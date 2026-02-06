@@ -5,6 +5,7 @@ import { getTranslations } from "@core/lib/i18n";
 import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
 import ServerStatusCard from "@presentation/components/ui/ServerStatusCard";
 import { BentoGrid, BentoGridItem } from "@presentation/components/ui/BentoGrid";
+import HeroSection from "@presentation/components/ui/HeroSection";
 
 interface HomePageProps {
     params: Promise<{ locale: string }>;
@@ -79,25 +80,7 @@ export default async function HomePage({ params }: HomePageProps) {
     return (
         <div className="void-pattern min-h-screen">
             {/* Hero Section */}
-            <section className="relative py-20 px-4">
-                <div className="max-w-4xl mx-auto text-center z-10 relative">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-void-surface/80 border border-void-border text-xs text-white/50 mb-8 backdrop-blur-md">
-                        <span className="w-2 h-2 rounded-full bg-neon-purple animate-pulse" />
-                        <span className="tracking-widest font-mono">SYSTEM ONLINE</span>
-                    </div>
-
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
-                        <span className="text-white">EGO</span>
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-cyan">WIKI</span>
-                    </h1>
-
-                    <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-                        {t.hero.subtitle}
-                    </p>
-
-                    <HeroSearchBar placeholder={t.hero.searchPlaceholder} />
-                </div>
-            </section>
+            <HeroSection locale={locale} />
 
             {/* Status Section */}
             <section className="max-w-7xl mx-auto px-4 mb-20">
