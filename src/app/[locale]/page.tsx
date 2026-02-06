@@ -80,7 +80,12 @@ export default async function HomePage({ params }: HomePageProps) {
     return (
         <div className="void-pattern min-h-screen">
             {/* Hero Section */}
-            <HeroSection locale={locale} />
+            <HeroSection
+                locale={locale}
+                subtitle={t.hero.subtitle}
+                searchPlaceholder={t.hero.searchPlaceholder}
+                ctaText={t.hero.accessData}
+            />
 
             {/* Status Section */}
             <section className="max-w-7xl mx-auto px-4 mb-20">

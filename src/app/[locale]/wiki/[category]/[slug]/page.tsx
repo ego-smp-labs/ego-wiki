@@ -5,11 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { CATEGORIES, getCategoryTitle } from "@core/lib/categories";
-import {
-    getArticle,
-    getCategoryArticles,
-    getArticleNavigation,
-} from "@core/lib/mdx";
+import { WikiService } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 import Sidebar from "@presentation/components/layout/Sidebar";
 import { mdxComponents } from "@presentation/components/mdx/MdxComponents";
@@ -22,7 +18,8 @@ export async function generateMetadata({
     params,
 }: ArticlePageProps): Promise<Metadata> {
     const { locale, category, slug } = await params;
-    const article = getArticle(locale, category, slug);
+    const wikiService = WikiService.getInstance();
+    const article = wikiService.getArticle(locale, category, slug);
 
     if (!article) {
         return { title: "Not Found" };
@@ -35,11 +32,12 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
+    const wikiService = WikiService.getInstance();
     const params: { locale: string; category: string; slug: string }[] = [];
 
     for (const locale of ["vi", "en"]) {
         for (const category of CATEGORIES) {
-            const articles = getCategoryArticles(locale, category.slug);
+            const articles = wikiService.getCategoryArticles(locale, category.slug);
             for (const article of articles) {
                 params.push({
                     locale,
@@ -56,14 +54,15 @@ export async function generateStaticParams() {
 export default async function ArticlePage({ params }: ArticlePageProps) {
     const { locale, category: categorySlug, slug } = await params;
     const t = getTranslations(locale);
+    const wikiService = WikiService.getInstance();
 
-    const article = getArticle(locale, categorySlug, slug);
+    const article = wikiService.getArticle(locale, categorySlug, slug);
     if (!article) {
         notFound();
     }
 
-    const articles = getCategoryArticles(locale, categorySlug);
-    const { prev, next } = getArticleNavigation(locale, categorySlug, slug);
+    const articles = wikiService.getCategoryArticles(locale, categorySlug);
+    const { prev, next } = wikiService.getArticleNavigation(locale, categorySlug, slug);
     const categoryTitle = getCategoryTitle(categorySlug, locale);
 
     return (

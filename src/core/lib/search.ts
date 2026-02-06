@@ -1,5 +1,5 @@
 import Fuse, { FuseResultMatch, IFuseOptions } from "fuse.js";
-import { getAllArticles, type ArticleMeta } from "./mdx";
+import { WikiService, type ArticleMeta } from "@core/services/WikiService";
 
 export interface SearchResult extends ArticleMeta {
     score: number;
@@ -26,7 +26,8 @@ export function buildSearchIndex(locale: string): Fuse<ArticleMeta> {
         return searchIndexCache.get(locale)!;
     }
 
-    const articles = getAllArticles(locale);
+    const wikiService = WikiService.getInstance();
+    const articles = wikiService.getAllArticles(locale);
     const fuse = new Fuse(articles, FUSE_OPTIONS);
     searchIndexCache.set(locale, fuse);
 

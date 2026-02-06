@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, FileText, ArrowRight, Loader2 } from "lucide-react";
-import { type ArticleMeta } from "@core/lib/mdx";
+import { type ArticleMeta } from "@core/services/WikiService";
 import { getCategory } from "@core/lib/categories";
 import { getTranslations } from "@core/lib/i18n";
 

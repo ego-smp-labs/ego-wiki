@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { CATEGORIES, getCategory, getCategoryTitle } from "@core/lib/categories";
-import { getCategoryArticles } from "@core/lib/mdx";
+import { WikiService } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 import Sidebar from "@presentation/components/layout/Sidebar";
 
@@ -38,13 +38,14 @@ export async function generateStaticParams() {
 export default async function CategoryPage({ params }: CategoryPageProps) {
     const { locale, category: categorySlug } = await params;
     const t = getTranslations(locale);
+    const wikiService = WikiService.getInstance();
 
     const category = getCategory(categorySlug);
     if (!category) {
         notFound();
     }
 
-    const articles = getCategoryArticles(locale, categorySlug);
+    const articles = wikiService.getCategoryArticles(locale, categorySlug);
     const Icon = category.icon;
     const title = locale === "vi" ? category.title.vi : category.title.en;
     const description = locale === "vi" ? category.description.vi : category.description.en;

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface StatRow {
     label: string;
@@ -50,8 +51,14 @@ export default function ItemStats({
                     <span className="text-xs uppercase tracking-widest text-white/40">{type}</span>
                 </div>
                 {image && (
-                    <div className="w-12 h-12 bg-void-bg rounded-lg p-1 border border-void-border">
-                        <img src={image} alt={name} className="w-full h-full object-contain pixelated" />
+                    <div className="w-12 h-12 bg-void-bg rounded-lg p-1 border border-void-border relative">
+                        <Image
+                            src={image}
+                            alt={name}
+                            fill
+                            sizes="48px"
+                            className="object-contain pixelated"
+                        />
                     </div>
                 )}
             </div>

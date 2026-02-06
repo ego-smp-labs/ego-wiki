@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface CraftingSlot {
     item?: string; // Image URL or initial
     label?: string;
@@ -31,11 +33,15 @@ export default function CraftingRecipe({ grid, result }: CraftingRecipeProps) {
                             title={slot?.label || ""}
                         >
                             {slot?.item && (
-                                <img
-                                    src={slot.item}
-                                    alt={slot.label}
-                                    className="w-8 h-8 object-contain pixelated rendering-pixelated"
-                                />
+                                <div className="relative w-8 h-8">
+                                    <Image
+                                        src={slot.item}
+                                        alt={slot.label || "Crafting ingredient"}
+                                        fill
+                                        sizes="32px"
+                                        className="object-contain pixelated rendering-pixelated"
+                                    />
+                                </div>
                             )}
                         </div>
                     ))}
@@ -51,14 +57,18 @@ export default function CraftingRecipe({ grid, result }: CraftingRecipeProps) {
                 {/* Result */}
                 <div className="w-16 h-16 bg-[#8b8b8b] border-2 border-[#373737] shadow-[inset_2px_2px_0_#373737,1px_1px_0_#ffffff] flex items-center justify-center relative group">
                     {result.item && (
-                        <img
-                            src={result.item}
-                            alt={result.label}
-                            className="w-10 h-10 object-contain pixelated rendering-pixelated"
-                        />
+                        <div className="relative w-10 h-10">
+                            <Image
+                                src={result.item}
+                                alt={result.label}
+                                fill
+                                sizes="40px"
+                                className="object-contain pixelated rendering-pixelated"
+                            />
+                        </div>
                     )}
                     {result.count && result.count > 1 && (
-                        <span className="absolute bottom-0 right-1 text-white font-bold text-xs drop-shadow-[1px_1px_0_#000000]">
+                        <span className="absolute bottom-0 right-1 text-white font-bold text-xs drop-shadow-[1px_1px_0_#000000] z-10">
                             {result.count}
                         </span>
                     )}

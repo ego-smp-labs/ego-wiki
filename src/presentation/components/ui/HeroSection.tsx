@@ -1,25 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { ArrowRight } from "lucide-react";
 import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
 
 interface HeroSectionProps {
     locale: string;
+    subtitle: string;
+    searchPlaceholder: string;
+    ctaText?: string;
 }
 
-export default function HeroSection({ locale }: HeroSectionProps) {
-    // We'll use a hardcoded fallback for now if useTranslations isn't fully set up for client components in this specific way,
-    // or assume it wraps correctly. Ideally we pass strings as props or use a client-safe hook.
-    // For this refactor, let's keep it simple and safe.
+export default function HeroSection({ locale, subtitle, searchPlaceholder, ctaText = "GET STARTED" }: HeroSectionProps) {
 
-    const subtitle = locale === "vi"
-        ? "Chào mừng đến với EGO SMP - Máy chủ Minecraft Việt Nam độc đáo với hệ thống kỹ năng, vật phẩm và cốt truyện chuyên sâu."
-        : "Welcome to EGO SMP - A unique Vietnamese Minecraft server with in-depth skills, items, and lore.";
 
-    const searchPlaceholder = locale === "vi"
-        ? "Tìm kiếm bài viết..."
-        : "Search documentation...";
 
     return (
         <section className="relative py-24 px-4 overflow-hidden">
@@ -111,7 +105,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                         href="/api/auth/signin"
                         className="inline-flex items-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
                     >
-                        GET STARTED <ArrowRight size={18} />
+                        {ctaText} <ArrowRight size={18} />
                     </a>
                 </motion.div>
             </div>
@@ -119,4 +113,4 @@ export default function HeroSection({ locale }: HeroSectionProps) {
     );
 }
 
-import { ArrowRight } from "lucide-react";
+

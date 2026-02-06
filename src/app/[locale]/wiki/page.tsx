@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { CATEGORIES } from "@core/lib/categories";
-import { getAllCategories } from "@core/lib/mdx";
+import { WikiService } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 import CategoryCard from "@presentation/components/ui/CategoryCard";
 import Sidebar from "@presentation/components/layout/Sidebar";
@@ -24,7 +24,7 @@ export async function generateMetadata({
 }
 
 function buildCategoryArticleCounts(
-    categories: ReturnType<typeof getAllCategories>
+    categories: ReturnType<WikiService["getAllCategories"]>
 ): Map<string, number> {
     return new Map(
         categories.map((cat) => [cat.slug, cat.articles.length])
@@ -34,7 +34,8 @@ function buildCategoryArticleCounts(
 export default async function WikiPage({ params }: WikiPageProps) {
     const { locale } = await params;
     const t = getTranslations(locale);
-    const categories = getAllCategories(locale);
+    const wikiService = WikiService.getInstance();
+    const categories = wikiService.getAllCategories(locale);
     const categoryArticleCounts = buildCategoryArticleCounts(categories);
 
     const pageSubtitle = locale === "vi"

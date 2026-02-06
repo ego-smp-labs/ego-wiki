@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { CATEGORIES, getCategory } from "@core/lib/categories";
-import { type ArticleMeta, type Heading } from "@core/lib/mdx";
+import { type ArticleMeta, type Heading } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 
 interface SidebarProps {
@@ -48,8 +48,8 @@ export default function Sidebar({
                                     <Link
                                         href={`/${locale}/wiki/${category.slug}`}
                                         className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all ${isActive
-                                                ? "bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20"
-                                                : "text-white/60 hover:text-white hover:bg-void-surface"
+                                            ? "bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20"
+                                            : "text-white/60 hover:text-white hover:bg-void-surface"
                                             }`}
                                     >
                                         <Icon
@@ -80,8 +80,8 @@ export default function Sidebar({
                                         <Link
                                             href={`/${locale}/wiki/${article.category}/${article.slug}`}
                                             className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all ${isActive
-                                                    ? "bg-neon-purple/10 text-neon-purple border-l-2 border-neon-purple"
-                                                    : "text-white/60 hover:text-white hover:bg-void-surface border-l-2 border-transparent"
+                                                ? "bg-neon-purple/10 text-neon-purple border-l-2 border-neon-purple"
+                                                : "text-white/60 hover:text-white hover:bg-void-surface border-l-2 border-transparent"
                                                 }`}
                                         >
                                             <span className="text-xs text-white/30 font-mono w-5">
