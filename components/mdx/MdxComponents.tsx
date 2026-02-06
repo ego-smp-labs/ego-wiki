@@ -179,6 +179,10 @@ const Img = ({ src, alt }: { src?: string; alt?: string }) => (
     </figure>
 );
 
+// ===== Item Components =====
+import ItemStats from "@/components/wiki/ItemStats";
+import CraftingRecipe from "@/components/wiki/CraftingRecipe";
+
 // ===== Export MDX Components =====
 export const mdxComponents = {
     h1: H1,
@@ -201,6 +205,9 @@ export const mdxComponents = {
     strong: Strong,
     em: Em,
     img: Img,
+    // Custom Components
+    ItemStats,
+    CraftingRecipe,
 };
 
 export default mdxComponents;

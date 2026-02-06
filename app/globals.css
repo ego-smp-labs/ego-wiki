@@ -3,30 +3,31 @@
 /* ===== CSS Variables ===== */
 :root {
   /* Void Theme Colors */
-  --void-bg: #050505;
-  --void-surface: #0a0a0f;
-  --void-surface-light: #0f0f18;
-  --void-border: #1a1a2e;
-  --void-border-light: #2a2a4e;
+  --void-bg: #030005;
+  --void-surface: #0a0510;
+  --void-surface-light: #12081f;
+  --void-border: #2a1540;
+  --void-border-light: #452465;
 
   /* Neon Accents */
-  --neon-cyan: #00f0ff;
-  --neon-cyan-dim: #00a0aa;
-  --neon-purple: #7b00ff;
+  --neon-cyan: #b050ff;
+  /* Changed to purple-ish */
+  --neon-cyan-dim: #7020b0;
+  --neon-purple: #9d00ff;
   --neon-purple-dim: #5a00bb;
-  --neon-pink: #ff00ff;
+  --neon-pink: #d000ff;
 
   /* Text Colors */
   --text-primary: #ffffff;
-  --text-secondary: #a0a0b0;
-  --text-muted: #606070;
+  --text-secondary: #bbaadd;
+  --text-muted: #706090;
 
   /* Shadows */
-  --glow-cyan: 0 0 20px rgba(0, 240, 255, 0.3), 0 0 40px rgba(0, 240, 255, 0.1);
-  --glow-purple: 0 0 20px rgba(123, 0, 255, 0.3), 0 0 40px rgba(123, 0, 255, 0.1);
+  --glow-cyan: 0 0 20px rgba(176, 80, 255, 0.3), 0 0 40px rgba(176, 80, 255, 0.1);
+  --glow-purple: 0 0 20px rgba(157, 0, 255, 0.4), 0 0 50px rgba(157, 0, 255, 0.2);
 
   /* Background & Foreground */
-  --background: #050505;
+  --background: #030005;
   --foreground: #ffffff;
 }
 
