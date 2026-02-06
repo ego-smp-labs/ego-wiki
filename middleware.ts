@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { LOCALES, DEFAULT_LOCALE } from "./lib/i18n";
+import { LOCALES, DEFAULT_LOCALE } from "@/lib/i18n";
 
 const SKIP_PATTERNS = ["/api", "/_next", "/favicon"];
 
