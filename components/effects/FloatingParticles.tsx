@@ -13,12 +13,12 @@ interface Particle {
     opacity: number;
 }
 
-const PARTICLE_COUNT = 30;
+const DEFAULT_PARTICLE_COUNT = 30;
 
-export default function FloatingParticles() {
+export default function FloatingParticles({ count = DEFAULT_PARTICLE_COUNT }: { count?: number }) {
     return (
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-            {[...Array(PARTICLE_COUNT)].map((_, i) => (
+            {[...Array(count)].map((_, i) => (
                 <PixelParticle key={i} />
             ))}
         </div>
