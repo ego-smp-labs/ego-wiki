@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Search, Globe } from "lucide-react";
-import { getTranslations, LOCALES } from "@/lib/i18n";
+import { getTranslations, LOCALES } from "@core/lib/i18n";
 
 interface NavbarProps {
     locale: string;

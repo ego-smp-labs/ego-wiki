@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@core/lib/utils";
 import { motion } from "framer-motion";
 
 export const BentoGrid = ({

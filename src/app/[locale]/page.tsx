@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Book, Skull, Zap, Hammer, Archive, Globe, MessageSquare } from "lucide-react";
-import { getTranslations } from "@/lib/i18n";
-import HeroSearchBar from "@/components/ui/HeroSearchBar";
-import ServerStatusCard from "@/components/ui/ServerStatusCard";
-import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
+import { getTranslations } from "@core/lib/i18n";
+import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
+import ServerStatusCard from "@presentation/components/ui/ServerStatusCard";
+import { BentoGrid, BentoGridItem } from "@presentation/components/ui/BentoGrid";
 
 interface HomePageProps {
     params: Promise<{ locale: string }>;

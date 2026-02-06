@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import CommandPalette from "@/components/layout/CommandPalette";
-import FloatingParticles from "@/components/effects/FloatingParticles";
+import Navbar from "@presentation/components/layout/Navbar";
+import Footer from "@presentation/components/layout/Footer";
+import CommandPalette from "@presentation/components/layout/CommandPalette";
+import FloatingParticles from "@presentation/components/effects/FloatingParticles";
 
 interface LocaleLayoutClientProps {
     children: React.ReactNode;

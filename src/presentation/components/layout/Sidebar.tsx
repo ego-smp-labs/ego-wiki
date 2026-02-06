@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { CATEGORIES, getCategory } from "@/lib/categories";
-import { type ArticleMeta, type Heading } from "@/lib/mdx";
-import { getTranslations } from "@/lib/i18n";
+import { CATEGORIES, getCategory } from "@core/lib/categories";
+import { type ArticleMeta, type Heading } from "@core/lib/mdx";
+import { getTranslations } from "@core/lib/i18n";
 
 interface SidebarProps {
     locale: string;

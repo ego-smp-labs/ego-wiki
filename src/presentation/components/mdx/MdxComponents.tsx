@@ -180,8 +180,8 @@ const Img = ({ src, alt }: { src?: string; alt?: string }) => (
 );
 
 // ===== Item Components =====
-import ItemStats from "@/components/wiki/ItemStats";
-import CraftingRecipe from "@/components/wiki/CraftingRecipe";
+import ItemStats from "@presentation/components/wiki/ItemStats";
+import CraftingRecipe from "@presentation/components/wiki/CraftingRecipe";
 
 // ===== Export MDX Components =====
 export const mdxComponents = {

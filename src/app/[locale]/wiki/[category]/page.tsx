@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
-import { CATEGORIES, getCategory, getCategoryTitle } from "@/lib/categories";
-import { getCategoryArticles } from "@/lib/mdx";
-import { getTranslations } from "@/lib/i18n";
-import Sidebar from "@/components/layout/Sidebar";
+import { CATEGORIES, getCategory, getCategoryTitle } from "@core/lib/categories";
+import { getCategoryArticles } from "@core/lib/mdx";
+import { getTranslations } from "@core/lib/i18n";
+import Sidebar from "@presentation/components/layout/Sidebar";
 
 interface CategoryPageProps {
     params: Promise<{ locale: string; category: string }>;

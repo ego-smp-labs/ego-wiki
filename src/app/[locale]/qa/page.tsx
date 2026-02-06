@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { getTranslations } from "@/lib/i18n";
-import { FAQ_CATEGORY } from "@/lib/categories";
-import Accordion from "@/components/ui/Accordion";
+import { getTranslations } from "@core/lib/i18n";
+import { FAQ_CATEGORY } from "@core/lib/categories";
+import Accordion from "@presentation/components/ui/Accordion";
 
 interface QAPageProps {
     params: Promise<{ locale: string }>;

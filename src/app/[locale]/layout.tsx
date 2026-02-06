@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { isValidLocale } from "@/lib/i18n";
+import { isValidLocale } from "@core/lib/i18n";
 import LocaleLayoutClient from "./LocaleLayoutClient";
 
 interface LocaleLayoutProps {

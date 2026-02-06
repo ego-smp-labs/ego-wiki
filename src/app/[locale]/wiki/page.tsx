@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { CATEGORIES } from "@/lib/categories";
-import { getAllCategories } from "@/lib/mdx";
-import { getTranslations } from "@/lib/i18n";
-import CategoryCard from "@/components/ui/CategoryCard";
-import Sidebar from "@/components/layout/Sidebar";
+import { CATEGORIES } from "@core/lib/categories";
+import { getAllCategories } from "@core/lib/mdx";
+import { getTranslations } from "@core/lib/i18n";
+import CategoryCard from "@presentation/components/ui/CategoryCard";
+import Sidebar from "@presentation/components/layout/Sidebar";
 
 interface WikiPageProps {
     params: Promise<{ locale: string }>;

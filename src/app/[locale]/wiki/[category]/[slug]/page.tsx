@@ -4,15 +4,15 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
-import { CATEGORIES, getCategoryTitle } from "@/lib/categories";
+import { CATEGORIES, getCategoryTitle } from "@core/lib/categories";
 import {
     getArticle,
     getCategoryArticles,
     getArticleNavigation,
-} from "@/lib/mdx";
-import { getTranslations } from "@/lib/i18n";
-import Sidebar from "@/components/layout/Sidebar";
-import { mdxComponents } from "@/components/mdx/MdxComponents";
+} from "@core/lib/mdx";
+import { getTranslations } from "@core/lib/i18n";
+import Sidebar from "@presentation/components/layout/Sidebar";
+import { mdxComponents } from "@presentation/components/mdx/MdxComponents";
 
 interface ArticlePageProps {
     params: Promise<{ locale: string; category: string; slug: string }>;

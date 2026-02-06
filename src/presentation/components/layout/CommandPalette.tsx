@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, FileText, ArrowRight, Loader2 } from "lucide-react";
-import { type ArticleMeta } from "@/lib/mdx";
-import { getCategory } from "@/lib/categories";
-import { getTranslations } from "@/lib/i18n";
+import { type ArticleMeta } from "@core/lib/mdx";
+import { getCategory } from "@core/lib/categories";
+import { getTranslations } from "@core/lib/i18n";
 
 interface CommandPaletteProps {
     locale: string;

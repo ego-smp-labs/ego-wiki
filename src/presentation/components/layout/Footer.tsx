@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Copy, Check, Github, MessageCircle } from "lucide-react";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@core/lib/i18n";
 
 interface FooterProps {
     locale: string;
