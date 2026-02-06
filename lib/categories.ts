@@ -1,4 +1,4 @@
-import { LucideIcon, BookOpen, Zap, Sword, Settings, HelpCircle } from "lucide-react";
+import { LucideIcon, BookOpen, Zap, Sword, Settings, HelpCircle, Hammer } from "lucide-react";
 
 export interface Category {
     slug: string;
@@ -52,6 +52,19 @@ export const CATEGORIES: Category[] = [
         description: {
             en: "Master the void. Advanced techniques.",
             vi: "Kỹ năng và chiến thuật nâng cao.",
+        },
+    },
+    {
+        slug: "items",
+        icon: Hammer,
+        color: "pink",
+        title: {
+            en: "Items & Crafting",
+            vi: "Vật phẩm & Chế tạo",
+        },
+        description: {
+            en: "Recipes and stats for custom items.",
+            vi: "Công thức và chỉ số vật phẩm.",
         },
     },
     {
