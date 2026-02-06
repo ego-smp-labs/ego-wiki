@@ -17,19 +17,27 @@ function createOfflineStatus(): McStatus {
     return {
         online: false,
         players: { online: 0, max: 0 },
-        version: "Unknown",
+        version: "Offline",
     };
 }
 
 export async function GET() {
     try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+
         const response = await fetch(
             `https://api.mcsrvstat.us/3/${SERVER_ADDRESS}`,
-            { next: { revalidate: CACHE_DURATION } }
+            {
+                next: { revalidate: CACHE_DURATION },
+                signal: controller.signal
+            }
         );
 
+        clearTimeout(timeoutId);
+
         if (!response.ok) {
-            throw new Error("Failed to fetch server status");
+            return NextResponse.json(createOfflineStatus());
         }
 
         const data = await response.json();
@@ -45,8 +53,7 @@ export async function GET() {
         };
 
         return NextResponse.json(status);
-    } catch (error) {
-        console.error("MC status error:", error);
-        return NextResponse.json(createOfflineStatus(), { status: 200 });
+    } catch {
+        return NextResponse.json(createOfflineStatus());
     }
 }

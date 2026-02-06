@@ -2,32 +2,31 @@
 
 /* ===== CSS Variables ===== */
 :root {
-  /* Void Theme Colors */
-  --void-bg: #030005;
-  --void-surface: #0a0510;
-  --void-surface-light: #12081f;
-  --void-border: #2a1540;
-  --void-border-light: #452465;
+  /* Purple/White Theme */
+  --void-bg: #0a0014;
+  --void-surface: #120028;
+  --void-surface-light: #1a0040;
+  --void-border: #3d1a70;
+  --void-border-light: #5c2d91;
 
   /* Neon Accents */
-  --neon-cyan: #b050ff;
-  /* Changed to purple-ish */
-  --neon-cyan-dim: #7020b0;
-  --neon-purple: #9d00ff;
-  --neon-purple-dim: #5a00bb;
-  --neon-pink: #d000ff;
+  --neon-cyan: #c77dff;
+  --neon-cyan-dim: #9d4edd;
+  --neon-purple: #a855f7;
+  --neon-purple-dim: #7c3aed;
+  --neon-pink: #e879f9;
 
-  /* Text Colors */
+  /* Text Colors - Using White */
   --text-primary: #ffffff;
-  --text-secondary: #bbaadd;
-  --text-muted: #706090;
+  --text-secondary: #e0d4f7;
+  --text-muted: #a78bdb;
 
   /* Shadows */
-  --glow-cyan: 0 0 20px rgba(176, 80, 255, 0.3), 0 0 40px rgba(176, 80, 255, 0.1);
-  --glow-purple: 0 0 20px rgba(157, 0, 255, 0.4), 0 0 50px rgba(157, 0, 255, 0.2);
+  --glow-cyan: 0 0 20px rgba(199, 125, 255, 0.4), 0 0 40px rgba(199, 125, 255, 0.2);
+  --glow-purple: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 50px rgba(168, 85, 247, 0.25);
 
   /* Background & Foreground */
-  --background: #030005;
+  --background: #0a0014;
   --foreground: #ffffff;
 }
 
@@ -76,13 +75,13 @@ body {
 
 /* ===== Selection ===== */
 ::selection {
-  background: rgba(0, 240, 255, 0.3);
+  background: rgba(168, 85, 247, 0.4);
   color: var(--text-primary);
 }
 
 /* ===== Glassmorphism Base ===== */
 .glass {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--void-border);
@@ -103,21 +102,21 @@ body {
 
 .glow-border-cyan {
   border-color: var(--neon-cyan);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2), inset 0 0 10px rgba(0, 240, 255, 0.05);
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.3), inset 0 0 10px rgba(199, 125, 255, 0.08);
 }
 
 .glow-border-purple {
   border-color: var(--neon-purple);
-  box-shadow: 0 0 10px rgba(123, 0, 255, 0.2), inset 0 0 10px rgba(123, 0, 255, 0.05);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3), inset 0 0 10px rgba(168, 85, 247, 0.08);
 }
 
 /* ===== Text Effects ===== */
 .text-glow-cyan {
-  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.6), 0 0 20px rgba(199, 125, 255, 0.4);
 }
 
 .text-glow-purple {
-  text-shadow: 0 0 10px rgba(123, 0, 255, 0.5), 0 0 20px rgba(123, 0, 255, 0.3);
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.6), 0 0 20px rgba(168, 85, 247, 0.4);
 }
 
 .text-gradient-neon {
@@ -188,9 +187,9 @@ body {
 /* ===== Void Background Pattern ===== */
 .void-pattern {
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(123, 0, 255, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0, 240, 255, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 40% 80%, rgba(123, 0, 255, 0.02) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(168, 85, 247, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(199, 125, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(168, 85, 247, 0.03) 0%, transparent 50%);
 }
 
 /* ===== Card Hover Effects ===== */
@@ -200,14 +199,14 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.15), 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 20px 40px rgba(0, 0, 0, 0.3);
   border-color: var(--neon-cyan-dim);
 }
 
 /* ===== Button Styles ===== */
 .btn-primary {
-  background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-cyan-dim) 100%);
-  color: var(--void-bg);
+  background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-cyan-dim) 100%);
+  color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -217,7 +216,7 @@ body {
 }
 
 .btn-primary:hover {
-  box-shadow: var(--glow-cyan);
+  box-shadow: var(--glow-purple);
   transform: translateY(-2px);
 }
 
@@ -233,7 +232,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 240, 255, 0.1);
+  background: rgba(199, 125, 255, 0.15);
   box-shadow: var(--glow-cyan);
 }
 
@@ -263,13 +262,13 @@ body {
 }
 
 .void-table tr:hover td {
-  background: rgba(0, 240, 255, 0.02);
+  background: rgba(168, 85, 247, 0.05);
 }
 
 /* ===== Blockquote ===== */
 .void-blockquote {
   border-left: 3px solid var(--neon-purple);
-  background: rgba(123, 0, 255, 0.05);
+  background: rgba(168, 85, 247, 0.08);
   padding: 1rem 1.5rem;
   margin: 1rem 0;
   border-radius: 0 8px 8px 0;
@@ -291,7 +290,7 @@ body {
   border: 1px solid var(--void-border);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 240, 255, 0.1);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(168, 85, 247, 0.15);
 }
 
 [cmdk-input] {
@@ -320,12 +319,12 @@ body {
 }
 
 [cmdk-item][data-selected="true"] {
-  background: rgba(0, 240, 255, 0.1);
+  background: rgba(168, 85, 247, 0.15);
   color: var(--neon-cyan);
 }
 
 [cmdk-item]:hover {
-  background: rgba(0, 240, 255, 0.05);
+  background: rgba(168, 85, 247, 0.08);
 }
 
 /* ===== Animations ===== */
