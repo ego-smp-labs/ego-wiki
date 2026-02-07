@@ -52,8 +52,8 @@ export const BentoGridItem = ({
         anime({
             targets: cardRef.current,
             scale: 1.02,
-            boxShadow: "0 0 20px 5px rgba(139, 92, 246, 0.5)", // Violet glow
-            borderColor: "rgba(139, 92, 246, 0.5)",
+            boxShadow: "0 0 30px 5px rgba(139, 92, 246, 0.6)", // Stronger Violet glow
+            borderColor: "rgba(139, 92, 246, 0.8)", // Violet border
             duration: 400,
             easing: "easeOutExpo",
         });
@@ -75,7 +75,7 @@ export const BentoGridItem = ({
             targets: cardRef.current,
             scale: 1,
             boxShadow: "0 0 0px 0px rgba(0, 0, 0, 0)",
-            borderColor: "rgba(255, 255, 255, 0.1)",
+            borderColor: "rgba(255, 255, 255, 0.1)", // Back to subtle white border
             duration: 400,
             easing: "easeOutExpo",
         });
@@ -89,35 +89,31 @@ export const BentoGridItem = ({
         });
     };
 
-    // Define background styles based on variant (Static)
+    // Define background styles based on variant (Now mostly transparent to match "remove bg")
+    // We keep a very subtle glass effect or just transparent as requested.
     const getBackgroundStyle = () => {
-        switch (variant) {
-            case "general": return "bg-neutral-900";
-            case "ego": return "bg-void-bg";
-            case "items": return "bg-neutral-900";
-            default: return "bg-void-surface";
-        }
+        return "bg-black/20 backdrop-blur-[2px]"; // Subtle glass default, overrides specific colors
     };
 
     return (
         <div
             ref={cardRef}
             className={cn(
-                "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden",
+                "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden",
                 getBackgroundStyle(),
                 className
             )}
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            style={{ borderColor: "rgba(255, 255, 255, 0.1)" }} // Initial explicit style for animejs to latch onto
+            style={{ borderColor: "rgba(255, 255, 255, 0.1)" }} // Initial explicit style
         >
-            {/* Animated Violet Gradient Background Layer */}
+            {/* Animated Violet Gradient Background Layer (Violet -> Dark) */}
             <div
                 ref={bgRef}
                 className="absolute inset-0 z-0 opacity-0 pointer-events-none"
                 style={{
-                    background: "linear-gradient(135deg, rgba(88, 28, 135, 0.8) 0%, rgba(15, 23, 42, 1) 100%)",
+                    background: "linear-gradient(135deg, rgba(88, 28, 135, 0.9) 0%, rgba(15, 23, 42, 1) 100%)",
                 }}
             />
 

@@ -5,13 +5,6 @@
 
 D:\_PROJJECT\ego-wiki\src\app\[locale]\admin\wiki\page.tsx
   39:11  warning  'title' is assigned a value but never used  @typescript-eslint/no-unused-vars
-  73:23  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
-
-D:\_PROJJECT\ego-wiki\src\app\[locale]\page.tsx
-  116:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
-
-D:\_PROJJECT\ego-wiki\src\core\services\MinecraftService.ts
-  47:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
 
 D:\_PROJJECT\ego-wiki\src\core\types\next-auth.d.ts
   1:8  warning  'NextAuth' is defined but never used  @typescript-eslint/no-unused-vars
@@ -25,8 +18,11 @@ D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx
 D:\_PROJJECT\ego-wiki\src\presentation\components\mdx\MdxComponents.tsx
   101:11  warning  'language' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
+D:\_PROJJECT\ego-wiki\src\presentation\components\ui\BentoGrid.tsx
+  43:5  warning  'variant' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
 D:\_PROJJECT\ego-wiki\src\presentation\components\ui\ServerStatusCard.tsx
   55:11  warning  'cardClass' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-✖ 9 problems (3 errors, 6 warnings)
+✖ 7 problems (0 errors, 7 warnings)
 
