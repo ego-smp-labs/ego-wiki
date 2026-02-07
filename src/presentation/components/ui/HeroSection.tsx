@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
 
 interface HeroSectionProps {
-    locale: string;
     subtitle: string;
     searchPlaceholder: string;
     ctaText?: string;
 }
 
-export default function HeroSection({ locale, subtitle, searchPlaceholder, ctaText = "GET STARTED" }: HeroSectionProps) {
+export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GET STARTED" }: HeroSectionProps) {
 
 
 
@@ -101,12 +101,12 @@ export default function HeroSection({ locale, subtitle, searchPlaceholder, ctaTe
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className="mt-8"
                 >
-                    <a
+                    <Link
                         href="/api/auth/signin"
                         className="inline-flex items-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
                     >
                         {ctaText} <ArrowRight size={18} />
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
         </section>

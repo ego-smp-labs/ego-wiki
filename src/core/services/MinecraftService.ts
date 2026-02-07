@@ -44,6 +44,7 @@ export class MinecraftService {
         }
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     private mapResponseToStatus(data: Record<string, any>): MinecraftStatus {
         return {
             online: data.online || false,

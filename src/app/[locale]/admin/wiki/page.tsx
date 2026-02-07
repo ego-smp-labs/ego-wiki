@@ -70,7 +70,7 @@ export default function WikiEditorPage({ params }: { params: Promise<{ locale: s
             setTimeout(() => {
                 router.push(`/${locale}/wiki/${data.category}/${data.slug}`);
             }, 1000);
-        } catch (err: any) {
+        } catch (err: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
             setMessage(`Error: ${err.message}`);
         } finally {
             setIsLoading(false);

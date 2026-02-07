@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Particle {
     id: number;
@@ -19,6 +19,7 @@ export default function FloatingParticles({ count = DEFAULT_PARTICLE_COUNT }: { 
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setMounted(true);
     }, []);
 
@@ -37,6 +38,7 @@ function PixelParticle() {
     const [config, setConfig] = useState<{ x: number, y: number, duration: number, size: number, xMove: number } | null>(null);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setConfig({
             x: Math.random() * 100,
             y: Math.random() * 100,
