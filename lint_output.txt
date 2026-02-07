@@ -1,0 +1,120 @@
+
+> nextjs-app@0.1.0 lint
+> eslint
+
+
+D:\_PROJJECT\ego-wiki\src\app\[locale]\admin\wiki\page.tsx
+  39:11  warning  'title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  73:23  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+
+D:\_PROJJECT\ego-wiki\src\app\[locale]\page.tsx
+  3:10  warning  'ArrowRight' is defined but never used     @typescript-eslint/no-unused-vars
+  3:57  warning  'Globe' is defined but never used          @typescript-eslint/no-unused-vars
+  5:8   warning  'HeroSearchBar' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\_PROJJECT\ego-wiki\src\core\actions\wiki.ts
+  23:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\_PROJJECT\ego-wiki\src\core\services\MinecraftService.ts
+  47:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\_PROJJECT\ego-wiki\src\core\types\next-auth.d.ts
+  1:8  warning  'NextAuth' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\_PROJJECT\ego-wiki\src\middleware.ts
+   2:15  warning  'NextRequest' is defined but never used   @typescript-eslint/no-unused-vars
+  40:42  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx
+   3:10  warning  'useEffect' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   3:21  warning  'useRef' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+   4:18  warning  'useAnimation' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   6:11  warning  'Particle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  29:21  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx:29:21
+  27 |
+  28 | function PixelParticle() {
+> 29 |     const randomX = Math.random() * 100;
+     |                     ^^^^^^^^^^^^^ Cannot call impure function
+  30 |     const randomY = Math.random() * 100;
+  31 |     const duration = 10 + Math.random() * 20;
+  32 |     const size = 2 + Math.random() * 4;       react-hooks/purity
+  30:21  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx:30:21
+  28 | function PixelParticle() {
+  29 |     const randomX = Math.random() * 100;
+> 30 |     const randomY = Math.random() * 100;
+     |                     ^^^^^^^^^^^^^ Cannot call impure function
+  31 |     const duration = 10 + Math.random() * 20;
+  32 |     const size = 2 + Math.random() * 4;
+  33 |       react-hooks/purity
+  31:27  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx:31:27
+  29 |     const randomX = Math.random() * 100;
+  30 |     const randomY = Math.random() * 100;
+> 31 |     const duration = 10 + Math.random() * 20;
+     |                           ^^^^^^^^^^^^^ Cannot call impure function
+  32 |     const size = 2 + Math.random() * 4;
+  33 |
+  34 |     return (               react-hooks/purity
+  32:22  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx:32:22
+  30 |     const randomY = Math.random() * 100;
+  31 |     const duration = 10 + Math.random() * 20;
+> 32 |     const size = 2 + Math.random() * 4;
+     |                      ^^^^^^^^^^^^^ Cannot call impure function
+  33 |
+  34 |     return (
+  35 |         <motion.div                                         react-hooks/purity
+  46:24  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\effects\FloatingParticles.tsx:46:24
+  44 |             animate={{
+  45 |                 y: [0, -100, 0],
+> 46 |                 x: [0, Math.random() * 50 - 25, 0],
+     |                        ^^^^^^^^^^^^^ Cannot call impure function
+  47 |                 opacity: [0, 0.8, 0],
+  48 |                 scale: [0, 1.5, 0],
+  49 |             }}  react-hooks/purity
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\layout\Footer.tsx
+   5:10  warning  'Copy' is defined but never used                   @typescript-eslint/no-unused-vars
+   5:16  warning  'Check' is defined but never used                  @typescript-eslint/no-unused-vars
+  18:12  warning  'copied' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  21:11  warning  'handleCopyIp' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\mdx\MdxComponents.tsx
+    3:24  warning  'Copy' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  100:11  warning  'language' is assigned a value but never used                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  172:11  warning  'isExternal' is assigned a value but never used                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  194:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\ui\BentoGrid.tsx
+  4:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\ui\HeroSection.tsx
+   14:39  warning  'locale' is defined but never used                                                                                                                                     @typescript-eslint/no-unused-vars
+  104:21  error    Do not use an `<a>` element to navigate to `/api/auth/signin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  104:21  error    Do not use an `<a>` element to navigate to `/api/auth/signin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  104:21  error    Do not use an `<a>` element to navigate to `/api/auth/signin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  104:21  error    Do not use an `<a>` element to navigate to `/api/auth/signin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\_PROJJECT\ego-wiki\src\presentation\components\ui\ServerStatusCard.tsx
+  55:11  warning  'cardClass' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 34 problems (13 errors, 21 warnings)
+

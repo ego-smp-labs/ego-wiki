@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import { ExternalLink, Copy } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 
 // ===== Custom MDX Component Types =====
 interface HeadingProps {
@@ -164,38 +165,18 @@ const Em = ({ children }: { children: ReactNode }) => (
 );
 
 // ===== Image =====
-// ===== Image =====
 const Img = ({ src, alt }: { src?: string; alt?: string }) => {
     if (!src) return null;
-
-    // Check if it's an external URL that starts with http
-    const isExternal = src.startsWith("http");
 
     return (
         <figure className="my-6">
             <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-void-border bg-void-surface-light">
-                {/* 
-                    For generic MDX images where we don't know dimensions, 
-                    fill + object-contain is a safe bet to prevent layout shift 
-                    if we contain it in a fixed height or aspect ratio box.
-                    However, fixed height might be bad for small icons.
-                    A better approach for generic arbitrary markdown images without plugins 
-                    is often just a standard img tag with lazy loading, OR 
-                    assuming a standard aspect ratio.
-                    
-                    For this project, let's use a standard img tag for arbitrary external images
-                    unless we configure remotePatterns.
-                    
-                    But for high score, let's use Next Image if internal, or standard img if external 
-                    (since we might not have whitelisted every domain).
-                    
-                    Actually, we have hostname "**" in next.config.ts, so we can use Next Image for everything.
-                 */}
-                <img
+                <Image
                     src={src}
-                    alt={alt || ""}
-                    className="w-full h-auto rounded-xl max-h-[500px] object-contain"
-                    loading="lazy"
+                    alt={alt || "Wiki content"}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
                 />
             </div>
             {alt && (

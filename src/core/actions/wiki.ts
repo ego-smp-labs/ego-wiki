@@ -20,7 +20,7 @@ export type WikiPageData = z.infer<typeof wikiPageSchema>;
 export async function createWikiPage({ title, category, slug, content, locale }: WikiPageData) {
     // 1. Auth Check (Double Layer Security)
     const session = await auth();
-    const userRoles = (session?.user as any)?.roles || [];
+    const userRoles = (session?.user as { roles?: string[] })?.roles || [];
     const hasAdminRole = env.DISCORD_ADMIN_ROLE_ID
         ? userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)
         : true; // Unsafe default but matches middleware
@@ -32,7 +32,7 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     // 2. Validate Data
     const validation = wikiPageSchema.safeParse({ title, category, slug, content, locale });
     if (!validation.success) {
-        throw new Error(validation.error.errors[0].message);
+        throw new Error(validation.error.issues[0].message);
     }
 
     // 3. construct File Path

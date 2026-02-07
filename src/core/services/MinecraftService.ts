@@ -44,7 +44,7 @@ export class MinecraftService {
         }
     }
 
-    private mapResponseToStatus(data: any): MinecraftStatus {
+    private mapResponseToStatus(data: Record<string, any>): MinecraftStatus {
         return {
             online: data.online || false,
             version: data.version || "Unknown",

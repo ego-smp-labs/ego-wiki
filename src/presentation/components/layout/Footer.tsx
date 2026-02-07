@@ -1,32 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Copy, Check, Github, MessageCircle } from "lucide-react";
+import { Github, MessageCircle } from "lucide-react";
 import { getTranslations } from "@core/lib/i18n";
-
 import { env } from "@core/config/env";
 
 interface FooterProps {
     locale: string;
 }
 
-const SERVER_IP = "play.egosmp.net";
-const COPY_FEEDBACK_DURATION = 2000;
-
 export default function Footer({ locale }: FooterProps) {
-    const [copied, setCopied] = useState(false);
     const t = getTranslations(locale);
-
-    const handleCopyIp = async () => {
-        try {
-            await navigator.clipboard.writeText(SERVER_IP);
-            setCopied(true);
-            setTimeout(() => setCopied(false), COPY_FEEDBACK_DURATION);
-        } catch (err) {
-            console.error("Failed to copy:", err);
-        }
-    };
 
     const description = locale === "vi"
         ? "Tri thức từ Vực Thẳm. Hướng dẫn đầy đủ cho Ego SMP."
@@ -75,7 +59,7 @@ export default function Footer({ locale }: FooterProps) {
                         </span>
                         <div className="flex gap-3">
                             <a
-                                href="https://discord.gg/egosmp"
+                                href={env.NEXT_PUBLIC_DISCORD_INVITE_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2.5 rounded-lg bg-void-bg border border-void-border hover:border-[#5865F2]/50 hover:text-[#5865F2] transition-all text-white/60"

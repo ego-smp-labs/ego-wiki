@@ -37,7 +37,7 @@ export default auth((req) => {
     // Check for Admin Role
     // Note: req.auth.user.roles is populated in auth.ts JWT callback
     // We treat "roles" as string[]
-    const userRoles = (req.auth?.user as any)?.roles || [];
+    const userRoles = (req.auth?.user as { roles?: string[] })?.roles || [];
     const hasAdminRole = env.DISCORD_ADMIN_ROLE_ID
         ? userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)
         : true; // If no admin role defined, allow all logged in users (dev mode/unsafe)

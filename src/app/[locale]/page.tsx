@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Book, Skull, Zap, Hammer, Archive, Globe, MessageSquare } from "lucide-react";
+import { Book, Skull, Zap, Hammer, Archive, MessageSquare } from "lucide-react";
 import { getTranslations } from "@core/lib/i18n";
-import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
 import ServerStatusCard from "@presentation/components/ui/ServerStatusCard";
 import { BentoGrid, BentoGridItem } from "@presentation/components/ui/BentoGrid";
 import HeroSection from "@presentation/components/ui/HeroSection";
