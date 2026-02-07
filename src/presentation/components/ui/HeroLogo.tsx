@@ -73,7 +73,7 @@ export const HeroLogo = () => {
 
     return (
         // Flex container for tighter, natural spacing
-        <div className="relative mb-6 select-none cursor-default flex items-baseline justify-center gap-2 md:gap-4">
+        <div className="relative mb-6 select-none cursor-default flex items-baseline justify-center gap-3 md:gap-5">
             {/* Main Title - EGO */}
             <h1
                 ref={egoTextRef}
@@ -89,7 +89,7 @@ export const HeroLogo = () => {
                 EGO
             </h1>
 
-            {/* SMP - Now a sibling, naturally placed */}
+            {/* SMP - Larger, stronger presence */}
             <div
                 ref={smpContainerRef}
                 className="flex gap-1 pointer-events-none"
@@ -97,7 +97,7 @@ export const HeroLogo = () => {
                 {["S", "M", "P"].map((char, index) => (
                     <span
                         key={index}
-                        className="smp-char text-4xl md:text-6xl font-bold text-white/90 inline-block drop-shadow-md"
+                        className="smp-char text-6xl md:text-8xl font-bold text-white/90 inline-block drop-shadow-md"
                         style={{ fontFamily: "var(--font-mono)" }}
                     >
                         {char}

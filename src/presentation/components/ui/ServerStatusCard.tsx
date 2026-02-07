@@ -61,16 +61,12 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
             strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
             duration: 500,
+            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 10px #7b00ff)"]
         });
 
-        // Animate Glow (NO Background)
+        // NO Box Shadow / Background on Container
         anime.remove(cardRef.current);
-        anime({
-            targets: cardRef.current,
-            boxShadow: "0 0 25px rgba(123, 0, 255, 0.15)",
-            easing: "easeOutQuad",
-            duration: 500,
-        });
+        cardRef.current.style.boxShadow = "none";
     };
 
     const handleMouseLeave = () => {
@@ -81,6 +77,7 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
         anime({
             targets: rectRef.current,
             strokeDashoffset: perimeter,
+            filter: "drop-shadow(0 0 0px #7b00ff)",
             easing: "easeInOutSine",
             duration: 300,
             complete: () => {
@@ -89,12 +86,7 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
         });
 
         anime.remove(cardRef.current);
-        anime({
-            targets: cardRef.current,
-            boxShadow: "none",
-            easing: "easeOutQuad",
-            duration: 300,
-        });
+        cardRef.current.style.boxShadow = "none";
     };
 
     return (

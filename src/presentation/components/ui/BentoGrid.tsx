@@ -82,17 +82,15 @@ export const BentoGridItem = ({
             strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
             duration: 500,
+            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 10px #7b00ff)"]
         });
 
-        // 2. Animate Glow / Lift (NO Background)
+        // NO Container Box-Shadow/Glow
         anime.remove(cardRef.current);
-        anime({
-            targets: cardRef.current,
-            translateY: -5,
-            boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)",
-            easing: "easeOutExpo",
-            duration: 500,
-        });
+        cardRef.current.style.boxShadow = "none";
+
+        // Optional: Keep slight lift if desired, but user is strict. Let's remove lift too to be safe/pure.
+        // anime({ targets: cardRef.current, translateY: -2 ... }) -> Removing to coincide with "don't animate background/shadow"
     };
 
     const handleMouseLeave = () => {
@@ -104,6 +102,7 @@ export const BentoGridItem = ({
         anime({
             targets: rectRef.current,
             strokeDashoffset: perimeter,
+            filter: "drop-shadow(0 0 0px #7b00ff)",
             easing: "easeInOutSine",
             duration: 300,
             complete: () => {
@@ -111,15 +110,9 @@ export const BentoGridItem = ({
             }
         });
 
-        // 2. Reset Card
+        // Reset any potential leftovers
         anime.remove(cardRef.current);
-        anime({
-            targets: cardRef.current,
-            translateY: 0,
-            boxShadow: "none",
-            easing: "easeOutExpo",
-            duration: 300,
-        });
+        cardRef.current.style.boxShadow = "none";
     };
 
     return (

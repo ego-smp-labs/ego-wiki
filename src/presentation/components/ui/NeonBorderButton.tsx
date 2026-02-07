@@ -54,16 +54,14 @@ export const NeonBorderButton = ({
             strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
             duration: 400,
+            // Add SVG Glow via Filter
+            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 10px #7b00ff)"]
         });
 
-        // 2. Animate Glow (Subtle - NO Background Change)
+        // NO Background/Box-Shadow on Button Container
         anime.remove(buttonRef.current);
-        anime({
-            targets: buttonRef.current,
-            boxShadow: "0 0 15px rgba(123, 0, 255, 0.4)", // Violet glow only
-            easing: "easeOutQuad",
-            duration: 400,
-        });
+        // Ensure no shadow leftovers
+        buttonRef.current.style.boxShadow = "none";
     };
 
     const handleMouseLeave = () => {
@@ -75,21 +73,13 @@ export const NeonBorderButton = ({
         anime.remove(rectRef.current);
         anime({
             targets: rectRef.current,
-            strokeDashoffset: perimeter, // Go back to hidden
+            strokeDashoffset: perimeter,
+            filter: "drop-shadow(0 0 0px #7b00ff)", // Turn off glow
             easing: "easeInOutSine",
-            duration: 300, // Faster exit
+            duration: 300,
             complete: () => {
                 if (rectRef.current) rectRef.current.style.opacity = "0";
             }
-        });
-
-        // 2. Remove Glow
-        anime.remove(buttonRef.current);
-        anime({
-            targets: buttonRef.current,
-            boxShadow: "0 0 0px rgba(0, 0, 0, 0)",
-            easing: "easeOutQuad",
-            duration: 300,
         });
     };
 
