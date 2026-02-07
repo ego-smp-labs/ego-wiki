@@ -9,6 +9,8 @@ import { WikiService } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 import Sidebar from "@presentation/components/layout/Sidebar";
 import { mdxComponents } from "@presentation/components/mdx/MdxComponents";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 interface ArticlePageProps {
     params: Promise<{ locale: string; category: string; slug: string }>;
@@ -112,6 +114,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                             options={{
                                 mdxOptions: {
                                     remarkPlugins: [remarkGfm],
+                                    rehypePlugins: [
+                                        rehypeSlug,
+                                        [rehypeAutolinkHeadings, { behavior: "wrap" }],
+                                    ],
                                 },
                             }}
                         />

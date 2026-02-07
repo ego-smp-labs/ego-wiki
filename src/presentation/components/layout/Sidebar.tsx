@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import { CATEGORIES, getCategory } from "@core/lib/categories";
 import { type ArticleMeta, type Heading } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
@@ -24,6 +25,27 @@ export default function Sidebar({
 }: SidebarProps) {
     const pathname = usePathname();
     const t = getTranslations(locale);
+    const [activeId, setActiveId] = useState<string>("");
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveId(entry.target.id);
+                    }
+                });
+            },
+            { rootMargin: "-100px 0px -66% 0px" }
+        );
+
+        headings.forEach((heading) => {
+            const element = document.getElementById(heading.slug);
+            if (element) observer.observe(element);
+        });
+
+        return () => observer.disconnect();
+    }, [headings]);
 
     const categoriesLabel = locale === "vi" ? "Danh mục" : "Categories";
     const articlesLabel = getCategory(currentCategory || "")?.title[locale as "en" | "vi"]
@@ -104,22 +126,33 @@ export default function Sidebar({
                         <ul className="space-y-1">
                             {headings
                                 .filter((h) => h.level <= 3)
-                                .map((heading, index) => (
-                                    <li key={`${heading.slug}-${index}`}>
-                                        <a
-                                            href={`#${heading.slug}`}
-                                            className={`block text-sm text-white/50 hover:text-neon-cyan transition-colors ${heading.level === 2 ? "pl-0" : "pl-4"
-                                                }`}
-                                        >
-                                            <span className="flex items-center gap-1">
-                                                {heading.level === 3 && (
-                                                    <ChevronRight size={12} className="text-white/30" />
-                                                )}
-                                                {heading.text}
-                                            </span>
-                                        </a>
-                                    </li>
-                                ))}
+                                .map((heading, index) => {
+                                    const isActive = activeId === heading.slug;
+                                    return (
+                                        <li key={`${heading.slug}-${index}`}>
+                                            <a
+                                                href={`#${heading.slug}`}
+                                                className={`block text-sm transition-colors ${isActive
+                                                    ? "text-neon-cyan font-medium"
+                                                    : "text-white/50 hover:text-neon-cyan"
+                                                    } ${heading.level === 2 ? "pl-0" : "pl-4"}`}
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    document.getElementById(heading.slug)?.scrollIntoView({
+                                                        behavior: "smooth"
+                                                    });
+                                                }}
+                                            >
+                                                <span className="flex items-center gap-1">
+                                                    {heading.level === 3 && (
+                                                        <ChevronRight size={12} className={isActive ? "text-neon-cyan" : "text-white/30"} />
+                                                    )}
+                                                    {heading.text}
+                                                </span>
+                                            </a>
+                                        </li>
+                                    );
+                                })}
                         </ul>
                     </div>
                 )}
