@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
+import anime from "animejs";
 import { Server, Users, Wifi, WifiOff } from "lucide-react";
-import { MovingBorder } from "@presentation/components/ui/MovingBorder";
+import { cn } from "@core/lib/utils";
 
 interface ServerStatusData {
     online: boolean;
@@ -19,6 +20,126 @@ interface ServerStatusCardProps {
 }
 
 const REFRESH_INTERVAL = 60000;
+
+// Internal Neon Card Component
+const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: number }) => {
+    const cardRef = useRef<HTMLDivElement>(null);
+    const rectRef = useRef<SVGRectElement>(null);
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+    useEffect(() => {
+        const updateDimensions = () => {
+            if (cardRef.current) {
+                setDimensions({
+                    width: cardRef.current.offsetWidth,
+                    height: cardRef.current.offsetHeight,
+                });
+            }
+        };
+
+        updateDimensions();
+        const timer = setTimeout(updateDimensions, 200);
+        window.addEventListener("resize", updateDimensions);
+        return () => {
+            window.removeEventListener("resize", updateDimensions);
+            clearTimeout(timer);
+        };
+    }, []);
+
+    const handleMouseEnter = () => {
+        if (!rectRef.current || !cardRef.current) return;
+
+        // Animate Stroke
+        const perimeter = rectRef.current.getTotalLength();
+        anime.remove(rectRef.current);
+        rectRef.current.style.strokeDasharray = `${perimeter}`;
+        rectRef.current.style.strokeDashoffset = `${perimeter}`;
+        rectRef.current.style.opacity = "1";
+
+        anime({
+            targets: rectRef.current,
+            strokeDashoffset: [perimeter, 0],
+            easing: "easeInOutSine",
+            duration: 500,
+        });
+
+        // Animate Glow
+        anime.remove(cardRef.current);
+        anime({
+            targets: cardRef.current,
+            boxShadow: "0 0 25px rgba(123, 0, 255, 0.15)",
+            backgroundColor: "rgba(123, 0, 255, 0.03)",
+            easing: "easeOutQuad",
+            duration: 500,
+        });
+    };
+
+    const handleMouseLeave = () => {
+        if (!rectRef.current || !cardRef.current) return;
+
+        const perimeter = rectRef.current.getTotalLength();
+        anime.remove(rectRef.current);
+        anime({
+            targets: rectRef.current,
+            strokeDashoffset: perimeter,
+            easing: "easeInOutSine",
+            duration: 500,
+            complete: () => {
+                if (rectRef.current) rectRef.current.style.opacity = "0";
+            }
+        });
+
+        anime.remove(cardRef.current);
+        anime({
+            targets: cardRef.current,
+            boxShadow: "none",
+            backgroundColor: "transparent",
+            easing: "easeOutQuad",
+            duration: 500,
+        });
+    };
+
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay }}
+            className="h-full"
+        >
+            <div
+                ref={cardRef}
+                className="relative h-full p-6 rounded-xl bg-void-surface/50 border border-white/10 backdrop-blur-sm overflow-hidden group transition-colors duration-300"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                {/* SVG Overlay */}
+                <svg
+                    className="absolute inset-0 pointer-events-none z-10"
+                    width="100%"
+                    height="100%"
+                    style={{ overflow: "visible" }}
+                >
+                    <rect
+                        ref={rectRef}
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                        rx="12"
+                        fill="none"
+                        stroke="#7b00ff"
+                        strokeWidth="2"
+                        strokeOpacity="0"
+                    />
+                </svg>
+
+                <div className="relative z-20">
+                    {children}
+                </div>
+            </div>
+        </motion.div>
+    );
+};
 
 export default function ServerStatusCard({ locale }: ServerStatusCardProps) {
     const [status, setStatus] = useState<ServerStatusData | null>(null);
@@ -52,93 +173,70 @@ export default function ServerStatusCard({ locale }: ServerStatusCardProps) {
         archivesOnline: locale === "vi" ? "Kho lưu trữ" : "Archives Online",
     };
 
-    const cardClass = "p-6 rounded-xl bg-void-surface/50 border border-void-border backdrop-blur-sm";
-
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="h-full rounded-xl"
-            >
-                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
-                    <div className="flex items-center gap-2 mb-2 text-white/50">
-                        <Users size={16} />
-                        <span className="text-xs uppercase tracking-wider">
-                            {labels.activeAgents}
+            <StatusItem delay={0.1}>
+                <div className="flex items-center gap-2 mb-2 text-white/50 group-hover:text-white/70 transition-colors">
+                    <Users size={16} />
+                    <span className="text-xs uppercase tracking-wider">
+                        {labels.activeAgents}
+                    </span>
+                </div>
+                <div className="font-display text-4xl font-bold text-white group-hover:text-neon-cyan transition-colors">
+                    {loading ? (
+                        <span className="text-white/30">---</span>
+                    ) : error || !status ? (
+                        <span className="text-white/30">0</span>
+                    ) : (
+                        <span>
+                            {status.players.online.toLocaleString()}
                         </span>
-                    </div>
-                    <div className="font-display text-4xl font-bold text-white">
-                        {loading ? (
-                            <span className="text-white/30">---</span>
-                        ) : error || !status ? (
-                            <span className="text-white/30">0</span>
-                        ) : (
-                            <span className="text-glow-cyan text-neon-cyan">
-                                {status.players.online.toLocaleString()}
-                            </span>
-                        )}
-                    </div>
-                    {status && !error && (
-                        <div className="text-xs text-white/40 mt-1">
-                            / {status.players.max.toLocaleString()} max
-                        </div>
                     )}
-                </MovingBorder>
-            </motion.div>
+                </div>
+                {status && !error && (
+                    <div className="text-xs text-white/40 mt-1">
+                        / {status.players.max.toLocaleString()} max
+                    </div>
+                )}
+            </StatusItem>
 
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="h-full rounded-xl"
-            >
-                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
-                    <div className="flex items-center gap-2 mb-2 text-white/50">
-                        <Server size={16} />
-                        <span className="text-xs uppercase tracking-wider">
-                            {labels.voidStability}
-                        </span>
-                    </div>
-                    <div className="font-display text-4xl font-bold">
-                        <span className="text-glow-purple text-neon-purple">20.0</span>
-                    </div>
-                    <div className="text-xs text-white/40 mt-1">TPS</div>
-                </MovingBorder>
-            </motion.div>
+            <StatusItem delay={0.2}>
+                <div className="flex items-center gap-2 mb-2 text-white/50 group-hover:text-white/70 transition-colors">
+                    <Server size={16} />
+                    <span className="text-xs uppercase tracking-wider">
+                        {labels.voidStability}
+                    </span>
+                </div>
+                <div className="font-display text-4xl font-bold text-white group-hover:text-neon-purple transition-colors">
+                    <span>20.0</span>
+                </div>
+                <div className="text-xs text-white/40 mt-1">TPS</div>
+            </StatusItem>
 
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="h-full rounded-xl"
-            >
-                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
-                    <div className="flex items-center gap-2 mb-2 text-white/50">
-                        {status?.online ? (
-                            <Wifi size={16} className="text-green-400" />
-                        ) : (
-                            <WifiOff size={16} className="text-red-400" />
-                        )}
-                        <span className="text-xs uppercase tracking-wider">
-                            {labels.archivesOnline}
-                        </span>
-                    </div>
-                    <div className="font-display text-4xl font-bold">
-                        {loading ? (
-                            <span className="text-white/30">---</span>
-                        ) : status?.online ? (
-                            <span className="text-green-400">99.9%</span>
-                        ) : (
-                            <span className="text-red-400">Offline</span>
-                        )}
-                    </div>
-                    {status?.version && (
-                        <div className="text-xs text-white/40 mt-1">{status.version}</div>
+            <StatusItem delay={0.3}>
+                <div className="flex items-center gap-2 mb-2 text-white/50 group-hover:text-white/70 transition-colors">
+                    {status?.online ? (
+                        <Wifi size={16} className="text-green-400" />
+                    ) : (
+                        <WifiOff size={16} className="text-red-400" />
                     )}
-                </MovingBorder>
-            </motion.div>
+                    <span className="text-xs uppercase tracking-wider">
+                        {labels.archivesOnline}
+                    </span>
+                </div>
+                <div className="font-display text-4xl font-bold text-white">
+                    {loading ? (
+                        <span className="text-white/30">---</span>
+                    ) : status?.online ? (
+                        <span className="text-green-400">99.9%</span>
+                    ) : (
+                        <span className="text-red-400">Offline</span>
+                    )}
+                </div>
+                {status?.version && (
+                    <div className="text-xs text-white/40 mt-1">{status.version}</div>
+                )}
+            </StatusItem>
         </div>
     );
 }

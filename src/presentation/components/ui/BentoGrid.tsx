@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@core/lib/utils";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import anime from "animejs";
 
 export const BentoGrid = ({
@@ -43,91 +43,132 @@ export const BentoGridItem = ({
     variant = "default",
 }: BentoGridItemProps) => {
     const cardRef = useRef<HTMLDivElement>(null);
-    const bgRef = useRef<HTMLDivElement>(null);
+    const rectRef = useRef<SVGRectElement>(null);
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+    // Handle Resize/Mount for SVG
+    useEffect(() => {
+        const updateDimensions = () => {
+            if (cardRef.current) {
+                setDimensions({
+                    width: cardRef.current.offsetWidth,
+                    height: cardRef.current.offsetHeight,
+                });
+            }
+        };
+
+        updateDimensions();
+        // Delay to catch layout settlement
+        const timer = setTimeout(updateDimensions, 200);
+        window.addEventListener("resize", updateDimensions);
+        return () => {
+            window.removeEventListener("resize", updateDimensions);
+            clearTimeout(timer);
+        };
+    }, []);
 
     const handleMouseEnter = () => {
-        if (!cardRef.current || !bgRef.current) return;
+        if (!rectRef.current || !cardRef.current) return;
 
-        // Animate Container Scale and Shadow (Violet Glow)
+        // 1. Animate Stroke (Clockwise)
+        const perimeter = rectRef.current.getTotalLength();
+        anime.remove(rectRef.current);
+        rectRef.current.style.strokeDasharray = `${perimeter}`;
+        rectRef.current.style.strokeDashoffset = `${perimeter}`;
+        rectRef.current.style.opacity = "1";
+
         anime({
-            targets: cardRef.current,
-            scale: 1.02,
-            boxShadow: "0 0 30px 5px rgba(139, 92, 246, 0.6)", // Stronger Violet glow
-            borderColor: "rgba(139, 92, 246, 0.8)", // Violet border
-            duration: 400,
-            easing: "easeOutExpo",
+            targets: rectRef.current,
+            strokeDashoffset: [perimeter, 0],
+            easing: "easeInOutSine",
+            duration: 500, // Slightly slower for larger cards
         });
 
-        // Animate Background Gradient Opacity
+        // 2. Animate Glow / Lift
         anime({
-            targets: bgRef.current,
-            opacity: [0, 1],
-            duration: 600,
-            easing: "easeOutQuad",
+            targets: cardRef.current,
+            translateY: -5,
+            boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(123, 0, 255, 0.03)", // Very subtle tint
+            easing: "easeOutExpo",
+            duration: 500,
         });
     };
 
     const handleMouseLeave = () => {
-        if (!cardRef.current || !bgRef.current) return;
+        if (!rectRef.current || !cardRef.current) return;
 
-        // Reset Container
+        // 1. Reverse Stroke
+        const perimeter = rectRef.current.getTotalLength();
+        anime.remove(rectRef.current);
+        anime({
+            targets: rectRef.current,
+            strokeDashoffset: perimeter,
+            easing: "easeInOutSine",
+            duration: 500,
+            complete: () => {
+                if (rectRef.current) rectRef.current.style.opacity = "0";
+            }
+        });
+
+        // 2. Reset Card
         anime({
             targets: cardRef.current,
-            scale: 1,
-            boxShadow: "0 0 0px 0px rgba(0, 0, 0, 0)",
-            borderColor: "rgba(255, 255, 255, 0.1)", // Back to subtle white border
-            duration: 400,
+            translateY: 0,
+            boxShadow: "none",
+            backgroundColor: "rgba(0,0,0,0.2)", // Back to default transparency
             easing: "easeOutExpo",
+            duration: 500,
         });
-
-        // Reset Background
-        anime({
-            targets: bgRef.current,
-            opacity: 0,
-            duration: 400,
-            easing: "easeOutQuad",
-        });
-    };
-
-    // Define background styles based on variant (Now mostly transparent to match "remove bg")
-    // We keep a very subtle glass effect or just transparent as requested.
-    const getBackgroundStyle = () => {
-        return "bg-black/20 backdrop-blur-[2px]"; // Subtle glass default, overrides specific colors
     };
 
     return (
         <div
             ref={cardRef}
             className={cn(
-                "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden",
-                getBackgroundStyle(),
+                "row-span-1 rounded-xl group/bento transition-colors duration-200",
+                "bg-black/20 backdrop-blur-sm border border-white/10", // Idle state matches request (White borders)
+                "justify-between flex flex-col space-y-4 relative overflow-hidden",
                 className
             )}
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            style={{ borderColor: "rgba(255, 255, 255, 0.1)" }} // Initial explicit style
         >
-            {/* Animated Violet Gradient Background Layer (Violet -> Dark) */}
-            <div
-                ref={bgRef}
-                className="absolute inset-0 z-0 opacity-0 pointer-events-none"
-                style={{
-                    background: "linear-gradient(135deg, rgba(88, 28, 135, 0.9) 0%, rgba(15, 23, 42, 1) 100%)",
-                }}
-            />
+            {/* Neon Border SVG Overlay */}
+            <svg
+                className="absolute inset-0 pointer-events-none z-10"
+                width="100%"
+                height="100%"
+                style={{ overflow: "visible" }}
+            >
+                <rect
+                    ref={rectRef}
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    rx="12" // Match rounded-xl (approx 12px)
+                    fill="none"
+                    stroke="#7b00ff" // Neon Violet
+                    strokeWidth="2"
+                    strokeOpacity="0"
+                />
+            </svg>
 
-            <div className="relative z-10 transition duration-200 group-hover/bento:translate-x-2">
-                {header}
-                <div className="font-display font-bold text-neutral-200 mb-2 mt-2 text-xl">
-                    {title}
+            <div className="relative z-0 p-4 h-full flex flex-col">
+                <div className="transition duration-200 group-hover/bento:translate-x-1">
+                    {header}
+                    <div className="font-display font-bold text-neutral-200 mb-2 mt-4 text-xl group-hover/bento:text-white transition-colors">
+                        {title}
+                    </div>
+                    <div className="font-sans font-normal text-white/50 text-xs">
+                        {description}
+                    </div>
                 </div>
-                <div className="font-sans font-normal text-neutral-400 text-xs">
-                    {description}
+                <div className="mt-auto ml-auto pt-4 text-white/30 group-hover/bento:text-neon-cyan transition-colors">
+                    {icon}
                 </div>
-            </div>
-            <div className="relative z-10 mt-auto ml-auto">
-                {icon}
             </div>
         </div>
     );

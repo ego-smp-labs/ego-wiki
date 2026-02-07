@@ -17,70 +17,84 @@ export const NeonBorderButton = ({
     className,
 }: NeonBorderButtonProps) => {
     const buttonRef = useRef<HTMLButtonElement>(null);
-    const pathRef = useRef<SVGPathElement>(null);
+    const rectRef = useRef<SVGRectElement>(null);
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
+    // Update dimensions on mount and resize to ensure SVG fits perfectly
     useEffect(() => {
-        if (buttonRef.current) {
-            setDimensions({
-                width: buttonRef.current.offsetWidth,
-                height: buttonRef.current.offsetHeight,
-            });
-        }
+        const updateDimensions = () => {
+            if (buttonRef.current) {
+                setDimensions({
+                    width: buttonRef.current.offsetWidth,
+                    height: buttonRef.current.offsetHeight,
+                });
+            }
+        };
+
+        updateDimensions();
+        // Small delay to ensure layout is settled
+        setTimeout(updateDimensions, 100);
+
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
     }, [children]);
 
     const handleMouseEnter = () => {
-        if (!pathRef.current) return;
+        if (!rectRef.current || !buttonRef.current) return;
 
-        // Animate Stroke Drawing (Clockwise)
+        // 1. Animate Stroke (Clockwise Fill)
+        anime.remove(rectRef.current); // Clear previous animations
+        // Reset to hidden state (offset = dasharray)
+        const perimeter = rectRef.current.getTotalLength();
+        rectRef.current.style.strokeDasharray = `${perimeter}`;
+        rectRef.current.style.strokeDashoffset = `${perimeter}`;
+        rectRef.current.style.opacity = "1";
+
         anime({
-            targets: pathRef.current,
-            strokeDashoffset: [anime.setDashoffset, 0],
-            opacity: [0, 1],
+            targets: rectRef.current,
+            strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
             duration: 400,
         });
 
-        // Animate Button Glow
-        if (buttonRef.current) {
-            anime({
-                targets: buttonRef.current,
-                boxShadow: "0 0 15px rgba(123, 0, 255, 0.4)", // Subtle violet glow
-                duration: 400,
-                easing: "easeOutQuad",
-            });
-        }
+        // 2. Animate Glow (Subtle)
+        anime.remove(buttonRef.current);
+        anime({
+            targets: buttonRef.current,
+            boxShadow: "0 0 20px rgba(123, 0, 255, 0.25)", // Soft Violet glow
+            backgroundColor: "rgba(123, 0, 255, 0.05)", // Extremely subtle tint
+            easing: "easeOutQuad",
+            duration: 400,
+        });
     };
 
     const handleMouseLeave = () => {
-        if (!pathRef.current) return;
+        if (!rectRef.current || !buttonRef.current) return;
 
-        // Reverse Stroke (Undraw)
+        // 1. Reverse Stroke (Undraw)
+        const perimeter = rectRef.current.getTotalLength();
+
+        anime.remove(rectRef.current);
         anime({
-            targets: pathRef.current,
-            strokeDashoffset: anime.setDashoffset,
-            opacity: {
-                value: 0,
-                duration: 200,
-                easing: "linear"
-            },
+            targets: rectRef.current,
+            strokeDashoffset: perimeter, // Go back to hidden
             easing: "easeInOutSine",
             duration: 400,
+            complete: () => {
+                if (rectRef.current) rectRef.current.style.opacity = "0";
+            }
         });
 
-        // Remove Glow
-        if (buttonRef.current) {
-            anime({
-                targets: buttonRef.current,
-                boxShadow: "0 0 0px rgba(0, 0, 0, 0)",
-                duration: 400,
-                easing: "easeOutQuad",
-            });
-        }
+        // 2. Remove Glow
+        anime.remove(buttonRef.current);
+        anime({
+            targets: buttonRef.current,
+            boxShadow: "0 0 0px rgba(0, 0, 0, 0)",
+            backgroundColor: "transparent",
+            easing: "easeOutQuad",
+            duration: 400,
+        });
     };
-
-    // Construct SVG Path (Rectangle)
-    const rectPath = `M0,0 L${dimensions.width},0 L${dimensions.width},${dimensions.height} L0,${dimensions.height} Z`;
 
     return (
         <button
@@ -89,26 +103,29 @@ export const NeonBorderButton = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className={cn(
-                "relative group px-6 py-3 bg-transparent text-white font-mono uppercase tracking-wider overflow-hidden",
-                "border border-white/30", // Idle subtle border
+                "relative group px-8 py-3 bg-transparent text-white font-mono uppercase tracking-widest text-sm",
                 className
             )}
-            style={{
-                borderRadius: "4px" // Keep it slightly sharp for tech look
-            }}
         >
-            {/* SVG Overlay for Animated Stroke */}
+            {/* Idle State: Thin White Border (30%) */}
+            <div className={`absolute inset-0 border border-white/30 rounded-[4px] pointer-events-none transition-opacity duration-300`} />
+
+            {/* Active State: SVG Overlay for Animated Stroke */}
             <svg
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none overflow-visible z-10"
                 width="100%"
                 height="100%"
                 style={{ overflow: "visible" }}
             >
-                <path
-                    ref={pathRef}
-                    d={rectPath}
+                <rect
+                    ref={rectRef}
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    rx="4"
                     fill="none"
-                    stroke="#7b00ff" // Neon Purple
+                    stroke="#7b00ff" // Neon Violet
                     strokeWidth="2"
                     strokeOpacity="0" // Hidden by default
                     vectorEffect="non-scaling-stroke"
@@ -116,7 +133,7 @@ export const NeonBorderButton = ({
             </svg>
 
             {/* Content */}
-            <span className="relative z-10 group-hover:text-neon-cyan transition-colors duration-300">
+            <span className="relative z-20 transition-colors duration-300 group-hover:text-white group-hover:drop-shadow-[0_0_8px_rgba(123,0,255,0.5)]">
                 {children}
             </span>
         </button>

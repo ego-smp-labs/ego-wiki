@@ -8,25 +8,20 @@ export const HeroLogo = () => {
     const egoTextRef = useRef<HTMLHeadingElement>(null);
     const smpContainerRef = useRef<HTMLDivElement>(null);
 
-    // 1. EGO - Soul Absorb Effect
+    // 1. EGO - Interaction
     const handleEgoHover = () => {
         if (!egoTextRef.current) return;
 
-        // Animate Color Transition (Purple -> Soul Blue)
         anime({
             targets: egoTextRef.current,
-            color: ["#7b00ff", "#00f0ff"], // Neon Purple -> Cyan
+            color: ["#7b00ff", "#a855f7"], // Keep it in Violet range (Neon -> Light Violet)
             textShadow: [
-                "0 0 10px rgba(123, 0, 255, 0.5)",
-                "0 0 20px rgba(0, 240, 255, 0.8), 0 0 40px rgba(0, 240, 255, 0.4)"
+                "0 0 15px rgba(123, 0, 255, 0.5)",
+                "0 0 30px rgba(123, 0, 255, 0.8), 0 0 60px rgba(123, 0, 255, 0.4)" // Stronger Violet Glow
             ],
-            duration: 800,
+            duration: 600,
             easing: "easeOutExpo"
         });
-
-        // Trigger Turbulence (simulated via CSS filter animation if possible, or refined shadow)
-        // Note: Anime.js can animate SVG filters, but for text, shadow manipulation is cleaner/performant.
-        // We'll stick to the shadow "inhale" effect.
     };
 
     const handleEgoLeave = () => {
@@ -35,43 +30,43 @@ export const HeroLogo = () => {
         anime({
             targets: egoTextRef.current,
             color: "#7b00ff",
-            textShadow: "0 0 15px rgba(157, 0, 255, 0.5)",
+            textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
             duration: 600,
             easing: "easeOutQuad"
         });
     };
 
-    // 2. SMP - Vanishing Debris & Glitch
+    // 2. SMP - Floating & Subtle Glitch
     useEffect(() => {
         if (!smpContainerRef.current) return;
 
         const letters = smpContainerRef.current.querySelectorAll(".smp-char");
 
-        // A. Anti-Gravity Float
+        // A. Anti-Gravity Float (Slower, more majestic)
         anime({
             targets: letters,
-            translateY: [-5, 5],
-            rotate: [-2, 2],
-            duration: () => anime.random(2000, 4000),
-            delay: () => anime.random(0, 500),
+            translateY: [-3, 3],
+            rotate: [-1, 1],
+            duration: () => anime.random(3000, 5000),
+            delay: () => anime.random(0, 1000),
             loop: true,
             direction: "alternate",
             easing: "easeInOutSine"
         });
 
-        // B. The Glitch (Random Disappear/Reappear)
+        // B. The Glitch (Rare and quick, not fully disappearing)
         const glitchLoop = () => {
             const target = letters[anime.random(0, letters.length - 1)];
 
+            // Occasional twitch instead of full disappear
             anime({
                 targets: target,
-                opacity: [1, 0, 1], // Blink out then in
-                scale: [1, 1.2, 1],
-                duration: 150, // Instant
-                easing: "steps(1)", // digital glitch feel
+                opacity: [1, 0.6, 1], // Don't go to 0, just flicker
+                skewX: [0, 10, 0], // Twitch
+                duration: 100,
+                easing: "steps(2)",
                 complete: () => {
-                    // Schedule next glitch
-                    setTimeout(glitchLoop, anime.random(1000, 3000));
+                    setTimeout(glitchLoop, anime.random(2000, 5000));
                 }
             });
         };
@@ -81,26 +76,28 @@ export const HeroLogo = () => {
     }, []);
 
     return (
-        <div className="relative mb-6 perspective-1000 select-none cursor-default">
+        <div className="relative mb-6 perspective-1000 select-none cursor-default inline-block">
             {/* Main Title - EGO */}
             <h1
                 ref={egoTextRef}
                 onMouseEnter={handleEgoHover}
                 onMouseLeave={handleEgoLeave}
-                className="text-8xl md:text-9xl font-black tracking-tighter inline-block relative z-10 transition-colors"
+                className="text-8xl md:text-9xl font-black tracking-tighter relative z-10 transition-colors"
                 style={{
-                    color: "#7b00ff", // Initial Neon Purple
-                    textShadow: "0 0 15px rgba(157, 0, 255, 0.5)",
-                    fontFamily: "var(--font-display)"
+                    color: "#7b00ff", // Neon Violet
+                    textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
+                    fontFamily: "var(--font-display)",
+                    marginRight: "0.2em" // Space for SMP
                 }}
             >
                 EGO
             </h1>
 
-            {/* SMP - Deconstructed / Floating Effect */}
+            {/* SMP - Tightened Spacing */}
             <div
                 ref={smpContainerRef}
-                className="absolute -right-4 -bottom-2 md:-right-12 md:bottom-2 flex gap-1 pointer-events-none"
+                className="absolute right-0 bottom-3 md:bottom-5 flex gap-0.5 pointer-events-none"
+                style={{ transform: "translateX(100%)" }} // Position exactly to the right
             >
                 {["S", "M", "P"].map((char, index) => (
                     <span
