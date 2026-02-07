@@ -6,6 +6,7 @@ import { CATEGORIES, getCategory, getCategoryTitle } from "@core/lib/categories"
 import { WikiService } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
 import Sidebar from "@presentation/components/layout/Sidebar";
+import { NeonCard } from "@presentation/components/ui/NeonCard";
 
 interface CategoryPageProps {
     params: Promise<{ locale: string; category: string }>;
@@ -99,10 +100,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     {articles.length > 0 ? (
                         <div className="space-y-3">
                             {articles.map((article) => (
-                                <Link
+                                <NeonCard
                                     key={article.slug}
                                     href={`/${locale}/wiki/${categorySlug}/${article.slug}`}
-                                    className="group flex items-center gap-4 p-5 rounded-xl bg-void-surface border border-void-border hover:border-neon-cyan/30 transition-all"
+                                    className="p-5 flex items-center gap-4"
+                                    color={category.color === "cyan" ? "#22d3ee" : "#7b00ff"} // Custom color per category
                                 >
                                     <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-void-bg border border-void-border font-mono text-sm text-white/40 group-hover:text-neon-cyan group-hover:border-neon-cyan/30 transition-colors">
                                         {String(article.order).padStart(2, "0")}
@@ -123,7 +125,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                                         size={18}
                                         className="text-white/20 group-hover:text-neon-cyan group-hover:translate-x-1 transition-all"
                                     />
-                                </Link>
+                                </NeonCard>
                             ))}
                         </div>
                     ) : (
