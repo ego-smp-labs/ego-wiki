@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Server, Users, Wifi, WifiOff } from "lucide-react";
+import { MovingBorder } from "@presentation/components/ui/MovingBorder";
 
 interface ServerStatusData {
     online: boolean;
@@ -59,78 +60,84 @@ export default function ServerStatusCard({ locale }: ServerStatusCardProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className={cardClass}
+                className="h-full rounded-xl"
             >
-                <div className="flex items-center gap-2 mb-2 text-white/50">
-                    <Users size={16} />
-                    <span className="text-xs uppercase tracking-wider">
-                        {labels.activeAgents}
-                    </span>
-                </div>
-                <div className="font-display text-4xl font-bold text-white">
-                    {loading ? (
-                        <span className="text-white/30">---</span>
-                    ) : error || !status ? (
-                        <span className="text-white/30">0</span>
-                    ) : (
-                        <span className="text-glow-cyan text-neon-cyan">
-                            {status.players.online.toLocaleString()}
+                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-2 text-white/50">
+                        <Users size={16} />
+                        <span className="text-xs uppercase tracking-wider">
+                            {labels.activeAgents}
                         </span>
-                    )}
-                </div>
-                {status && !error && (
-                    <div className="text-xs text-white/40 mt-1">
-                        / {status.players.max.toLocaleString()} max
                     </div>
-                )}
+                    <div className="font-display text-4xl font-bold text-white">
+                        {loading ? (
+                            <span className="text-white/30">---</span>
+                        ) : error || !status ? (
+                            <span className="text-white/30">0</span>
+                        ) : (
+                            <span className="text-glow-cyan text-neon-cyan">
+                                {status.players.online.toLocaleString()}
+                            </span>
+                        )}
+                    </div>
+                    {status && !error && (
+                        <div className="text-xs text-white/40 mt-1">
+                            / {status.players.max.toLocaleString()} max
+                        </div>
+                    )}
+                </MovingBorder>
             </motion.div>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className={cardClass}
+                className="h-full rounded-xl"
             >
-                <div className="flex items-center gap-2 mb-2 text-white/50">
-                    <Server size={16} />
-                    <span className="text-xs uppercase tracking-wider">
-                        {labels.voidStability}
-                    </span>
-                </div>
-                <div className="font-display text-4xl font-bold">
-                    <span className="text-glow-purple text-neon-purple">20.0</span>
-                </div>
-                <div className="text-xs text-white/40 mt-1">TPS</div>
+                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-2 text-white/50">
+                        <Server size={16} />
+                        <span className="text-xs uppercase tracking-wider">
+                            {labels.voidStability}
+                        </span>
+                    </div>
+                    <div className="font-display text-4xl font-bold">
+                        <span className="text-glow-purple text-neon-purple">20.0</span>
+                    </div>
+                    <div className="text-xs text-white/40 mt-1">TPS</div>
+                </MovingBorder>
             </motion.div>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className={cardClass}
+                className="h-full rounded-xl"
             >
-                <div className="flex items-center gap-2 mb-2 text-white/50">
-                    {status?.online ? (
-                        <Wifi size={16} className="text-green-400" />
-                    ) : (
-                        <WifiOff size={16} className="text-red-400" />
+                <MovingBorder className="h-full rounded-xl" containerClassName="p-6 bg-void-surface/50 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-2 text-white/50">
+                        {status?.online ? (
+                            <Wifi size={16} className="text-green-400" />
+                        ) : (
+                            <WifiOff size={16} className="text-red-400" />
+                        )}
+                        <span className="text-xs uppercase tracking-wider">
+                            {labels.archivesOnline}
+                        </span>
+                    </div>
+                    <div className="font-display text-4xl font-bold">
+                        {loading ? (
+                            <span className="text-white/30">---</span>
+                        ) : status?.online ? (
+                            <span className="text-green-400">99.9%</span>
+                        ) : (
+                            <span className="text-red-400">Offline</span>
+                        )}
+                    </div>
+                    {status?.version && (
+                        <div className="text-xs text-white/40 mt-1">{status.version}</div>
                     )}
-                    <span className="text-xs uppercase tracking-wider">
-                        {labels.archivesOnline}
-                    </span>
-                </div>
-                <div className="font-display text-4xl font-bold">
-                    {loading ? (
-                        <span className="text-white/30">---</span>
-                    ) : status?.online ? (
-                        <span className="text-green-400">99.9%</span>
-                    ) : (
-                        <span className="text-red-400">Offline</span>
-                    )}
-                </div>
-                {status?.version && (
-                    <div className="text-xs text-white/40 mt-1">{status.version}</div>
-                )}
+                </MovingBorder>
             </motion.div>
         </div>
     );

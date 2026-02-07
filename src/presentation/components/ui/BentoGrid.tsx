@@ -2,7 +2,7 @@
 
 import { cn } from "@core/lib/utils";
 import { motion } from "framer-motion";
-import { GradientBorder } from "@presentation/components/ui/GradientBorder";
+import { MovingBorder } from "@presentation/components/ui/MovingBorder";
 
 export const BentoGrid = ({
     className,
@@ -39,8 +39,8 @@ export const BentoGridItem = ({
     onClick?: () => void;
 }) => {
     return (
-        <div className={cn("row-span-1", className)} onClick={onClick}>
-            <GradientBorder className="h-full flex flex-col justify-between p-4 cursor-pointer" containerClassName="w-full h-full">
+        <div className={cn("row-span-1 rounded-xl", className)} onClick={onClick}>
+            <MovingBorder className="h-full rounded-xl" containerClassName="w-full h-full p-4 flex flex-col justify-between">
                 <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0" />
 
                 {header}
@@ -59,7 +59,7 @@ export const BentoGridItem = ({
 
                 {/* Corner Accent */}
                 <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-neon-purple/20 to-transparent rounded-bl-3xl opacity-50 group-hover:opacity-100 transition-opacity z-0" />
-            </GradientBorder>
+            </MovingBorder>
         </div>
     );
 };

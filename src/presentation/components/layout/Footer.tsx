@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Copy, Check, Github, MessageCircle } from "lucide-react";
 import { getTranslations } from "@core/lib/i18n";
 
+import { env } from "@core/config/env";
+
 interface FooterProps {
     locale: string;
 }
@@ -52,29 +54,19 @@ export default function Footer({ locale }: FooterProps) {
 
                     <div className="flex flex-col items-start md:items-center">
                         <span className="text-xs text-white/40 uppercase tracking-wider mb-2">
-                            {t.footer.serverIp}
+                            Join Server / Support
                         </span>
-                        <button
-                            onClick={handleCopyIp}
-                            className="group flex items-center gap-3 px-4 py-2 rounded-lg bg-void-bg border border-void-border hover:border-neon-cyan/50 transition-all"
+                        <a
+                            href={env.NEXT_PUBLIC_DISCORD_INVITE_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 px-4 py-2 rounded-lg bg-void-bg border border-void-border hover:border-[#5865F2] transition-colors"
                         >
-                            <span className="font-mono text-neon-cyan text-lg">
-                                {SERVER_IP}
+                            <MessageCircle size={20} className="text-[#5865F2]" />
+                            <span className="font-mono text-white/80 group-hover:text-white transition-colors">
+                                {env.NEXT_PUBLIC_DISCORD_INVITE_URL.replace("https://", "")}
                             </span>
-                            <span className="flex items-center gap-1 text-xs text-white/50 group-hover:text-neon-cyan transition-colors">
-                                {copied ? (
-                                    <>
-                                        <Check size={14} className="text-green-400" />
-                                        {t.footer.copied}
-                                    </>
-                                ) : (
-                                    <>
-                                        <Copy size={14} />
-                                        {t.footer.copyIp}
-                                    </>
-                                )}
-                            </span>
-                        </button>
+                        </a>
                     </div>
 
                     <div className="flex flex-col items-start md:items-end">
