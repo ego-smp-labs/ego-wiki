@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
+import { HeroLogo } from "@presentation/components/ui/HeroLogo";
+import { NeonBorderButton } from "@presentation/components/ui/NeonBorderButton";
 
 interface HeroSectionProps {
     subtitle: string;
@@ -34,53 +36,15 @@ export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GE
                     <span className="tracking-widest font-mono text-neon-cyan">SYSTEM ONLINE</span>
                 </motion.div>
 
-                {/* Main Title - EGO SMP */}
-                <div className="relative mb-6 perspective-1000">
-                    <motion.h1
-                        className="text-6xl md:text-9xl font-black tracking-tighter flex justify-center items-center gap-4 md:gap-8"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
-                        {/* EGO - Glowing Gradient */}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-neon-purple via-white to-black/50 drop-shadow-[0_0_15px_rgba(157,0,255,0.5)]">
-                            EGO
-                        </span>
-
-                        {/* SMP - Deconstructed / Floating Effect */}
-                        <span className="relative flex gap-1">
-                            {["S", "M", "P"].map((char, index) => (
-                                <motion.span
-                                    key={index}
-                                    className="text-white/90 inline-block"
-                                    initial={{ y: 0, rotate: 0 }}
-                                    animate={{
-                                        y: [0, -10, 0],
-                                        rotate: [0, index % 2 === 0 ? 2 : -2, 0],
-                                    }}
-                                    transition={{
-                                        duration: 4 + index,
-                                        repeat: Infinity,
-                                        ease: "easeInOut",
-                                        delay: index * 0.2,
-                                    }}
-                                    style={{
-                                        textShadow: "0 4px 20px rgba(0,0,0,0.8)",
-                                    }}
-                                >
-                                    {char}
-                                </motion.span>
-                            ))}
-                        </span>
-                    </motion.h1>
-                </div>
+                {/* Main Title - EGO SMP (Animated) */}
+                <HeroLogo />
 
                 {/* Subtitle */}
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light"
+                    className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light"
                 >
                     {subtitle}
                 </motion.p>
@@ -94,18 +58,19 @@ export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GE
                     <HeroSearchBar placeholder={searchPlaceholder} />
                 </motion.div>
 
-                {/* CTA - Get Started */}
+                {/* CTA - Get Started (Animated) */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.8 }}
-                    className="mt-8"
+                    className="mt-8 flex justify-center"
                 >
-                    <Link
-                        href="/api/auth/signin"
-                        className="inline-flex items-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
-                    >
-                        {ctaText} <ArrowRight size={18} />
+                    <Link href="/api/auth/signin">
+                        <NeonBorderButton>
+                            <span className="flex items-center gap-2">
+                                {ctaText} <ArrowRight size={18} />
+                            </span>
+                        </NeonBorderButton>
                     </Link>
                 </motion.div>
             </div>
