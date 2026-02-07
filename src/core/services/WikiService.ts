@@ -54,13 +54,13 @@ export class WikiService {
         if (match) {
             return {
                 order: parseInt(match[1], 10),
-                slug: match[2],
+                slug: match[2].toLowerCase(), // Force lowercase for consistency
             };
         }
 
         return {
             order: 999,
-            slug: name,
+            slug: name.toLowerCase(),
         };
     }
 
@@ -156,7 +156,7 @@ export class WikiService {
         const files = fs.readdirSync(categoryPath);
         const matchingFile = files.find((file) => {
             const { slug: fileSlug } = this.parseFilename(file);
-            return fileSlug === slug;
+            return fileSlug === slug.toLowerCase();
         });
 
         if (!matchingFile) {
