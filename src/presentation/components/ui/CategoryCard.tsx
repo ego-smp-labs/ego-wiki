@@ -1,7 +1,8 @@
 "use client";
 
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import anime from "animejs";
 import { ArrowRight, BookOpen, Zap, Sword, Settings, HelpCircle, LucideIcon } from "lucide-react";
 import { NeonCard } from "@presentation/components/ui/NeonCard";
 
@@ -24,6 +25,7 @@ interface CategoryCardProps {
     index?: number;
 }
 
+// 1. Anime.js Migration for CategoryCard
 export default function CategoryCard({
     categorySlug,
     categoryColor,
@@ -33,7 +35,22 @@ export default function CategoryCard({
     articleCount = 0,
     index = 0,
 }: CategoryCardProps) {
+    const cardRef = useRef<HTMLDivElement>(null);
     const Icon = CATEGORY_ICONS[categorySlug] || BookOpen;
+
+    // Entrance Animation
+    useEffect(() => {
+        if (!cardRef.current) return;
+
+        anime({
+            targets: cardRef.current,
+            opacity: [0, 1],
+            translateY: [20, 0],
+            duration: 800,
+            delay: index * 100, // Staggered delay
+            easing: "easeOutExpo"
+        });
+    }, [index]);
 
     const colorClasses = {
         cyan: {
@@ -56,11 +73,7 @@ export default function CategoryCard({
     const colors = colorClasses[categoryColor];
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-        >
+        <div ref={cardRef} className="h-full opacity-0" style={{ transform: "translateY(20px)" }}>
             <NeonCard
                 href={`/${locale}/wiki/${categorySlug}`}
                 className="p-6 h-full flex flex-col justify-between"
@@ -100,6 +113,6 @@ export default function CategoryCard({
                     </div>
                 )}
             </NeonCard>
-        </motion.div>
+        </div>
     );
 }
