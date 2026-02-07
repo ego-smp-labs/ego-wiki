@@ -81,15 +81,15 @@ export const BentoGridItem = ({
             targets: rectRef.current,
             strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
-            duration: 500, // Slightly slower for larger cards
+            duration: 500,
         });
 
-        // 2. Animate Glow / Lift
+        // 2. Animate Glow / Lift (NO Background)
+        anime.remove(cardRef.current);
         anime({
             targets: cardRef.current,
             translateY: -5,
             boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)",
-            backgroundColor: "rgba(123, 0, 255, 0.03)", // Very subtle tint
             easing: "easeOutExpo",
             duration: 500,
         });
@@ -105,20 +105,20 @@ export const BentoGridItem = ({
             targets: rectRef.current,
             strokeDashoffset: perimeter,
             easing: "easeInOutSine",
-            duration: 500,
+            duration: 300,
             complete: () => {
                 if (rectRef.current) rectRef.current.style.opacity = "0";
             }
         });
 
         // 2. Reset Card
+        anime.remove(cardRef.current);
         anime({
             targets: cardRef.current,
             translateY: 0,
             boxShadow: "none",
-            backgroundColor: "rgba(0,0,0,0.2)", // Back to default transparency
             easing: "easeOutExpo",
-            duration: 500,
+            duration: 300,
         });
     };
 

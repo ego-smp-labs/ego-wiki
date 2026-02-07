@@ -63,12 +63,11 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
             duration: 500,
         });
 
-        // Animate Glow
+        // Animate Glow (NO Background)
         anime.remove(cardRef.current);
         anime({
             targets: cardRef.current,
             boxShadow: "0 0 25px rgba(123, 0, 255, 0.15)",
-            backgroundColor: "rgba(123, 0, 255, 0.03)",
             easing: "easeOutQuad",
             duration: 500,
         });
@@ -83,7 +82,7 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
             targets: rectRef.current,
             strokeDashoffset: perimeter,
             easing: "easeInOutSine",
-            duration: 500,
+            duration: 300,
             complete: () => {
                 if (rectRef.current) rectRef.current.style.opacity = "0";
             }
@@ -93,9 +92,8 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
         anime({
             targets: cardRef.current,
             boxShadow: "none",
-            backgroundColor: "transparent",
             easing: "easeOutQuad",
-            duration: 500,
+            duration: 300,
         });
     };
 

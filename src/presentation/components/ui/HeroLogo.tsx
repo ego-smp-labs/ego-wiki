@@ -8,18 +8,17 @@ export const HeroLogo = () => {
     const egoTextRef = useRef<HTMLHeadingElement>(null);
     const smpContainerRef = useRef<HTMLDivElement>(null);
 
-    // 1. EGO - Interaction
+    // 1. EGO - Interaction (No Color Shift, just Shadow Intensify)
     const handleEgoHover = () => {
         if (!egoTextRef.current) return;
 
         anime({
             targets: egoTextRef.current,
-            color: ["#7b00ff", "#a855f7"], // Keep it in Violet range (Neon -> Light Violet)
             textShadow: [
                 "0 0 15px rgba(123, 0, 255, 0.5)",
-                "0 0 30px rgba(123, 0, 255, 0.8), 0 0 60px rgba(123, 0, 255, 0.4)" // Stronger Violet Glow
+                "0 0 30px rgba(123, 0, 255, 0.9), 0 0 60px rgba(123, 0, 255, 0.6)" // Stronger Violet Glow
             ],
-            duration: 600,
+            duration: 400, // Faster response
             easing: "easeOutExpo"
         });
     };
@@ -29,23 +28,22 @@ export const HeroLogo = () => {
 
         anime({
             targets: egoTextRef.current,
-            color: "#7b00ff",
             textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
-            duration: 600,
+            duration: 400,
             easing: "easeOutQuad"
         });
     };
 
-    // 2. SMP - Floating & Subtle Glitch
+    // 2. SMP - Floating Only (No Disappearing Glitch)
     useEffect(() => {
         if (!smpContainerRef.current) return;
 
         const letters = smpContainerRef.current.querySelectorAll(".smp-char");
 
-        // A. Anti-Gravity Float (Slower, more majestic)
+        // A. Anti-Gravity Float
         anime({
             targets: letters,
-            translateY: [-3, 3],
+            translateY: [-2, 2], // Subtle float
             rotate: [-1, 1],
             duration: () => anime.random(3000, 5000),
             delay: () => anime.random(0, 1000),
@@ -54,50 +52,47 @@ export const HeroLogo = () => {
             easing: "easeInOutSine"
         });
 
-        // B. The Glitch (Rare and quick, not fully disappearing)
-        const glitchLoop = () => {
+        // B. Micro-Twitch (Instead of Disappearing)
+        const twitchLoop = () => {
             const target = letters[anime.random(0, letters.length - 1)];
 
-            // Occasional twitch instead of full disappear
             anime({
                 targets: target,
-                opacity: [1, 0.6, 1], // Don't go to 0, just flicker
-                skewX: [0, 10, 0], // Twitch
-                duration: 100,
-                easing: "steps(2)",
+                skewX: [0, 5, 0], // Very subtle twitch
+                duration: 50,
+                easing: "linear",
                 complete: () => {
-                    setTimeout(glitchLoop, anime.random(2000, 5000));
+                    setTimeout(twitchLoop, anime.random(3000, 8000)); // Rare
                 }
             });
         };
 
-        glitchLoop();
+        twitchLoop();
 
     }, []);
 
     return (
-        <div className="relative mb-6 perspective-1000 select-none cursor-default inline-block">
+        // Flex container for tighter, natural spacing
+        <div className="relative mb-6 select-none cursor-default flex items-baseline justify-center gap-2 md:gap-4">
             {/* Main Title - EGO */}
             <h1
                 ref={egoTextRef}
                 onMouseEnter={handleEgoHover}
                 onMouseLeave={handleEgoLeave}
-                className="text-8xl md:text-9xl font-black tracking-tighter relative z-10 transition-colors"
+                className="text-8xl md:text-9xl font-black tracking-tighter relative z-10"
                 style={{
-                    color: "#7b00ff", // Neon Violet
+                    color: "#7b00ff", // Fixed Neon Violet
                     textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
                     fontFamily: "var(--font-display)",
-                    marginRight: "0.2em" // Space for SMP
                 }}
             >
                 EGO
             </h1>
 
-            {/* SMP - Tightened Spacing */}
+            {/* SMP - Now a sibling, naturally placed */}
             <div
                 ref={smpContainerRef}
-                className="absolute right-0 bottom-3 md:bottom-5 flex gap-0.5 pointer-events-none"
-                style={{ transform: "translateX(100%)" }} // Position exactly to the right
+                className="flex gap-1 pointer-events-none"
             >
                 {["S", "M", "P"].map((char, index) => (
                     <span

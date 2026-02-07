@@ -43,8 +43,7 @@ export const NeonBorderButton = ({
         if (!rectRef.current || !buttonRef.current) return;
 
         // 1. Animate Stroke (Clockwise Fill)
-        anime.remove(rectRef.current); // Clear previous animations
-        // Reset to hidden state (offset = dasharray)
+        anime.remove(rectRef.current);
         const perimeter = rectRef.current.getTotalLength();
         rectRef.current.style.strokeDasharray = `${perimeter}`;
         rectRef.current.style.strokeDashoffset = `${perimeter}`;
@@ -57,12 +56,11 @@ export const NeonBorderButton = ({
             duration: 400,
         });
 
-        // 2. Animate Glow (Subtle)
+        // 2. Animate Glow (Subtle - NO Background Change)
         anime.remove(buttonRef.current);
         anime({
             targets: buttonRef.current,
-            boxShadow: "0 0 20px rgba(123, 0, 255, 0.25)", // Soft Violet glow
-            backgroundColor: "rgba(123, 0, 255, 0.05)", // Extremely subtle tint
+            boxShadow: "0 0 15px rgba(123, 0, 255, 0.4)", // Violet glow only
             easing: "easeOutQuad",
             duration: 400,
         });
@@ -79,7 +77,7 @@ export const NeonBorderButton = ({
             targets: rectRef.current,
             strokeDashoffset: perimeter, // Go back to hidden
             easing: "easeInOutSine",
-            duration: 400,
+            duration: 300, // Faster exit
             complete: () => {
                 if (rectRef.current) rectRef.current.style.opacity = "0";
             }
@@ -90,9 +88,8 @@ export const NeonBorderButton = ({
         anime({
             targets: buttonRef.current,
             boxShadow: "0 0 0px rgba(0, 0, 0, 0)",
-            backgroundColor: "transparent",
             easing: "easeOutQuad",
-            duration: 400,
+            duration: 300,
         });
     };
 
