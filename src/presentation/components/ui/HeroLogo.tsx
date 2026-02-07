@@ -34,40 +34,23 @@ export const HeroLogo = () => {
         });
     };
 
-    // 2. SMP - Floating Only (No Disappearing Glitch)
+    // 2. SMP - Floating Animation
     useEffect(() => {
         if (!smpContainerRef.current) return;
 
         const letters = smpContainerRef.current.querySelectorAll(".smp-char");
 
-        // A. Anti-Gravity Float
+        // A. Anti-Gravity Float (Make it visible)
         anime({
             targets: letters,
-            translateY: [-2, 2], // Subtle float
-            rotate: [-1, 1],
-            duration: () => anime.random(3000, 5000),
-            delay: () => anime.random(0, 1000),
+            translateY: [-5, 5], // Increased range from 2 to 5 for visibility
+            rotate: [-2, 2], // Slight rotation
+            duration: 3000,
+            delay: anime.stagger(200), // Stagger for wave effect
             loop: true,
             direction: "alternate",
             easing: "easeInOutSine"
         });
-
-        // B. Micro-Twitch (Instead of Disappearing)
-        const twitchLoop = () => {
-            const target = letters[anime.random(0, letters.length - 1)];
-
-            anime({
-                targets: target,
-                skewX: [0, 5, 0], // Very subtle twitch
-                duration: 50,
-                easing: "linear",
-                complete: () => {
-                    setTimeout(twitchLoop, anime.random(3000, 8000)); // Rare
-                }
-            });
-        };
-
-        twitchLoop();
 
     }, []);
 
@@ -89,7 +72,7 @@ export const HeroLogo = () => {
                 EGO
             </h1>
 
-            {/* SMP - Larger, stronger presence */}
+            {/* SMP - Same size as EGO */}
             <div
                 ref={smpContainerRef}
                 className="flex gap-1 pointer-events-none"
@@ -97,7 +80,7 @@ export const HeroLogo = () => {
                 {["S", "M", "P"].map((char, index) => (
                     <span
                         key={index}
-                        className="smp-char text-6xl md:text-8xl font-bold text-white/90 inline-block drop-shadow-md"
+                        className="smp-char text-8xl md:text-9xl font-bold text-white/90 inline-block drop-shadow-md"
                         style={{ fontFamily: "var(--font-mono)" }}
                     >
                         {char}
