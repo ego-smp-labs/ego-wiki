@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import anime from "animejs";
 import { cn } from "@core/lib/utils";
 
@@ -11,6 +11,12 @@ interface NeonBorderButtonProps {
     href?: string;
 }
 
+/**
+ * NeonBorderButton - Button with animated neon border effect.
+ * Uses anime.js for SVG stroke animation.
+ * 
+ * Key: Initialize strokeDasharray on mount, then animate strokeDashoffset.
+ */
 export const NeonBorderButton = ({
     onClick,
     children,
@@ -18,70 +24,96 @@ export const NeonBorderButton = ({
 }: NeonBorderButtonProps) => {
     const buttonRef = useRef<HTMLButtonElement>(null);
     const rectRef = useRef<SVGRectElement>(null);
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const perimeterRef = useRef<number>(0);
 
-    // Update dimensions on mount and resize to ensure SVG fits perfectly
+    // Initialize SVG stroke properties on mount
     useEffect(() => {
-        const updateDimensions = () => {
-            if (buttonRef.current) {
-                setDimensions({
-                    width: buttonRef.current.offsetWidth,
-                    height: buttonRef.current.offsetHeight,
-                });
-            }
-        };
+        if (!rectRef.current) return;
 
-        updateDimensions();
-        // Small delay to ensure layout is settled
-        setTimeout(updateDimensions, 100);
+        // Calculate perimeter once
+        const rect = rectRef.current;
+        const perimeter = rect.getTotalLength();
+        perimeterRef.current = perimeter;
 
-        window.addEventListener("resize", updateDimensions);
-        return () => window.removeEventListener("resize", updateDimensions);
-    }, [children]);
+        // Set initial state: stroke hidden
+        rect.style.strokeDasharray = `${perimeter}`;
+        rect.style.strokeDashoffset = `${perimeter}`;
+        rect.style.opacity = "1";
+    }, []);
 
-    const handleMouseEnter = () => {
-        if (!rectRef.current || !buttonRef.current) return;
+    const handleMouseEnter = useCallback(() => {
+        const rect = rectRef.current;
+        const button = buttonRef.current;
+        const perimeter = perimeterRef.current;
 
-        // 1. Animate Stroke (Clockwise Fill)
-        anime.remove(rectRef.current);
-        const perimeter = rectRef.current.getTotalLength();
-        rectRef.current.style.strokeDasharray = `${perimeter}`;
-        rectRef.current.style.strokeDashoffset = `${perimeter}`;
-        rectRef.current.style.opacity = "1";
+        if (!rect || perimeter === 0) return;
 
+        // Cancel any running animations
+        anime.remove(rect);
+
+        // 1. Stroke Draw Animation
         anime({
-            targets: rectRef.current,
+            targets: rect,
             strokeDashoffset: [perimeter, 0],
-            easing: "easeInOutSine",
             duration: 400,
-            // Add SVG Glow via Filter
-            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 10px #7b00ff)"]
+            easing: "easeInOutQuad",
         });
 
-        // NO Background/Box-Shadow on Button Container
-        anime.remove(buttonRef.current);
-        // Ensure no shadow leftovers
-        buttonRef.current.style.boxShadow = "none";
-    };
-
-    const handleMouseLeave = () => {
-        if (!rectRef.current || !buttonRef.current) return;
-
-        // 1. Reverse Stroke (Undraw)
-        const perimeter = rectRef.current.getTotalLength();
-
-        anime.remove(rectRef.current);
+        // 2. Glow Animation
         anime({
-            targets: rectRef.current,
-            strokeDashoffset: perimeter,
-            filter: "drop-shadow(0 0 0px #7b00ff)", // Turn off glow
-            easing: "easeInOutSine",
-            duration: 300,
-            complete: () => {
-                if (rectRef.current) rectRef.current.style.opacity = "0";
-            }
+            targets: rect,
+            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 12px #7b00ff)"],
+            duration: 400,
+            easing: "easeOutQuad",
         });
-    };
+
+        // 3. Scale Effect (subtle)
+        if (button) {
+            anime({
+                targets: button,
+                scale: 1.03,
+                duration: 300,
+                easing: "easeOutExpo",
+            });
+        }
+    }, []);
+
+    const handleMouseLeave = useCallback(() => {
+        const rect = rectRef.current;
+        const button = buttonRef.current;
+        const perimeter = perimeterRef.current;
+
+        if (!rect || perimeter === 0) return;
+
+        // Cancel any running animations
+        anime.remove(rect);
+
+        // 1. Stroke Undraw Animation
+        anime({
+            targets: rect,
+            strokeDashoffset: perimeter,
+            duration: 250,
+            easing: "easeInOutQuad",
+        });
+
+        // 2. Glow Fade
+        anime({
+            targets: rect,
+            filter: "drop-shadow(0 0 0px #7b00ff)",
+            duration: 250,
+            easing: "easeOutQuad",
+        });
+
+        // 3. Reset Scale
+        if (button) {
+            anime({
+                targets: button,
+                scale: 1,
+                duration: 200,
+                easing: "easeOutQuad",
+            });
+        }
+    }, []);
 
     return (
         <button
@@ -93,28 +125,27 @@ export const NeonBorderButton = ({
                 "relative group px-8 py-3 bg-transparent text-white font-mono uppercase tracking-widest text-sm",
                 className
             )}
+            style={{ willChange: "transform" }}
         >
-            {/* Idle State: Thin White Border (30%) */}
-            <div className={`absolute inset-0 border border-white/30 rounded-[4px] pointer-events-none transition-opacity duration-300`} />
+            {/* Idle State: Thin White Border */}
+            <div className="absolute inset-0 border border-white/30 rounded-[4px] pointer-events-none transition-opacity duration-300" />
 
             {/* Active State: SVG Overlay for Animated Stroke */}
             <svg
                 className="absolute inset-0 pointer-events-none overflow-visible z-10"
                 width="100%"
                 height="100%"
-                style={{ overflow: "visible" }}
             >
                 <rect
                     ref={rectRef}
-                    x="0"
-                    y="0"
-                    width="100%"
-                    height="100%"
+                    x="1"
+                    y="1"
+                    width="calc(100% - 2px)"
+                    height="calc(100% - 2px)"
                     rx="4"
                     fill="none"
-                    stroke="#7b00ff" // Neon Violet
+                    stroke="#7b00ff"
                     strokeWidth="2"
-                    strokeOpacity="0" // Hidden by default
                     vectorEffect="non-scaling-stroke"
                 />
             </svg>

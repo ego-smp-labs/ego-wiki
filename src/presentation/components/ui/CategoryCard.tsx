@@ -38,17 +38,21 @@ export default function CategoryCard({
     const cardRef = useRef<HTMLDivElement>(null);
     const Icon = CATEGORY_ICONS[categorySlug] || BookOpen;
 
-    // Entrance Animation
+    // Entrance Animation - Fast and Synchronized
     useEffect(() => {
         if (!cardRef.current) return;
+
+        // Set initial state explicitly
+        cardRef.current.style.opacity = "0";
+        cardRef.current.style.transform = "translateY(15px)";
 
         anime({
             targets: cardRef.current,
             opacity: [0, 1],
-            translateY: [20, 0],
-            duration: 800,
-            delay: index * 100, // Staggered delay
-            easing: "easeOutExpo"
+            translateY: [15, 0],
+            duration: 400, // Faster
+            delay: index * 50, // Shorter stagger for synchronization
+            easing: "easeOutCubic"
         });
     }, [index]);
 
@@ -73,7 +77,7 @@ export default function CategoryCard({
     const colors = colorClasses[categoryColor];
 
     return (
-        <div ref={cardRef} className="h-full opacity-0" style={{ transform: "translateY(20px)" }}>
+        <div ref={cardRef} className="h-full">
             <NeonCard
                 href={`/${locale}/wiki/${categorySlug}`}
                 className="p-6 h-full flex flex-col justify-between"

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import anime from "animejs";
 import { cn } from "@core/lib/utils";
@@ -10,127 +10,178 @@ interface NeonCardProps {
     className?: string;
     href?: string;
     onClick?: () => void;
-    color?: string; // Default to #7b00ff
+    color?: string;
 }
 
+/**
+ * NeonCard - A reusable card component with animated neon border effect.
+ * Uses anime.js for all animations (stroke drawing, scale, lift).
+ * 
+ * Anime.js SVG Stroke Animation Explained:
+ * 1. Get total path length via getTotalLength()
+ * 2. Set strokeDasharray = pathLength (one long dash)
+ * 3. Set strokeDashoffset = pathLength (hides the dash)
+ * 4. Animate strokeDashoffset from pathLength to 0 (reveals the dash)
+ */
 export const NeonCard = ({
     children,
     className,
     href,
     onClick,
-    color = "#7b00ff", // Neon Violet default
+    color = "#7b00ff",
 }: NeonCardProps) => {
-    const cardRef = useRef<any>(null);
+    const cardRef = useRef<HTMLDivElement | HTMLAnchorElement>(null);
     const rectRef = useRef<SVGRectElement>(null);
-    const [mounted, setMounted] = useState(false);
+    const perimeterRef = useRef<number>(0);
 
+    // Initialize SVG stroke properties on mount
     useEffect(() => {
-        setMounted(true);
-        // Handle resize if needed, but 100% width/height usually handles it
+        if (!rectRef.current) return;
+
+        // Calculate perimeter once
+        const rect = rectRef.current;
+        const perimeter = rect.getTotalLength();
+        perimeterRef.current = perimeter;
+
+        // Set initial state: stroke hidden (dasharray = perimeter, offset = perimeter)
+        rect.style.strokeDasharray = `${perimeter}`;
+        rect.style.strokeDashoffset = `${perimeter}`;
+        rect.style.opacity = "1"; // Always visible, animation controls appearance via offset
     }, []);
 
-    const handleMouseEnter = () => {
-        if (!rectRef.current) return;
+    const handleMouseEnter = useCallback(() => {
+        const rect = rectRef.current;
+        const card = cardRef.current;
+        const perimeter = perimeterRef.current;
 
-        // 1. Animate Stroke (Clockwise Fill)
-        anime.remove(rectRef.current);
-        const perimeter = rectRef.current.getTotalLength();
-        rectRef.current.style.opacity = "1";
+        if (!rect || perimeter === 0) return;
 
-        // 1. Animate Stroke
+        // Cancel any running animations
+        anime.remove(rect);
+        if (card) anime.remove(card);
+
+        // 1. Stroke Draw Animation (clockwise reveal)
         anime({
-            targets: rectRef.current,
+            targets: rect,
             strokeDashoffset: [perimeter, 0],
-            easing: "easeInOutSine",
-            duration: 400,
-            filter: [`drop-shadow(0 0 0px ${color})`, `drop-shadow(0 0 12px ${color})`] // Stronger Glow
+            duration: 500,
+            easing: "easeInOutQuad",
         });
 
-        // 2. Scale/Lift Effect (User Requested)
-        if (cardRef.current) {
+        // 2. Glow Animation (separate for clarity)
+        anime({
+            targets: rect,
+            filter: [`drop-shadow(0 0 0px ${color})`, `drop-shadow(0 0 15px ${color})`],
+            duration: 500,
+            easing: "easeOutQuad",
+        });
+
+        // 3. Card Lift/Scale (user requested)
+        if (card) {
             anime({
-                targets: cardRef.current,
+                targets: card,
                 scale: 1.02,
-                translateY: -5,
+                translateY: -4,
                 duration: 400,
-                easing: "easeOutExpo"
+                easing: "easeOutExpo",
             });
         }
-    };
+    }, [color]);
 
-    const handleMouseLeave = () => {
-        if (!rectRef.current) return;
+    const handleMouseLeave = useCallback(() => {
+        const rect = rectRef.current;
+        const card = cardRef.current;
+        const perimeter = perimeterRef.current;
 
-        // 1. Reverse Stroke
-        const perimeter = rectRef.current.getTotalLength();
+        if (!rect || perimeter === 0) return;
 
-        anime.remove(rectRef.current);
+        // Cancel any running animations
+        anime.remove(rect);
+        if (card) anime.remove(card);
+
+        // 1. Stroke Undraw Animation
         anime({
-            targets: rectRef.current,
-            strokeDashoffset: perimeter, // Go back to hidden
-            filter: `drop-shadow(0 0 0px ${color})`, // Turn off glow
-            easing: "easeInOutSine",
+            targets: rect,
+            strokeDashoffset: perimeter,
             duration: 300,
-            complete: () => {
-                if (rectRef.current) rectRef.current.style.opacity = "0";
-            }
+            easing: "easeInOutQuad",
         });
 
-        // 2. Reset Scale/Lift
-        if (cardRef.current) {
+        // 2. Glow Fade
+        anime({
+            targets: rect,
+            filter: `drop-shadow(0 0 0px ${color})`,
+            duration: 300,
+            easing: "easeOutQuad",
+        });
+
+        // 3. Card Reset
+        if (card) {
             anime({
-                targets: cardRef.current,
+                targets: card,
                 scale: 1,
                 translateY: 0,
                 duration: 300,
-                easing: "easeOutQuad"
+                easing: "easeOutQuad",
             });
         }
+    }, [color]);
+
+    const commonProps = {
+        ref: cardRef as any,
+        className: cn(
+            "relative group block rounded-xl bg-void-surface",
+            "border border-white/10",
+            "shadow-lg shadow-black/40",
+            className
+        ),
+        style: { willChange: "transform" } as React.CSSProperties,
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
     };
 
-    const Container = (href ? Link : "div") as React.ElementType;
-    const props = href ? { href } : { onClick };
-
-    return (
-        <Container
-            {...props}
-            ref={cardRef}
-            className={cn(
-                "relative group block overflow-hidden rounded-xl bg-void-surface transition-all duration-300",
-                "border border-white/10", // Idle border
-                "shadow-lg shadow-black/40", // Static "Raised" Shadow (Bóng đổ nổi) - Always present
-                className
-            )}
-            style={{ willChange: "transform" }} // Optimize for anime.js
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            {/* Neon Border SVG Overlay - Increased Z-index and Visibility */}
+    const content = (
+        <>
+            {/* Neon Border SVG */}
             <svg
-                className="absolute inset-0 pointer-events-none z-20"
+                className="absolute inset-0 pointer-events-none z-30 overflow-visible"
                 width="100%"
                 height="100%"
-                style={{ overflow: "visible" }}
+                preserveAspectRatio="none"
             >
                 <rect
                     ref={rectRef}
-                    x="2"
-                    y="2"
-                    width="calc(100% - 4px)"
-                    height="calc(100% - 4px)"
-                    rx="10" // Adjusted for padding
+                    x="1"
+                    y="1"
+                    width="calc(100% - 2px)"
+                    height="calc(100% - 2px)"
+                    rx="12"
+                    ry="12"
                     fill="none"
                     stroke={color}
-                    strokeWidth="4" // Thicker stroke for visibility
-                    strokeOpacity="0"
+                    strokeWidth="3"
                     vectorEffect="non-scaling-stroke"
                 />
             </svg>
 
             {/* Content */}
-            <div className="relative z-20 h-full">
+            <div className="relative z-10 h-full">
                 {children}
             </div>
-        </Container>
+        </>
+    );
+
+    if (href) {
+        return (
+            <Link href={href} {...commonProps}>
+                {content}
+            </Link>
+        );
+    }
+
+    return (
+        <div {...commonProps} onClick={onClick}>
+            {content}
+        </div>
     );
 };
