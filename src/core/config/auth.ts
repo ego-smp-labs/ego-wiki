@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import Discord from "next-auth/providers/discord";
-import { env } from "@/core/config/env";
+import { env } from "@core/config/env";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
     providers: [
@@ -42,8 +42,5 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             }
             return token;
         },
-    },
-    pages: {
-        signIn: "/login",
     },
 });
