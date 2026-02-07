@@ -10,6 +10,7 @@ const envSchema = z.object({
     DISCORD_CLIENT_ID: z.string().min(1, "DISCORD_CLIENT_ID is required"),
     DISCORD_CLIENT_SECRET: z.string().min(1, "DISCORD_CLIENT_SECRET is required"),
     DISCORD_GUILD_ID: z.string().optional(),
+    DISCORD_ADMIN_ROLE_ID: z.string().optional(), // Role ID for Admin access
 
     // NextAuth
     AUTH_SECRET: z.string().min(1, "AUTH_SECRET is required"), // NextAuth v5 uses AUTH_SECRET
@@ -23,6 +24,7 @@ const _env = envSchema.safeParse({
     DISCORD_CLIENT_ID: process.env.DISCORD_CLIENT_ID,
     DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
     DISCORD_GUILD_ID: process.env.DISCORD_GUILD_ID,
+    DISCORD_ADMIN_ROLE_ID: process.env.DISCORD_ADMIN_ROLE_ID,
     AUTH_SECRET: process.env.AUTH_SECRET,
 });
 
