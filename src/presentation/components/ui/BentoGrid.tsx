@@ -33,7 +33,15 @@ interface BentoGridItemProps {
     variant?: "default" | "general" | "ego" | "items" | "advanced" | "community";
 }
 
-// 3. BentoGridItem - Unified with NeonCard
+const VARIANT_COLORS: Record<string, string> = {
+    default: "#7b00ff",
+    general: "#22d3ee",
+    ego: "#7b00ff",
+    items: "#f59e0b",
+    advanced: "#10b981",
+    community: "#3b82f6",
+};
+
 export const BentoGridItem = ({
     className,
     title,
@@ -43,18 +51,13 @@ export const BentoGridItem = ({
     onClick,
     variant = "default",
 }: BentoGridItemProps) => {
-    // Detect color based on variant/icon
-    let color = "#7b00ff"; // Default Neon Purple
-    if (variant === "general") color = "#22d3ee"; // Cyan
-    if (variant === "items") color = "#f59e0b"; // Amber
-    if (variant === "advanced") color = "#10b981"; // Emerald
-    if (variant === "community") color = "#3b82f6"; // Blue
+    const color = VARIANT_COLORS[variant];
 
     return (
         <NeonCard
             className={cn(
                 "row-span-1 h-full flex flex-col justify-between p-4",
-                "bg-black/20 backdrop-blur-sm", // Keep existing backdrop
+                "bg-black/20 backdrop-blur-sm",
                 className
             )}
             onClick={onClick}
