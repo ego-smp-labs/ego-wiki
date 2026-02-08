@@ -1,0 +1,355 @@
+@import "tailwindcss";
+
+/* ===== CSS Variables ===== */
+:root {
+  /* Purple/White Theme */
+  --void-bg: #0a0014;
+  --void-surface: #120028;
+  --void-surface-light: #1a0040;
+  --void-border: #3d1a70;
+  --void-border-light: #5c2d91;
+
+  /* Neon Accents */
+  --neon-cyan: #c77dff;
+  --neon-cyan-dim: #9d4edd;
+  --neon-purple: #a855f7;
+  --neon-purple-dim: #7c3aed;
+  --neon-pink: #e879f9;
+
+  /* Text Colors - Using White */
+  --text-primary: #ffffff;
+  --text-secondary: #e0d4f7;
+  --text-muted: #a78bdb;
+
+  /* Shadows */
+  --glow-cyan: 0 0 20px rgba(199, 125, 255, 0.4), 0 0 40px rgba(199, 125, 255, 0.2);
+  --glow-purple: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 50px rgba(168, 85, 247, 0.25);
+
+  /* Background & Foreground */
+  --background: #0a0014;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ===== Base Styles ===== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--void-border-light) var(--void-surface);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--void-surface);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--void-border-light);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan-dim);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--void-bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== Selection ===== */
+::selection {
+  background: rgba(168, 85, 247, 0.4);
+  color: var(--text-primary);
+}
+
+/* ===== Glassmorphism Base ===== */
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--void-border);
+}
+
+.glass:hover {
+  border-color: var(--void-border-light);
+}
+
+/* ===== Glow Effects ===== */
+.glow-cyan {
+  box-shadow: var(--glow-cyan);
+}
+
+.glow-purple {
+  box-shadow: var(--glow-purple);
+}
+
+.glow-border-cyan {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.3), inset 0 0 10px rgba(199, 125, 255, 0.08);
+}
+
+.glow-border-purple {
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3), inset 0 0 10px rgba(168, 85, 247, 0.08);
+}
+
+/* ===== Text Effects ===== */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.6), 0 0 20px rgba(199, 125, 255, 0.4);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.6), 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.text-gradient-neon {
+  background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--neon-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Animated Underline ===== */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* ===== Pixelated Font (Optional) ===== */
+.font-pixel {
+  font-family: var(--font-orbitron), sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ===== Terminal Style ===== */
+.terminal {
+  background: var(--void-surface);
+  border: 1px solid var(--void-border);
+  border-radius: 8px;
+  font-family: var(--font-jetbrains-mono), monospace;
+  position: relative;
+}
+
+.terminal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: var(--void-surface-light);
+  border-bottom: 1px solid var(--void-border);
+  border-radius: 8px 8px 0 0;
+}
+
+.terminal::after {
+  content: '● ● ●';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--void-border-light);
+}
+
+/* ===== Void Background Pattern ===== */
+.void-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(168, 85, 247, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(199, 125, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(168, 85, 247, 0.03) 0%, transparent 50%);
+}
+
+/* ===== Card Hover Effects ===== */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2), 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--neon-cyan-dim);
+}
+
+/* ===== Button Styles ===== */
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-cyan-dim) 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  box-shadow: var(--glow-purple);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--neon-cyan);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--neon-cyan);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(199, 125, 255, 0.15);
+  box-shadow: var(--glow-cyan);
+}
+
+/* ===== Table Styles ===== */
+.void-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.void-table th {
+  background: var(--void-surface-light);
+  color: var(--neon-cyan);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--void-border);
+}
+
+.void-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--void-border);
+  color: var(--text-secondary);
+}
+
+.void-table tr:hover td {
+  background: rgba(168, 85, 247, 0.05);
+}
+
+/* ===== Blockquote ===== */
+.void-blockquote {
+  border-left: 3px solid var(--neon-purple);
+  background: rgba(168, 85, 247, 0.08);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ===== Inline Code ===== */
+.void-code {
+  background: var(--void-surface-light);
+  color: var(--neon-cyan);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.9em;
+}
+
+/* ===== Command Palette Overrides ===== */
+[cmdk-root] {
+  background: var(--void-surface);
+  border: 1px solid var(--void-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(168, 85, 247, 0.15);
+}
+
+[cmdk-input] {
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  outline: none;
+  background: var(--void-surface);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--void-border);
+}
+
+[cmdk-input]::placeholder {
+  color: var(--text-muted);
+}
+
+[cmdk-item] {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+
+[cmdk-item][data-selected="true"] {
+  background: rgba(168, 85, 247, 0.15);
+  color: var(--neon-cyan);
+}
+
+[cmdk-item]:hover {
+  background: rgba(168, 85, 247, 0.08);
+}
+
+/* ===== Animations ===== */
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
