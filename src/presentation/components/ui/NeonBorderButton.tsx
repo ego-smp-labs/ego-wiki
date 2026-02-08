@@ -11,12 +11,6 @@ interface NeonBorderButtonProps {
     href?: string;
 }
 
-/**
- * NeonBorderButton - Button with animated neon border effect.
- * Uses anime.js for SVG stroke animation.
- * 
- * Key: Initialize strokeDasharray on mount, then animate strokeDashoffset.
- */
 export const NeonBorderButton = ({
     onClick,
     children,
@@ -26,16 +20,11 @@ export const NeonBorderButton = ({
     const rectRef = useRef<SVGRectElement>(null);
     const perimeterRef = useRef<number>(0);
 
-    // Initialize SVG stroke properties on mount
     useEffect(() => {
         if (!rectRef.current) return;
-
-        // Calculate perimeter once
         const rect = rectRef.current;
         const perimeter = rect.getTotalLength();
         perimeterRef.current = perimeter;
-
-        // Set initial state: stroke hidden
         rect.style.strokeDasharray = `${perimeter}`;
         rect.style.strokeDashoffset = `${perimeter}`;
         rect.style.opacity = "1";
@@ -45,13 +34,10 @@ export const NeonBorderButton = ({
         const rect = rectRef.current;
         const button = buttonRef.current;
         const perimeter = perimeterRef.current;
-
         if (!rect || perimeter === 0) return;
 
-        // Cancel any running animations
         anime.remove(rect);
 
-        // 1. Stroke Draw Animation
         anime({
             targets: rect,
             strokeDashoffset: [perimeter, 0],
@@ -59,7 +45,6 @@ export const NeonBorderButton = ({
             easing: "easeInOutQuad",
         });
 
-        // 2. Glow Animation
         anime({
             targets: rect,
             filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 12px #7b00ff)"],
@@ -67,7 +52,6 @@ export const NeonBorderButton = ({
             easing: "easeOutQuad",
         });
 
-        // 3. Scale Effect (subtle)
         if (button) {
             anime({
                 targets: button,
@@ -82,13 +66,10 @@ export const NeonBorderButton = ({
         const rect = rectRef.current;
         const button = buttonRef.current;
         const perimeter = perimeterRef.current;
-
         if (!rect || perimeter === 0) return;
 
-        // Cancel any running animations
         anime.remove(rect);
 
-        // 1. Stroke Undraw Animation
         anime({
             targets: rect,
             strokeDashoffset: perimeter,
@@ -96,7 +77,6 @@ export const NeonBorderButton = ({
             easing: "easeInOutQuad",
         });
 
-        // 2. Glow Fade
         anime({
             targets: rect,
             filter: "drop-shadow(0 0 0px #7b00ff)",
@@ -104,7 +84,6 @@ export const NeonBorderButton = ({
             easing: "easeOutQuad",
         });
 
-        // 3. Reset Scale
         if (button) {
             anime({
                 targets: button,
@@ -127,10 +106,7 @@ export const NeonBorderButton = ({
             )}
             style={{ willChange: "transform" }}
         >
-            {/* Idle State: Thin White Border */}
             <div className="absolute inset-0 border border-white/30 rounded-[4px] pointer-events-none transition-opacity duration-300" />
-
-            {/* Active State: SVG Overlay for Animated Stroke */}
             <svg
                 className="absolute inset-0 pointer-events-none overflow-visible z-10"
                 width="100%"
@@ -149,8 +125,6 @@ export const NeonBorderButton = ({
                     vectorEffect="non-scaling-stroke"
                 />
             </svg>
-
-            {/* Content */}
             <span className="relative z-20 transition-colors duration-300 group-hover:text-white group-hover:drop-shadow-[0_0_8px_rgba(123,0,255,0.5)]">
                 {children}
             </span>

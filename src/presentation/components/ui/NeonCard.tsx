@@ -13,16 +13,6 @@ interface NeonCardProps {
     color?: string;
 }
 
-/**
- * NeonCard - A reusable card component with animated neon border effect.
- * Uses anime.js for all animations (stroke drawing, scale, lift).
- * 
- * Anime.js SVG Stroke Animation Explained:
- * 1. Get total path length via getTotalLength()
- * 2. Set strokeDasharray = pathLength (one long dash)
- * 3. Set strokeDashoffset = pathLength (hides the dash)
- * 4. Animate strokeDashoffset from pathLength to 0 (reveals the dash)
- */
 export const NeonCard = ({
     children,
     className,
@@ -34,33 +24,25 @@ export const NeonCard = ({
     const rectRef = useRef<SVGRectElement>(null);
     const perimeterRef = useRef<number>(0);
 
-    // Initialize SVG stroke properties on mount
     useEffect(() => {
         if (!rectRef.current) return;
-
-        // Calculate perimeter once
         const rect = rectRef.current;
         const perimeter = rect.getTotalLength();
         perimeterRef.current = perimeter;
-
-        // Set initial state: stroke hidden (dasharray = perimeter, offset = perimeter)
         rect.style.strokeDasharray = `${perimeter}`;
         rect.style.strokeDashoffset = `${perimeter}`;
-        rect.style.opacity = "1"; // Always visible, animation controls appearance via offset
+        rect.style.opacity = "1";
     }, []);
 
     const handleMouseEnter = useCallback(() => {
         const rect = rectRef.current;
         const card = cardRef.current;
         const perimeter = perimeterRef.current;
-
         if (!rect || perimeter === 0) return;
 
-        // Cancel any running animations
         anime.remove(rect);
         if (card) anime.remove(card);
 
-        // 1. Stroke Draw Animation (clockwise reveal)
         anime({
             targets: rect,
             strokeDashoffset: [perimeter, 0],
@@ -68,7 +50,6 @@ export const NeonCard = ({
             easing: "easeInOutQuad",
         });
 
-        // 2. Glow Animation (separate for clarity)
         anime({
             targets: rect,
             filter: [`drop-shadow(0 0 0px ${color})`, `drop-shadow(0 0 15px ${color})`],
@@ -76,7 +57,6 @@ export const NeonCard = ({
             easing: "easeOutQuad",
         });
 
-        // 3. Card Lift/Scale (user requested)
         if (card) {
             anime({
                 targets: card,
@@ -92,14 +72,11 @@ export const NeonCard = ({
         const rect = rectRef.current;
         const card = cardRef.current;
         const perimeter = perimeterRef.current;
-
         if (!rect || perimeter === 0) return;
 
-        // Cancel any running animations
         anime.remove(rect);
         if (card) anime.remove(card);
 
-        // 1. Stroke Undraw Animation
         anime({
             targets: rect,
             strokeDashoffset: perimeter,
@@ -107,7 +84,6 @@ export const NeonCard = ({
             easing: "easeInOutQuad",
         });
 
-        // 2. Glow Fade
         anime({
             targets: rect,
             filter: `drop-shadow(0 0 0px ${color})`,
@@ -115,7 +91,6 @@ export const NeonCard = ({
             easing: "easeOutQuad",
         });
 
-        // 3. Card Reset
         if (card) {
             anime({
                 targets: card,
@@ -142,7 +117,6 @@ export const NeonCard = ({
 
     const content = (
         <>
-            {/* Neon Border SVG */}
             <svg
                 className="absolute inset-0 pointer-events-none z-30 overflow-visible"
                 width="100%"
@@ -163,8 +137,6 @@ export const NeonCard = ({
                     vectorEffect="non-scaling-stroke"
                 />
             </svg>
-
-            {/* Content */}
             <div className="relative z-10 h-full">
                 {children}
             </div>
