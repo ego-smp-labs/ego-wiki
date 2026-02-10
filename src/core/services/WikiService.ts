@@ -32,6 +32,9 @@ export interface CategoryInfo {
 export class WikiService {
     private readonly contentDir: string;
     private static instance: WikiService;
+    private metaCache: Map<string, ArticleMeta> = new Map();
+    private categoryArticlesCache: Map<string, ArticleMeta[]> = new Map();
+    private allCategoriesCache: Map<string, CategoryInfo[]> = new Map();
 
     private constructor() {
         this.contentDir = path.join(process.cwd(), "content");
@@ -42,6 +45,15 @@ export class WikiService {
             WikiService.instance = new WikiService();
         }
         return WikiService.instance;
+    }
+
+    /**
+     * Clears all internal caches
+     */
+    public clearCache(): void {
+        this.metaCache.clear();
+        this.categoryArticlesCache.clear();
+        this.allCategoriesCache.clear();
     }
 
     /**
@@ -117,6 +129,11 @@ export class WikiService {
         filename: string
     ): ArticleMeta | null {
         const filePath = path.join(this.contentDir, locale, category, filename);
+        const cacheKey = `${locale}:${category}:${filename}`;
+
+        if (this.metaCache.has(cacheKey)) {
+            return this.metaCache.get(cacheKey)!;
+        }
 
         if (!fs.existsSync(filePath)) {
             return null;
@@ -128,7 +145,7 @@ export class WikiService {
         const headings = this.extractHeadings(content);
         const title = frontmatter.title || this.extractTitle(content);
 
-        return {
+        const meta: ArticleMeta = {
             slug,
             order,
             title,
@@ -137,6 +154,9 @@ export class WikiService {
             locale,
             headings,
         };
+
+        this.metaCache.set(cacheKey, meta);
+        return meta;
     }
 
     /**
@@ -190,18 +210,31 @@ export class WikiService {
         locale: string,
         category: string
     ): ArticleMeta[] {
+        const cacheKey = `${locale}:${category}`;
+
+        if (this.categoryArticlesCache.has(cacheKey)) {
+            return this.categoryArticlesCache.get(cacheKey)!;
+        }
+
         const files = this.getArticleFiles(locale, category);
 
-        return files
+        const articles = files
             .map((file) => this.getArticleMeta(locale, category, file))
             .filter((article): article is ArticleMeta => article !== null)
             .sort((a, b) => a.order - b.order);
+
+        this.categoryArticlesCache.set(cacheKey, articles);
+        return articles;
     }
 
     /**
      * Gets all categories with their articles for a locale
      */
     public getAllCategories(locale: string): CategoryInfo[] {
+        if (this.allCategoriesCache.has(locale)) {
+            return this.allCategoriesCache.get(locale)!;
+        }
+
         const localePath = path.join(this.contentDir, locale);
 
         if (!fs.existsSync(localePath)) {
@@ -213,10 +246,13 @@ export class WikiService {
             .filter((dirent) => dirent.isDirectory())
             .map((dirent) => dirent.name);
 
-        return categories.map((category) => ({
+        const result = categories.map((category) => ({
             slug: category,
             articles: this.getCategoryArticles(locale, category),
         }));
+
+        this.allCategoriesCache.set(locale, result);
+        return result;
     }
 
     /**
