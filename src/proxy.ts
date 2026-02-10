@@ -39,9 +39,7 @@ export default function proxy(req: NextRequest) {
         // Note: req.auth.user.roles is populated in auth.ts JWT callback
         // We treat "roles" as string[]
         const userRoles = (req.auth?.user as { roles?: string[] })?.roles || [];
-        const hasAdminRole = env.DISCORD_ADMIN_ROLE_ID
-            ? userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)
-            : true; // If no admin role defined, allow all logged in users (dev mode/unsafe)
+        const hasAdminRole = !!env.DISCORD_ADMIN_ROLE_ID && userRoles.includes(env.DISCORD_ADMIN_ROLE_ID);
 
         if (isAdminRoute) {
             if (!isLoggedIn) {

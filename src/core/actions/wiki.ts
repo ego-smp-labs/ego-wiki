@@ -21,9 +21,7 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     // 1. Auth Check (Double Layer Security)
     const session = await auth();
     const userRoles = (session?.user as { roles?: string[] })?.roles || [];
-    const hasAdminRole = env.DISCORD_ADMIN_ROLE_ID
-        ? userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)
-        : true; // Unsafe default but matches middleware
+    const hasAdminRole = !!env.DISCORD_ADMIN_ROLE_ID && userRoles.includes(env.DISCORD_ADMIN_ROLE_ID);
 
     if (!session || !hasAdminRole) {
         throw new Error("Unauthorized");
