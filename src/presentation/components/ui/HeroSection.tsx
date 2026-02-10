@@ -32,7 +32,10 @@ export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GE
                     transition={{ duration: 0.5 }}
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-void-surface/80 border border-void-border text-xs text-secondary mb-8 backdrop-blur-md"
                 >
-                    <span className="w-2 h-2 rounded-full bg-neon-purple animate-pulse" />
+                    <span className="relative flex h-2.5 w-2.5">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                        <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+                    </span>
                     <span className="tracking-widest font-mono text-neon-cyan">SYSTEM ONLINE</span>
                 </motion.div>
 
