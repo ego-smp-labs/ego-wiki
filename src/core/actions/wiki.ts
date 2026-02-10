@@ -23,7 +23,7 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     const userRoles = (session?.user as { roles?: string[] })?.roles || [];
     const hasAdminRole = env.DISCORD_ADMIN_ROLE_ID
         ? userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)
-        : true; // Unsafe default but matches middleware
+        : false; // Safe default: fail closed if role ID is not set
 
     if (!session || !hasAdminRole) {
         throw new Error("Unauthorized");
