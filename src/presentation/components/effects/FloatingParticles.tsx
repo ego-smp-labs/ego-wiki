@@ -1,76 +1,80 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState, memo } from "react";
 
-interface Particle {
-    id: number;
-    x: number;
-    y: number;
-    size: number;
-    speedX: number;
-    speedY: number;
-    opacity: number;
+/**
+ * Lightweight floating particles using pure CSS animations
+ * instead of framer-motion to avoid JS-driven per-frame updates.
+ */
+
+const PARTICLE_COUNT = 12; // Reduced from 30
+
+function generateParticleStyle(index: number) {
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+    const size = 2 + Math.random() * 3;
+    const duration = 12 + Math.random() * 18;
+    const delay = Math.random() * -duration; // negative = stagger start
+
+    return {
+        width: size,
+        height: size,
+        left: `${x}%`,
+        top: `${y}%`,
+        animationDuration: `${duration}s`,
+        animationDelay: `${delay}s`,
+    } as React.CSSProperties;
 }
 
-const DEFAULT_PARTICLE_COUNT = 30;
-
-export default function FloatingParticles({ count = DEFAULT_PARTICLE_COUNT }: { count?: number }) {
-    const [mounted, setMounted] = useState(false);
+const FloatingParticles = memo(function FloatingParticles({ count = PARTICLE_COUNT }: { count?: number }) {
+    const [styles, setStyles] = useState<React.CSSProperties[]>([]);
 
     useEffect(() => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
-        setMounted(true);
-    }, []);
+        setStyles(Array.from({ length: count }, (_, i) => generateParticleStyle(i)));
+    }, [count]);
 
-    if (!mounted) return null;
-
-    return (
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-            {[...Array(count)].map((_, i) => (
-                <PixelParticle key={i} />
-            ))}
-        </div>
-    );
-}
-
-function PixelParticle() {
-    const [config, setConfig] = useState<{ x: number, y: number, duration: number, size: number, xMove: number } | null>(null);
-
-    useEffect(() => {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        setConfig({
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            duration: 10 + Math.random() * 20,
-            size: 2 + Math.random() * 4,
-            xMove: Math.random() * 50 - 25,
-        });
-    }, []);
-
-    if (!config) return null;
+    if (styles.length === 0) return null;
 
     return (
-        <motion.div
-            className="absolute bg-neon-purple/30 rounded-full blur-[1px]"
-            style={{
-                width: config.size,
-                height: config.size,
-                left: `${config.x}%`,
-                top: `${config.y}%`,
-                boxShadow: "0 0 4px var(--neon-purple)",
-            }}
-            animate={{
-                y: [0, -100, 0],
-                x: [0, config.xMove, 0],
-                opacity: [0, 0.8, 0],
-                scale: [0, 1.5, 0],
-            }}
-            transition={{
-                duration: config.duration,
-                repeat: Infinity,
-                ease: "linear",
-            }}
-        />
+        <>
+            <style jsx global>{`
+                @keyframes float-particle {
+                    0% {
+                        transform: translateY(0) translateX(0) scale(0);
+                        opacity: 0;
+                    }
+                    10% {
+                        opacity: 0.6;
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: translateY(-80px) translateX(20px) scale(1.2);
+                        opacity: 0.4;
+                    }
+                    90% {
+                        opacity: 0.6;
+                    }
+                    100% {
+                        transform: translateY(-160px) translateX(-10px) scale(0);
+                        opacity: 0;
+                    }
+                }
+            `}</style>
+            <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+                {styles.map((style, i) => (
+                    <div
+                        key={i}
+                        className="absolute rounded-full bg-neon-purple/25"
+                        style={{
+                            ...style,
+                            animation: `float-particle ${style.animationDuration} ${style.animationDelay} linear infinite`,
+                        }}
+                    />
+                ))}
+            </div>
+        </>
     );
-}
+});
+
+export default FloatingParticles;

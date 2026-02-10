@@ -60,7 +60,7 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
     ];
 
     const headerClass = isScrolled
-        ? "bg-void-surface/80 backdrop-blur-xl border-b border-void-border"
+        ? "bg-void-surface/90 backdrop-blur-md border-b border-void-border"
         : "bg-transparent";
 
     return (

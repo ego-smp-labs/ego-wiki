@@ -1,230 +1,128 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { animate, svg, stagger } from "animejs";
 
-/**
- * SVG paths for "EGO" letters - outlined font paths for draw animation.
- * Each letter is designed in a 100x100 viewBox for consistent sizing.
- */
-const EGO_PATHS = {
-    E: [
-        // Top horizontal bar
-        "M 8 15 L 72 15",
-        // Vertical bar
-        "M 8 15 L 8 85",
-        // Middle horizontal bar  
-        "M 8 50 L 60 50",
-        // Bottom horizontal bar
-        "M 8 85 L 72 85",
-    ],
-    G: [
-        // Main arc (top → left → bottom → right)
-        "M 65 25 C 55 10, 25 10, 15 30 C 5 50, 10 75, 30 85 C 45 92, 65 88, 70 70",
-        // Horizontal bar inward
-        "M 70 70 L 70 52 L 45 52",
-    ],
-    O: [
-        // Full oval
-        "M 40 12 C 15 12, 5 35, 5 50 C 5 65, 15 88, 40 88 C 65 88, 75 65, 75 50 C 75 35, 65 12, 40 12 Z",
-    ],
-};
-
 export const HeroLogo = () => {
-    const egoSvgRef = useRef<SVGSVGElement>(null);
-    const smpContainerRef = useRef<HTMLDivElement>(null);
-    const [drawComplete, setDrawComplete] = useState(false);
+    const svgRef = useRef<SVGSVGElement>(null);
+    const smpRef = useRef<HTMLDivElement>(null);
+    const animsRef = useRef<ReturnType<typeof animate>[]>([]);
 
-    // EGO SVG Draw Animation
     useEffect(() => {
-        if (!egoSvgRef.current) return;
-        const paths = egoSvgRef.current.querySelectorAll(".ego-line");
-        if (paths.length === 0) return;
+        const svgEl = svgRef.current;
+        const smpEl = smpRef.current;
+        if (!svgEl || !smpEl) return;
 
+        const paths = svgEl.querySelectorAll(".ego-stroke");
+        const chars = smpEl.querySelectorAll(".smp-char");
+        if (!paths.length || !chars.length) return;
+
+        // === EGO: SVG line draw ===
         const drawables = svg.createDrawable(paths);
-
-        // Initial state: hidden
         animate(drawables, { draw: "0 0", duration: 0 });
 
-        // Draw animation: appear → fill → stay
         const drawAnim = animate(drawables, {
             draw: ["0 0", "0 1"],
             ease: "inOutQuad",
-            duration: 1800,
-            delay: stagger(80),
-            onComplete: () => {
-                setDrawComplete(true);
-            }
+            duration: 1400,
+            delay: stagger(60),
         });
+        animsRef.current.push(drawAnim);
 
-        // Subtle glow pulse after draw completes
-        const glowAnim = animate(paths, {
-            strokeOpacity: [0.7, 1],
-            duration: 2000,
-            delay: stagger(100, { start: 2200 }),
-            loop: true,
-            alternate: true,
-            ease: "inOutSine",
-        });
+        // === SMP: gravity drop ===
+        animate(chars, { translateY: -50, opacity: 0, duration: 0 });
 
-        return () => {
-            drawAnim?.pause?.();
-            glowAnim?.pause?.();
-        };
-    }, []);
-
-    // SMP Gravity Bounce Animation
-    useEffect(() => {
-        if (!smpContainerRef.current) return;
-        const letters = smpContainerRef.current.querySelectorAll(".smp-char");
-        if (letters.length === 0) return;
-
-        // Initial state: letters spawn above, invisible
-        animate(letters, {
-            translateY: -60,
-            opacity: 0,
-            duration: 0,
-        });
-
-        // Phase 1: Gravity drop with bounce
-        const dropAnim = animate(letters, {
+        const dropAnim = animate(chars, {
             translateY: 0,
             opacity: 1,
-            duration: 1200,
-            delay: stagger(150, { start: 1200 }), // Start after EGO draw begins
+            duration: 900,
+            delay: stagger(120, { start: 800 }),
             ease: "outBounce",
         });
+        animsRef.current.push(dropAnim);
 
-        // Phase 2: Wind sway (starts after drop completes)
-        const swayDelay = 1200 + 150 * 3 + 1200; // after all letters dropped
-        const swayTimeout = setTimeout(() => {
-            if (!smpContainerRef.current) return;
-            const chars = smpContainerRef.current.querySelectorAll(".smp-char");
-
-            animate(chars, {
-                translateX: [-3, 3],
-                rotate: [-1.5, 1.5],
-                duration: 3500,
-                delay: stagger(300),
+        // Gentle float after landing (lightweight, no loop on expensive props)
+        const floatTimer = setTimeout(() => {
+            if (!smpEl) return;
+            const c = smpEl.querySelectorAll(".smp-char");
+            const floatAnim = animate(c, {
+                translateY: [-2, 2],
+                duration: 3000,
+                delay: stagger(250),
                 loop: true,
                 alternate: true,
                 ease: "inOutSine",
             });
-        }, swayDelay);
+            animsRef.current.push(floatAnim);
+        }, 2200);
 
         return () => {
-            dropAnim?.pause?.();
-            clearTimeout(swayTimeout);
+            clearTimeout(floatTimer);
+            animsRef.current.forEach(a => a?.pause?.());
+            animsRef.current = [];
         };
     }, []);
 
     return (
-        <div className="relative mb-6 select-none cursor-default flex items-center justify-center gap-2 md:gap-4">
-            {/* EGO: SVG Draw Effect */}
+        <div className="relative mb-6 select-none cursor-default flex items-baseline justify-center gap-3 md:gap-5">
+            {/* EGO — SVG outlined strokes */}
             <svg
-                ref={egoSvgRef}
-                viewBox="0 0 260 100"
-                className="h-[80px] md:h-[120px] w-auto"
+                ref={svgRef}
+                viewBox="0 0 320 100"
+                className="h-[72px] md:h-[110px] w-auto"
                 aria-label="EGO"
+                role="img"
             >
-                {/* Purple neon glow filter */}
                 <defs>
-                    <filter id="ego-glow" x="-50%" y="-50%" width="200%" height="200%">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
-                        <feMerge>
-                            <feMergeNode in="blur" />
-                            <feMergeNode in="SourceGraphic" />
-                        </feMerge>
-                    </filter>
-                    <linearGradient id="ego-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <linearGradient id="ego-grad" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stopColor="#7b00ff" />
-                        <stop offset="50%" stopColor="#a855f7" />
+                        <stop offset="60%" stopColor="#a855f7" />
                         <stop offset="100%" stopColor="#c77dff" />
                     </linearGradient>
                 </defs>
 
-                {/* Letter E (offset x: 0) */}
-                <g transform="translate(0, 0)" filter="url(#ego-glow)">
-                    {EGO_PATHS.E.map((d, i) => (
-                        <path
-                            key={`e-${i}`}
-                            className="ego-line"
-                            d={d}
-                            fill="none"
-                            stroke="url(#ego-gradient)"
-                            strokeWidth="7"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    ))}
-                </g>
-
-                {/* Letter G (offset x: 85) */}
-                <g transform="translate(85, 0)" filter="url(#ego-glow)">
-                    {EGO_PATHS.G.map((d, i) => (
-                        <path
-                            key={`g-${i}`}
-                            className="ego-line"
-                            d={d}
-                            fill="none"
-                            stroke="url(#ego-gradient)"
-                            strokeWidth="7"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    ))}
-                </g>
-
-                {/* Letter O (offset x: 175) */}
-                <g transform="translate(175, 0)" filter="url(#ego-glow)">
-                    {EGO_PATHS.O.map((d, i) => (
-                        <path
-                            key={`o-${i}`}
-                            className="ego-line"
-                            d={d}
-                            fill="none"
-                            stroke="url(#ego-gradient)"
-                            strokeWidth="7"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    ))}
-                </g>
-
-                {/* Fill text that fades in after draw completes */}
-                <text
-                    x="130"
-                    y="68"
-                    textAnchor="middle"
-                    className="transition-opacity duration-1000"
-                    style={{
-                        fontFamily: "var(--font-display), Orbitron, sans-serif",
-                        fontSize: "72px",
-                        fontWeight: 900,
-                        fill: "#7b00ff",
-                        opacity: drawComplete ? 0.15 : 0,
-                        letterSpacing: "-0.02em",
-                    }}
+                <g
+                    fill="none"
+                    stroke="url(#ego-grad)"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                 >
-                    EGO
-                </text>
+                    {/* ===== E ===== */}
+                    {/* Vertical spine */}
+                    <path className="ego-stroke" d="M 10,15 L 10,85" />
+                    {/* Top bar */}
+                    <path className="ego-stroke" d="M 10,15 L 70,15" />
+                    {/* Middle bar */}
+                    <path className="ego-stroke" d="M 10,50 L 58,50" />
+                    {/* Bottom bar */}
+                    <path className="ego-stroke" d="M 10,85 L 70,85" />
+
+                    {/* ===== G ===== */}
+                    {/* Arc from top-right → top → left → bottom → right */}
+                    <path className="ego-stroke" d="M 170,28 C 155,12 120,10 105,25 C 90,40 90,65 105,78 C 120,90 155,88 170,72" />
+                    {/* Horizontal shelf */}
+                    <path className="ego-stroke" d="M 170,72 L 170,52 L 142,52" />
+
+                    {/* ===== O ===== */}
+                    {/* Full ellipse */}
+                    <path className="ego-stroke" d="M 250,15 C 222,15 210,35 210,50 C 210,65 222,85 250,85 C 278,85 290,65 290,50 C 290,35 278,15 250,15 Z" />
+                </g>
             </svg>
 
-            {/* SMP: Gravity Bounce Letters */}
-            <div ref={smpContainerRef} className="flex gap-0.5 md:gap-1">
-                {["S", "M", "P"].map((char, index) => (
+            {/* SMP — gravity drop text */}
+            <div ref={smpRef} className="flex">
+                {["S", "M", "P"].map((ch, i) => (
                     <span
-                        key={index}
-                        className="smp-char text-7xl md:text-9xl font-bold text-white/90 inline-block will-change-transform"
+                        key={i}
+                        className="smp-char text-7xl md:text-[110px] font-bold text-white/90 inline-block leading-none"
                         style={{
                             fontFamily: "var(--font-mono)",
-                            backfaceVisibility: "hidden",
-                            WebkitFontSmoothing: "antialiased",
-                            textShadow: "0 2px 10px rgba(123, 0, 255, 0.3)",
-                            opacity: 0, // Start hidden, animate in
+                            textShadow: "0 2px 12px rgba(123,0,255,0.25)",
+                            willChange: "transform, opacity",
                         }}
                     >
-                        {char}
+                        {ch}
                     </span>
                 ))}
             </div>

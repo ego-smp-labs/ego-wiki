@@ -14,3 +14,4 @@ order: 1
 ## Quản Lý Ego
 - Đừng dùng Ego bừa bãi.
 - Giữ Soul Keeper cho những trận chiến quan trọng.
+
