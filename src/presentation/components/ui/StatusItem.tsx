@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { animate, remove } from "animejs";
 
@@ -11,104 +11,58 @@ interface StatusItemProps {
 
 const StatusItem = ({ children, delay }: StatusItemProps) => {
     const cardRef = useRef<HTMLDivElement>(null);
-    const rectRef = useRef<SVGRectElement>(null);
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-
-    useEffect(() => {
-        const updateDimensions = () => {
-            if (cardRef.current) {
-                setDimensions({
-                    width: cardRef.current.offsetWidth,
-                    height: cardRef.current.offsetHeight,
-                });
-            }
-        };
-
-        updateDimensions();
-        const timer = setTimeout(updateDimensions, 200);
-        window.addEventListener("resize", updateDimensions);
-        return () => {
-            window.removeEventListener("resize", updateDimensions);
-            clearTimeout(timer);
-        };
-    }, []);
+    const glowRef = useRef<HTMLDivElement>(null);
 
     const handleMouseEnter = () => {
-        if (!rectRef.current || !cardRef.current) return;
+        if (!cardRef.current || !glowRef.current) return;
 
-        // Animate Stroke
-        const perimeter = rectRef.current.getTotalLength();
-        remove(rectRef.current);
-        rectRef.current.style.strokeDasharray = `${perimeter}`;
-        rectRef.current.style.strokeDashoffset = `${perimeter}`;
-        rectRef.current.style.opacity = "1";
-
-        animate(rectRef.current, {
-            strokeDashoffset: [perimeter, 0],
-            easing: "easeInOutSine",
-            duration: 500,
-            filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 10px #7b00ff)"]
+        remove(glowRef.current);
+        animate(glowRef.current, {
+            opacity: [0, 1],
+            scaleY: [0.3, 1],
+            duration: 400,
+            ease: "outExpo",
         });
-
-        // NO Box Shadow / Background on Container
-        remove(cardRef.current);
-        cardRef.current.style.boxShadow = "none";
     };
 
     const handleMouseLeave = () => {
-        if (!rectRef.current || !cardRef.current) return;
+        if (!glowRef.current) return;
 
-        const perimeter = rectRef.current.getTotalLength();
-        remove(rectRef.current);
-        animate(rectRef.current, {
-            strokeDashoffset: perimeter,
-            filter: "drop-shadow(0 0 0px #7b00ff)",
-            easing: "easeInOutSine",
+        remove(glowRef.current);
+        animate(glowRef.current, {
+            opacity: [1, 0],
+            scaleY: [1, 0.3],
             duration: 300,
-            complete: () => {
-                if (rectRef.current) rectRef.current.style.opacity = "0";
-            }
+            ease: "inQuad",
         });
-
-        remove(cardRef.current);
-        cardRef.current.style.boxShadow = "none";
     };
 
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay }}
+            transition={{ delay, duration: 0.5, ease: "easeOut" }}
             className="h-full"
         >
             <div
                 ref={cardRef}
-                className="relative h-full p-6 rounded-xl bg-void-surface/50 border border-white/10 backdrop-blur-sm overflow-hidden group transition-colors duration-300"
+                className="relative h-full p-6 rounded-xl bg-void-surface/50 border border-white/10 overflow-hidden group transition-colors duration-300 hover:border-neon-purple/30"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                {/* SVG Overlay */}
-                <svg
-                    className="absolute inset-0 pointer-events-none z-10"
-                    width="100%"
-                    height="100%"
-                    style={{ overflow: "visible" }}
-                >
-                    <rect
-                        ref={rectRef}
-                        x="0"
-                        y="0"
-                        width="100%"
-                        height="100%"
-                        rx="12"
-                        fill="none"
-                        stroke="#7b00ff"
-                        strokeWidth="2"
-                        strokeOpacity="0"
-                    />
-                </svg>
+                {/* Left border glow line */}
+                <div
+                    ref={glowRef}
+                    className="absolute left-0 top-0 w-[3px] h-full origin-top"
+                    style={{
+                        background: "linear-gradient(180deg, #7b00ff, #a855f7, #7b00ff)",
+                        boxShadow: "0 0 12px 2px rgba(123, 0, 255, 0.6), 0 0 24px 4px rgba(123, 0, 255, 0.3)",
+                        opacity: 0,
+                        borderRadius: "0 0 0 0",
+                    }}
+                />
 
-                <div className="relative z-20">
+                <div className="relative z-10">
                     {children}
                 </div>
             </div>

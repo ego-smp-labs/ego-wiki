@@ -1,8 +1,9 @@
 "use client";
 
 import { cn } from "@core/lib/utils";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { NeonCard } from "@presentation/components/ui/NeonCard";
+import { animate, stagger } from "animejs";
 
 export const BentoGrid = ({
     className,
@@ -11,8 +12,36 @@ export const BentoGrid = ({
     className?: string;
     children: React.ReactNode;
 }) => {
+    const gridRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!gridRef.current) return;
+        const items = gridRef.current.querySelectorAll(".bento-item");
+        if (!items.length) return;
+
+        // Initial state
+        items.forEach((el) => {
+            (el as HTMLElement).style.opacity = "0";
+            (el as HTMLElement).style.transform = "translateY(30px)";
+        });
+
+        // Stagger entrance
+        const anim = animate(items, {
+            opacity: [0, 1],
+            translateY: [30, 0],
+            duration: 600,
+            delay: stagger(120, { start: 300 }),
+            ease: "outCubic",
+        });
+
+        return () => {
+            anim?.pause?.();
+        };
+    }, []);
+
     return (
         <div
+            ref={gridRef}
             className={cn(
                 "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto",
                 className
@@ -56,8 +85,8 @@ export const BentoGridItem = ({
     return (
         <NeonCard
             className={cn(
-                "row-span-1 h-full flex flex-col justify-between p-4",
-                "bg-black/20 backdrop-blur-sm",
+                "bento-item row-span-1 h-full flex flex-col justify-between p-4",
+                "bg-black/20",
                 className
             )}
             onClick={onClick}

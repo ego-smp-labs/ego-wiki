@@ -55,7 +55,7 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
     const navLinks: NavLink[] = [
         { href: `/${locale}`, label: t.nav.home },
         { href: `/${locale}/wiki`, label: t.nav.wiki },
-        { href: `/${locale}/qa`, label: t.nav.qa },
+        { href: `/${locale}/faq`, label: t.nav.faq },
         { href: "https://discord.gg/jRqnNbupj4", label: t.nav.discord, external: true },
     ];
 

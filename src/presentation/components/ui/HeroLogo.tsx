@@ -1,54 +1,71 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { animate, svg, stagger } from "animejs";
+import { animate, stagger } from "animejs";
 
 export const HeroLogo = () => {
-    const svgRef = useRef<SVGSVGElement>(null);
+    const egoRef = useRef<HTMLDivElement>(null);
     const smpRef = useRef<HTMLDivElement>(null);
     const animsRef = useRef<ReturnType<typeof animate>[]>([]);
 
     useEffect(() => {
-        const svgEl = svgRef.current;
+        const egoEl = egoRef.current;
         const smpEl = smpRef.current;
-        if (!svgEl || !smpEl) return;
+        if (!egoEl || !smpEl) return;
 
-        const paths = svgEl.querySelectorAll(".ego-stroke");
-        const chars = smpEl.querySelectorAll(".smp-char");
-        if (!paths.length || !chars.length) return;
+        const egoChars = egoEl.querySelectorAll(".ego-char");
+        const smpChars = smpEl.querySelectorAll(".smp-char");
+        if (!egoChars.length || !smpChars.length) return;
 
-        // === EGO: SVG line draw ===
-        const drawables = svg.createDrawable(paths);
-        animate(drawables, { draw: "0 0", duration: 0 });
-
-        const drawAnim = animate(drawables, {
-            draw: ["0 0", "0 1"],
-            ease: "inOutQuad",
-            duration: 1400,
-            delay: stagger(60),
+        // === EGO: clip-path reveal + glow pulse ===
+        // Initial state: hidden via clip
+        egoChars.forEach((el) => {
+            (el as HTMLElement).style.clipPath = "inset(0 100% 0 0)";
+            (el as HTMLElement).style.opacity = "0";
         });
-        animsRef.current.push(drawAnim);
 
-        // === SMP: gravity drop ===
-        animate(chars, { translateY: -50, opacity: 0, duration: 0 });
+        // Reveal each letter by expanding clip from left to right
+        const egoReveal = animate(egoChars, {
+            opacity: [0, 1],
+            duration: 600,
+            delay: stagger(180, { start: 200 }),
+            ease: "outExpo",
+            onBegin: (anim) => {
+                // Manually animate clipPath since anime.js doesn't handle it natively
+                egoChars.forEach((el, i) => {
+                    const charDelay = 200 + i * 180;
+                    setTimeout(() => {
+                        const htmlEl = el as HTMLElement;
+                        htmlEl.style.transition = "clip-path 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+                        htmlEl.style.clipPath = "inset(0 0% 0 0)";
+                    }, charDelay);
+                });
+            },
+        });
+        animsRef.current.push(egoReveal);
 
-        const dropAnim = animate(chars, {
-            translateY: 0,
-            opacity: 1,
+        // === SMP: gravity bounce ===
+        smpChars.forEach((el) => {
+            (el as HTMLElement).style.opacity = "0";
+        });
+
+        const smpDrop = animate(smpChars, {
+            translateY: [-60, 0],
+            opacity: [0, 1],
             duration: 900,
-            delay: stagger(120, { start: 800 }),
+            delay: stagger(120, { start: 900 }),
             ease: "outBounce",
         });
-        animsRef.current.push(dropAnim);
+        animsRef.current.push(smpDrop);
 
-        // Gentle float after landing (lightweight, no loop on expensive props)
-        const floatTimer = setTimeout(() => {
+        // Gentle idle float (very lightweight)
+        const floatDelay = setTimeout(() => {
             if (!smpEl) return;
-            const c = smpEl.querySelectorAll(".smp-char");
-            const floatAnim = animate(c, {
-                translateY: [-2, 2],
+            const chars = smpEl.querySelectorAll(".smp-char");
+            const floatAnim = animate(chars, {
+                translateY: [-1.5, 1.5],
                 duration: 3000,
-                delay: stagger(250),
+                delay: stagger(200),
                 loop: true,
                 alternate: true,
                 ease: "inOutSine",
@@ -57,60 +74,36 @@ export const HeroLogo = () => {
         }, 2200);
 
         return () => {
-            clearTimeout(floatTimer);
-            animsRef.current.forEach(a => a?.pause?.());
+            clearTimeout(floatDelay);
+            animsRef.current.forEach((a) => a?.pause?.());
             animsRef.current = [];
         };
     }, []);
 
     return (
         <div className="relative mb-6 select-none cursor-default flex items-baseline justify-center gap-3 md:gap-5">
-            {/* EGO — SVG outlined strokes */}
-            <svg
-                ref={svgRef}
-                viewBox="0 0 320 100"
-                className="h-[72px] md:h-[110px] w-auto"
-                aria-label="EGO"
-                role="img"
-            >
-                <defs>
-                    <linearGradient id="ego-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="#7b00ff" />
-                        <stop offset="60%" stopColor="#a855f7" />
-                        <stop offset="100%" stopColor="#c77dff" />
-                    </linearGradient>
-                </defs>
+            {/* EGO — Gradient text with reveal animation */}
+            <div ref={egoRef} className="flex">
+                {["E", "G", "O"].map((ch, i) => (
+                    <span
+                        key={i}
+                        className="ego-char text-7xl md:text-[110px] font-black inline-block leading-none"
+                        style={{
+                            fontFamily: "var(--font-display), Orbitron, sans-serif",
+                            background: "linear-gradient(135deg, #7b00ff 0%, #a855f7 50%, #c77dff 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            backgroundClip: "text",
+                            filter: "drop-shadow(0 0 20px rgba(123, 0, 255, 0.4))",
+                            willChange: "clip-path, opacity",
+                        }}
+                    >
+                        {ch}
+                    </span>
+                ))}
+            </div>
 
-                <g
-                    fill="none"
-                    stroke="url(#ego-grad)"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                >
-                    {/* ===== E ===== */}
-                    {/* Vertical spine */}
-                    <path className="ego-stroke" d="M 10,15 L 10,85" />
-                    {/* Top bar */}
-                    <path className="ego-stroke" d="M 10,15 L 70,15" />
-                    {/* Middle bar */}
-                    <path className="ego-stroke" d="M 10,50 L 58,50" />
-                    {/* Bottom bar */}
-                    <path className="ego-stroke" d="M 10,85 L 70,85" />
-
-                    {/* ===== G ===== */}
-                    {/* Arc from top-right → top → left → bottom → right */}
-                    <path className="ego-stroke" d="M 170,28 C 155,12 120,10 105,25 C 90,40 90,65 105,78 C 120,90 155,88 170,72" />
-                    {/* Horizontal shelf */}
-                    <path className="ego-stroke" d="M 170,72 L 170,52 L 142,52" />
-
-                    {/* ===== O ===== */}
-                    {/* Full ellipse */}
-                    <path className="ego-stroke" d="M 250,15 C 222,15 210,35 210,50 C 210,65 222,85 250,85 C 278,85 290,65 290,50 C 290,35 278,15 250,15 Z" />
-                </g>
-            </svg>
-
-            {/* SMP — gravity drop text */}
+            {/* SMP — Gravity bounce white text */}
             <div ref={smpRef} className="flex">
                 {["S", "M", "P"].map((ch, i) => (
                     <span
@@ -118,7 +111,7 @@ export const HeroLogo = () => {
                         className="smp-char text-7xl md:text-[110px] font-bold text-white/90 inline-block leading-none"
                         style={{
                             fontFamily: "var(--font-mono)",
-                            textShadow: "0 2px 12px rgba(123,0,255,0.25)",
+                            textShadow: "0 2px 12px rgba(123, 0, 255, 0.2)",
                             willChange: "transform, opacity",
                         }}
                     >

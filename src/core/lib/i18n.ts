@@ -7,7 +7,7 @@ export const translations = {
         nav: {
             home: "Home",
             wiki: "Wiki",
-            qa: "Q&A",
+            faq: "FAQ",
             rules: "Rules",
             discord: "Discord",
             search: "Search...",
@@ -53,7 +53,7 @@ export const translations = {
         nav: {
             home: "Trang chủ",
             wiki: "Wiki",
-            qa: "Hỏi đáp",
+            faq: "FAQ",
             rules: "Luật",
             discord: "Discord",
             search: "Tìm kiếm...",
