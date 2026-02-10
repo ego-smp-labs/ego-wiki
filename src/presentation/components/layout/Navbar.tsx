@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Search, Globe } from "lucide-react";
 import { getTranslations, LOCALES } from "@core/lib/i18n";
+import AuthButton from "@presentation/components/auth/AuthButton";
 
 interface NavbarProps {
     locale: string;
@@ -139,6 +140,9 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
                             )}
                         </AnimatePresence>
                     </div>
+
+                    {/* Auth Button */}
+                    <AuthButton />
 
                     <button
                         onClick={() => setIsOpen(!isOpen)}

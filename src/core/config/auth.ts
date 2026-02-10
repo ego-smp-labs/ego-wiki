@@ -15,12 +15,22 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             if (token?.sub) {
                 session.user.id = token.sub;
                 session.user.roles = token.roles as string[];
+                session.user.isGuildMember = token.isGuildMember as boolean;
+                session.user.isAdmin = token.isAdmin as boolean;
             }
             return session;
         },
         async jwt({ token, account }) {
             if (account) {
                 token.accessToken = account.access_token;
+                token.isGuildMember = false;
+                token.isAdmin = false;
+
+                // Check admin by Discord User ID
+                const ADMIN_USER_IDS = ["1195303714777468988"];
+                if (token.sub && ADMIN_USER_IDS.includes(token.sub)) {
+                    token.isAdmin = true;
+                }
 
                 // Fetch User Roles from Discord Guild if GUILD_ID is set
                 if (env.DISCORD_GUILD_ID) {
@@ -33,7 +43,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
                         if (res.ok) {
                             const member = await res.json();
-                            token.roles = member.roles; // Array of Role IDs
+                            token.roles = member.roles;
+                            token.isGuildMember = true;
+
+                            // Check admin by role
+                            if (env.DISCORD_ADMIN_ROLE_ID && member.roles?.includes(env.DISCORD_ADMIN_ROLE_ID)) {
+                                token.isAdmin = true;
+                            }
                         }
                     } catch (error) {
                         console.error("Failed to fetch Discord roles", error);

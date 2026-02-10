@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SessionProvider } from "next-auth/react";
 import Navbar from "@presentation/components/layout/Navbar";
 import Footer from "@presentation/components/layout/Footer";
 import CommandPalette from "@presentation/components/layout/CommandPalette";
@@ -18,7 +19,7 @@ export default function LocaleLayoutClient({
     const [searchOpen, setSearchOpen] = useState(false);
 
     return (
-        <>
+        <SessionProvider>
             {/* Background effects */}
             <FloatingParticles count={25} />
 
@@ -37,6 +38,6 @@ export default function LocaleLayoutClient({
                 isOpen={searchOpen}
                 onClose={() => setSearchOpen(false)}
             />
-        </>
+        </SessionProvider>
     );
 }

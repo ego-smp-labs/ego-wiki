@@ -10,6 +10,10 @@ declare module "next-auth" {
             id: string;
             /** The user's roles from the specific Guild. */
             roles?: string[];
+            /** Whether the user is a member of the Discord guild. */
+            isGuildMember?: boolean;
+            /** Whether the user is an admin. */
+            isAdmin?: boolean;
         } & DefaultSession["user"];
     }
 }
@@ -23,5 +27,9 @@ declare module "next-auth/jwt" {
         sub?: string;
         /** The user's roles from the specific Guild. */
         roles?: string[];
+        /** Whether the user is a member of the Discord guild. */
+        isGuildMember?: boolean;
+        /** Whether the user is an admin. */
+        isAdmin?: boolean;
     }
 }
