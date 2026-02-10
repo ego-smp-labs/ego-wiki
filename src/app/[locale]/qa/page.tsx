@@ -16,8 +16,8 @@ export async function generateMetadata({
         title: locale === "vi" ? "Hỏi đáp" : "FAQ",
         description:
             locale === "vi"
-                ? "Câu hỏi thường gặp về Ego SMP"
-                : "Frequently asked questions about Ego SMP",
+                ? "Câu hỏi thường gặp về EGO WIKI"
+                : "Frequently asked questions about EGO WIKI",
     };
 }
 

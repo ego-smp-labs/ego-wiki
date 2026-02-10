@@ -13,8 +13,8 @@ export default function Footer({ locale }: FooterProps) {
     const t = getTranslations(locale);
 
     const description = locale === "vi"
-        ? "Tri thức từ Vực Thẳm. Hướng dẫn đầy đủ cho Ego SMP."
-        : "Knowledge from the Abyss. Complete guide for Ego SMP.";
+        ? "Tri thức từ Vực Thẳm. Hướng dẫn đầy đủ cho EGO WIKI."
+        : "Knowledge from the Abyss. Complete guide for EGO WIKI.";
 
     return (
         <footer className="relative mt-20 border-t border-void-border bg-void-surface/50">
@@ -68,7 +68,7 @@ export default function Footer({ locale }: FooterProps) {
                                 <MessageCircle size={20} />
                             </a>
                             <a
-                                href="https://github.com/egosmp"
+                                href="https://github.com/ego-smp-labs"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2.5 rounded-lg bg-void-bg border border-void-border hover:border-white/50 hover:text-white transition-all text-white/60"

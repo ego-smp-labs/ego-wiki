@@ -55,7 +55,7 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
         { href: `/${locale}`, label: t.nav.home },
         { href: `/${locale}/wiki`, label: t.nav.wiki },
         { href: `/${locale}/qa`, label: t.nav.qa },
-        { href: "https://discord.gg/egosmp", label: t.nav.discord, external: true },
+        { href: "https://discord.gg/jRqnNbupj4", label: t.nav.discord, external: true },
     ];
 
     const headerClass = isScrolled
@@ -71,7 +71,7 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
                             EGO
                         </span>
                         <span className="font-display text-xl font-bold text-white ml-1">
-                            SMP
+                            WIKI
                         </span>
                     </div>
                 </Link>

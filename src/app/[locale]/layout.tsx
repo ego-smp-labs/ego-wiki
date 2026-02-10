@@ -20,8 +20,8 @@ export async function generateMetadata({
         },
         description:
             locale === "vi"
-                ? "Tri thức từ Vực Thẳm. Hướng dẫn đầy đủ cho Ego SMP Minecraft Server."
-                : "Knowledge from the Abyss. Complete guide for Ego SMP Minecraft Server.",
+                ? "Tri thức từ Vực Thẳm. Hướng dẫn đầy đủ cho EGO WIKI."
+                : "Knowledge from the Abyss. Complete guide for EGO WIKI.",
         keywords: ["Minecraft", "SMP", "Ego", "Wiki", "PvP", "Tier System"],
         openGraph: {
             title: "EGO WIKI",

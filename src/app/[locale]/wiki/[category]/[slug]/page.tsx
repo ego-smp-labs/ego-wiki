@@ -29,7 +29,7 @@ export async function generateMetadata({
 
     return {
         title: article.title,
-        description: article.description || `${article.title} - Ego SMP Wiki`,
+        description: article.description || `${article.title} - EGO WIKI`,
     };
 }
 

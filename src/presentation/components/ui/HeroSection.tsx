@@ -36,7 +36,7 @@ export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GE
                     <span className="tracking-widest font-mono text-neon-cyan">SYSTEM ONLINE</span>
                 </motion.div>
 
-                {/* Main Title - EGO SMP (Animated) */}
+                {/* Main Title - EGO WIKI (Animated) */}
                 <HeroLogo />
 
                 {/* Subtitle */}

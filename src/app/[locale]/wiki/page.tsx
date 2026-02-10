@@ -18,8 +18,8 @@ export async function generateMetadata({
         title: "Wiki",
         description:
             locale === "vi"
-                ? "Tất cả tài liệu và hướng dẫn cho Ego SMP"
-                : "All documentation and guides for Ego SMP",
+                ? "Tất cả tài liệu và hướng dẫn cho EGO WIKI"
+                : "All documentation and guides for EGO WIKI",
     };
 }
 
@@ -39,8 +39,8 @@ export default async function WikiPage({ params }: WikiPageProps) {
     const categoryArticleCounts = buildCategoryArticleCounts(categories);
 
     const pageSubtitle = locale === "vi"
-        ? "Khám phá tất cả tài liệu về Ego SMP"
-        : "Explore all Ego SMP documentation";
+        ? "Khám phá tất cả tài liệu về EGO WIKI"
+        : "Explore all EGO WIKI documentation";
 
     const recentUpdatesTitle = locale === "vi" ? "Cập nhật gần đây" : "Recent Updates";
     const comingSoonText = locale === "vi"

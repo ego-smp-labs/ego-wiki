@@ -2,7 +2,7 @@ import { z } from "zod";
 
 const clientSchema = z.object({
     NEXT_PUBLIC_APP_URL: z.string().url().default("http://localhost:3000"),
-    NEXT_PUBLIC_DISCORD_INVITE_URL: z.string().url().default("https://discord.gg/egosmp"),
+    NEXT_PUBLIC_DISCORD_INVITE_URL: z.string().url().default("https://discord.gg/jRqnNbupj4"),
 });
 
 const serverSchema = z.object({
