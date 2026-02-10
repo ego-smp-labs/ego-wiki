@@ -8,10 +8,11 @@ import { createWikiPage } from "@core/actions/wiki"; // We will alias this
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 import { MovingBorder } from "@presentation/components/ui/MovingBorder";
+import { CATEGORIES, CATEGORY_SLUGS } from "@core/lib/categories";
 
 const formSchema = z.object({
     title: z.string().min(3),
-    category: z.enum(["general", "ego-system", "items", "advanced", "miscellaneous"]),
+    category: z.enum(CATEGORY_SLUGS),
     slug: z.string().min(3).regex(/^[a-z0-9-]+$/),
     content: z.string().min(10),
 });
@@ -108,11 +109,11 @@ export default function WikiEditorPage({ params }: { params: Promise<{ locale: s
                                 {...register("category")}
                                 className="w-full bg-void-bg border border-void-border rounded-lg p-3 text-white focus:border-neon-purple outline-none transition-colors"
                             >
-                                <option value="general">General</option>
-                                <option value="ego-system">EGO System</option>
-                                <option value="items">Items</option>
-                                <option value="advanced">Advanced</option>
-                                <option value="miscellaneous">Miscellaneous</option>
+                                {CATEGORIES.map((cat) => (
+                                    <option key={cat.slug} value={cat.slug}>
+                                        {cat.title.en}
+                                    </option>
+                                ))}
                             </select>
                             {errors.category && <p className="text-red-400 text-xs mt-1">{errors.category.message}</p>}
                         </div>

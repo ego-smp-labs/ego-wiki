@@ -82,6 +82,8 @@ export const CATEGORIES: Category[] = [
     },
 ];
 
+export const CATEGORY_SLUGS = CATEGORIES.map((c) => c.slug) as [string, ...string[]];
+
 export const FAQ_CATEGORY: Category = {
     slug: "faq",
     icon: HelpCircle,

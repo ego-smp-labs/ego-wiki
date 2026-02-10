@@ -6,10 +6,11 @@ import path from "path";
 import { revalidatePath } from "next/cache";
 import { auth } from "@core/config/auth";
 import { env } from "@core/config/env";
+import { CATEGORY_SLUGS } from "@core/lib/categories";
 
 const wikiPageSchema = z.object({
     title: z.string().min(3, "Title must be at least 3 characters"),
-    category: z.enum(["general", "ego-system", "items", "advanced", "miscellaneous"]),
+    category: z.enum(CATEGORY_SLUGS),
     slug: z.string().min(3, "Slug must be at least 3 characters").regex(/^[a-z0-9-]+$/, "Slug must only contain lowercase letters, numbers, and hyphens"),
     content: z.string().min(10, "Content must be at least 10 characters"),
     locale: z.enum(["en", "vi"]),

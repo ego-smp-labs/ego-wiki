@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Shield, Send, AlertTriangle, CheckCircle, FileText, Bell, Loader2 } from "lucide-react";
+import { CATEGORY_SLUGS } from "@core/lib/categories";
 
 interface NotificationForm {
     title: string;
@@ -78,7 +79,7 @@ export default function AdminPageClient({ locale }: { locale: string }) {
         }
     };
 
-    const categories = ["general", "ego-system", "items", "advanced"];
+    const categories = CATEGORY_SLUGS;
     const actions: { value: NotificationForm["action"]; label: string; labelVi: string }[] = [
         { value: "created", label: "Created", labelVi: "Tạo mới" },
         { value: "updated", label: "Updated", labelVi: "Cập nhật" },
