@@ -7,15 +7,27 @@ const clientSchema = z.object({
 
 const serverSchema = z.object({
     NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
-    DISCORD_CLIENT_ID: z.string().optional().default(""),
-    DISCORD_CLIENT_SECRET: z.string().optional().default(""),
+    DISCORD_CLIENT_ID: z.string().min(1, "DISCORD_CLIENT_ID is required"),
+    DISCORD_CLIENT_SECRET: z.string().min(1, "DISCORD_CLIENT_SECRET is required"),
     DISCORD_GUILD_ID: z.string().optional(),
     DISCORD_ADMIN_ROLE_ID: z.string().optional(),
     DISCORD_WEBHOOK_URL: z.string().url().optional().default("https://discord.com/api/webhooks/placeholder"),
-    AUTH_SECRET: z.string().optional().default("dev_secret_replace_in_production_32chars"),
+    AUTH_SECRET: z.string().min(1, "AUTH_SECRET is required"),
 });
 
-const allSchema = serverSchema.merge(clientSchema);
+const allSchema = serverSchema.merge(clientSchema).refine(
+    (data) => {
+        if (data.NODE_ENV === "production") {
+            return data.AUTH_SECRET !== "dev_secret_replace_in_production_32chars";
+        }
+        return true;
+    },
+    {
+        message: "AUTH_SECRET must be changed from the default value in production",
+        path: ["AUTH_SECRET"],
+    }
+);
+
 const isServer = typeof window === "undefined";
 
 let parsed;
