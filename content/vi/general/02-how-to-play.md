@@ -19,14 +19,8 @@ Việc đầu tiên nên làm:
 ## Mục Tiêu
 1. Thu thập tài nguyên.
 2. Chế tạo vũ khí.
-3. Chiến đấu với người chơi khác để nhận **Ego Fragment**.
-4. Nâng cấp Tier để mở khóa kỹ năng mới.
-
-## Vòng lặp “đúng bài” (cho người muốn mạnh nhanh)
-- Farm nhanh (iron/food/bow).
-- Đi tìm giao tranh nhỏ để kiếm Ego Fragment.
-- Nâng Tier sớm để có lợi thế.
-- Chủ động chọn kèo, đừng lao vào teamfight khi chưa đủ đồ.
+3. Chiến đấu với người chơi khác để nhận sức mạnh bản ngã **Ego Fragment**.
+4. Nâng cấp **Tier** để mở khóa kỹ năng mới.
 
 ## Quy Tắc
 - Không hack/cheat.
@@ -34,4 +28,4 @@ Việc đầu tiên nên làm:
 - PvP là một phần của trò chơi — hãy chuẩn bị tinh thần!
 
 ## Đi tiếp ở đâu?
-Tham khảo bài viết **[Cách Chơi](/vi/wiki/general/cach-choi)** để biết thêm chi tiết.
+Tham khảo bài viết **[Cách Chơi](/vi/general/02-how-to-play.md)** để biết thêm chi tiết.

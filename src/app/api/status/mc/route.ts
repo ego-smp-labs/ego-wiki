@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const SERVER_ADDRESS = "play.egosmp.net";
+const SERVER_ADDRESS = "pc.sabicoder.xyz:25880";
 const CACHE_DURATION = 60;
 
 interface McStatus {
