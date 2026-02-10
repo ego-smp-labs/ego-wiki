@@ -11,8 +11,8 @@ export const HeroLogo = () => {
         if (!egoTextRef.current) return;
         animate(egoTextRef.current, {
             textShadow: [
-                "0 0 15px rgba(123, 0, 255, 0.5)",
-                "0 0 30px rgba(123, 0, 255, 0.9), 0 0 60px rgba(123, 0, 255, 0.6)"
+                "0 0 15px rgba(123, 0, 255, 0.3) 0 0 0px rgba(123, 0, 255, 0)", // Start frame matches explicit initial
+                "0 0 30px rgba(123, 0, 255, 0.9) 0 0 60px rgba(123, 0, 255, 0.6)" // End frame
             ],
             duration: 400,
             easing: "easeOutExpo"
@@ -22,7 +22,7 @@ export const HeroLogo = () => {
     const handleEgoLeave = useCallback(() => {
         if (!egoTextRef.current) return;
         animate(egoTextRef.current, {
-            textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
+            textShadow: "0 0 15px rgba(123, 0, 255, 0.3) 0 0 0px rgba(123, 0, 255, 0)",
             duration: 400,
             easing: "easeOutQuad"
         });
@@ -31,9 +31,17 @@ export const HeroLogo = () => {
     useEffect(() => {
         if (!smpContainerRef.current) return;
         const letters = smpContainerRef.current.querySelectorAll(".smp-char");
+        
+        // Ensure initial state to prevent jump
         animate(letters, {
-            translateY: [-5, 5],
-            rotate: [-2, 2],
+            translateY: -5,
+            rotate: -2,
+            duration: 0
+        });
+
+        animate(letters, {
+            translateY: 5,
+            rotate: 2,
             duration: 3000,
             delay: stagger(200),
             loop: true,
@@ -48,10 +56,10 @@ export const HeroLogo = () => {
                 ref={egoTextRef}
                 onMouseEnter={handleEgoHover}
                 onMouseLeave={handleEgoLeave}
-                className="text-8xl md:text-9xl font-black tracking-tighter relative z-10"
+                className="text-8xl md:text-9xl font-black tracking-tighter relative z-10 will-change-[text-shadow]"
                 style={{
                     color: "#7b00ff",
-                    textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
+                    textShadow: "0 0 15px rgba(123, 0, 255, 0.3) 0 0 0px rgba(123, 0, 255, 0)", // Double layer initial
                     fontFamily: "var(--font-display)",
                 }}
             >
@@ -62,8 +70,12 @@ export const HeroLogo = () => {
                 {["S", "M", "P"].map((char, index) => (
                     <span
                         key={index}
-                        className="smp-char text-8xl md:text-9xl font-bold text-white/90 inline-block drop-shadow-md"
-                        style={{ fontFamily: "var(--font-mono)" }}
+                        className="smp-char text-8xl md:text-9xl font-bold text-white/90 inline-block drop-shadow-md will-change-transform"
+                        style={{ 
+                            fontFamily: "var(--font-mono)",
+                            backfaceVisibility: "hidden",
+                            WebkitFontSmoothing: "antialiased"
+                        }}
                     >
                         {char}
                     </span>
