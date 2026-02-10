@@ -1,21 +1,41 @@
-# Dark Ego (Bản Ngã Hắc Hóa)
+# Dark Ego
 
 ## Dark Ego là gì?
 
-Một phiên bản đen tối của Mảnh Bản Ngã, rơi từ người chơi **Tier 5+** với tỷ lệ **50%**.
+Phiên bản **hỏng** của Ego Fragment. Cực kỳ hiếm và cực kỳ nguy hiểm.
 
-## Hiệu ứng khi nhặt
+## Cách Nhận
 
-⚠️ **Nguy hiểm!**
+- **Tỉ lệ rơi**: **5%** khi hạ người chơi **Tier 5+**
+- Ego Fragment thường rơi với tỉ lệ **95%** từ Tier 5+
+- Dưới Tier 5, chỉ rơi Ego Fragment thường
 
-- Inventory bị xáo trộn ngay lập tức
-- Nhận debuff: Darkness, Nausea, Slowness
-- Kéo dài 10 giây
+## Rủi Ro
 
-## Progression Gate
+> ⚠️ Dùng Dark Ego là đánh cược với mạng sống!
+
+Khi bạn chuột phải Dark Ego:
+
+| Thời gian | Hiệu ứng |
+|-----------|-----------|
+| 30 giây | **Wither II** — mất máu liên tục |
+| 30 giây | **Darkness** — tầm nhìn suy giảm |
+| 30 giây | **Slowness III** — di chuyển chậm |
+| 30 giây | **Weakness II** — sát thương giảm |
+| Ngay lập tức | **Xáo trộn Inventory** |
+
+## Phần Thưởng
+
+Nếu sống sót 30 giây:
+
+| Tier Hiện Tại | Số Tier Tăng |
+|---------------|-------------|
+| Tier 0–3 | **+2 đến +3 tier** |
+| Tier 4–6 | **+1 đến +2 tier** |
+| Tier 7–8 | **+1 tier** |
+
+## Cổng Progression
 
 🔒 **Quan trọng!**
 
-Để lên Tier 5+, bạn **PHẢI** tiêu diệt một người chơi đang giữ Dark Ego trước!
-
-Điều này đảm bảo người chơi mạnh đã thực sự chiến đấu với những người chơi tier cao khác.
+Để vượt qua **Tier 5**, bạn **PHẢI** đánh bại người chơi đang cầm Dark Ego. Đảm bảo chỉ người chơi PvP mạnh mới đạt tier cao nhất.
