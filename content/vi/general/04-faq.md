@@ -1,3 +1,9 @@
+---
+title: Câu Hỏi Thường Gặp
+description: Các câu hỏi thường gặp về server và plugin.
+order: 4
+---
+
 # Câu Hỏi Thường Gặp
 
 ## Hệ Thống Ego
@@ -20,8 +26,6 @@ Lý do có thể:
 ### Cổng Dark Ego là gì?
 Để đạt **Tier 5 trở lên**, bạn phải đánh bại người chơi đang cầm Dark Ego trước. Đảm bảo chỉ người chơi PvP thực sự mới lên được tier cao.
 
----
-
 ## Mace
 
 ### Mace phát sáng bao lâu sau khi chế tạo?
@@ -32,8 +36,6 @@ Chỉ khi **Strict Mode** tắt. Khi Strict Mode BẬT, Mace chỉ có thể ở
 
 ### Điều gì xảy ra khi nhặt/chế Mace of Chaos?
 Bạn nhận **nguyền rủa**: 10 giây Wither + 10 giây xáo trộn inventory. Đó là cái giá của sức mạnh hỗn loạn.
-
----
 
 ## Server
 

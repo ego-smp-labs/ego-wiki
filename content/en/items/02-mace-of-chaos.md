@@ -1,12 +1,12 @@
 ---
 title: Mace of Chaos
-description: The corrupted glitch weapon — power at a terrible cost.
+description: The corrupted glitch weapon â€” power at a terrible cost.
 order: 2
 ---
 
-# Mace of Chaos — "The Glitch"
+# Mace of Chaos â€” "The Glitch"
 
-> ☠️ A corrupted weapon born from the void. Wielding it comes at a **terrible cost**.
+> â˜ ï¸ A corrupted weapon born from the void. Wielding it comes at a **terrible cost**.
 
 ## Stats
 
@@ -14,7 +14,7 @@ order: 2
 |----------|-------|
 | Material | Mace |
 | Custom Model | `2002` |
-| Kill Display | `█▓▒░ GLITCH ░▒▓█` (obfuscated) |
+| Kill Display | `â–ˆâ–“â–’â–‘ GLITCH â–‘â–’â–“â–ˆ` (obfuscated) |
 
 ## Crafting Recipe
 
@@ -26,12 +26,12 @@ order: 2
 
 | Slot | Material | Quantity |
 |------|----------|---------|
-| **N** | Netherite Ingot | ×4 |
-| **H** | Heavy Core | ×3 |
-| **M** | Mace (base) | ×1 |
-| **W** | Wither Rose | ×1 |
+| **N** | Netherite Ingot | Ã—4 |
+| **H** | Heavy Core | Ã—3 |
+| **M** | Mace (base) | Ã—1 |
+| **W** | Wither Rose | Ã—1 |
 
-## ⚠️ Risk: Self-Curse on Craft/Pickup
+## âš ï¸ Risk: Self-Curse on Craft/Pickup
 
 The moment you craft or pick up the Mace of Chaos:
 
@@ -50,7 +50,7 @@ The moment you craft or pick up the Mace of Chaos:
 - Shuffle interval: every 5 ticks
 
 ### Glitch Kill Name
-When you kill someone with the Mace of Chaos, the kill message shows a **glitched/obfuscated name** — hiding the killer's identity.
+When you kill someone with the Mace of Chaos, the kill message shows a **glitched/obfuscated name** â€” hiding the killer's identity.
 
 ### Permanent Effects
 - **Glowing**: Enabled (everyone can see you)

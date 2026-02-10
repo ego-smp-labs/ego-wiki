@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import anime from "animejs";
+import { animate, remove } from "animejs";
 import { cn } from "@core/lib/utils";
 
 interface NeonCardProps {
@@ -40,26 +40,23 @@ export const NeonCard = ({
         const perimeter = perimeterRef.current;
         if (!rect || perimeter === 0) return;
 
-        anime.remove(rect);
-        if (card) anime.remove(card);
+        remove(rect);
+        if (card) remove(card);
 
-        anime({
-            targets: rect,
+        animate(rect, {
             strokeDashoffset: [perimeter, 0],
             duration: 500,
             easing: "easeInOutQuad",
         });
 
-        anime({
-            targets: rect,
+        animate(rect, {
             filter: [`drop-shadow(0 0 0px ${color})`, `drop-shadow(0 0 15px ${color})`],
             duration: 500,
             easing: "easeOutQuad",
         });
 
         if (card) {
-            anime({
-                targets: card,
+            animate(card, {
                 scale: 1.02,
                 translateY: -4,
                 duration: 400,
@@ -74,26 +71,23 @@ export const NeonCard = ({
         const perimeter = perimeterRef.current;
         if (!rect || perimeter === 0) return;
 
-        anime.remove(rect);
-        if (card) anime.remove(card);
+        remove(rect);
+        if (card) remove(card);
 
-        anime({
-            targets: rect,
+        animate(rect, {
             strokeDashoffset: perimeter,
             duration: 300,
             easing: "easeInOutQuad",
         });
 
-        anime({
-            targets: rect,
+        animate(rect, {
             filter: `drop-shadow(0 0 0px ${color})`,
             duration: 300,
             easing: "easeOutQuad",
         });
 
         if (card) {
-            anime({
-                targets: card,
+            animate(card, {
                 scale: 1,
                 translateY: 0,
                 duration: 300,

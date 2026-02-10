@@ -1,3 +1,9 @@
+---
+title: Nhật Ký Cập Nhật
+description: Lịch sử cập nhật plugin EgoSMP và Mace-Exclusive.
+order: 3
+---
+
 # Nhật Ký Cập Nhật
 
 ## EgoSMP Plugin
@@ -25,8 +31,6 @@
 - 🌑 **Dark Ego** — Rơi hiếm (5%) từ Tier 5+
 - 🚫 **Anti-Farming** — Ngăn farm Tier 0
 - 🛡️ **Bảo vệ Ego** — Items được bảo vệ khi chết
-
----
 
 ## Mace-Exclusive Plugin
 

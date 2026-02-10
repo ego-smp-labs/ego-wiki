@@ -1,3 +1,9 @@
+---
+title: Commands
+description: All available server commands.
+order: 1
+---
+
 # Commands
 
 ## Main Commands

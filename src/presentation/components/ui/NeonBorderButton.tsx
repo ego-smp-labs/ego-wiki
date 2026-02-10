@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useCallback } from "react";
-import anime from "animejs";
+import { animate, remove } from "animejs";
 import { cn } from "@core/lib/utils";
 
 interface NeonBorderButtonProps {
@@ -36,25 +36,22 @@ export const NeonBorderButton = ({
         const perimeter = perimeterRef.current;
         if (!rect || perimeter === 0) return;
 
-        anime.remove(rect);
+        remove(rect);
 
-        anime({
-            targets: rect,
+        animate(rect, {
             strokeDashoffset: [perimeter, 0],
             duration: 400,
             easing: "easeInOutQuad",
         });
 
-        anime({
-            targets: rect,
+        animate(rect, {
             filter: ["drop-shadow(0 0 0px #7b00ff)", "drop-shadow(0 0 12px #7b00ff)"],
             duration: 400,
             easing: "easeOutQuad",
         });
 
         if (button) {
-            anime({
-                targets: button,
+            animate(button, {
                 scale: 1.03,
                 duration: 300,
                 easing: "easeOutExpo",
@@ -68,25 +65,22 @@ export const NeonBorderButton = ({
         const perimeter = perimeterRef.current;
         if (!rect || perimeter === 0) return;
 
-        anime.remove(rect);
+        remove(rect);
 
-        anime({
-            targets: rect,
+        animate(rect, {
             strokeDashoffset: perimeter,
             duration: 250,
             easing: "easeInOutQuad",
         });
 
-        anime({
-            targets: rect,
+        animate(rect, {
             filter: "drop-shadow(0 0 0px #7b00ff)",
             duration: 250,
             easing: "easeOutQuad",
         });
 
         if (button) {
-            anime({
-                targets: button,
+            animate(button, {
                 scale: 1,
                 duration: 200,
                 easing: "easeOutQuad",

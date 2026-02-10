@@ -11,6 +11,7 @@ const serverSchema = z.object({
     DISCORD_CLIENT_SECRET: z.string().optional().default(""),
     DISCORD_GUILD_ID: z.string().optional(),
     DISCORD_ADMIN_ROLE_ID: z.string().optional(),
+    DISCORD_WEBHOOK_URL: z.string().url().optional().default("https://discord.com/api/webhooks/placeholder"),
     AUTH_SECRET: z.string().optional().default("dev_secret_replace_in_production_32chars"),
 });
 

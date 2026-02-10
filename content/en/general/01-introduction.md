@@ -1,3 +1,9 @@
+---
+title: Introduction
+description: Welcome to EGO WIKI.
+order: 1
+---
+
 # Welcome to EGO WIKI
 
 Ego is a **PvP evolution system** where you gain **Tier** (level 0–9) by defeating other players and consuming their **Ego Fragments**.

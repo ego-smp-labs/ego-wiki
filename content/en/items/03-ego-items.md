@@ -16,9 +16,10 @@ order: 3
 
 **Usage:** Right-click to consume. 90% Chaos State, 5% instant death, 5% full heal.
 
-If you survive the Chaos State → **Tier +1**
+If you survive the Chaos State â†’ **Tier +1**
 
----
+
+
 
 ## Dark Ego
 
@@ -26,15 +27,16 @@ If you survive the Chaos State → **Tier +1**
 |----------|-------|
 | Material | Nether Star (dark variant) |
 | Source | Tier 5+ player kill (5% chance) |
-| Risk Level | ☠️ Extreme |
+| Risk Level | â˜ ï¸ Extreme |
 
 **Usage:** Right-click to consume. 30 seconds of Wither II + Darkness + Slowness + Weakness + inventory shuffle.
 
-If you survive → **Tier +1 to +3** (depends on your current tier)
+If you survive â†’ **Tier +1 to +3** (depends on your current tier)
 
 > Required to pass the **Tier 5 Progression Gate**.
 
----
+
+
 
 ## Soul Keeper
 

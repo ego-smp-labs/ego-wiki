@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import anime from "animejs";
+import { animate } from "animejs";
 import { ArrowRight, BookOpen, Zap, Sword, Settings, HelpCircle, LucideIcon } from "lucide-react";
 import { NeonCard } from "@presentation/components/ui/NeonCard";
 
@@ -40,8 +40,7 @@ export default function CategoryCard({
         cardRef.current.style.opacity = "0";
         cardRef.current.style.transform = "translateY(15px)";
 
-        anime({
-            targets: cardRef.current,
+        animate(cardRef.current, {
             opacity: [0, 1],
             translateY: [15, 0],
             duration: 400,

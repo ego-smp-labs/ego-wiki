@@ -1,25 +1,12 @@
 ---
 title: Giáp Vật Chất Tối
-description: Bộ giáp được chế tạo từ năng lượng Hư Không nén.
-date: 2024-03-20
+description: Bộ giáp mạnh nhất rèn từ Dark Ego.
+order: 4
 ---
 
 # Giáp Vật Chất Tối
 
-> [!WARNING]
-> Bộ giáp này tiêu thụ XP của người mặc để tự sửa chữa.
+Được rèn từ Dark Ego và Netherite.
 
-**Giáp Vật Chất Tối** là bộ bảo vệ Cấp 4 trong Ego SMP.
-
-## Chế tạo
-Được chế tạo bằng **Thỏi Vật Chất Tối** và **Tinh Hoa Hư Không**.
-
-| Mảnh | Phòng thủ | Độ bền | Hiệu ứng đặc biệt |
-| :--- | :--- | :--- | :--- |
-| Mũ | 4 | 500 | Nhìn trong bóng tối |
-| Áo | 9 | 800 | Kháng cự I |
-| Quần | 7 | 750 | Tốc độ I |
-| Giày | 4 | 400 | Không sát thương khi ngã |
-
-## Hiệu ứng bộ: "Void Walker"
-Khi mặc đủ bộ, bạn sẽ trở nên vô hình với Endermen.
+- **Bảo vệ**: Tối đa.
+- **Hiệu ứng**: Kháng hiệu ứng xấu, tăng tốc độ di chuyển ban đêm.

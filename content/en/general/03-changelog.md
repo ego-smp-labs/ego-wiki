@@ -1,3 +1,9 @@
+---
+title: Changelog
+description: Version history and updates.
+order: 3
+---
+
 # Changelog
 
 ## EgoSMP Plugin
@@ -26,7 +32,6 @@
 - 🚫 **Anti-Farming** — Prevents high-tier players from farming Tier 0
 - 🛡️ **Ego Protection** — Items protected on death
 
----
 
 ## Mace-Exclusive Plugin
 

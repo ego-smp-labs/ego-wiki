@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
-import anime from "animejs";
+import { animate, remove } from "animejs";
 import { Server, Users, Wifi, WifiOff } from "lucide-react";
 import { cn } from "@core/lib/utils";
 
@@ -51,13 +51,12 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
 
         // Animate Stroke
         const perimeter = rectRef.current.getTotalLength();
-        anime.remove(rectRef.current);
+        remove(rectRef.current);
         rectRef.current.style.strokeDasharray = `${perimeter}`;
         rectRef.current.style.strokeDashoffset = `${perimeter}`;
         rectRef.current.style.opacity = "1";
 
-        anime({
-            targets: rectRef.current,
+        animate(rectRef.current, {
             strokeDashoffset: [perimeter, 0],
             easing: "easeInOutSine",
             duration: 500,
@@ -65,7 +64,7 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
         });
 
         // NO Box Shadow / Background on Container
-        anime.remove(cardRef.current);
+        remove(cardRef.current);
         cardRef.current.style.boxShadow = "none";
     };
 
@@ -73,9 +72,8 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
         if (!rectRef.current || !cardRef.current) return;
 
         const perimeter = rectRef.current.getTotalLength();
-        anime.remove(rectRef.current);
-        anime({
-            targets: rectRef.current,
+        remove(rectRef.current);
+        animate(rectRef.current, {
             strokeDashoffset: perimeter,
             filter: "drop-shadow(0 0 0px #7b00ff)",
             easing: "easeInOutSine",
@@ -85,7 +83,7 @@ const StatusItem = ({ children, delay }: { children: React.ReactNode; delay: num
             }
         });
 
-        anime.remove(cardRef.current);
+        remove(cardRef.current);
         cardRef.current.style.boxShadow = "none";
     };
 

@@ -1,3 +1,9 @@
+---
+title: Dark Ego
+description: Dark Ego mechanics and effects.
+order: 2
+---
+
 # Dark Ego
 
 ## What is Dark Ego?

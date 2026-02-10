@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useCallback } from "react";
-import anime from "animejs";
+import { animate, stagger } from "animejs";
 
 export const HeroLogo = () => {
     const egoTextRef = useRef<HTMLHeadingElement>(null);
@@ -9,8 +9,7 @@ export const HeroLogo = () => {
 
     const handleEgoHover = useCallback(() => {
         if (!egoTextRef.current) return;
-        anime({
-            targets: egoTextRef.current,
+        animate(egoTextRef.current, {
             textShadow: [
                 "0 0 15px rgba(123, 0, 255, 0.5)",
                 "0 0 30px rgba(123, 0, 255, 0.9), 0 0 60px rgba(123, 0, 255, 0.6)"
@@ -22,8 +21,7 @@ export const HeroLogo = () => {
 
     const handleEgoLeave = useCallback(() => {
         if (!egoTextRef.current) return;
-        anime({
-            targets: egoTextRef.current,
+        animate(egoTextRef.current, {
             textShadow: "0 0 15px rgba(123, 0, 255, 0.3)",
             duration: 400,
             easing: "easeOutQuad"
@@ -33,12 +31,11 @@ export const HeroLogo = () => {
     useEffect(() => {
         if (!smpContainerRef.current) return;
         const letters = smpContainerRef.current.querySelectorAll(".smp-char");
-        anime({
-            targets: letters,
+        animate(letters, {
             translateY: [-5, 5],
             rotate: [-2, 2],
             duration: 3000,
-            delay: anime.stagger(200),
+            delay: stagger(200),
             loop: true,
             direction: "alternate",
             easing: "easeInOutSine"

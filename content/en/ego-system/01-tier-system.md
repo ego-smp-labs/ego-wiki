@@ -1,3 +1,9 @@
+---
+title: Tier System
+description: The ego tier progression system.
+order: 1
+---
+
 # Tier System
 
 ## Overview

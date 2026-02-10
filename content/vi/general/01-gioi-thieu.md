@@ -1,16 +1,16 @@
-# Giới thiệu EgoSMP
+---
+title: Giới Thiệu
+description: Giới thiệu về EGO WIKI.
+order: 1
+---
 
-Ego là hệ thống tiến hóa PvP nơi bạn đạt được **Tier** (cấp 0-9) bằng cách tiêu diệt người chơi khác và sử dụng **Mảnh Bản Ngã** của họ.
+# Chào Mừng đến EGO WIKI
 
-## Tại sao nên chơi?
+Wiki chính thức cho **EgoSMP** và **Mace-Exclusive Plugin**.
 
-- Tier càng cao = càng mạnh!
-- Nhận được bonus máu và sát thương
-- Mở khóa kỹ năng đặc biệt
-- Nhưng cẩn thận - chết sẽ mất tier!
+Tại đây bạn sẽ tìm thấy mọi thông tin về:
+- **Hệ thống Ego**: Tier, kỹ năng, và vật phẩm.
+- **Mace**: Cây chùy huyền thoại và các biến thể.
+- **Lệnh**: Hướng dẫn sử dụng lệnh cho người chơi và admin.
 
-## Bắt đầu
-
-1. **Giết người chơi khác** để họ rơi Mảnh Bản Ngã
-2. **Nhặt và sử dụng** bằng Right Click
-3. **Sống sót qua Trạng thái Hỗn Loạn** để tăng Tier!
+Hãy khám phá và trở thành chiến binh mạnh nhất!

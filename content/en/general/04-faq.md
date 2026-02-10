@@ -1,3 +1,9 @@
+---
+title: FAQ
+description: Frequently asked questions.
+order: 4
+---
+
 # Frequently Asked Questions
 
 ## Ego System
@@ -20,7 +26,6 @@ Possible reasons:
 ### What is the Dark Ego Progression Gate?
 To reach **Tier 5 or above**, you must first defeat a player who holds Dark Ego. This ensures high-tier players have actually fought against other strong players.
 
----
 
 ## Mace
 
@@ -33,7 +38,6 @@ Only if **Strict Mode** is disabled. When Strict Mode is ON, the Mace can ONLY b
 ### What happens when I pick up or craft the Mace of Chaos?
 You receive a **self-curse**: 10 seconds of Wither effect + 10 seconds of inventory shuffle. This is the price of wielding chaos.
 
----
 
 ## Server
 

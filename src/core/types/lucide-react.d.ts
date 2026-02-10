@@ -26,6 +26,7 @@ declare module "lucide-react" {
     export const Bell: LucideIcon;
     export const Loader2: LucideIcon;
     export const Users: LucideIcon;
+    export const User: LucideIcon;
     export const MessageCircle: LucideIcon;
     export const Heart: LucideIcon;
     export const Github: LucideIcon;
@@ -56,4 +57,9 @@ declare module "lucide-react" {
     export const Home: LucideIcon;
     export const Lock: LucideIcon;
     export const Unlock: LucideIcon;
+    export const ArrowRight: LucideIcon;
+    export const BookOpen: LucideIcon;
+    export const Sword: LucideIcon;
+    export const HelpCircle: LucideIcon;
+    export type { LucideIcon };
 }

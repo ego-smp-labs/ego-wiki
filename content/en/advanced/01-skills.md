@@ -1,3 +1,9 @@
+---
+title: Advanced Skills
+description: Advanced gameplay skills and techniques.
+order: 1
+---
+
 # Active Skills
 
 | Tier | Skill | Description | Usage |

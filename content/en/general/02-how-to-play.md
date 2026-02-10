@@ -1,3 +1,9 @@
+---
+title: How to Play
+description: Getting started with EGO SMP.
+order: 2
+---
+
 # How to Play
 
 ## 1. The Goal: Ascend the Tiers
@@ -17,7 +23,6 @@ Your goal is to increase your **Ego Tier** from 0 to 9. Each tier grants:
 | 8 | +16 HP | +16% | Berserk, Strength I |
 | 9 | +18 HP | +18% | Abyssal Shriek |
 
----
 
 ## 2. Getting Ego Fragments
 
@@ -26,7 +31,6 @@ Your goal is to increase your **Ego Tier** from 0 to 9. Each tier grants:
 - ⏱️ **Cooldown**: 25 minutes per victim before they can drop again
 - 🚫 **Anti-Farming**: Tier 2+ players cannot farm drops from Tier 0 players
 
----
 
 ## 3. Using the Fragment (The Ritual)
 
@@ -43,7 +47,6 @@ Hold the Ego Fragment and **Right-Click** to consume it.
 - You receive **Nausea + Darkness** debuffs
 - **Survive = Tier Up!**
 
----
 
 ## 4. Death & Tier Loss
 
@@ -54,7 +57,6 @@ Hold the Ego Fragment and **Right-Click** to consume it.
 - Use a **Soul Keeper** item to prevent tier loss on your next death
 - After respawning, you get **5 minutes of death protection** (no PvP)
 
----
 
 ## 5. Dark Ego (Advanced)
 
@@ -63,7 +65,6 @@ Hold the Ego Fragment and **Right-Click** to consume it.
 - **Extremely dangerous**: Wither II, Darkness, Slowness, Weakness for 30s
 - Must defeat a Dark Ego holder to pass **Tier 5 Progression Gate**
 
----
 
 ## 6. Special Items
 
@@ -73,7 +74,6 @@ Hold the Ego Fragment and **Right-Click** to consume it.
 | **Dark Ego** | 5% from Tier 5+ kills | High-risk, high-reward tier jump |
 | **Soul Keeper** | Admin/special drop | Prevents tier loss on death (one use) |
 
----
 
 ## 7. The End Dimension
 
