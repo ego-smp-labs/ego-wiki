@@ -53,6 +53,8 @@ Featuring a dynamic UI, real-time data integration, and seamless animations.
    DISCORD_CLIENT_ID=your_id
    DISCORD_CLIENT_SECRET=your_secret
    DISCORD_GUILD_ID=your_guild_id
+   DISCORD_ADMIN_ROLE_ID=your_admin_role_id
+   DISCORD_ADMIN_USER_IDS=your_admin_user_ids_comma_separated
    DISCORD_WEBHOOK_URL=your_webhook
    ```
 

@@ -27,8 +27,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                 token.isAdmin = false;
 
                 // Check admin by Discord User ID
-                const ADMIN_USER_IDS = ["1195303714777468988"];
-                if (token.sub && ADMIN_USER_IDS.includes(token.sub)) {
+                if (token.sub && env.DISCORD_ADMIN_USER_IDS.includes(token.sub)) {
                     token.isAdmin = true;
                 }
 
