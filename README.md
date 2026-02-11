@@ -74,6 +74,8 @@ AUTH_SECRET=your_super_secret_key
 DISCORD_CLIENT_ID=your_client_id
 DISCORD_CLIENT_SECRET=your_client_secret
 DISCORD_GUILD_ID=your_guild_id
+DISCORD_ADMIN_USER_IDS=your_admin_user_ids
+
 ```
 
 ### 4. INITIATE SEQUENCE
