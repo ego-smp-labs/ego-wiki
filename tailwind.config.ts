@@ -21,6 +21,7 @@ const config: Config = {
                     purple: "#7b00ff",
                     "purple-dim": "#5a00bb",
                     pink: "#ff00ff",
+                    lavender: "#e0b0ff",
                 },
             },
             fontFamily: {
