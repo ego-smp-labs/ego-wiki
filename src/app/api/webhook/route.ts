@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { WebhookService } from "@/core/services/WebhookService";
+import { auth } from "@/core/config/auth";
 
 const webhookService = new WebhookService();
 
@@ -9,6 +10,15 @@ const webhookService = new WebhookService();
  */
 export async function POST(request: NextRequest) {
     try {
+        // Sentinel: Ensure user is admin before proceeding
+        const session = await auth();
+        if (!session?.user?.isAdmin) {
+            return NextResponse.json(
+                { error: "Unauthorized: Admin access required" },
+                { status: 401 }
+            );
+        }
+
         const body = await request.json();
         const { title, category, author, action } = body;
 
