@@ -74,7 +74,7 @@ const A = ({
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neon-pink font-medium hover:text-white transition-colors inline-flex items-center gap-1 link-underline decoration-neon-pink/50"
+                className="text-neon-lavender font-medium hover:text-white transition-colors inline-flex items-center gap-1 link-underline decoration-neon-lavender/50"
             >
                 {children}
                 <ExternalLink size={12} />
@@ -85,7 +85,7 @@ const A = ({
     return (
         <Link
             href={href || "#"}
-            className="text-neon-pink font-medium hover:text-white transition-colors link-underline decoration-neon-pink/50"
+            className="text-neon-lavender font-medium hover:text-white transition-colors link-underline decoration-neon-lavender/50"
         >
             {children}
         </Link>
