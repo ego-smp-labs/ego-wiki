@@ -104,6 +104,21 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                         </Link>
                         <span>/</span>
                         <span className="text-white/60">{article.title}</span>
+                        <span className="text-white/60">{article.title}</span>
+                    </div>
+
+                    {/* Meta Info */}
+                    <div className="flex items-center gap-4 text-xs text-white/30 mb-8 border-b border-void-border pb-4">
+                        <span className="flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-neon-pink animate-pulse"></span>
+                            {t.common?.lastUpdated || "Last Updated"}: {new Date(article.lastUpdated).toLocaleDateString(locale, {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit'
+                            })}
+                        </span>
                     </div>
 
                     {/* Article Content */}

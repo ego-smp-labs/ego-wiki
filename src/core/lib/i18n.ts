@@ -47,6 +47,7 @@ export const translations = {
             loading: "Loading...",
             error: "Error",
             notFound: "Not found",
+            lastUpdated: "Last Updated",
         },
     },
     vi: {
@@ -93,6 +94,7 @@ export const translations = {
             loading: "Đang tải...",
             error: "Lỗi",
             notFound: "Không tìm thấy",
+            lastUpdated: "Cập nhật lần cuối",
         },
     },
 } as const;

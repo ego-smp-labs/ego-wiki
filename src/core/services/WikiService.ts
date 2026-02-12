@@ -17,6 +17,7 @@ export interface ArticleMeta {
     category: string;
     locale: string;
     headings: Heading[];
+    lastUpdated: string;
 }
 
 export interface Article extends ArticleMeta {
@@ -140,6 +141,7 @@ export class WikiService {
         }
 
         const fileContent = fs.readFileSync(filePath, "utf-8");
+        const stats = fs.statSync(filePath);
         const { data: frontmatter, content } = matter(fileContent);
         const { order, slug } = this.parseFilename(filename);
         const headings = this.extractHeadings(content);
@@ -153,6 +155,7 @@ export class WikiService {
             category,
             locale,
             headings,
+            lastUpdated: stats.mtime.toISOString(),
         };
 
         this.metaCache.set(cacheKey, meta);
@@ -185,6 +188,7 @@ export class WikiService {
 
         const filePath = path.join(categoryPath, matchingFile);
         const fileContent = fs.readFileSync(filePath, "utf-8");
+        const stats = fs.statSync(filePath);
         const { data: frontmatter, content } = matter(fileContent);
         const { order } = this.parseFilename(matchingFile);
         const headings = this.extractHeadings(content);
@@ -200,6 +204,7 @@ export class WikiService {
             headings,
             content,
             rawContent: fileContent,
+            lastUpdated: stats.mtime.toISOString(),
         };
     }
 
