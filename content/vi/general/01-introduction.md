@@ -38,12 +38,12 @@ EgoSMP xoay quanh một câu hỏi đơn giản nhưng khó nuốt:
 Bạn có thể bắt đầu như một người bình thường. Nhưng thế giới này không cho bạn đứng yên.  
 Càng sống lâu, bạn càng bị ép phải chọn: giữ mình, hoặc để bản ngã trượt sâu—và chấp nhận hậu quả.
 
-- Bắt đầu nhanh: **[Cách Chơi](/vi/wiki/general/02-how-to-play.md)**
-- Bản ngã: **[Ego](/vi/wiki/ego-system/01-ego.md)**
-- Thất đại tội và truyền thuyết: **[Cin](/vi/wiki/advanced/03-cin.md)**
-- Cánh cửa đen: **[Dark Ego](/vi/wiki/ego-system/04-dark-ego.md)**
-- Vũ khí & đồ: **[Items](/vi/wiki/items/01-items.md)**
-- Cầu nguyện cơ bản: **[Commands](/vi/wiki/miscellaneous/01-commands.md)**
+- Bắt đầu nhanh: **[Cách Chơi](/vi/wiki/general/how-to-play)**
+- Bản ngã: **[Ego](/vi/wiki/ego-system/ego)**
+- Thất đại tội và truyền thuyết: **[Cin](/vi/wiki/advanced/sins)**
+- Bản Ngã đen: **[Dark Ego](/vi/wiki/ego-system/dark-ego)**
+- Vũ khí & Di vật: **[Items](/vi/wiki/items/items)**
+- Cầu nguyện cơ bản: **[Commands](/vi/wiki/miscellaneous/commands)**
 
 ## Luật ngầm của vực thẳm (đọc cho khỏi ngáo)
 
@@ -60,7 +60,7 @@ Tai ương không rơi xuống từ bầu trời — nó trồi lên từ bên t
 Mỗi vết máu, mỗi lần bạn sống sót, đều là một lời mời để **Đại Tội** thức giấc và gọi tên bạn. 
 Và giữa thế giới tội lỗi này, chỉ có **Bản Ngã** giữ bạn còn là “người”… hoặc đẩy bạn thành thứ mà bạn từng sợ hãi.
 
-Muốn xem tuyến truyện đầy đủ, hãy đọc qua: **[Story](/vi/wiki/general/story.md)**
+Muốn xem tuyến truyện đầy đủ, hãy đọc qua: **[Story](/vi/wiki/general/story)**
 
 
 ## Lời nhắn trước khi bạn bước xuống
