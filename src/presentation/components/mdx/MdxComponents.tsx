@@ -67,6 +67,7 @@ const A = ({
     children: ReactNode;
 }) => {
     const isExternal = href?.startsWith("http");
+    const commonClasses = "text-neon-lavender font-medium hover:text-neon-cyan transition-colors link-underline decoration-neon-lavender/50";
 
     if (isExternal) {
         return (
@@ -74,7 +75,7 @@ const A = ({
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neon-lavender font-medium hover:text-white transition-colors inline-flex items-center gap-1 link-underline decoration-neon-lavender/50"
+                className={`${commonClasses} inline-flex items-center gap-1`}
             >
                 {children}
                 <ExternalLink size={12} />
@@ -85,7 +86,7 @@ const A = ({
     return (
         <Link
             href={href || "#"}
-            className="text-neon-lavender font-medium hover:text-white transition-colors link-underline decoration-neon-lavender/50"
+            className={commonClasses}
         >
             {children}
         </Link>
