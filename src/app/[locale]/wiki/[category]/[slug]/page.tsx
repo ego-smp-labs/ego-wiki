@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Lock } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { CATEGORIES, getCategoryTitle } from "@core/lib/categories";
@@ -66,6 +66,46 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     const articles = wikiService.getCategoryArticles(locale, categorySlug);
     const { prev, next } = wikiService.getArticleNavigation(locale, categorySlug, slug);
     const categoryTitle = getCategoryTitle(categorySlug, locale);
+
+    // Check Lock Status
+    if (article.lockedUntil) {
+        const unlockDate = new Date(article.lockedUntil).getTime();
+        const now = Date.now();
+        if (now < unlockDate) {
+            return (
+                 <div className="container mx-auto px-4 py-24 flex flex-col items-center justify-center min-h-[60vh] text-center">
+                    <div className="relative">
+                        <div className="absolute inset-0 bg-neon-red/20 blur-[50px] rounded-full animate-pulse-slow" />
+                        <Lock size={64} className="text-neon-red relative z-10 mb-6" />
+                    </div>
+                    
+                    <h1 className="font-display text-4xl font-bold text-white mb-2">
+                        {locale === "vi" ? "DỮ LIỆU BỊ PHONG ẤN" : "DATA SEALED"}
+                    </h1>
+                    
+                    <div className="px-4 py-2 border border-neon-red/30 bg-neon-red/5 rounded-lg mb-8">
+                        <p className="font-mono text-neon-red text-sm">
+                            {locale === "vi" ? "GIẢI PHONG ẤN:" : "UNLOCK DATE:"} {article.lockedUntil}
+                        </p>
+                    </div>
+
+                    <p className="text-white/40 max-w-md mx-auto mb-8">
+                        {locale === "vi" 
+                            ? "Nội dung này hiện không khả dụng. Bạn không đủ quyền hạn để truy cập thông tin này."
+                            : "This content is currently unavailable. You do not have sufficient clearance to access this information."}
+                    </p>
+
+                    <Link 
+                        href={`/${locale}/wiki`}
+                        className="text-white/60 hover:text-white transition-colors flex items-center gap-2 text-sm"
+                    >
+                        <ArrowLeft size={16} />
+                        {locale === "vi" ? "Quay lại Wiki" : "Return to Wiki"}
+                    </Link>
+                 </div>
+            );
+        }
+    }
 
     return (
         <div className="container mx-auto px-4 py-12">

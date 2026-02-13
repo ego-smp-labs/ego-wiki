@@ -100,22 +100,6 @@ export default async function HomePage({ params }: HomePageProps) {
                 : "Forbidden covenant. Hold to join.",
             className: "md:col-span-2 md:row-span-1", // 2:1 ratio roughly
         },
-        {
-            title: locale === "vi" ? "Cộng đồng" : "Community",
-            description: locale === "vi"
-                ? "Sự kiện, thông báo và kênh Discord."
-                : "Events, announcements, and Discord channels.",
-            header: (
-                <div className="relative flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden group/img">
-                    <img src="/bg/misc_bg.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-110" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-void-bg/90 via-blue-500/5 to-transparent backdrop-blur-[1px]" />
-                </div>
-            ),
-            icon: <MessageSquare className="h-4 w-4 text-blue-500" />,
-            href: `/${locale}/wiki/miscellaneous`,
-            className: "md:col-span-1",
-            variant: "community",
-        },
     ];
 
     return (

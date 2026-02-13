@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 import HeroSearchBar from "@presentation/components/ui/HeroSearchBar";
 import { HeroLogo } from "@presentation/components/ui/HeroLogo";
 import { NeonBorderButton } from "@presentation/components/ui/NeonBorderButton";
@@ -68,16 +69,27 @@ export default function HeroSection({ subtitle, searchPlaceholder, ctaText = "GE
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className="mt-8 flex justify-center"
                 >
-                    <Link href="/api/auth/signin">
-                        <NeonBorderButton>
-                            <span className="flex items-center gap-2">
-                                {ctaText} <ArrowRight size={18} />
-                            </span>
-                        </NeonBorderButton>
-                    </Link>
+                    <CTAButton ctaText={ctaText} />
                 </motion.div>
             </div>
         </section>
+    );
+}
+
+function CTAButton({ ctaText }: { ctaText: string }) {
+    const { status } = useSession();
+    
+    const href = status === "authenticated" ? "/wiki" : "/login";
+    const text = status === "authenticated" ? "ACCESS DATABASE" : ctaText;
+
+    return (
+        <Link href={href}>
+            <NeonBorderButton>
+                <span className="flex items-center gap-2">
+                    {text} <ArrowRight size={18} />
+                </span>
+            </NeonBorderButton>
+        </Link>
     );
 }
 

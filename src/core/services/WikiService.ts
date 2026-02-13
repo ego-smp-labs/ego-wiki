@@ -18,6 +18,7 @@ export interface ArticleMeta {
     locale: string;
     headings: Heading[];
     lastUpdated: string;
+    lockedUntil?: string;
 }
 
 export interface Article extends ArticleMeta {
@@ -156,6 +157,9 @@ export class WikiService {
             locale,
             headings,
             lastUpdated: stats.mtime.toISOString(),
+            lockedUntil: frontmatter.lockedUntil instanceof Date 
+                ? frontmatter.lockedUntil.toISOString().split('T')[0] 
+                : frontmatter.lockedUntil,
         };
 
         this.metaCache.set(cacheKey, meta);
@@ -205,6 +209,9 @@ export class WikiService {
             content,
             rawContent: fileContent,
             lastUpdated: stats.mtime.toISOString(),
+            lockedUntil: frontmatter.lockedUntil instanceof Date 
+                ? frontmatter.lockedUntil.toISOString().split('T')[0] 
+                : frontmatter.lockedUntil,
         };
     }
 
