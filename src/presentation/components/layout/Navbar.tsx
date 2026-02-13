@@ -56,6 +56,7 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
         { href: `/${locale}`, label: t.nav.home },
         { href: `/${locale}/wiki`, label: t.nav.wiki },
         { href: `/${locale}/faq`, label: t.nav.faq },
+        { href: `/${locale}/changelog`, label: locale === "vi" ? "Changelog" : "Changelog" },
         { href: "https://discord.gg/jRqnNbupj4", label: t.nav.discord, external: true },
     ];
 

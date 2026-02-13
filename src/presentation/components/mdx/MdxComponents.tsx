@@ -149,11 +149,12 @@ const TR = ({ children }: { children: ReactNode }) => <tr>{children}</tr>;
 
 // ===== Horizontal Rule =====
 const HR = () => (
-    <hr className="my-8 border-t border-void-border relative">
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-void-bg border border-void-border rounded-full flex items-center justify-center">
+    <div className="relative my-8">
+        <hr className="border-t border-void-border" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-void-bg border border-void-border rounded-full flex items-center justify-center">
             <div className="w-1.5 h-1.5 bg-neon-cyan rounded-full" />
         </div>
-    </hr>
+    </div>
 );
 
 // ===== Strong / Em =====

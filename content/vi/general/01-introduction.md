@@ -40,7 +40,7 @@ Càng sống lâu, bạn càng bị ép phải chọn: giữ mình, hoặc để
 
 - Bắt đầu nhanh: **[Cách Chơi](/vi/wiki/general/how-to-play)**
 - Bản ngã: **[Ego](/vi/wiki/ego-system/ego)**
-- Thất đại tội và truyền thuyết: **[Cin](/vi/wiki/advanced/sins)**
+- Thất đại tội và truyền thuyết: **[Sins](/vi/wiki/advanced/sins)**
 - Bản Ngã đen: **[Dark Ego](/vi/wiki/ego-system/dark-ego)**
 - Vũ khí & Di vật: **[Items](/vi/wiki/items/items)**
 - Cầu nguyện cơ bản: **[Commands](/vi/wiki/miscellaneous/commands)**

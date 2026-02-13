@@ -1,7 +1,7 @@
 ---
 title: Vật Phẩm Ego
 description: Danh sách các vật phẩm Ego thường gặp.
-order: 1
+order: 2
 ---
 
 # Vật Phẩm Ego
