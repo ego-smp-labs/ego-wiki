@@ -1,16 +1,28 @@
 ---
 title: Dark Ego
 description: Sức mạnh đen tối và rủi ro.
-order: 5
+order: 4
 ---
 
-# Dark Ego
+## Bản Ngã Hắc Hóa (Dark Ego)
 
-**Dark Ego** là vật phẩm hiếm, rơi ra từ người chơi Tier 5+ (tỉ lệ 50%).
+Đến một ngưỡng sức mạnh nào đó (Tier 5+), bản ngã bình thường không còn đủ thoả mãn bạn. Bạn cần thứ đen tối hơn: **Dark Ego**.
 
-## Công Dụng
-- Chế tạo **Mace of Chaos**.
-- Nâng cấp lên Tier 5.
 
-## Rủi Ro
-Sở hữu Dark Ego khiến bạn trở thành mục tiêu của toàn server.
+### Nguồn gốc
+- **Rơi từ đâu?**: Chỉ rơi từ người chơi **Tier 5 trở lên**.
+- **Tỉ lệ**: **100%** (Luôn rơi).
+
+### Quyền năng
+Dark Ego không dành cho kẻ yếu tim.
+- **Sức mạnh**:
+  - **Tier < 5**: Tăng ngay random **+1-2 Tier**.
+  - **Tier >= 5**: Tăng **+1 Tier** (Bắt buộc dùng vật phẩm này để thăng cấp).
+
+## Cái giá phải trả:
+  - **Tử vong**: **10%** khả năng **CHẾT NGAY LẬP TỨC** khi sử dụng.
+  - **Hỗn loạn**: Luôn kích hoạt (không thể bỏ qua).
+  - **Mất lý trí**: Túi đồ của bạn sẽ bị xáo trộn điên cuồng.
+  - **Hiệu ứng**: Wither II, Bóng tối, Chậm, Yếu, **Buồn nôn**.
+
+  - Dark Ego là một bản ngã không thể hấp thụ một cách dễ dàng

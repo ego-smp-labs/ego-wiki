@@ -1,13 +1,16 @@
 ---
 title: Ego Items
 description: List of common Ego items.
-order: 3
+orders: 1
 ---
 
 # Ego Items
 
 ## Ego Fragment
-Shard of power, used to upgrade Tier.
+Power fragments, used to upgrade Tier.
+
+## Dark Ego
+Shards of dark power, used to upgrade Tier 5+ and craft.
 
 ## Soul Keeper
-Protects your Tier when dying. One-time use.
+Like Totem, protects your Tier upon death. Used once.
