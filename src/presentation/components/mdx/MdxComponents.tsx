@@ -29,7 +29,6 @@ const H2 = ({ children, id }: HeadingProps) => (
         id={id}
         className="font-display text-2xl md:text-3xl font-bold mt-12 mb-4 text-white border-b border-void-border pb-2 flex items-center gap-2"
     >
-        <span className="text-neon-cyan">#</span>
         {children}
     </h2>
 );
@@ -39,7 +38,6 @@ const H3 = ({ children, id }: HeadingProps) => (
         id={id}
         className="font-display text-xl font-semibold mt-8 mb-3 text-white flex items-center gap-2"
     >
-        <span className="text-neon-purple">##</span>
         {children}
     </h3>
 );
