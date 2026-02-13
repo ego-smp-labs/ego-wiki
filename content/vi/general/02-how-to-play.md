@@ -28,4 +28,4 @@ Việc đầu tiên nên làm:
 - PvP là một phần của trò chơi — hãy chuẩn bị tinh thần!
 
 ## Đi tiếp ở đâu?
-Tham khảo bài viết **[Cách Chơi](/vi/general/02-how-to-play.md)** để biết thêm chi tiết.
+Tham khảo bài viết **[FAQ](/vi/general/faq)** để biết thêm chi tiết.
