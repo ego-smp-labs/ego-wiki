@@ -4,7 +4,7 @@ description: Thông tin cơ bản về Ego.
 order: 1
 ---
 
-# Ego
+# Bản Ngã (Ego)
 
 **Bản Ngã** (hay còn gọi là Ego) là sức mạnh rơi ra từ máu.
 Bạn có thể mạnh lên nhờ nó — nhưng mỗi lần chạm vào Ego, bạn đang ký thêm một dòng vào khế ước với vực thẳm.
@@ -21,8 +21,13 @@ Nó không phải “phần thưởng”, mà là mảnh tội lỗi còn nóng 
 Dùng Ego không phải bấm phát là buff xong.  
 Nó là một cơn sóng tràn vào đầu bạn, kéo ánh sáng và bóng tối chồng lên nhau, bắt bạn **chống chọi** với thứ vừa thức tỉnh.
 
-Hiệu ứng đi kèm: 
-- Độc, Chóng mặt/choáng, sáng tối nhập nhòe, rối loạn, mất lý trí (item đổi chỗ như bị trêu ngươi)
+- **Cái giá phải trả**
+  - **Tử vong**: **5%** khả năng **CHẾT NGAY LẬP TỨC** khi sử dụng.
+  - **Hỗn loạn**: Luôn kích hoạt (không thể bỏ qua).
+  - **Mất lý trí**: Túi đồ của bạn sẽ bị xáo trộn điên cuồng.
+  - **Hiệu ứng**: Độc II, Bóng tối, **Buồn nôn**.
+
+  - **Hấp thụ**: Tỉ lệ rất nhỏ bạn sẽ chung hoà được ego mà không bị gì cả.
 
 một cái giá nhỏ để nhắc bạn rằng “Ego luôn lấy lại phần của nó”.
 
@@ -38,25 +43,6 @@ Mỗi tier là một tầng địa ngục sâu hơn — và cũng là một ngư
 - Tier 9: hình thái cực hạn — không còn là “cầm sức mạnh”, mà là “sống chung với nó”.
 
 (Chi tiết quyền lợi từng tier xem ở trang [Tier System](./02-tier-system).)  
-
-## Bản Ngã Hắc Hóa (Dark Ego) 🌑
-
-Đến một ngưỡng sức mạnh nào đó (Tier 5+), bản ngã bình thường không còn đủ thoả mãn bạn. Bạn cần thứ đen tối hơn: **Dark Ego**.
-
-### Nguồn gốc
-- **Rơi từ đâu?**: Chỉ rơi từ người chơi **Tier 5 trở lên**.
-- **Tỉ lệ**: **100%** (Luôn rơi).
-
-### Quyền năng & Cái giá
-Dark Ego không dành cho kẻ yếu tim.
-- **Sức mạnh**:
-  - **Tier < 5**: Tăng ngay **+2 Tier**.
-  - **Tier >= 5**: Tăng **+1 Tier** (Bắt buộc dùng vật phẩm này để thăng cấp).
-- **Cái giá phải trả (Hậu quả)**:
-  - **Tử vong**: **10%** khả năng **CHẾT NGAY LẬP TỨC** khi sử dụng.
-  - **Hỗn loạn**: Luôn kích hoạt (không thể bỏ qua).
-  - **Đảo lộn túi đồ**: Túi đồ của bạn sẽ bị xáo trộn điên cuồng (mỗi **0.5 giây**).
-  - **Hiệu ứng**: Wither II, Bóng tối, Chậm, Yếu, **Buồn nôn**.
 
 ## Anti-farm: vực thẳm ghét kẻ lạm dụng
 

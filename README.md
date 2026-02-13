@@ -78,18 +78,20 @@ DISCORD_ADMIN_USER_IDS=your_admin_user_ids
 
 ```
 
-### 4. INITIATE SEQUENCE
+###To run the development server:
+
 ```bash
-npm run dev
+pnpm dev
 ```
-*System will be accessible at [http://localhost:3000](http://localhost:3000)*
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 📡 SIGNAL
 
 Establish communication with the central command.
 
 - **Discord Mainframe**: [Join Server](https://discord.gg/jRqnNbupj4)
-- **Live Frequency**: [ego-wiki.vercel.app](https://ego.sabicoder.xyz)
+- **Live Frequency**: [ego.sabicoder.xyz](https://ego.sabicoder.xyz)
 
 ---
 
