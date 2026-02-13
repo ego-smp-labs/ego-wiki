@@ -29,7 +29,7 @@ Vũ khí huyền thoại với sức mạnh hủy diệt.
 
 ---
 
-## Công thức: Mace of Power
+### Công thức: Mace of Power
 
 <div align="center">
 
@@ -41,7 +41,7 @@ Vũ khí huyền thoại với sức mạnh hủy diệt.
 
 ---
 
-## Mace of Chaos (The Glitch)
+## Mace of Chaos
 
 Người ta kể rằng có một lần Mace of Power “được sao chép”… và bản sao đó không chịu làm bản sao.  
 Từ đó, Mace of Chaos lang thang khắp server như một điềm lỗi.
@@ -54,7 +54,7 @@ Từ đó, Mace of Chaos lang thang khắp server như một điềm lỗi.
 
 ---
 
-## Công thức: Mace of Chaos
+### Công thức: Mace of Chaos
 
 <div align="center">
 
@@ -64,4 +64,6 @@ Từ đó, Mace of Chaos lang thang khắp server như một điềm lỗi.
 
 ---
 
-> Mace không chọn kẻ mạnh nhất. Nó chọn kẻ **dám giữ** nó lâu nhất.
+> **Lưu ý:** Di Vật cần được rèn trong **10 phút** — trễ nhịp là mất cơ hội.
+
+Mace không chọn kẻ mạnh nhất. Nó chọn kẻ **dám giữ** nó lâu nhất.
