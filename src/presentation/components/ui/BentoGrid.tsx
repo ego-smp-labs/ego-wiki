@@ -59,7 +59,7 @@ interface BentoGridItemProps {
     header?: React.ReactNode;
     icon?: React.ReactNode;
     onClick?: () => void;
-    variant?: "default" | "general" | "ego" | "items" | "advanced" | "community";
+    variant?: "default" | "general" | "ego" | "items" | "advanced" | "community" | "sins";
 }
 
 const VARIANT_COLORS: Record<string, string> = {
@@ -69,6 +69,7 @@ const VARIANT_COLORS: Record<string, string> = {
     items: "#f59e0b",
     advanced: "#10b981",
     community: "#3b82f6",
+    sins: "#ef4444",
 };
 
 export const BentoGridItem = ({

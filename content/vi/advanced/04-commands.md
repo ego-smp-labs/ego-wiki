@@ -4,7 +4,7 @@ description: Các lệnh hệ thống.
 order: 4
 ---
 
-# Nghi Thức (Rituals / Commands)
+# Nghi Thức (Commands)
 Trong EgoSMP, các lệnh không phải là công cụ, chúng là những nghi thức giao tiếp với hệ thống.
 
 | Nghi thức | Mô tả | Ghi chú |
