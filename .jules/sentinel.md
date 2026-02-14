@@ -7,3 +7,8 @@
 **Vulnerability:** The application lacked standard security headers, exposing users to clickjacking and MIME sniffing attacks.
 **Learning:** Next.js defaults are minimal. Explicit configuration in `next.config.ts` is required for defense-in-depth headers like HSTS and X-Frame-Options.
 **Prevention:** Use `next.config.ts` `headers()` configuration to enforce security policies at the framework level.
+
+## 2025-02-24 - Path Traversal in WikiService
+**Vulnerability:** `WikiService` methods (`getAllCategories`, `getCategoryArticles`, `getArticle`) trusted user input (`locale`, `category`) without validation, allowing directory traversal via `..` segments to access sensitive files/directories like `.jules` or source code.
+**Learning:** File system operations that use user input for paths must always validate against a whitelist (like `isValidLocale`) or strictly sanitize path segments to prevent traversal, even if `path.join` is used.
+**Prevention:** Implement strict input validation for all parameters used in file system paths. Use helper methods like `isSafePathSegment` and validate against known enums/constants (`LOCALES`).

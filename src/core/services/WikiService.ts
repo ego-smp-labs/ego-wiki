@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { isValidLocale } from "../lib/i18n";
 
 // Interfaces
 export interface Heading {
@@ -56,6 +57,13 @@ export class WikiService {
         this.metaCache.clear();
         this.categoryArticlesCache.clear();
         this.allCategoriesCache.clear();
+    }
+
+    /**
+     * Checks if a path segment is safe (no traversal or separators)
+     */
+    private isSafePathSegment(segment: string): boolean {
+        return !segment.includes("..") && !segment.includes("/") && !segment.includes("\\");
     }
 
     /**
@@ -130,6 +138,10 @@ export class WikiService {
         category: string,
         filename: string
     ): ArticleMeta | null {
+        if (!isValidLocale(locale) || !this.isSafePathSegment(category) || !this.isSafePathSegment(filename)) {
+            return null;
+        }
+
         const filePath = path.join(this.contentDir, locale, category, filename);
         const cacheKey = `${locale}:${category}:${filename}`;
 
@@ -157,8 +169,8 @@ export class WikiService {
             locale,
             headings,
             lastUpdated: stats.mtime.toISOString(),
-            lockedUntil: frontmatter.lockedUntil instanceof Date 
-                ? frontmatter.lockedUntil.toISOString().split('T')[0] 
+            lockedUntil: frontmatter.lockedUntil instanceof Date
+                ? frontmatter.lockedUntil.toISOString().split('T')[0]
                 : frontmatter.lockedUntil,
         };
 
@@ -174,6 +186,10 @@ export class WikiService {
         category: string,
         slug: string
     ): Article | null {
+        if (!isValidLocale(locale) || !this.isSafePathSegment(category) || !this.isSafePathSegment(slug)) {
+            return null;
+        }
+
         const categoryPath = path.join(this.contentDir, locale, category);
 
         if (!fs.existsSync(categoryPath)) {
@@ -209,8 +225,8 @@ export class WikiService {
             content,
             rawContent: fileContent,
             lastUpdated: stats.mtime.toISOString(),
-            lockedUntil: frontmatter.lockedUntil instanceof Date 
-                ? frontmatter.lockedUntil.toISOString().split('T')[0] 
+            lockedUntil: frontmatter.lockedUntil instanceof Date
+                ? frontmatter.lockedUntil.toISOString().split('T')[0]
                 : frontmatter.lockedUntil,
         };
     }
@@ -222,6 +238,10 @@ export class WikiService {
         locale: string,
         category: string
     ): ArticleMeta[] {
+        if (!isValidLocale(locale) || !this.isSafePathSegment(category)) {
+            return [];
+        }
+
         const cacheKey = `${locale}:${category}`;
 
         if (this.categoryArticlesCache.has(cacheKey)) {
@@ -243,6 +263,10 @@ export class WikiService {
      * Gets all categories with their articles for a locale
      */
     public getAllCategories(locale: string): CategoryInfo[] {
+        if (!isValidLocale(locale)) {
+            return [];
+        }
+
         if (this.allCategoriesCache.has(locale)) {
             return this.allCategoriesCache.get(locale)!;
         }
@@ -283,6 +307,10 @@ export class WikiService {
         category: string,
         currentSlug: string
     ): { prev: ArticleMeta | null; next: ArticleMeta | null } {
+        if (!isValidLocale(locale) || !this.isSafePathSegment(category) || !this.isSafePathSegment(currentSlug)) {
+            return { prev: null, next: null };
+        }
+
         const articles = this.getCategoryArticles(locale, category);
         const currentIndex = articles.findIndex((a) => a.slug === currentSlug);
 
