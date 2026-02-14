@@ -9,13 +9,28 @@ export const GlobalBackground = () => {
     useEffect(() => {
         if (!bgRef.current) return;
 
-        // Entrance Fade In only - no zoom/pan
+        // Entrance Fade In
         animate(bgRef.current, {
             opacity: [0, 1], 
             duration: 1500,
             easing: "easeOutSine",
         });
 
+        // Parallax Effect (Clamped)
+        const handleScroll = () => {
+            if (!bgRef.current) return;
+            const scrollY = window.scrollY;
+            
+            // Move background slightly DOWN as we scroll down (chasing the scroll)
+            // Clamped to 100px max to prevent showing the top edge (since top is -10% ~= -100px)
+            // Speed factor 0.1: moves 50px for every 500px scrolled.
+            const offset = Math.min(scrollY * 0.1, 100);
+            
+            bgRef.current.style.transform = `translateY(${offset}px)`;
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
@@ -23,7 +38,7 @@ export const GlobalBackground = () => {
             {/* Background Image Container */}
             <div 
                 ref={bgRef}
-                className="absolute inset-0 w-full h-full opacity-0"
+                className="absolute inset-0 w-full h-[120%] opacity-0 will-change-transform top-[-10%]"
             >
                 <img
                     src="/bg/bg.png"
