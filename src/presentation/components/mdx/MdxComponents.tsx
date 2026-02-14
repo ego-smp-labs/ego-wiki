@@ -65,7 +65,7 @@ const A = ({
     children: ReactNode;
 }) => {
     const isExternal = href?.startsWith("http");
-    const commonClasses = "text-neon-lavender font-medium hover:text-neon-cyan transition-colors link-underline decoration-neon-lavender/50";
+    const commonClasses = "text-neon-lavender font-medium hover:text-neon-cyan transition-colors link-underline decoration-neon-lavender/50 [&_strong]:text-inherit";
 
     if (isExternal) {
         return (

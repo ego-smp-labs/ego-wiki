@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Lock, Skull } from "lucide-react";
 import { cn } from "@core/lib/utils";
-import { animate } from "animejs";
 
 interface SinsCardProps {
     locale: string;
@@ -15,153 +13,77 @@ interface SinsCardProps {
 
 export const SinsCard = ({ locale, title, description, className }: SinsCardProps) => {
     const router = useRouter();
-    const [isHolding, setIsHolding] = useState(false);
-    const [showOverlay, setShowOverlay] = useState(false);
     
     // Unlock Date: Feb 20, 2026
     const UNLOCK_DATE = new Date("2026-02-20T00:00:00").getTime();
     const now = Date.now();
     const isLocked = now < UNLOCK_DATE;
 
-    const progressRef = useRef<SVGCircleElement>(null);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const animationRef = useRef<any>(null);
-
-    const handleCardClick = () => {
-        setShowOverlay(true);
-    };
-
-    const startHold = () => {
-        setIsHolding(true);
-        const el = progressRef.current;
-        if (el) {
-            animationRef.current = animate(el, {
-                strokeDashoffset: [283, 0],
-                duration: 2000,
-                easing: "linear",
-                onComplete: () => {
-                    if (isLocked) {
-                         setIsHolding(false);
-                         alert(locale === "vi" ? "Phong ấn chưa được giải trừ..." : "The seal remains unbroken...");
-                    } else {
-                        router.push(`/${locale}/wiki/ego-system/05-sins`);
-                    }
-                }
-            });
-        }
-    };
-
-    const endHold = () => {
-        setIsHolding(false);
-        if (animationRef.current) {
-            animationRef.current.pause();
-            const el = progressRef.current;
-            if (el) {
-                animate(el, {
-                    strokeDashoffset: 283,
-                    duration: 300,
-                    easing: "easeOutQuad"
-                });
-            }
-        }
+    const handleClick = () => {
+        router.push(`/${locale}/wiki/ego-system/05-sins`);
     };
 
     return (
-        <>
-            <div
-                onClick={handleCardClick}
-                className={cn(
-                    "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-black border border-white/10 justify-between flex flex-col space-y-4 cursor-pointer relative overflow-hidden",
-                    className
-                )}
-            >
-                {/* Background */}
-                <div className="absolute inset-0 z-0">
-                     <img src="/bg/sins_bg.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover/bento:scale-110 grayscale group-hover/bento:grayscale-0" />
-                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                </div>
+        <div
+            onClick={handleClick}
+            className={cn(
+                "col-span-1 md:col-span-3 row-span-1 relative h-48 md:h-64 rounded-xl group/sins overflow-hidden cursor-pointer border border-neon-red/30",
+                className
+            )}
+        >
+            {/* Background Image with Glitch/Parallax potential */}
+            <div className="absolute inset-0 z-0">
+                    <img 
+                        src="/bg/sins_bg.png" 
+                        alt="Sins" 
+                        className="w-full h-full object-cover opacity-80 transition-transform duration-1000 group-hover/sins:scale-105 group-hover/sins:grayscale-0 grayscale" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
+                    {/* Scanlines / Noise overlay could go here */}
+                    <div className="absolute inset-0 bg-[url('/effects/grid.svg')] opacity-20 mix-blend-overlay" />
+            </div>
 
-                <div className="group-hover/bento:translate-x-2 transition duration-200 relative z-10">
-                    <div className="text-neon-red mb-2 mt-2">
-                        {isLocked ? <Lock size={24} /> : <Skull size={24} />}
+            {/* Content Container */}
+            <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-16">
+                
+                {/* Header / Lock Status */}
+                <div className="flex items-center gap-4 mb-4">
+                    <div className={cn(
+                        "p-3 rounded-lg border backdrop-blur-md transition-all duration-300",
+                        isLocked 
+                            ? "bg-neon-red/10 border-neon-red/50 text-neon-red group-hover/sins:bg-neon-red/20 group-hover/sins:shadow-[0_0_15px_rgba(239,68,68,0.4)]" 
+                            : "bg-neon-purple/10 border-neon-purple/50 text-neon-purple"
+                    )}>
+                        {isLocked ? <Lock size={28} /> : <Skull size={28} />}
                     </div>
-                    <div className="font-display font-bold text-neutral-200 mb-2 mt-2 text-xl">
-                        {title}
-                    </div>
-                    <div className="font-sans font-normal text-neutral-400 text-xs text-shadow-sm">
-                        {description}
-                    </div>
-                     {isLocked && (
-                        <div className="mt-2 text-[10px] font-mono text-neon-red/80 border border-neon-red/30 px-2 py-1 inline-block rounded">
-                            LOCKED UNTIL 20.02.2026
+                    
+                    {isLocked && (
+                        <div className="flex flex-col">
+                            <span className="text-neon-red font-mono text-xs tracking-[0.2em] font-bold">CLASSIFIED // SEALED</span>
+                            <span className="text-white/50 font-mono text-[10px]">UNLOCK_DATE: 2026.02.20</span>
                         </div>
                     )}
                 </div>
-            </div>
 
-            {/* Overlay for Hold Interaction */}
-            {showOverlay && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm" onClick={() => setShowOverlay(false)}>
-                    <div className="relative flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
-                        
-                        <div 
-                            className="relative w-32 h-32 flex items-center justify-center cursor-pointer select-none"
-                            onMouseDown={startHold}
-                            onMouseUp={endHold}
-                            onMouseLeave={endHold}
-                            onTouchStart={startHold}
-                            onTouchEnd={endHold}
-                        >
-                            {/* Static Ring */}
-                            <svg className="absolute inset-0 w-full h-full rotate-[-90deg]">
-                                <circle
-                                    cx="64"
-                                    cy="64"
-                                    r="45"
-                                    fill="transparent"
-                                    stroke="#333"
-                                    strokeWidth="4"
-                                />
-                                <circle
-                                    ref={progressRef}
-                                    cx="64"
-                                    cy="64"
-                                    r="45"
-                                    fill="transparent"
-                                    stroke={isLocked ? "#ef4444" : "#22d3ee"}
-                                    strokeWidth="4"
-                                    strokeDasharray="283"
-                                    strokeDashoffset="283"
-                                />
-                            </svg>
-                            
-                            {/* Icon */}
-                            <div className={cn("transition-transform duration-200", isHolding ? "scale-90" : "scale-100")}>
-                                {isLocked ? <Lock size={40} className="text-neon-red" /> : <Skull size={40} className="text-neon-cyan" />}
-                            </div>
-                        </div>
+                {/* Title & Description with Glitch Text Effect (CSS based or simple class) */}
+                <h2 className="font-display font-black text-4xl md:text-6xl text-white mb-2 tracking-tight group-hover/sins:text-neon-red transition-colors duration-300">
+                    {title}
+                </h2>
+                
+                <p className="font-sans text-white/70 max-w-lg text-sm md:text-base border-l-2 border-neon-red/50 pl-4 py-1">
+                    {description}
+                </p>
 
-                        <p className="mt-8 text-white/60 font-display animate-pulse select-none">
-                            {isHolding 
-                                ? (isLocked ? "BREAKING SEAL..." : "ENTERING...") 
-                                : (isLocked ? "HOLD TO BREAK SEAL" : "HOLD TO ENTER")}
-                        </p>
-                        
-                        {isLocked && (
-                             <p className="mt-2 text-neon-red text-sm font-mono">
-                                 SEALED UNTIL 2026-02-20
-                             </p>
-                        )}
-                        
-                         <button 
-                            onClick={() => setShowOverlay(false)}
-                            className="mt-12 text-white/30 hover:text-white text-sm"
-                        >
-                            [ CANCEL ]
-                        </button>
-                    </div>
+                {/* Decorative Elements */}
+                <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-black/80 to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 right-8 text-white/20 font-mono text-xs tracking-widest group-hover/sins:text-neon-red/60 transition-colors">
+                    PROJECT_SINS_V1.0
                 </div>
-            )}
-        </>
+
+                {/* Anime-style corner borders */}
+                <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-white/20 group-hover/sins:border-neon-red/80 transition-all duration-500" />
+                <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-white/20 group-hover/sins:border-neon-red/80 transition-all duration-500" />
+            </div>
+        </div>
     );
 };
