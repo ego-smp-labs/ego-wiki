@@ -6,7 +6,7 @@ import ServerStatusCard from "@presentation/components/ui/ServerStatusCard";
 import { BentoGrid, BentoGridItem } from "@presentation/components/ui/BentoGrid";
 import HeroSection from "@presentation/components/ui/HeroSection";
 import { getRecentUpdates } from "@core/lib/changelog";
-import { SinsCard } from "@presentation/components/ui/SinsCard";
+import { SevenDeadlySinsBanner } from "@presentation/components/dashboard/SevenDeadlySinsBanner";
 import { RecentUpdatesGrid } from "@presentation/components/ui/RecentUpdatesGrid";
 
 interface HomePageProps {
@@ -73,14 +73,7 @@ export default async function HomePage({ params }: HomePageProps) {
             variant: "advanced",
         },
         // SINS Item (Custom)
-        {
-            isSins: true,
-            title: locale === "vi" ? "Thất Đại Tội" : "Seven Deadly Sins",
-            description: locale === "vi"
-                ? "Khế ước cấm. Giữ để gia nhập."
-                : "Forbidden covenant. Hold to join.",
-            className: "md:col-span-3", // Full width
-        },
+
     ];
 
     return (
@@ -121,30 +114,31 @@ export default async function HomePage({ params }: HomePageProps) {
 
                 <BentoGrid>
                     {items.map((item, i) => (
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        (item as any).isSins ? (
-                            <SinsCard
-                                key={i}
-                                locale={locale}
+                         // Skip Sins item if it somehow remains in data, though we filtered it out conceptually
+                         // Note: We removed Sins from the items array, so we just render normal items here
+                        <Link key={i} href={(item as any).href} className={item.className}>
+                            <BentoGridItem
                                 title={item.title}
                                 description={item.description}
-                                className={item.className}
+                                image={(item as any).image}
+                                icon={(item as any).icon}
+                                className="h-full"
+                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                variant={(item as any).variant}
                             />
-                        ) : (
-                            <Link key={i} href={(item as any).href} className={item.className}>
-                                <BentoGridItem
-                                    title={item.title}
-                                    description={item.description}
-                                    image={(item as any).image}
-                                    icon={(item as any).icon}
-                                    className="h-full"
-                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                                    variant={(item as any).variant}
-                                />
-                            </Link>
-                        )
+                        </Link>
                     ))}
                 </BentoGrid>
+            </section>
+
+            {/* Seven Deadly Sins Banner Section */}
+            <section className="max-w-7xl mx-auto px-4 pb-24">
+                 <SevenDeadlySinsBanner
+                    locale={locale}
+                    // Hardcoded strings or use translation if available
+                    title={locale === "vi" ? "Thất Đại Tội" : "Seven Deadly Sins"}
+                    description={locale === "vi" ? "Khế ước cấm. Giữ để gia nhập." : "Forbidden covenant. Hold to join."}
+                 />
             </section>
         </div>
     );
