@@ -9,19 +9,9 @@ export const GlobalBackground = () => {
     useEffect(() => {
         if (!bgRef.current) return;
 
-        // Subtle Ken Burns Effect (Slow Zoom & Pan)
+        // Entrance Fade In only - no zoom/pan
         animate(bgRef.current, {
-            scale: [1, 1.1],
-            // translateX: ["0%", "-2%"], // Optional subtle pan
-            duration: 20000,
-            direction: "alternate",
-            loop: true,
-            easing: "linear",
-        });
-        
-        // Entrance Fade In
-        animate(bgRef.current, {
-            opacity: [0, 0.4], // Max opacity 0.4 to keep text readable
+            opacity: [0, 1], 
             duration: 1500,
             easing: "easeOutSine",
         });
