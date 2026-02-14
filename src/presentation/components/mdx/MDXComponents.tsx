@@ -1,123 +1,222 @@
+import { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 
-const MDXComponents = {
-  // Headings
-  h1: (props: React.ComponentPropsWithoutRef<"h1">) => (
-    <h1 className="text-4xl font-bold mt-12 mb-6 text-white border-b border-void-border pb-4" {...props} />
-  ),
-  h2: (props: React.ComponentPropsWithoutRef<"h2">) => (
-    <h2 className="text-3xl font-semibold mt-10 mb-5 text-white flex items-center gap-2 group" {...props}>
-      <span className="w-2 h-8 rounded-sm bg-neon-cyan/80 hidden group-hover:block transition-all mr-2" />
-      {props.children}
-    </h2>
-  ),
-  h3: (props: React.ComponentPropsWithoutRef<"h3">) => (
-    <h3 className="text-2xl font-semibold mt-8 mb-4 text-neon-lavender" {...props} />
-  ),
-  h4: (props: React.ComponentPropsWithoutRef<"h4">) => (
-    <h4 className="text-xl font-medium mt-6 mb-3 text-white/90" {...props} />
-  ),
+// ===== Custom MDX Component Types =====
+interface HeadingProps {
+    children: ReactNode;
+    id?: string;
+}
 
-  // Text
-  p: (props: React.ComponentPropsWithoutRef<"p">) => (
-    <p className="mb-6 leading-7 text-white/70" {...props} />
-  ),
-  strong: (props: React.ComponentPropsWithoutRef<"strong">) => (
-    <strong className="text-white font-semibold" {...props} />
-  ),
-  em: (props: React.ComponentPropsWithoutRef<"em">) => (
-    <em className="text-neon-pink not-italic" {...props} />
-  ),
-  blockquote: (props: React.ComponentPropsWithoutRef<"blockquote">) => (
-    <blockquote className="border-l-4 border-neon-cyan bg-void-surface/50 p-6 my-8 rounded-r-lg italic text-white/80" {...props} />
-  ),
+interface CodeProps {
+    children: ReactNode;
+    className?: string;
+}
 
-  // Lists
-  ul: (props: React.ComponentPropsWithoutRef<"ul">) => (
-    <ul className="list-disc list-outside mb-6 ml-6 text-white/70 space-y-2 marker:text-neon-cyan" {...props} />
-  ),
-  ol: (props: React.ComponentPropsWithoutRef<"ol">) => (
-    <ol className="list-decimal list-outside mb-6 ml-6 text-white/70 space-y-2 marker:text-neon-purple" {...props} />
-  ),
-  li: (props: React.ComponentPropsWithoutRef<"li">) => (
-    <li className="pl-2" {...props} />
-  ),
-
-  // Links
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  a: ({ href, children, ...props }: any) => {
-    const isInternal = href && (href.startsWith("/") || href.startsWith("#"));
-    if (isInternal) {
-      return (
-        <Link href={href} className="text-neon-cyan hover:text-neon-lavender transition-colors underline decoration-neon-cyan/30 underline-offset-4" {...props}>
-          {children}
-        </Link>
-      );
-    }
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-neon-cyan hover:text-neon-lavender transition-colors underline decoration-neon-cyan/30 underline-offset-4 inline-flex items-center gap-1"
-        {...props}
-      >
+// ===== Heading Components =====
+const H1 = ({ children, id }: HeadingProps) => (
+    <h1
+        id={id}
+        className="font-display text-4xl md:text-5xl font-bold mb-6 text-white text-glow-purple"
+    >
         {children}
-        <span className="text-[10px] opacity-50">↗</span>
-      </a>
-    );
-  },
+    </h1>
+);
 
-  // Code
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  code: ({ className, children, ...props }: any) => {
-    const isInline = !className;
-    if (isInline) {
-      return (
-        <code className="bg-void-dark px-1.5 py-0.5 rounded text-sm text-neon-green font-mono border border-white/10" {...props}>
-          {children}
-        </code>
-      );
+const H2 = ({ children, id }: HeadingProps) => (
+    <h2
+        id={id}
+        className="font-display text-2xl md:text-3xl font-bold mt-12 mb-4 text-white flex items-center gap-2 text-glow-purple"
+        style={{ textShadow: '0 0 8px rgba(168, 85, 247, 0.3)' }}
+    >
+        <span className="text-neon-cyan">#</span>
+        {children}
+    </h2>
+);
+
+const H3 = ({ children, id }: HeadingProps) => (
+    <h3
+        id={id}
+        className="font-display text-xl font-semibold mt-8 mb-3 text-white flex items-center gap-2"
+    >
+        <span className="text-neon-purple">##</span>
+        {children}
+    </h3>
+);
+
+const H4 = ({ children, id }: HeadingProps) => (
+    <h4
+        id={id}
+        className="font-display text-lg font-medium mt-6 mb-2 text-white/90"
+    >
+        {children}
+    </h4>
+);
+
+// ===== Paragraph =====
+const P = ({ children }: { children: ReactNode }) => (
+    <p className="text-white/70 leading-relaxed mb-4">{children}</p>
+);
+
+// ===== Links =====
+const A = ({
+    href,
+    children,
+}: {
+    href?: string;
+    children: ReactNode;
+}) => {
+    const isExternal = href?.startsWith("http");
+
+    if (isExternal) {
+        return (
+            <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neon-cyan hover:text-white transition-colors inline-flex items-center gap-1 link-underline"
+            >
+                {children}
+                <ExternalLink size={12} />
+            </a>
+        );
     }
-    return <code className={className} {...props}>{children}</code>;
-  },
-  pre: (props: React.ComponentPropsWithoutRef<"pre">) => (
-    <pre className="bg-void-dark p-4 rounded-lg overflow-x-auto my-6 border border-void-border custom-scrollbar" {...props} />
-  ),
 
-  // Media
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  img: (props: any) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img className="rounded-xl border border-void-border my-8 w-full object-cover max-h-[500px]" alt={props.alt} {...props} />
-  ),
-
-  // Tables
-  table: (props: React.ComponentPropsWithoutRef<"table">) => (
-    <div className="overflow-x-auto my-8 border border-void-border rounded-lg">
-      <table className="w-full text-left" {...props} />
-    </div>
-  ),
-  thead: (props: React.ComponentPropsWithoutRef<"thead">) => (
-    <thead className="bg-void-surface border-b border-void-border" {...props} />
-  ),
-  tbody: (props: React.ComponentPropsWithoutRef<"tbody">) => (
-    <tbody className="divide-y divide-void-border" {...props} />
-  ),
-  tr: (props: React.ComponentPropsWithoutRef<"tr">) => (
-    <tr className="hover:bg-white/5 transition-colors" {...props} />
-  ),
-  th: (props: React.ComponentPropsWithoutRef<"th">) => (
-    <th className="px-6 py-4 text-sm font-semibold text-white uppercase tracking-wider" {...props} />
-  ),
-  td: (props: React.ComponentPropsWithoutRef<"td">) => (
-    <td className="px-6 py-4 text-sm text-white/70 whitespace-pre-wrap" {...props} />
-  ),
-
-  // Divider
-  hr: (props: React.ComponentPropsWithoutRef<"hr">) => (
-    <hr className="my-12 border-void-border bg-gradient-to-r from-transparent via-white/10 to-transparent h-[1px] border-none" {...props} />
-  ),
+    return (
+        <Link
+            href={href || "#"}
+            className="text-neon-cyan hover:text-white transition-colors link-underline"
+        >
+            {children}
+        </Link>
+    );
 };
 
-export default MDXComponents;
+// ===== Code =====
+const InlineCode = ({ children }: { children: ReactNode }) => (
+    <code className="void-code">{children}</code>
+);
+
+const CodeBlock = ({ children, className }: CodeProps) => {
+    return (
+        <div className="terminal my-6 overflow-hidden">
+            {/* Terminal header is handled by CSS */}
+            <div className="pt-10 pb-4 px-4 overflow-x-auto">
+                <pre className="text-sm">
+                    <code className={`text-white/80 ${className || ""}`}>{children}</code>
+                </pre>
+            </div>
+        </div>
+    );
+};
+
+// ===== Lists =====
+const UL = ({ children }: { children: ReactNode }) => (
+    <ul className="list-none space-y-2 my-4 pl-4">{children}</ul>
+);
+
+const OL = ({ children }: { children: ReactNode }) => (
+    <ol className="list-decimal list-inside space-y-2 my-4 text-white/70">
+        {children}
+    </ol>
+);
+
+const LI = ({ children }: { children: ReactNode }) => (
+    <li className="text-white/70 flex items-start gap-2">
+        <span className="text-neon-cyan mt-1.5">▸</span>
+        <span>{children}</span>
+    </li>
+);
+
+// ===== Blockquote =====
+const Blockquote = ({ children }: { children: ReactNode }) => (
+    <blockquote className="void-blockquote">{children}</blockquote>
+);
+
+// ===== Table =====
+const Table = ({ children }: { children: ReactNode }) => (
+    <div className="overflow-x-auto my-6 rounded-xl border border-void-border">
+        <table className="void-table">{children}</table>
+    </div>
+);
+
+const TH = ({ children }: { children: ReactNode }) => <th>{children}</th>;
+const TD = ({ children }: { children: ReactNode }) => <td>{children}</td>;
+const TR = ({ children }: { children: ReactNode }) => <tr>{children}</tr>;
+
+// ===== Horizontal Rule =====
+const HR = () => (
+    <div className="relative my-8">
+        <div className="border-t border-void-border" />
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-void-bg border border-void-border rounded-full flex items-center justify-center">
+            <div className="w-1.5 h-1.5 bg-neon-cyan rounded-full" />
+        </div>
+    </div>
+);
+
+// ===== Strong / Em =====
+const Strong = ({ children }: { children: ReactNode }) => (
+    <strong className="text-white font-semibold">{children}</strong>
+);
+
+const Em = ({ children }: { children: ReactNode }) => (
+    <em className="text-neon-purple">{children}</em>
+);
+
+// ===== Image =====
+const Img = ({ src, alt }: { src?: string; alt?: string }) => {
+    if (!src) return null;
+
+    return (
+        <figure className="my-6">
+            <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-void-border bg-void-surface-light">
+                <Image
+                    src={src}
+                    alt={alt || "Wiki content"}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
+                />
+            </div>
+            {alt && (
+                <figcaption className="text-center text-xs text-white/40 mt-2">
+                    {alt}
+                </figcaption>
+            )}
+        </figure>
+    );
+};
+
+// ===== Item Components =====
+import ItemStats from "@presentation/components/wiki/ItemStats";
+import CraftingRecipe from "@presentation/components/wiki/CraftingRecipe";
+
+// ===== Export MDX Components =====
+export const mdxComponents = {
+    h1: H1,
+    h2: H2,
+    h3: H3,
+    h4: H4,
+    p: P,
+    a: A,
+    code: InlineCode,
+    pre: CodeBlock,
+    ul: UL,
+    ol: OL,
+    li: LI,
+    blockquote: Blockquote,
+    table: Table,
+    th: TH,
+    td: TD,
+    tr: TR,
+    hr: HR,
+    strong: Strong,
+    em: Em,
+    img: Img,
+    // Custom Components
+    ItemStats,
+    CraftingRecipe,
+};
+
+export default mdxComponents;

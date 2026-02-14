@@ -25,7 +25,7 @@ export const LockedArticleView = ({ locale, lockedUntil }: LockedArticleViewProp
         const el = progressRef.current;
         if (el) {
             animationRef.current = animate(el, {
-                strokeDashoffset: [283, 0],
+                strokeDashoffset: [377, 0],
                 duration: 2000,
                 easing: "linear",
                 onComplete: () => {
@@ -36,7 +36,7 @@ export const LockedArticleView = ({ locale, lockedUntil }: LockedArticleViewProp
                      
                      // Reset circle immediately
                      animate(el, {
-                        strokeDashoffset: 283,
+                        strokeDashoffset: 377,
                         duration: 100,
                      });
                 }
@@ -50,7 +50,7 @@ export const LockedArticleView = ({ locale, lockedUntil }: LockedArticleViewProp
             const el = progressRef.current;
             if (el) {
                 animate(el, {
-                    strokeDashoffset: 283,
+                    strokeDashoffset: 377,
                     duration: 300,
                     easing: "easeOutQuad"
                 });
@@ -78,7 +78,7 @@ export const LockedArticleView = ({ locale, lockedUntil }: LockedArticleViewProp
                 onTouchEnd={endHold}
             >
                 {/* Static Background Ring */}
-                <svg className="absolute inset-0 w-full h-full rotate-[-90deg]">
+                <svg className="absolute inset-0 w-full h-full rotate-[-90deg]" viewBox="0 0 160 160">
                     <circle
                         cx="80"
                         cy="80"
@@ -96,10 +96,9 @@ export const LockedArticleView = ({ locale, lockedUntil }: LockedArticleViewProp
                         fill="transparent"
                         stroke="#ef4444"
                         strokeWidth="6"
-                        strokeDasharray="283" // Approx 2 * pi * 45? No, r=60 -> 2*pi*60 = 377
-                        strokeDashoffset="377" 
-                        className="opacity-100"
-                        style={{ strokeDasharray: 377, strokeDashoffset: 377 }}
+                        strokeDasharray="377"
+                        strokeDashoffset="377"
+                        strokeLinecap="round"
                     />
                 </svg>
 

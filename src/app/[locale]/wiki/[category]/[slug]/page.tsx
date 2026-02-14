@@ -114,7 +114,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                         </Link>
                         <span>/</span>
                         <span className="text-white/60">{article.title}</span>
-                        <span className="text-white/60">{article.title}</span>
                     </div>
 
                     {/* Meta Info */}

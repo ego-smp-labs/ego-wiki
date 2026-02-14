@@ -20,7 +20,7 @@ export const SinsCard = ({ locale, title, description, className }: SinsCardProp
     const isLocked = now < UNLOCK_DATE;
 
     const handleClick = () => {
-        router.push(`/${locale}/wiki/ego-system/05-sins`);
+        router.push(`/${locale}/wiki/ego-system/sins`);
     };
 
     return (
