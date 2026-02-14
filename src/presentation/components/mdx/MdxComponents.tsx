@@ -1,222 +1,124 @@
-import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
 
-// ===== Custom MDX Component Types =====
-interface HeadingProps {
-    children: ReactNode;
-    id?: string;
-}
 
-interface CodeProps {
-    children: ReactNode;
-    className?: string;
-}
-
-// ===== Heading Components =====
-const H1 = ({ children, id }: HeadingProps) => (
-    <h1
-        id={id}
-        className="font-display text-4xl md:text-5xl font-bold mb-6 text-white text-glow-cyan"
-    >
-        {children}
-    </h1>
-);
-
-const H2 = ({ children, id }: HeadingProps) => (
-    <h2
-        id={id}
-        className="font-display text-2xl md:text-3xl font-bold mt-12 mb-4 text-white border-b border-void-border pb-2 flex items-center gap-2"
-    >
-        {children}
+const MDXComponents = {
+  // Headings
+  h1: (props: any) => (
+    <h1 className="text-4xl font-bold mt-12 mb-6 text-white border-b border-void-border pb-4" {...props} />
+  ),
+  h2: (props: any) => (
+    <h2 className="text-3xl font-semibold mt-10 mb-5 text-white flex items-center gap-2 group" {...props}>
+      <span className="w-2 h-8 rounded-sm bg-neon-cyan/80 hidden group-hover:block transition-all mr-2"></span>
+      {props.children}
     </h2>
-);
+  ),
+  h3: (props: any) => (
+    <h3 className="text-2xl font-semibold mt-8 mb-4 text-neon-lavender" {...props} />
+  ),
+  h4: (props: any) => (
+    <h4 className="text-xl font-medium mt-6 mb-3 text-white/90" {...props} />
+  ),
 
-const H3 = ({ children, id }: HeadingProps) => (
-    <h3
-        id={id}
-        className="font-display text-xl font-semibold mt-8 mb-3 text-white flex items-center gap-2"
-    >
-        {children}
-    </h3>
-);
+  // Text
+  p: (props: any) => (
+    <p className="mb-6 leading-7 text-white/70" {...props} />
+  ),
+  strong: (props: any) => (
+    <strong className="text-white font-semibold" {...props} />
+  ),
+  em: (props: any) => (
+    <em className="text-neon-pink not-italic" {...props} /> // Stylistic choice
+  ),
+  blockquote: (props: any) => (
+    <blockquote className="border-l-4 border-neon-cyan bg-void-surface/50 p-6 my-8 rounded-r-lg italic text-white/80" {...props} />
+  ),
 
-const H4 = ({ children, id }: HeadingProps) => (
-    <h4
-        id={id}
-        className="font-display text-lg font-medium mt-6 mb-2 text-white/90"
-    >
-        {children}
-    </h4>
-);
+  // Lists
+  ul: (props: any) => (
+    <ul className="list-disc list-outside mb-6 ml-6 text-white/70 space-y-2 marker:text-neon-cyan" {...props} />
+  ),
+  ol: (props: any) => (
+    <ol className="list-decimal list-outside mb-6 ml-6 text-white/70 space-y-2 marker:text-neon-purple" {...props} />
+  ),
+  li: (props: any) => (
+    <li className="pl-2" {...props} />
+  ),
 
-// ===== Paragraph =====
-const P = ({ children }: { children: ReactNode }) => (
-    <p className="text-white/70 leading-relaxed mb-4">{children}</p>
-);
+  // Links
+  a: ({ href, children, ...props }: any) => {
+    const isInternal = href && (href.startsWith("/") || href.startsWith("#"));
 
-// ===== Links =====
-const A = ({
-    href,
-    children,
-}: {
-    href?: string;
-    children: ReactNode;
-}) => {
-    const isExternal = href?.startsWith("http");
-    const commonClasses = "text-neon-lavender font-medium hover:text-neon-cyan transition-colors link-underline decoration-neon-lavender/50 [&_strong]:text-inherit";
-
-    if (isExternal) {
-        return (
-            <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${commonClasses} inline-flex items-center gap-1`}
-            >
-                {children}
-                <ExternalLink size={12} />
-            </a>
-        );
+    if (isInternal) {
+      return (
+        <Link href={href} className="text-neon-cyan hover:text-neon-lavender transition-colors underline decoration-neon-cyan/30 underline-offset-4" {...props}>
+          {children}
+        </Link>
+      );
     }
 
     return (
-        <Link
-            href={href || "#"}
-            className={commonClasses}
-        >
-            {children}
-        </Link>
-    );
-};
-
-// ===== Code =====
-const InlineCode = ({ children }: { children: ReactNode }) => (
-    <code className="void-code">{children}</code>
-);
-
-const CodeBlock = ({ children, className }: CodeProps) => {
-    const language = className?.replace("language-", "") || "text";
-
-    return (
-        <div className="terminal my-6 overflow-hidden">
-            {/* Terminal header is handled by CSS */}
-            <div className="pt-10 pb-4 px-4 overflow-x-auto">
-                <pre className="text-sm">
-                    <code className={`text-white/80 ${className || ""}`}>{children}</code>
-                </pre>
-            </div>
-        </div>
-    );
-};
-
-// ===== Lists =====
-const UL = ({ children }: { children: ReactNode }) => (
-    <ul className="list-none space-y-2 my-4 pl-4">{children}</ul>
-);
-
-const OL = ({ children }: { children: ReactNode }) => (
-    <ol className="list-decimal list-inside space-y-2 my-4 text-white/70">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-neon-cyan hover:text-neon-lavender transition-colors underline decoration-neon-cyan/30 underline-offset-4 inline-flex items-center gap-1"
+        {...props}
+      >
         {children}
-    </ol>
-);
-
-const LI = ({ children }: { children: ReactNode }) => (
-    <li className="text-white/70 flex items-start gap-2">
-        <span className="text-neon-cyan mt-1.5">▸</span>
-        <span>{children}</span>
-    </li>
-);
-
-// ===== Blockquote =====
-const Blockquote = ({ children }: { children: ReactNode }) => (
-    <blockquote className="void-blockquote">{children}</blockquote>
-);
-
-// ===== Table =====
-const Table = ({ children }: { children: ReactNode }) => (
-    <div className="overflow-x-auto my-6 rounded-xl border border-void-border">
-        <table className="void-table">{children}</table>
-    </div>
-);
-
-const TH = ({ children }: { children: ReactNode }) => <th>{children}</th>;
-const TD = ({ children }: { children: ReactNode }) => <td>{children}</td>;
-const TR = ({ children }: { children: ReactNode }) => <tr>{children}</tr>;
-
-// ===== Horizontal Rule =====
-const HR = () => (
-    <div className="relative my-8">
-        <hr className="border-t border-void-border" />
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-void-bg border border-void-border rounded-full flex items-center justify-center">
-            <div className="w-1.5 h-1.5 bg-neon-cyan rounded-full" />
-        </div>
-    </div>
-);
-
-// ===== Strong / Em =====
-const Strong = ({ children }: { children: ReactNode }) => (
-    <strong className="text-white font-semibold">{children}</strong>
-);
-
-const Em = ({ children }: { children: ReactNode }) => (
-    <em className="text-neon-purple">{children}</em>
-);
-
-// ===== Image =====
-const Img = ({ src, alt }: { src?: string; alt?: string }) => {
-    if (!src) return null;
-
-    return (
-        <figure className="my-6">
-            <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-void-border bg-void-surface-light">
-                <Image
-                    src={src}
-                    alt={alt || "Wiki content"}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
-                />
-            </div>
-            {alt && (
-                <figcaption className="text-center text-xs text-white/40 mt-2">
-                    {alt}
-                </figcaption>
-            )}
-        </figure>
+        <span className="text-[10px] opacity-50">↗</span>
+      </a>
     );
+  },
+
+  // Code
+  code: ({ className, children, ...props }: any) => {
+    const isInline = !className;
+    if (isInline) {
+      return (
+        <code className="bg-void-dark px-1.5 py-0.5 rounded text-sm text-neon-green font-mono border border-white/10" {...props}>
+          {children}
+        </code>
+      );
+    }
+    return <code className={className} {...props}>{children}</code>;
+  },
+  pre: (props: any) => (
+    <pre className="bg-void-dark p-4 rounded-lg overflow-x-auto my-6 border border-void-border custom-scrollbar" {...props} />
+  ),
+
+  // Media
+  img: (props: any) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img className="rounded-xl border border-void-border my-8 w-full object-cover max-h-[500px]" alt={props.alt} {...props} />
+  ),
+  
+  // Tables
+  table: (props: any) => (
+    <div className="overflow-x-auto my-8 border border-void-border rounded-lg">
+      <table className="w-full text-left" {...props} />
+    </div>
+  ),
+  thead: (props: any) => (
+    <thead className="bg-void-surface border-b border-void-border" {...props} />
+  ),
+  tbody: (props: any) => (
+    <tbody className="divide-y divide-void-border" {...props} />
+  ),
+  tr: (props: any) => (
+    <tr className="hover:bg-white/5 transition-colors" {...props} />
+  ),
+  th: (props: any) => (
+    <th className="px-6 py-4 text-sm font-semibold text-white uppercase tracking-wider" {...props} />
+  ),
+  td: (props: any) => (
+    <td className="px-6 py-4 text-sm text-white/70 whitespace-pre-wrap" {...props} />
+  ),
+  
+  // Divider
+  hr: (props: any) => (
+    <hr className="my-12 border-void-border bg-gradient-to-r from-transparent via-white/10 to-transparent h-[1px] border-none" {...props} />
+  ),
 };
 
-// ===== Item Components =====
-import ItemStats from "@presentation/components/wiki/ItemStats";
-import CraftingRecipe from "@presentation/components/wiki/CraftingRecipe";
-
-// ===== Export MDX Components =====
-export const mdxComponents = {
-    h1: H1,
-    h2: H2,
-    h3: H3,
-    h4: H4,
-    p: P,
-    a: A,
-    code: InlineCode,
-    pre: CodeBlock,
-    ul: UL,
-    ol: OL,
-    li: LI,
-    blockquote: Blockquote,
-    table: Table,
-    th: TH,
-    td: TD,
-    tr: TR,
-    hr: HR,
-    strong: Strong,
-    em: Em,
-    img: Img,
-    // Custom Components
-    ItemStats,
-    CraftingRecipe,
-};
-
-export default mdxComponents;
+export default MDXComponents;
