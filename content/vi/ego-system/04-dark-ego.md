@@ -22,7 +22,7 @@ Dark Ego không dành cho kẻ yếu tim.
 ## Cái giá phải trả:
   - **Tử vong**: **10%** khả năng **CHẾT NGAY LẬP TỨC** khi sử dụng.
   - **Hỗn loạn**: Luôn kích hoạt (không thể bỏ qua).
-  - **Mất lý trí**: Túi đồ của bạn sẽ bị xáo trộn điên cuồng.
+  - **Mất lý trí**: **Toàn bộ** kho đồ của bạn sẽ bị xáo trộn điên cuồng (cả hotbar và inventory).
   - **Hiệu ứng**: Wither II, Bóng tối, Chậm, Yếu, **Buồn nôn**.
 
   - Dark Ego là một bản ngã không thể hấp thụ một cách dễ dàng

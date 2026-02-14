@@ -22,7 +22,7 @@ Dark Ego is not for the faint of heart.
 ## The price to pay:
   - **Death**: **10%** chance of **INSTANT DEATH** when used.
   - **Chaos**: Always active (cannot be skipped).
-  - **Loss of reason**: Your inventory will be frantically shuffled around.
+  - **Loss of reason**: Your **entire** inventory (hotbar + inventory) will be frantically shuffled.
   - **Effect**: Wither II, Darkness, Slow, Weak, **Nausea**.
 
   - Dark Ego is an ego that cannot be absorbed easily

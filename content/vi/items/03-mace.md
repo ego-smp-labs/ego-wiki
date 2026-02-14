@@ -48,7 +48,7 @@ Từ đó, Mace of Chaos lang thang khắp server như một điềm lỗi.
 
 ### Sức mạnh
 - **Sát thương**: Là bản sao của [Mace of Power](#mace-of-power), nhưng đổi lại là cái giá của Hỗn Mang.
-- **Hỗn mang (Combat)**: 10% gây **shuffle inventory** của nạn nhân trong vài giây.
+- **Hỗn mang (Combat)**: 5% gây **shuffle inventory** của nạn nhân trong 10s.
 - **Ẩn danh**: Death message có thể **giấu tên kẻ giết**.
 - **Nguyền rủa (Self-Curse)**: Khi được rèn hoặc nhặt lên có thể dính **wither II** và hỗn mang.
 
