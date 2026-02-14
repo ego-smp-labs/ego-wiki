@@ -5,6 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import Navbar from "@presentation/components/layout/Navbar";
 import Footer from "@presentation/components/layout/Footer";
 import CommandPalette from "@presentation/components/layout/CommandPalette";
+import { GlobalBackground } from "@presentation/components/ui/GlobalBackground";
 import FloatingParticles from "@presentation/components/effects/FloatingParticles";
 
 interface LocaleLayoutClientProps {
@@ -20,6 +21,9 @@ export default function LocaleLayoutClient({
 
     return (
         <SessionProvider>
+            {/* Global Animated Background */}
+            <GlobalBackground />
+
             {/* Background effects */}
             <FloatingParticles count={25} />
 

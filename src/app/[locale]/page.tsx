@@ -77,7 +77,7 @@ export default async function HomePage({ params }: HomePageProps) {
     ];
 
     return (
-        <div className="void-pattern min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <HeroSection
                 subtitle={t.hero.subtitle}
