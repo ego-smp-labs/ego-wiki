@@ -53,9 +53,9 @@ export default function Sidebar({
 
     return (
         <aside
-            className={`w-64 flex-shrink-0 hidden lg:block sticky top-20 h-[calc(100vh-6rem)] overflow-y-auto ${className}`}
+            className={`w-64 flex-shrink-0 hidden lg:block sticky top-20 h-[calc(100vh-6rem)] overflow-y-auto bg-black/40 backdrop-blur-md p-4 rounded-xl border border-white/5 ${className}`}
         >
-            <nav className="pr-4 pb-8">
+            <nav className="pb-4">
                 <div className="mb-8">
                     <h4 className="text-xs font-medium uppercase tracking-wider text-white/40 mb-3">
                         {categoriesLabel}
