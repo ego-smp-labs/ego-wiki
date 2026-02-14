@@ -33,7 +33,7 @@ export default async function HomePage({ params }: HomePageProps) {
             description: locale === "vi"
                 ? "Các lệnh cơ bản, quy tắc, land claim và hướng dẫn người mới."
                 : "Essential commands, rules, land claiming, and beginner guides.",
-            image: "/bg/general_bg.png",
+            image: "/bg/general_bg.jpg",
             icon: <Book className="h-6 w-6" />,
             href: `/${locale}/wiki/general`,
             className: "md:col-span-2",
@@ -44,7 +44,7 @@ export default async function HomePage({ params }: HomePageProps) {
             description: locale === "vi"
                 ? "Mở khóa tiềm năng. Nâng cấp cấp bậc. Thu thập linh hồn."
                 : "Unlock your potential. Level up. Harvest souls.",
-            image: "/bg/egosystem_bg.png",
+            image: "/bg/egosystem_bg.jpg",
             icon: <Zap className="h-6 w-6" />,
             href: `/${locale}/wiki/ego-system`,
             className: "md:col-span-1",
@@ -55,7 +55,7 @@ export default async function HomePage({ params }: HomePageProps) {
             description: locale === "vi"
                 ? "Công thức chế tạo vũ khí huyền thoại và vật phẩm cấm."
                 : "Recipes for legendary weapons and forbidden artifacts.",
-            image: "/bg/items_bg.png",
+            image: "/bg/items_bg.jpg",
             icon: <Hammer className="h-6 w-6" />,
             href: `/${locale}/wiki/items`,
             className: "md:col-span-1",
