@@ -156,18 +156,18 @@ export const SevenDeadlySinsBanner = ({
             onTouchEnd={handleHoldEnd}
             className={cn(
                 "relative w-full h-64 md:h-72 rounded-xl overflow-hidden group/banner cursor-pointer select-none",
-                "border border-neon-red/30 bg-black/40",
+                "border border-neon-red/30 hover:border-neon-purple/80 transition-colors duration-500 bg-black/40",
                 className
             )}
         >
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/bg/sins_bg.png"
+                    src="/bg/sins-bg.jpg"
                     alt="Sins Background"
                     className="w-full h-full object-cover opacity-60 group-hover/banner:opacity-80 transition-opacity duration-700 grayscale group-hover/banner:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                 <div className="absolute inset-0 bg-[url('/effects/grid.svg')] opacity-10 mix-blend-overlay" />
             </div>
 

@@ -66,7 +66,7 @@ export default async function HomePage({ params }: HomePageProps) {
             description: locale === "vi"
                 ? "Cơ chế máy móc, tự động hóa và kỹ thuật nâng cao."
                 : "Mechanics, automation, and advanced technical data.",
-            image: "/bg/abyss-main.jpg",
+            image: "/bg/advanced_bg.jpg",
             icon: <Archive className="h-6 w-6" />,
             href: `/${locale}/wiki/advanced`,
             className: "md:col-span-2",
