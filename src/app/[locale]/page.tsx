@@ -103,7 +103,7 @@ export default async function HomePage({ params }: HomePageProps) {
                 <RecentUpdatesGrid updates={recentUpdates} />
             </section>
 
-            {/* Bento Grid Section */}
+            {/* System Database + Sins Banner — Shared Flex Column Container */}
             <section className="max-w-7xl mx-auto px-4 pb-24">
                 <div className="flex items-center gap-3 mb-8">
                     <Skull className="text-neon-purple animate-pulse" size={24} />
@@ -112,33 +112,31 @@ export default async function HomePage({ params }: HomePageProps) {
                     </h2>
                 </div>
 
-                <BentoGrid>
-                    {items.map((item, i) => (
-                         // Skip Sins item if it somehow remains in data, though we filtered it out conceptually
-                         // Note: We removed Sins from the items array, so we just render normal items here
-                        <Link key={i} href={(item as any).href} className={item.className}>
-                            <BentoGridItem
-                                title={item.title}
-                                description={item.description}
-                                image={(item as any).image}
-                                icon={(item as any).icon}
-                                className="h-full"
-                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                                variant={(item as any).variant}
-                            />
-                        </Link>
-                    ))}
-                </BentoGrid>
-            </section>
+                {/* Flex Column: Grid + Banner stacked with gap */}
+                <div className="flex flex-col gap-6">
+                    <BentoGrid>
+                        {items.map((item, i) => (
+                            <Link key={i} href={(item as any).href} className={item.className}>
+                                <BentoGridItem
+                                    title={item.title}
+                                    description={item.description}
+                                    image={(item as any).image}
+                                    icon={(item as any).icon}
+                                    className="h-full"
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                    variant={(item as any).variant}
+                                />
+                            </Link>
+                        ))}
+                    </BentoGrid>
 
-            {/* Seven Deadly Sins Banner Section */}
-            <section className="max-w-7xl mx-auto px-4 pb-24">
-                 <SevenDeadlySinsBanner
-                    locale={locale}
-                    // Hardcoded strings or use translation if available
-                    title={locale === "vi" ? "Thất Đại Tội" : "Seven Deadly Sins"}
-                    description={locale === "vi" ? "Khế ước cấm. Giữ để gia nhập." : "Forbidden covenant. Hold to join."}
-                 />
+                    {/* Sins Banner — sits naturally below the grid */}
+                    <SevenDeadlySinsBanner
+                        locale={locale}
+                        title={locale === "vi" ? "Thất Đại Tội" : "Seven Deadly Sins"}
+                        description={locale === "vi" ? "Khế ước cấm. Giữ để gia nhập." : "Forbidden covenant. Hold to join."}
+                    />
+                </div>
             </section>
         </div>
     );

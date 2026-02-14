@@ -101,7 +101,7 @@ export const BentoGridItem = ({
         >
             {/* Full Background Image */}
             {image && (
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
                     <img
                         src={image}
                         alt="bg"
