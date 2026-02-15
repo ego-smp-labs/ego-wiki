@@ -23,6 +23,10 @@ const orbitron = Orbitron({
 export const metadata: Metadata = {
   title: "EGO Wiki",
   description: "Knowledge from the Abyss - EGO WIKI",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

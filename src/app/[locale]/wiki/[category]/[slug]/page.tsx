@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 />
 
                 {/* Main Content */}
-                <article className="flex-1 min-w-0 max-w-3xl bg-black/60 backdrop-blur-sm p-8 rounded-xl border border-white/5">
+                <article className="flex-1 min-w-0 max-w-5xl bg-black/60 backdrop-blur-sm p-8 rounded-xl border border-white/5">
                     {/* Breadcrumb */}
                     <div className="flex items-center gap-2 text-sm text-white/40 mb-6 flex-wrap">
                         <Link

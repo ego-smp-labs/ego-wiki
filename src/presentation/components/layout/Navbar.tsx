@@ -68,14 +68,19 @@ export default function Navbar({ locale, onSearchClick }: NavbarProps) {
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerClass}`}>
             <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href={`/${locale}`} className="flex items-center gap-2 group">
-                    <div className="relative">
-                        <span className="font-display text-xl font-bold text-neon-cyan text-glow-cyan">
-                            EGO
-                        </span>
-                        <span className="font-display text-xl font-bold text-white ml-1">
-                            WIKI
-                        </span>
-                    </div>
+                    <motion.div 
+                        initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+                        animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="relative"
+                    >
+                        <div className="absolute inset-0 bg-neon-purple/20 blur-xl rounded-full scale-150 opacity-50" />
+                        <img 
+                            src="/logo_icon.png" 
+                            alt="EGO WIKI" 
+                            className="h-10 w-auto object-contain relative z-10 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]"
+                        />
+                    </motion.div>
                 </Link>
 
                 <div className="hidden md:flex items-center gap-6">
