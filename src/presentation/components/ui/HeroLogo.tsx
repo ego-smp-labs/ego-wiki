@@ -46,20 +46,25 @@ export const HeroLogo = () => {
         const ctx = canvas.getContext("2d", { willReadFrequently: true });
         if (!ctx) return;
 
-        // Match canvas to image display size
+        // Image display size
         const rect = img.getBoundingClientRect();
-        canvas.width = rect.width;
-        canvas.height = rect.height;
+        // Add padding around image so particles can orbit outside without clipping
+        const PAD = 300;
+        const cw = rect.width + PAD * 2;
+        const ch = rect.height + PAD * 2;
+        canvas.width = cw;
+        canvas.height = ch;
 
-        // Draw image to sample pixel colors
-        ctx.drawImage(img, 0, 0, rect.width, rect.height);
-        const imageData = ctx.getImageData(0, 0, rect.width, rect.height);
+        // Draw image into the center of the padded canvas to sample colors
+        ctx.drawImage(img, PAD, PAD, rect.width, rect.height);
+        const imageData = ctx.getImageData(PAD, PAD, rect.width, rect.height);
         const data = imageData.data;
 
         const particles: Particle[] = [];
         const gap = 5;
-        const cx = rect.width / 2;
-        const cy = rect.height / 2;
+        // Center of the canvas (also center of the image within canvas)
+        const cx = cw / 2;
+        const cy = ch / 2;
 
         for (let y = 0; y < rect.height; y += gap) {
             for (let x = 0; x < rect.width; x += gap) {
@@ -77,10 +82,11 @@ export const HeroLogo = () => {
                 const scatterDist = 150 + Math.random() * 250;
 
                 particles.push({
+                    // originX/Y are where the particle assembles (image coords + PAD offset)
                     x: cx + Math.cos(angle) * scatterDist,
                     y: cy + Math.sin(angle) * scatterDist,
-                    originX: x,
-                    originY: y,
+                    originX: x + PAD,
+                    originY: y + PAD,
                     scatterX: cx + Math.cos(angle) * scatterDist,
                     scatterY: cy + Math.sin(angle) * scatterDist,
                     color: `rgb(${r},${g},${b})`,
@@ -94,7 +100,7 @@ export const HeroLogo = () => {
 
         particlesRef.current = particles;
         initializedRef.current = true;
-        ctx.clearRect(0, 0, rect.width, rect.height);
+        ctx.clearRect(0, 0, cw, ch);
     }, []);
 
     // Main animation loop
@@ -201,7 +207,7 @@ export const HeroLogo = () => {
     return (
         <div
             ref={containerRef}
-            className="relative mb-6 select-none cursor-pointer flex items-center justify-center opacity-0"
+            className="relative mb-6 select-none cursor-pointer flex items-center justify-center opacity-0 overflow-visible"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onTouchStart={handleMouseEnter}
@@ -232,10 +238,10 @@ export const HeroLogo = () => {
                 }`}
             />
 
-            {/* Particle canvas overlay */}
+            {/* Particle canvas overlay — larger than image to allow orbit space */}
             <canvas
                 ref={canvasRef}
-                className="absolute z-20 inset-0 w-full h-full pointer-events-none"
+                className="absolute z-20 pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
 
             {/* Hover hint text */}
