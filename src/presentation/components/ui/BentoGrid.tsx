@@ -105,9 +105,9 @@ export const BentoGridItem = ({
                     <img
                         src={image}
                         alt="bg"
-                        className="w-full h-full object-cover opacity-60 group-hover/bento:opacity-40 group-hover/bento:scale-105 transition-all duration-700 blur-[2px] group-hover/bento:blur-0 filter grayscale group-hover/bento:grayscale-0"
+                        className="w-full h-full object-cover transition-all duration-700 filter grayscale group-hover/bento:grayscale-0 group-hover/bento:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent transition-opacity duration-300" />
                 </div>
             )}
 

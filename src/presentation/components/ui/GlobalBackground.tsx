@@ -16,21 +16,39 @@ export const GlobalBackground = () => {
             easing: "easeOutSine",
         });
 
-        // Parallax Effect (Clamped)
-        const handleScroll = () => {
+        // Parallax Effect with Smooth Lerp
+        let currentOffset = 0;
+        let targetOffset = 0;
+        let requestRef: number;
+
+        const loop = () => {
             if (!bgRef.current) return;
+            
+            // Lerp: Move current towards target by 10% each frame
+            // This creates the "smooth" (mượt) feel
+            currentOffset += (targetOffset - currentOffset) * 0.1;
+            
+            // Apply transform
+            // We use 3d transform for GPU acceleration
+            bgRef.current.style.transform = `translate3d(0, ${currentOffset}px, 0)`;
+            
+            requestRef = requestAnimationFrame(loop);
+        };
+
+        const handleScroll = () => {
             const scrollY = window.scrollY;
-            
-            // Move background slightly DOWN as we scroll down (chasing the scroll)
-            // Clamped to 100px max to prevent showing the top edge (since top is -10% ~= -100px)
-            // Speed factor 0.1: moves 50px for every 500px scrolled.
-            const offset = Math.min(scrollY * 0.1, 100);
-            
-            bgRef.current.style.transform = `translateY(${offset}px)`;
+            // Target moves down (0.1 speed) clamped to 150px
+            targetOffset = Math.min(scrollY * 0.15, 150);
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
+        // Start loop
+        loop();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            cancelAnimationFrame(requestRef);
+        };
     }, []);
 
     return (
@@ -38,7 +56,7 @@ export const GlobalBackground = () => {
             {/* Background Image Container */}
             <div 
                 ref={bgRef}
-                className="absolute inset-0 w-full h-[120%] opacity-0 will-change-transform top-[-10%]"
+                className="absolute inset-0 w-full h-[120lvh] opacity-0 will-change-transform top-[-10%]"
             >
                 <img
                     src="/bg/bg.png"
