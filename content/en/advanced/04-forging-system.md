@@ -1,7 +1,7 @@
 ---
 title: Abyssal Forging
 description: The art of crafting from the abyss.
-order: 2
+order: 4
 ---
 
 # Abyssal Forging

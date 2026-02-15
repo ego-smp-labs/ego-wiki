@@ -1,7 +1,7 @@
 ---
 title: Nghi Thức
 description: Các lệnh hệ thống.
-order: 4
+order: 1
 ---
 
 # Nghi Thức (Commands)

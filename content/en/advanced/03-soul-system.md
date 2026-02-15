@@ -1,7 +1,7 @@
 ---
 title: Soul Echoes
 description: Whispers of the soul after death.
-order: 1
+order: 3
 ---
 
 # Soul Echoes (Memory Shards)

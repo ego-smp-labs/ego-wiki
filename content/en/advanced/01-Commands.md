@@ -1,7 +1,7 @@
 ---
 title: Rituals
 description: System commands and invocations.
-order: 4
+order: 1
 ---
 
 # Rituals (Commands)

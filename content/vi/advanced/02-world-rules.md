@@ -1,7 +1,7 @@
 ---
 title: Quy Tắc Thế Giới
 description: Những luật lệ bất di bất dịch.
-order: 3
+order: 2
 ---
 
 # Quy Tắc Thế Giới (World Rules)

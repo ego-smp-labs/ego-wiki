@@ -1,7 +1,7 @@
 ---
 title: World Rules
 description: The immutable laws of existence.
-order: 3
+order: 2
 ---
 
 # World Rules

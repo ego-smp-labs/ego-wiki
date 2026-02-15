@@ -20,10 +20,10 @@ Hệ thống có 10 mốc: **Tier 0 → Tier 9**. (Tier 9 là tối đa.)
 | 2 | Vết Nứt | +10% / +10% | Hấp thụ thêm Bản Ngã: chứng minh đây không còn là "lỡ tay". |
 | 3 | Dấu Ấn | +15% / +15% | Hấp thụ thêm Bản Ngã: chứng minh sức mạnh bản thân |
 | 4 | Huyết Khế | +20% / +20% / + Speed 5% | Hấp thụ thêm Bản Ngã: chứng minh sức mạnh bản thân |
-| 5 | Cửa Tội | +25% / +25% / + Speed 10% | Muốn lên Tier 6: bắt buộc sở hữu **[Dark Ego](./04-dark-ego)** Từ đây, thế giới bắt đầu gọi tên bạn. |
-| 6 | Lãnh Địa | +30% / +30% / + Speed 10% / + Kháng Cự I | Muốn lên Tier 7: bắt buộc sở hữu **[Dark Ego](./04-dark-ego)** |
-| 7 | Hoá Thân | +35% / +35% / + Speed 10% / + Dạ Nhãn / + Kháng Cự I | Muốn lên Tier 8: bắt buộc sở hữu **[Dark Ego](./04-dark-ego)** |
-| 8 | Vương Ấn | +40% / +40% / + Speed 15% / + Dạ Nhãn / + Sức Mạnh I | Muốn lên Tier 9: bắt buộc sở hữu **[Dark Ego](./04-dark-ego)** |
+| 5 | Cửa Tội | +25% / +25% / + Speed 10% | Muốn lên Tier 6: bắt buộc sở hữu **[Dark Ego](./dark-ego)** Từ đây, thế giới bắt đầu gọi tên bạn. |
+| 6 | Lãnh Địa | +30% / +30% / + Speed 10% / + Kháng Cự I | Muốn lên Tier 7: bắt buộc sở hữu **[Dark Ego](./dark-ego)** |
+| 7 | Hoá Thân | +35% / +35% / + Speed 10% / + Dạ Nhãn / + Kháng Cự I | Muốn lên Tier 8: bắt buộc sở hữu **[Dark Ego](./dark-ego)** |
+| 8 | Vương Ấn | +40% / +40% / + Speed 15% / + Dạ Nhãn / + Sức Mạnh I | Muốn lên Tier 9: bắt buộc sở hữu **[Dark Ego](./dark-ego)** |
 | 9 | Tội Thân | +45% / +45% / + Speed 15% / + Dạ Nhãn / + Sức Mạnh II| Tier tối đa. Ở đây không còn "lên cấp", chỉ còn "giữ được mình". |
 
 ## Biểu Hiện & Tác Động Phụ (The Manifestation)

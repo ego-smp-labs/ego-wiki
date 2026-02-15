@@ -1,7 +1,7 @@
 ---
 title: Rèn Huyết Tế
 description: Nghệ thuật rèn đúc từ vực thẳm.
-order: 2
+order: 4
 ---
 
 # Rèn Huyết Tế (Abyssal Forging)

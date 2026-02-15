@@ -1,7 +1,7 @@
 ---
 title: Mảnh Kí Ức
 description: Tiếng vọng của linh hồn sau cái chết.
-order: 1
+order: 3
 ---
 
 # Mảnh Kí Ức (Soul Grave)
