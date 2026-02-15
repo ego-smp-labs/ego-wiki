@@ -12,3 +12,8 @@
 **Vulnerability:** `WikiService` methods (`getAllCategories`, `getCategoryArticles`, `getArticle`) trusted user input (`locale`, `category`) without validation, allowing directory traversal via `..` segments to access sensitive files/directories like `.jules` or source code.
 **Learning:** File system operations that use user input for paths must always validate against a whitelist (like `isValidLocale`) or strictly sanitize path segments to prevent traversal, even if `path.join` is used.
 **Prevention:** Implement strict input validation for all parameters used in file system paths. Use helper methods like `isSafePathSegment` and validate against known enums/constants (`LOCALES`).
+
+## 2025-02-25 - Uncapped Search Inputs
+**Vulnerability:** The search API accepted unlimited query lengths and result limits, exposing the server to Denial of Service (DoS) attacks via CPU exhaustion (long queries) or memory exhaustion (large limits).
+**Learning:** Publicly accessible APIs must enforce strict bounds on input parameters to prevent resource exhaustion, even if the underlying search logic is efficient. Authentication is not a substitute for input validation.
+**Prevention:** Implement input validation for all API parameters. Cap string lengths (e.g., 100 chars) and numeric limits (e.g., 50 items) at the entry point of the API handler.
