@@ -4,95 +4,101 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import { animate } from "animejs";
 
 /**
- * HeroLogo — Displays `logo_icon.png` as the main hero logo.
+ * HeroLogo — `logo_icon.png` as hero logo.
  *
- * Default state:  Grayscale, slightly desaturated.
- * On hover:       Particles sweep across and "fill" the color back in.
- *                 Uses a canvas overlay with small colored squares that
- *                 scatter outward from the logo, revealing the full-color image beneath.
+ * Default:   Grayscale image + colored particles floating around.
+ * Hover:     Particles rush INTO the logo, filling it with color (grayscale → full color).
+ * Release:   Particles scatter back outward, logo fades back to grayscale.
  */
+
+interface Particle {
+    x: number;
+    y: number;
+    originX: number;
+    originY: number;
+    scatterX: number;
+    scatterY: number;
+    color: string;
+    size: number;
+    angle: number;
+    speed: number;
+    orbitRadius: number;
+}
+
 export const HeroLogo = () => {
     const containerRef = useRef<HTMLDivElement>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const imgRef = useRef<HTMLImageElement>(null);
-    const [isHovered, setIsHovered] = useState(false);
-    const [isRevealed, setIsRevealed] = useState(false);
-    const animFrameRef = useRef<number>(0);
     const particlesRef = useRef<Particle[]>([]);
+    const animFrameRef = useRef<number>(0);
+    const hoveredRef = useRef(false);
+    const progressRef = useRef(0); // 0 = scattered, 1 = assembled
+    const [isHovered, setIsHovered] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const initializedRef = useRef(false);
 
-    interface Particle {
-        x: number;
-        y: number;
-        originX: number;
-        originY: number;
-        color: string;
-        size: number;
-        life: number;
-        maxLife: number;
-        vx: number;
-        vy: number;
-        delay: number;
-    }
-
-    // Generate particles from the image
-    const generateParticles = useCallback(() => {
+    // Generate particles by sampling image colors
+    const initParticles = useCallback(() => {
         const canvas = canvasRef.current;
         const img = imgRef.current;
-        if (!canvas || !img) return;
+        if (!canvas || !img || initializedRef.current) return;
 
-        const ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext("2d", { willReadFrequently: true });
         if (!ctx) return;
 
-        // Draw image to canvas to sample colors
-        const w = canvas.width;
-        const h = canvas.height;
-        ctx.clearRect(0, 0, w, h);
-        ctx.drawImage(img, 0, 0, w, h);
+        // Match canvas to image display size
+        const rect = img.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
 
-        const imageData = ctx.getImageData(0, 0, w, h);
+        // Draw image to sample pixel colors
+        ctx.drawImage(img, 0, 0, rect.width, rect.height);
+        const imageData = ctx.getImageData(0, 0, rect.width, rect.height);
         const data = imageData.data;
-        const particles: Particle[] = [];
-        const gap = 6; // Sample every 6px
 
-        for (let y = 0; y < h; y += gap) {
-            for (let x = 0; x < w; x += gap) {
-                const i = (y * w + x) * 4;
+        const particles: Particle[] = [];
+        const gap = 5;
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+
+        for (let y = 0; y < rect.height; y += gap) {
+            for (let x = 0; x < rect.width; x += gap) {
+                const i = (y * rect.width + x) * 4;
                 const r = data[i];
                 const g = data[i + 1];
                 const b = data[i + 2];
                 const a = data[i + 3];
 
-                // Skip transparent pixels
                 if (a < 50) continue;
-                // Skip very dark pixels (background)
-                if (r < 15 && g < 15 && b < 15) continue;
+                if (r < 20 && g < 20 && b < 20) continue;
 
-                const distFromCenter = Math.sqrt(
-                    Math.pow(x - w / 2, 2) + Math.pow(y - h / 2, 2)
-                );
-                const maxDist = Math.sqrt(Math.pow(w / 2, 2) + Math.pow(h / 2, 2));
+                // Random scatter position (outside the logo bounds)
+                const angle = Math.random() * Math.PI * 2;
+                const scatterDist = 150 + Math.random() * 250;
 
                 particles.push({
-                    x: x + (Math.random() - 0.5) * 200,
-                    y: y + (Math.random() - 0.5) * 200,
+                    x: cx + Math.cos(angle) * scatterDist,
+                    y: cy + Math.sin(angle) * scatterDist,
                     originX: x,
                     originY: y,
-                    color: `rgba(${r},${g},${b},${a / 255})`,
-                    size: gap * 0.8 + Math.random() * 1,
-                    life: 0,
-                    maxLife: 60 + Math.random() * 40,
-                    vx: (Math.random() - 0.5) * 4,
-                    vy: (Math.random() - 0.5) * 4,
-                    delay: (distFromCenter / maxDist) * 30,
+                    scatterX: cx + Math.cos(angle) * scatterDist,
+                    scatterY: cy + Math.sin(angle) * scatterDist,
+                    color: `rgb(${r},${g},${b})`,
+                    size: gap * 0.7 + Math.random() * 0.6,
+                    angle: angle,
+                    speed: 0.003 + Math.random() * 0.005,
+                    orbitRadius: scatterDist,
                 });
             }
         }
 
         particlesRef.current = particles;
+        initializedRef.current = true;
+        ctx.clearRect(0, 0, rect.width, rect.height);
     }, []);
 
-    // Animate particles converging to their positions
-    const animateParticles = useCallback(() => {
+    // Main animation loop
+    const startLoop = useCallback(() => {
         const canvas = canvasRef.current;
         if (!canvas) return;
         const ctx = canvas.getContext("2d");
@@ -100,58 +106,64 @@ export const HeroLogo = () => {
 
         const w = canvas.width;
         const h = canvas.height;
-        let allDone = false;
-        let frame = 0;
+        const cx = w / 2;
+        const cy = h / 2;
 
         const tick = () => {
             ctx.clearRect(0, 0, w, h);
-            allDone = true;
-            frame++;
+            const particles = particlesRef.current;
+            const hovered = hoveredRef.current;
 
-            for (const p of particlesRef.current) {
-                if (frame < p.delay) {
-                    // Still waiting — draw at scattered position
-                    ctx.globalAlpha = 0.3;
-                    ctx.fillStyle = p.color;
-                    ctx.fillRect(p.x, p.y, p.size, p.size);
-                    allDone = false;
-                    continue;
-                }
+            // Smoothly interpolate progress
+            const targetProgress = hovered ? 1 : 0;
+            progressRef.current += (targetProgress - progressRef.current) * 0.06;
+            const progress = progressRef.current;
 
-                p.life++;
-                const progress = Math.min(p.life / p.maxLife, 1);
-                const ease = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+            for (const p of particles) {
+                // Update orbit angle for floating effect when scattered
+                p.angle += p.speed;
 
-                // Lerp from scattered to origin
-                p.x += (p.originX - p.x) * ease * 0.15;
-                p.y += (p.originY - p.y) * ease * 0.15;
+                // Scattered position (orbiting)
+                const floatX = cx + Math.cos(p.angle) * p.orbitRadius;
+                const floatY = cy + Math.sin(p.angle) * p.orbitRadius;
 
-                ctx.globalAlpha = Math.min(progress * 2, 1);
+                // Lerp between floating and assembled position
+                p.x = floatX + (p.originX - floatX) * progress;
+                p.y = floatY + (p.originY - floatY) * progress;
+
+                // Fade particles: more visible when scattered, fade when assembled
+                const alpha = progress < 0.9 ? 0.6 + progress * 0.4 : Math.max(0, 1 - (progress - 0.9) * 10);
+
+                ctx.globalAlpha = alpha;
                 ctx.fillStyle = p.color;
-                ctx.fillRect(p.x, p.y, p.size, p.size);
 
-                if (progress < 1) allDone = false;
+                if (progress < 0.5) {
+                    // Circular particles when floating
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size * 0.5, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    // Square pixels when assembling
+                    ctx.fillRect(p.x - p.size / 2, p.y - p.size / 2, p.size, p.size);
+                }
             }
 
-            if (allDone) {
-                // Fade out canvas, show the real colored image
-                setIsRevealed(true);
-                return;
-            }
-
+            ctx.globalAlpha = 1;
             animFrameRef.current = requestAnimationFrame(tick);
         };
 
         tick();
     }, []);
 
-    // Handle hover start
     const handleMouseEnter = useCallback(() => {
-        if (isRevealed) return; // Already revealed
+        hoveredRef.current = true;
         setIsHovered(true);
-        generateParticles();
-        animateParticles();
-    }, [isRevealed, generateParticles, animateParticles]);
+    }, []);
+
+    const handleMouseLeave = useCallback(() => {
+        hoveredRef.current = false;
+        setIsHovered(false);
+    }, []);
 
     // Entrance animation
     useEffect(() => {
@@ -170,32 +182,38 @@ export const HeroLogo = () => {
         };
     }, []);
 
-    // Set canvas dimensions when image loads
-    const handleImageLoad = useCallback(() => {
-        const canvas = canvasRef.current;
-        const img = imgRef.current;
-        if (!canvas || !img) return;
+    // Start particle system when image loads
+    useEffect(() => {
+        if (!imageLoaded) return;
 
-        // Use display size
-        const rect = img.getBoundingClientRect();
-        canvas.width = rect.width;
-        canvas.height = rect.height;
-    }, []);
+        // Small delay to ensure layout is stable
+        const timer = setTimeout(() => {
+            initParticles();
+            startLoop();
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            cancelAnimationFrame(animFrameRef.current);
+        };
+    }, [imageLoaded, initParticles, startLoop]);
 
     return (
         <div
             ref={containerRef}
             className="relative mb-6 select-none cursor-pointer flex items-center justify-center opacity-0"
             onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             onTouchStart={handleMouseEnter}
+            onTouchEnd={handleMouseLeave}
         >
             {/* Glow behind the logo */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div
-                    className={`w-[80%] h-[80%] rounded-full blur-[60px] transition-all duration-1000 ${
-                        isRevealed
-                            ? "bg-neon-purple/30 scale-110"
-                            : "bg-neon-purple/10 scale-100"
+                    className={`w-[80%] h-[80%] rounded-full blur-[60px] transition-all duration-700 ${
+                        isHovered
+                            ? "bg-neon-purple/40 scale-125"
+                            : "bg-neon-purple/15 scale-100"
                     }`}
                 />
             </div>
@@ -205,9 +223,10 @@ export const HeroLogo = () => {
                 ref={imgRef}
                 src="/logo_icon.png"
                 alt="EGO SMP"
-                onLoad={handleImageLoad}
-                className={`relative z-10 w-auto max-w-[500px] h-auto max-h-[280px] md:max-w-[600px] md:max-h-[340px] object-contain transition-all duration-1000 drop-shadow-[0_0_30px_rgba(123,0,255,0.4)] ${
-                    isRevealed
+                crossOrigin="anonymous"
+                onLoad={() => setImageLoaded(true)}
+                className={`relative z-10 w-auto max-w-[500px] h-auto max-h-[280px] md:max-w-[600px] md:max-h-[340px] object-contain transition-all duration-700 drop-shadow-[0_0_30px_rgba(123,0,255,0.4)] ${
+                    isHovered
                         ? "grayscale-0 brightness-110"
                         : "grayscale brightness-75"
                 }`}
@@ -216,21 +235,17 @@ export const HeroLogo = () => {
             {/* Particle canvas overlay */}
             <canvas
                 ref={canvasRef}
-                className={`absolute z-20 top-0 left-1/2 -translate-x-1/2 pointer-events-none transition-opacity duration-500 ${
-                    isRevealed ? "opacity-0" : "opacity-100"
-                }`}
-                style={{
-                    maxWidth: "600px",
-                    maxHeight: "340px",
-                }}
+                className="absolute z-20 inset-0 w-full h-full pointer-events-none"
             />
 
             {/* Hover hint text */}
-            {!isHovered && !isRevealed && (
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-8 text-white/30 text-xs font-mono tracking-widest animate-pulse">
-                    HOVER TO AWAKEN
-                </div>
-            )}
+            <div
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-10 text-white/30 text-xs font-mono tracking-widest transition-opacity duration-500 ${
+                    isHovered ? "opacity-0" : "opacity-100 animate-pulse"
+                }`}
+            >
+                HOVER TO AWAKEN
+            </div>
         </div>
     );
 };

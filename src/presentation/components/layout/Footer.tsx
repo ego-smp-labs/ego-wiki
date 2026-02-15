@@ -24,12 +24,11 @@ export default function Footer({ locale }: FooterProps) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
                         <Link href={`/${locale}`} className="inline-block mb-4">
-                            <span className="font-display text-2xl font-bold text-neon-cyan text-glow-cyan">
-                                EGO
-                            </span>
-                            <span className="font-display text-2xl font-bold text-white ml-1">
-                                WIKI
-                            </span>
+                            <img 
+                                src="/logo_icon.png" 
+                                alt="EGO SMP" 
+                                className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]" 
+                            />
                         </Link>
                         <p className="text-white/50 text-sm leading-relaxed">
                             {description}
