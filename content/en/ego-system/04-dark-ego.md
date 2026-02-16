@@ -19,6 +19,13 @@ Dark Ego is not for the faint of heart.
   - **Tier < 5**: Randomly increase **+1-2 Tier**.
   - **Tier >= 5**: Increase **+1 Tier** (Required to use this item to level up).
 
+### Forging
+**Dark Ego** can now be forged using the **Cursed Crafting Table**.
+- **Recipe**:
+  - **Tainted Ego** (Center)
+  - **Obsidian** (Bottom)
+  - **Soul Sand** (Top)
+
 ## The price to pay:
   - **Death**: **10%** chance of **INSTANT DEATH** when used.
   - **Chaos**: Always active (cannot be skipped).

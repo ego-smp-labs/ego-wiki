@@ -56,6 +56,15 @@ From then on, Mace of Chaos wandered around the server like an omen of error.
 
 ### Recipe: Mace of Chaos
 
+**Requiment**: [Cursed Crafting Table](../items/04-cursed-items.md)
+
+**Ingredients**:
+- **M**: **Heavy Core** (Center)
+- **T**: **Dark Ego** (Bottom Center)
+- **N**: **Netherite Ingot** (Corners)
+
+*(Pattern: N-H-N / D / N-N)*
+
 <div align="center">
 
 ![Hard Recipe - Mace of Chaos](https://i.imgur.com/XClFjxZ.png)

@@ -14,3 +14,6 @@ Shards of dark power, used to upgrade Tier 5+ and craft.
 
 ## Soul Keeper
 Like Totem, protects your Tier upon death. Used once.
+
+## Tainted Ego
+An unstable variant of Ego, mixed with netherite. used in [Cursed Forging](../items/04-cursed-items.md).
