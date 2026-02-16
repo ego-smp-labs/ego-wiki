@@ -51,8 +51,9 @@ Server có luật chống farm để giữ PvP còn chất — không biến th�
 
 Các nguyên tắc cốt lõi:
 - Giết quá liên tục có thể bị hạn chế rơi Ego (anti kill-spam), để tránh lạm dụng.  
-- **Chênh lệch Tier** sẽ ảnh hưởng drop: người Tier cao giết người Tier thấp quá sẽ **không rơi Ego** nhằm chống farm.
-- Ví dụ rule cụ thể: khi kẻ tấn công Tier 5 giết nạn nhân Tier 0 thì **không rơi Ego** (trong khi Tier 0 hoặc Tier 1 giết Tier 0 theo rule phù hợp mới có thể rơi).
+- **Chênh lệch Tier** sẽ ảnh hưởng drop: người Tier cao (> Tier 2) giết người Tier 0 sẽ **không rơi Ego** nhằm chống farm.
+- Ví dụ rule cụ thể: khi kẻ tấn công Tier 3+ giết nạn nhân Tier 0 thì **không rơi Ego**.
+- Tuy nhiên, trận chiến **Tier 0 vs Tier 0** sẽ **LUÔN rơi Ego**, bỏ qua các hạn chế anti-farm.
 
 ## Chết thì sao?
 

@@ -67,8 +67,9 @@ The server has anti-farm rules to keep PvP sharp — not turn it into an Ego pre
 
 Core principles:
 - Killing too repeatedly can reduce/limit Ego drops (anti kill-spam), to prevent abuse.
-- **Tier difference** affects drops: a high-tier killing a much lower-tier will **not drop Ego** (anti-farm).
-- Example rule: if a Tier 5 attacker kills a Tier 0 victim, **no Ego drops** (while Tier 0 or Tier 1 killing Tier 0 — under the right rule conditions — may still drop).
+- **Tier difference** affects drops: a high-tier (Tier > 2) killing a Tier 0 victim will **not drop Ego** (anti-farm).
+- Example rule: if a Tier 3+ attacker kills a Tier 0 victim, **no Ego drops**.
+- However, **Tier 0 vs Tier 0** battles will **ALWAYS drop Ego**, bypassing anti-farm restrictions.
 
 
 ## What happens when you die?
