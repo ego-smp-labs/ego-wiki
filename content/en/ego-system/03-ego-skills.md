@@ -1,12 +1,12 @@
 ---
 title: Ego Skills
-description: Detailed bonuses and tier skills.
+description: Tier bonuses and sin-based skill system.
 order: 3
 ---
 
 # Ego Skills
 
-As you increase your Tier, the Ego system unlocks new bonuses and skills.
+As you increase your Tier, the Ego system unlocks stat bonuses. Active skills are granted through the **Sin system** (see [The Seven Deadly Sins](/ego-system/sins)).
 
 ## Base Bonuses (Per Tier)
 
@@ -15,34 +15,30 @@ As you increase your Tier, the Ego system unlocks new bonuses and skills.
 | ❤ Health | **+2 HP** per Tier |
 | ⚔ Damage | **+5%** per Tier |
 
-## Tier Skill Table
+## Tier Progression Table
 
-| Tier | Name | Bonus HP | Bonus DMG | Passive / Skill |
-|------|------|----------|-----------|-----------------|
-| 0 | The Awakened | +0 | +0% | None |
-| 1 | Ego Warrior | +2 | +2% | None |
-| 2 | Chaos Hunter | +4 | +4% | Anti-farming starts |
-| 3 | Shadow Dominator | +6 | +6% | Soul Stealer |
-| 4 | Herald of Destruction | +8 | +8% | Speed **+10%** |
-| 5 | Ego Master | +10 | +10% | Speed **+20%**, Shadow Step, can drop Dark Ego |
-| 6 | Lord of Chaos | +12 | +12% | Speed **+30%**, Titan Skin, Resistance I |
-| 7 | Death Incarnate | +14 | +14% | Speed **+40%**, Glowing aura |
-| 8 | Ego God | +16 | +16% | Speed **+50%**, Berserk, Strength I |
-| 9 | Immortal | +18 | +18% | Speed **+60%**, Abyssal Shriek |
+| Tier | Name | Bonus HP | Bonus DMG | Special |
+|------|------|----------|-----------|---------|
+| 0 | Mortal | +0 | +0% | None |
+| 1 | Awakened | +2 | +2% | None |
+| 2 | Fracture | +4 | +4% | Anti-farming starts |
+| 3 | Mark | +6 | +6% | Soul Stealer |
+| 4 | Blood Pact | +8 | +8% | Speed **+10%** |
+| 5 | Gate of Sin | +10 | +10% | Speed **+20%**, can drop Dark Ego |
+| 6 | Domain | +12 | +12% | Speed **+30%**, Resistance I |
+| 7 | Incarnation | +14 | +14% | Speed **+40%**, Glowing aura |
+| 8 | Sovereign Seal | +16 | +16% | Speed **+50%**, Strength I |
+| 9 | Sin Incarnate | +18 | +18% | Speed **+60%** |
 
-## Skill Details
+## Active Skills (Sin-Based)
 
-### Shadow Step (Tier 5+)
-Dash forward quickly. Cooldown: 15 seconds.
+Active skills are no longer tied to your tier. Instead, they come from the **Sin system**:
 
-### Titan Skin (Tier 6+)
-Reduce incoming damage for a short duration. Cooldown: 20 seconds.
+1. Awaken a sin to Level 2 using two Sin Hearts
+2. Two skills are bound to your **Skill Slots** (hotbar)
+3. Activate with `Shift + Right-Click` (Slot 1) or `Shift + Left-Click` (Slot 2)
 
-### Berserk (Tier 8+)
-Temporarily increase damage dealt but take more damage. Cooldown: 30 seconds.
-
-### Abyssal Shriek (Tier 9)
-A special passive ability exclusive to Tier 9.
+Each of the 7 sins has a unique pair of skills. See the [Sins page](/ego-system/sins) for details.
 
 ## Curses (Tier 6+)
 

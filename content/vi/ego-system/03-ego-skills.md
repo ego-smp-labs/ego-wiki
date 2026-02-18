@@ -1,12 +1,12 @@
 ---
 title: Kỹ Năng Ego
-description: Chi tiết bonus và kỹ năng theo từng cấp.
+description: Bonus tier và hệ thống kỹ năng dựa trên tội lỗi.
 order: 3
 ---
 
 # Kỹ Năng Ego
 
-Khi bạn tăng Tier, hệ thống Ego sẽ mở khóa các bonus và kỹ năng mới.
+Khi tăng Tier, hệ thống Ego mở khóa các bonus chỉ số. Kỹ năng chủ động được cấp qua **hệ thống Tội Lỗi** (xem [Thất Đại Tội](/ego-system/sins)).
 
 ## Bonus Cơ Bản (Mỗi Tier)
 
@@ -15,48 +15,44 @@ Khi bạn tăng Tier, hệ thống Ego sẽ mở khóa các bonus và kỹ năng
 | ❤ Máu | **+2 HP** mỗi Tier |
 | ⚔ Sát Thương | **+5%** mỗi Tier |
 
-## Bảng Kỹ Năng Theo Tier
+## Bảng Tiến Trình Tier
 
-| Tier | Tên | Bonus HP | Bonus DMG | Passive / Kỹ Năng |
-|------|-----|----------|-----------|-------------------|
-| 0 | Người Tỉnh Dậy | +0 | +0% | Không có |
-| 1 | Chiến Binh Bản Ngã | +2 | +2% | Không có |
-| 2 | Kẻ Săn Hỗn Loạn | +4 | +4% | Anti-farming bắt đầu |
-| 3 | Thống Trị Bóng Tối | +6 | +6% | Soul Stealer |
-| 4 | Sứ Giả Hủy Diệt | +8 | +8% | Tốc độ **+10%** |
-| 5 | Bậc Thầy Bản Ngã | +10 | +10% | Tốc độ **+20%**, Shadow Step, có thể drop Dark Ego |
-| 6 | Chúa Tể Hỗn Loạn | +12 | +12% | Tốc độ **+30%**, Titan Skin, Kháng Sát Thương I |
-| 7 | Hiện Thân Của Cái Chết | +14 | +14% | Tốc độ **+40%**, Phát sáng |
-| 8 | Thần Bản Ngã | +16 | +16% | Tốc độ **+50%**, Berserk, Sức Mạnh I |
-| 9 | Bất Tử | +18 | +18% | Tốc độ **+60%**, Abyssal Shriek |
+| Tier | Tên | Bonus HP | Bonus DMG | Đặc Biệt |
+|------|-----|----------|-----------|-----------|
+| 0 | Phàm Nhân | +0 | +0% | Không |
+| 1 | Thức Tỉnh | +2 | +2% | Không |
+| 2 | Rạn Nứt | +4 | +4% | Anti-farming bắt đầu |
+| 3 | Dấu Ấn | +6 | +6% | Soul Stealer |
+| 4 | Huyết Ước | +8 | +8% | Tốc độ **+10%** |
+| 5 | Cửa Tội | +10 | +10% | Tốc độ **+20%**, có thể rơi Dark Ego |
+| 6 | Lãnh Địa | +12 | +12% | Tốc độ **+30%**, Kháng I |
+| 7 | Hóa Thân | +14 | +14% | Tốc độ **+40%**, Phát sáng |
+| 8 | Ấn Quân Vương | +16 | +16% | Tốc độ **+50%**, Sức Mạnh I |
+| 9 | Hiện Thân Tội Lỗi | +18 | +18% | Tốc độ **+60%** |
 
-## Chi Tiết Kỹ Năng
+## Kỹ Năng Chủ Động (Dựa Trên Tội Lỗi)
 
-### Shadow Step (Tier 5+)
-Dịch chuyển nhanh về phía trước. Thời gian hồi: 15 giây.
+Kỹ năng chủ động không còn gắn với tier. Thay vào đó, chúng đến từ **hệ thống Tội Lỗi**:
 
-### Titan Skin (Tier 6+)
-Giảm sát thương nhận vào trong một khoảng thời gian ngắn. Hồi: 20 giây.
+1. Thức tỉnh tội lỗi lên Cấp 2 bằng hai Trái Tim Tội Lỗi
+2. Hai kỹ năng được gắn vào **Ô Kỹ Năng** (hotbar)
+3. Kích hoạt với `Shift + Chuột Phải` (Ô 1) hoặc `Shift + Chuột Trái` (Ô 2)
 
-### Berserk (Tier 8+)
-Tăng sát thương tạm thời nhưng nhận thêm sát thương. Hồi: 30 giây.
-
-### Abyssal Shriek (Tier 9)
-Kỹ năng passive đặc biệt dành riêng cho Tier 9.
+Mỗi tội lỗi trong 7 loại có một cặp kỹ năng riêng. Xem trang [Tội Lỗi](/ego-system/sins) để biết chi tiết.
 
 ## Lời Nguyền (Tier 6+)
 
-Từ **Tier 6** trở lên, bạn phải chịu các hiệu ứng nguyền rủa:
+Từ **Tier 6** trở đi, bạn phải chịu hiệu ứng nguyền:
 
 | Hiệu Ứng | Bắt Đầu Từ |
 |-----------|------------|
-| Hạt nguyền rủa | Tier 6 |
-| Phát sáng (Glowing) | Tier 7 |
+| Hạt nguyền | Tier 6 |
+| Phát sáng | Tier 7 |
 
-## Xáo Trộn Kho Đồ (Chaos)
+## Xáo Trộn Kho (Chaos)
 
-Khi kích hoạt Ego/Dark Ego, kho đồ của bạn sẽ bị **xáo trộn toàn bộ** (bao gồm cả hotbar và inventory).
+Khi dùng vật phẩm Ego/Dark Ego, **toàn bộ kho đồ** (cả hotbar và túi đồ) sẽ bị xáo trộn.
 
 ## Xếp Chồng Vật Phẩm
 
-Ego và Dark Ego có thể **xếp chồng** lên nhau (tối đa 16 vật phẩm).
+Ego và Dark Ego có thể **xếp chồng** (tối đa 16 mỗi ô).
