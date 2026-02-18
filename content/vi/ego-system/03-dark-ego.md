@@ -1,7 +1,7 @@
 ---
 title: Dark Ego
 description: Sức mạnh đen tối và rủi ro.
-order: 4
+order: 3
 ---
 
 ## Bản Ngã Hắc Hóa (Dark Ego)

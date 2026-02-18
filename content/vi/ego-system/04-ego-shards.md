@@ -1,7 +1,7 @@
 ---
 title: Ô Mảnh Vỡ Bản Ngã
 description: Cơ chế Shard Slot — trang bị mảnh vỡ để nhận sức mạnh ẩn.
-order: 7
+order: 4
 ---
 
 # Ô Mảnh Vỡ Bản Ngã — Shard Slots
