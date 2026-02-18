@@ -44,3 +44,15 @@ Sức mạnh lớn đi kèm với sự điên loạn không thể kiểm soát.
 ## Vận hành
 
 Tier càng cao càng mạnh, nhưng đừng quên: càng cao thì càng dễ trở thành mục tiêu, vì server này sống bằng luật "giết hoặc bị giết".
+
+### Mất Tier khi Chết
+
+Theo mặc định, tier chỉ bị reset khi bạn **bị giết bởi người chơi khác** (PvP). Chết vì mob, rơi, dung nham, hoặc bất kỳ nguyên nhân nào khác **không** làm mất tier.
+
+> *"Chỉ có sự phản bội giữa đồng loại mới đủ sức kéo ngươi khỏi vực thẳm."*
+
+- Bị người chơi tấn công trực tiếp → **mất tier**
+- Bị bắn bởi mũi tên/projectile từ người chơi → **mất tier**
+- Chết vì mob, rơi, cháy, v.v. → **giữ nguyên tier**
+- Sử dụng [Soul Keeper](/vi/items/ego-items#soul-keeper) → **bảo vệ tier** dù chết bất kỳ cách nào
+

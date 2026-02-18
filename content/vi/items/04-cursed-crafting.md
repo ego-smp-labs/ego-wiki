@@ -38,7 +38,7 @@ Bàn Nguyền mở một **GUI 54 ô** — không giống bất kỳ bàn chế 
 |------------|--------|
 | **Lưới 3×3** | Đặt nguyên liệu tại đây |
 | **Ô Kết Quả** | Hiển thị sản phẩm nếu công thức hợp lệ |
-| **Vòng Linh Hồn** | 12 ô hiển thị linh hồn (đã nạp / trống) |
+| **Vùng Linh Hồn** | 10 ô bên trái hiển thị linh hồn (xám = trống, tím = đã nạp) |
 | **⚡ Nút Nạp** | Hy sinh 1 Tier để nạp linh hồn |
 | **📊 Ô Thông Tin** | Hiển thị số linh hồn hiện tại |
 | **📖 Nút Wiki** | Liên kết đến wiki |
@@ -47,7 +47,7 @@ Bàn Nguyền mở một **GUI 54 ô** — không giống bất kỳ bàn chế 
 
 ## Hệ Thống Linh Hồn
 
-Mỗi Bàn Nguyền chứa tối đa **12 linh hồn**.
+Mỗi Bàn Nguyền chứa tối đa **10 linh hồn**.
 Linh hồn bị tiêu thụ khi rèn [công thức nguyền](/vi/items/cursed-recipes).
 
 ### Nạp Linh Hồn
@@ -84,7 +84,6 @@ Không giống chế tạo thông thường, Rèn Huyết Tế là một **canh 
 | 📍 **Lộ Diện** | Vị trí lò rèn bị **broadcast cho toàn server** |
 | 🔒 **Khóa** | Không thể lấy vật phẩm ra cho đến khi hoàn tất |
 | 💀 **Mất Trắng** | Bị giết hoặc lò bị phá hủy → mất tất cả nguyên liệu + linh hồn |
-| 🌀 **Hỗn Mang** | Kho đồ bị xáo trộn sau khi rèn xong (Chaos Shuffle) |
 
 > *"Những tạo vật của vực thẳm không thể được chế tạo theo cách thông thường. Chúng cần thời gian, và cả sự đánh cược."*
 
