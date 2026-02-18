@@ -30,20 +30,10 @@ Bàn Nguyền không tự xuất hiện. Bạn phải **tự tay** xây dựng n
 
 ---
 
-## Giao Diện (GUI)
-
-Bàn Nguyền mở một **GUI 54 ô** — không giống bất kỳ bàn chế tạo nào bạn từng thấy:
-
 | Thành phần | Mô tả |
 |------------|--------|
-| **Lưới 3×3** | Đặt nguyên liệu tại đây |
-| **Ô Kết Quả** | Hiển thị sản phẩm nếu công thức hợp lệ |
 | **Vùng Linh Hồn** | 10 ô bên trái hiển thị linh hồn (xám = trống, tím = đã nạp) |
 | **⚡ Nút Nạp** | Hy sinh 1 Tier để nạp linh hồn |
-| **📊 Ô Thông Tin** | Hiển thị số linh hồn hiện tại |
-| **📖 Nút Wiki** | Liên kết đến wiki |
-
----
 
 ## Hệ Thống Linh Hồn
 

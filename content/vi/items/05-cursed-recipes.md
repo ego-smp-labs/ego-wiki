@@ -63,9 +63,9 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ## Mảnh Vỡ Ego — Ego Shards
 
-> Xem chi tiết hiệu ứng → [Hiến Tế — Mảnh Vỡ Ego](/vi/items/sacrifice#mảnh-vỡ-ego--ego-shards)
+> Xem chi tiết hiệu ứng → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
 
-Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt hiệu ứng.
+Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại chỉ tồn tại **một** trong server.
 
 ### Mảnh Gai — Thorns
 
@@ -130,5 +130,5 @@ Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt hiệu ứng.
 ## Liên kết
 
 - → [Bàn Chế Tạo Nguyền & Rèn Huyết Tế](/vi/items/cursed-crafting)
-- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/items/sacrifice)
+- → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
 - → [Chùy Huyền Thoại](/vi/items/mace)
