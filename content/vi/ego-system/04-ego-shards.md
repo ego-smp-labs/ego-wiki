@@ -1,82 +1,232 @@
 ---
-title: Ô Mảnh Vỡ Bản Ngã
-description: Cơ chế Shard Slot — trang bị mảnh vỡ để nhận sức mạnh ẩn.
+title: Mảnh Vỡ Bản Ngã
+description: Sáu mảnh hồn bị lạc — từng là cái tôi của những kẻ đã biến mất khỏi lịch sử.
 order: 4
 ---
 
-# Ô Mảnh Vỡ Bản Ngã — Shard Slots
+# Mảnh Vỡ Bản Ngã — Ego Shards
 
-> *"Mỗi mảnh vỡ là một phần linh hồn bị tách ra. Lắp chúng lại — và ngươi sẽ trở thành thứ gì đó không còn là con người."*
+> *"Bản ngã không chết theo thân xác. Nó vỡ ra — và những mảnh vỡ đó trôi dạt trong thế giới,
+> chờ kẻ đủ mạnh để nhặt lên."*
 
-Ô Mảnh Vỡ là hai vị trí đặc biệt trong inventory, cho phép trang bị **Ego Shard** để nhận hiệu ứng chiến đấu.
+Ô Mảnh Vỡ là hai vị trí đặc biệt trong inventory, cho phép trang bị **Ego Shard**
+để nhận hiệu ứng chiến đấu. Mỗi mảnh vỡ là phần còn lại của một **cái tôi thực sự** — 
+không phải huyền thoại, mà là ký ức bị giam cầm trong vật chất.
 
 ---
 
 ## Mở Khóa
 
 | Tier | Số ô mở khóa |
-|------|---------------|
-| < 3 | Không có (khoá) |
-| 3 – 4 | **1 ô** (Slot 1) |
-| 5+ | **2 ô** (Slot 1 + Slot 2) |
+|------|--------------|
+| < 3  | Không có 🔒 |
+| 3 – 4 | **1 ô** (Slot 1 — trái) |
+| 5+   | **2 ô** (Slot 1 + Slot 2) |
 
-- Khi chưa đủ tier, ô hiển thị kính đỏ (🔒 khoá)
-- Khi đủ tier nhưng chưa có shard, ô hiển thị kính xám (trống)
+- Ô chưa mở → kính **đỏ** (khoá)
+- Ô mở nhưng trống → kính **xám**
 
 ---
 
 ## Kích Hoạt
 
-Mảnh vỡ có 2 loại: **Passive** (tự động) và **Active** (kích hoạt thủ công).
+| Ô | Keybind kích hoạt |
+|---|-------------------|
+| Slot 1 (trái) | **SHIFT + CHUỘT TRÁI** |
+| Slot 2 (phải) | **SHIFT + CHUỘT PHẢI** |
 
-| Ô | Keybind |
-|---|---------|
-| Slot 1 | **SHIFT + LEFT CLICK** |
-| Slot 2 | **SHIFT + RIGHT CLICK** |
+> ⚔️ **Active Shards** yêu cầu đang cầm **vũ khí cận chiến**
+> (kiếm, rìu, chùy) mới có thể kích hoạt.
+> **Passive Shards** luôn hoạt động ngầm khi được lắp, bất kể vị trí slot.
 
-> Active Shards yêu cầu cầm **vũ khí cận chiến** (kiếm, rìu, chùy, đinh ba) để kích hoạt.
+---
+
+## Lắp Đặt
+
+- Kéo Shard từ inventory vào **đúng ô Slot** để lắp.
+- Mảnh nào lắp **Slot 1** → kích hoạt bằng Shift + Trái.
+- Mảnh nào lắp **Slot 2** → kích hoạt bằng Shift + Phải.
+- Không thể đặt mảnh vỡ vào **rương hoặc container** bất kỳ.
 
 ---
 
 ## Tính Duy Nhất
 
-Mỗi loại mảnh vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn server.
+Mỗi loại Shard chỉ tồn tại **MỘT** trong toàn server.
 
-- Người sở hữu mảnh vỡ trở thành **mục tiêu truy sát**
-- Nếu người giữ mảnh vỡ chết → mảnh vỡ có thể được **triệu hồi lại** tại Bàn Nguyền
-- Không thể đặt trong rương hoặc container (Strict Mode)
-
-> *"Sức mạnh này không thuộc về ngươi mãi mãi. Nó thuộc về kẻ đủ mạnh để giữ nó."*
+- Người giữ shard là **mục tiêu truy sát**
+- Khi người giữ chết → shard **biến mất**, có thể rèn lại
+- Rèn lại → vị trí bị lộ toàn server
 
 ---
 
 ## Danh Sách Mảnh Vỡ
 
-### Passive (Tự động)
+### Passive (Tự Động)
 
 | Mảnh Vỡ | Hiệu Ứng |
 |----------|-----------|
-| **Mảnh Gai — Thorns** | Phản chiếu 15% sát thương cận chiến về kẻ tấn công |
-| **Mảnh Huyết — Bloodlust** | Dưới 30% HP → nhận Strength I (3s) |
-| **Mảnh Lông — Featherstep** | Giảm 50% sát thương rơi |
+| **Mảnh Vỡ Kẻ Tàng Kiếm** | Phản chiếu 15% sát thương cận chiến |
+| **Mảnh Vỡ Kẻ Huyết Lang** | <30% HP → 30% xác suất: +200% dmg trong 5s |
 
 ### Active (Keybind)
 
 | Mảnh Vỡ | Hiệu Ứng | Cooldown |
 |----------|-----------|----------|
-| **Mảnh Bóng — Shadow Step** | Nhảy 8 blocks + Tàng Hình 3s | 20s |
-| **Mảnh Hư Vô — Void Scream** | AoE knockback 5 blocks bán kính | 30s |
+| **Mảnh Vỡ Kẻ Vô Danh** | Tàng hình hoàn toàn 5 phút | 10 phút |
+| **Mảnh Vỡ Kẻ Ảnh Huyết** | Lao 8 block + Tàng hình 3s | 20s |
+| **Mảnh Vỡ Kẻ Cuồng Thanh** | AoE Knockback bán kính 5bl | 30s |
+| **Mảnh Vỡ Kẻ Ngạo Thiên** | Bắn thẳng lên không trung 10bl | 45s |
 
 ---
 
-## Chế Tạo
+## Công Thức Rèn
 
-Tất cả Ego Shards được rèn tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting) — xem [Công thức nguyền rủa](/vi/items/cursed-recipes#mảnh-vỡ-ego--ego-shards).
+> Tất cả rèn tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting).
+> Yêu cầu **Tier 3+** để lắp và kích hoạt.
+> Mỗi công thức tốn **1 Linh Hồn** — **5 phút rèn** — *vị trí bị lộ toàn server*.
+> **Tất cả đặt Tainted Ego ở ô trung tâm.**
+
+---
+
+### 🗡️ Mảnh Vỡ Kẻ Tàng Kiếm
+
+> *"Thân ta đầy sẹo nhưng mắt ta không hề mờ đi.
+> Mỗi vết thương trên người ta — là một vết thương của kẻ khác."*
+
+Tàng Kiếm là chiến binh không thể bị đánh gục — không phải vì hắn mạnh,
+mà vì mỗi lần hắn bị chém, **lưỡi kiếm của kẻ thù tự vỡ ra**.
+Người ta nói vũ khí của hắn không phải kiếm trong tay — mà là **chính bề mặt cơ thể hắn**.
+Hắn chết không phải trong chiến trận. Hắn chết trong giấc ngủ,
+tay vẫn nắm chặt kiếm như thể sợ ai đó lấy đi.
+
+**Hiệu Ứng (Passive)**: Phản chiếu **15%** sát thương cận chiến về kẻ tấn công.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Cactus ×10 | Netherite Sword ×1 | Prismarine Shard ×10 |
+| Hàng 2 | Prismarine Shard ×10 | **Tainted Ego** | Cactus ×10 |
+| Hàng 3 | Cactus ×10 | Enchanted Book (Thorns III) ×1 | Prismarine Shard ×10 |
+
+---
+
+### 🩸 Mảnh Vỡ Kẻ Huyết Lang
+
+> *"Người ta sợ ta khi ta gần chết.
+> Vì họ biết — đó mới là lúc ta thực sự sống."*
+
+Không ai biết tên thật của Huyết Lang. Họ chỉ biết một thứ:
+càng dồn hắn vào đường cùng, hắn càng trở nên **không giống con người**.
+Binh lính không sợ hắn khi hắn khỏe mạnh — họ sợ hắn **khi hắn đang hấp hối**,
+vì đó là lúc đôi mắt hắn sáng lên và tất cả những gì hắn chạm vào đều **tan vỡ gấp ba**.
+Hắn chết khi đã không còn kẻ thù để chiến đấu. Không còn lý do để tiếp tục tồn tại.
+
+**Hiệu Ứng (Passive)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
+kích hoạt: tăng **+200% sát thương** trong **5 giây** *(damage multiplier custom, không phải potion effect)*.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
+| Hàng 2 | Crimson Fungus ×10 | **Tainted Ego** | Crimson Fungus ×10 |
+| Hàng 3 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
+
+---
+
+### 🌑 Mảnh Vỡ Kẻ Vô Danh
+
+> *"Ta không ẩn mình. Ta không trốn chạy.
+> Ta đơn giản là... không còn tồn tại trong mắt ngươi nữa."*
+
+Kẻ Vô Danh không bị lịch sử xóa đi — hắn **tự xóa mình trước**.
+Không phải tàng hình theo nghĩa thông thường, mà là hắn học được cách
+**rút mình ra khỏi nhận thức của người xung quanh** — không ai nhớ khuôn mặt hắn,
+không ai nghe thấy giọng hắn, không ai cảm nhận được sự hiện diện của hắn.
+Hắn ngồi giữa triều đình đông đúc, nhìn vua cướp đi tất cả của mình,
+và mỉm cười — vì hắn biết sẽ đến lúc hắn **cần biến mất hoàn toàn**.
+Cuối đời, hắn ra đi giữa ban ngày mà không ai để ý.
+
+**Hiệu Ứng (Active)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
+Cooldown: **10 phút** sau khi hiệu ứng kết thúc.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
+| Hàng 2 | Ink Sac ×10 | **Tainted Ego** | Ink Sac ×10 |
+| Hàng 3 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
+
+---
+
+### 🌘 Mảnh Vỡ Kẻ Ảnh Huyết
+
+> *"Ta không ở đây. Ta chưa bao giờ ở đây.
+> Nhưng ngươi đã chết rồi."*
+
+Ảnh Huyết là sát thủ duy nhất không ai từng nhìn thấy mặt.
+Danh sách nạn nhân của hắn dài hơn bất kỳ tên đồ tể nào trong lịch sử —
+nhưng không có nhân chứng sống. Người ta nói hắn không di chuyển qua không gian —
+hắn **xuyên qua bóng tối**. Hắn biến mất khỏi lịch sử theo đúng nghĩa đen.
+Không mộ phần. Không tên. Chỉ còn lại mảnh vỡ của một cái tôi
+lạnh như đêm và nhanh như tử thần.
+
+**Hiệu Ứng (Active)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**.
+Cooldown: **20 giây**.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Gunpowder ×10 | Coal Block ×1 | Gunpowder ×10 |
+| Hàng 2 | Coal Block ×1 | **Tainted Ego** | Coal Block ×1 |
+| Hàng 3 | Gunpowder ×10 | Coal Block ×1 | Gunpowder ×10 |
+
+---
+
+### 💀 Mảnh Vỡ Kẻ Cuồng Thanh
+
+> *"Tiếng hét này không dành cho ngươi nghe.
+> Nó dành để đẩy ngươi đi."*
+
+Cuồng Thanh mất tất cả trong một đêm — gia đình, danh dự, lý trí.
+Hắn đứng giữa chiến trường rỗng không và **hét lên** — không phải tiếng người,
+mà tiếng của thứ gì đó đã từ bỏ việc là người.
+Kẻ địch xung quanh hắn bị thổi bay như lá khô trước bão.
+Người ta không giết hắn vì họ không thể đến gần đủ để làm vậy.
+Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
+
+**Hiệu Ứng (Active)**: Phát sóng xung kích đẩy lùi tất cả kẻ địch trong bán kính **5 block**.
+Cooldown: **30 giây**.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×10 | Sculk Shrieker ×1 |
+| Hàng 2 | Echo Shard ×10 | **Tainted Ego** | Echo Shard ×10 |
+| Hàng 3 | Sculk Shrieker ×1 | Echo Shard ×10 | Goat Horn ×1 |
+
+---
+
+### ☁️ Mảnh Vỡ Kẻ Ngạo Thiên
+
+> *"Đất dưới chân ta là thứ ta khinh nhất.
+> Ta không thuộc về nơi này. Ta thuộc về chỗ cao hơn."*
+
+Ngạo Thiên là hoàng đế từ chối cúi đầu — kể cả trước bầu trời.
+Hắn xây tháp cao đến nỗi đám mây phải né hắn. Khi tháp sụp đổ
+vì sức nặng của sự ngạo mạn, hắn không rơi xuống —
+hắn **bị bắn lên trên**, như thể đất cũng không chịu đựng được hắn nữa.
+Người ta tìm xác hắn mãi không thấy. Có lẽ hắn vẫn đang bay ở đâu đó —
+hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
+
+**Hiệu Ứng (Active)**: Bắn thẳng lên không trung **10 block** tức thì.
+Cooldown: **45 giây**.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
+| Hàng 2 | Slime Ball ×10 | **Tainted Ego** | Slime Ball ×10 |
+| Hàng 3 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
 
 ---
 
 ## Liên kết
 
-- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
 - → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
+- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
 - → [Hệ Thống Tier](/vi/ego-system/tier-system)

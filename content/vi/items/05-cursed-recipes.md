@@ -52,12 +52,50 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Totem of Undying | |
-| Hàng 2 | Tainted Ego | Nether Star | Tainted Ego |
-| Hàng 3 | | Tainted Ego | |
+| Hàng 1 | Amethyst Shard | **Ego Soul** | Amethyst Shard |
+| Hàng 2 | Amethyst Shard | Amethyst Shard | Amethyst Shard |
+| Hàng 3 | Amethyst Shard | Totem of Undying | Amethyst Shard |
 
 - **Linh hồn**: 0
 - **Thời gian rèn**: Tức thì
+
+---
+
+## Nguyên Liệu Chế Tạo
+
+### Ego Soul — Mảnh Ego Soul
+
+> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
+| Hàng 2 | Glass Pane | **Ego** | Glass Pane |
+| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
+
+---
+
+### Dark Ego Soul — Mảnh Dark Ego Soul
+
+> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
+| Hàng 2 | Glass Pane | **Dark Ego** | Glass Pane |
+| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
+
+---
+
+### Tainted Ego — Ego Ô Uế
+
+> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Sculk | Sculk | Sculk |
+| Hàng 2 | Sculk | **Ego Soul** | Sculk |
+| Hàng 3 | Sculk | Sculk | Sculk |
 
 ---
 
@@ -66,16 +104,17 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 > Xem chi tiết hiệu ứng → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
 
 Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại chỉ tồn tại **một** trong server.
+Mọi công thức mảnh đều cần **Tainted Ego ở chính giữa**.
 
 ### Mảnh Gai — Thorns
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Prismarine Shard | |
-| Hàng 2 | Tainted Ego | Prismarine Shard | Tainted Ego |
-| Hàng 3 | | Prismarine Shard | |
+| Hàng 1 | Prismarine Shard | Cactus | Prismarine Shard |
+| Hàng 2 | Cactus | **Tainted Ego** | Iron Chestplate |
+| Hàng 3 | Prismarine Shard | Cactus | Prismarine Shard |
 
-- **Linh hồn**: 1 · **Thời gian rèn**: 60 giây
+- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 
@@ -83,11 +122,11 @@ Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại ch
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Redstone Block | |
-| Hàng 2 | Tainted Ego | Nether Wart | Tainted Ego |
-| Hàng 3 | | Redstone Block | |
+| Hàng 1 | Bone Block | Crimson Fungus | Bone Block |
+| Hàng 2 | Crimson Fungus | **Tainted Ego** | Crimson Fungus |
+| Hàng 3 | Bone Block | Crimson Fungus | Bone Block |
 
-- **Linh hồn**: 1 · **Thời gian rèn**: 60 giây
+- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 
@@ -95,11 +134,11 @@ Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại ch
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Feather | |
-| Hàng 2 | Tainted Ego | Phantom Membrane | Tainted Ego |
-| Hàng 3 | | Feather | |
+| Hàng 1 | White Wool | Phantom Membrane | White Wool |
+| Hàng 2 | Phantom Membrane | **Tainted Ego** | White Wool |
+| Hàng 3 | White Wool | Phantom Membrane | White Wool |
 
-- **Linh hồn**: 1 · **Thời gian rèn**: 60 giây
+- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 
@@ -107,11 +146,11 @@ Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại ch
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Ender Eye | |
-| Hàng 2 | Tainted Ego | Ender Pearl | Tainted Ego |
-| Hàng 3 | | Ender Eye | |
+| Hàng 1 | Gunpowder | Coal Block | Gunpowder |
+| Hàng 2 | Coal Block | **Tainted Ego** | Coal Block |
+| Hàng 3 | Gunpowder | Coal Block | Gunpowder |
 
-- **Linh hồn**: 1 · **Thời gian rèn**: 60 giây
+- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 
@@ -119,11 +158,11 @@ Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại ch
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Echo Shard | |
-| Hàng 2 | Tainted Ego | Sculk Catalyst | Tainted Ego |
-| Hàng 3 | | Echo Shard | |
+| Hàng 1 | Echo Shard | Soul Sand | Echo Shard |
+| Hàng 2 | Soul Sand | **Tainted Ego** | Soul Sand |
+| Hàng 3 | Echo Shard | Soul Sand | Echo Shard |
 
-- **Linh hồn**: 1 · **Thời gian rèn**: 60 giây
+- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 

@@ -2,6 +2,7 @@
 title: The Seven Deadly Sins
 description: The Sin awakening system, skill slots, and progression.
 order: 5
+lockedUntil: 2026-03-01
 ---
 
 # The Seven Deadly Sins — Thất Đại Tội

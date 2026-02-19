@@ -20,7 +20,7 @@ Bàn Nguyền không tự xuất hiện. Bạn phải **tự tay** xây dựng n
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Dark Ego | |
+| Hàng 1 | | Ego soul | |
 | Hàng 2 | Obsidian | Crafting Table | Obsidian |
 | Hàng 3 | | Netherite Ingot | |
 
