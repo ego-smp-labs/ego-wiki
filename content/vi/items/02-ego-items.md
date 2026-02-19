@@ -48,8 +48,12 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Netherite.
 
 - **Công thức (Chế Tạo Thường)**: Ego Fragment + Netherite Ingot (Shapeless)
-- **Công dụng**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/items/cursed-crafting)
-- **Lưu ý**: Không thể sử dụng trực tiếp để nâng Tier
+- **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/items/cursed-crafting)
+- **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
+  - Thả ra **Dark Ego** (nạn nhân = bản thân)
+  - **Reset Tier về 1** + xóa toàn bộ Shard
+  - Hiệu ứng **Wither I** trong bán kính 5 block xướng quanh
+- **Giới hạn**: Không thể xếp chồng — không thể đặt trong rương
 
 ---
 
@@ -64,3 +68,13 @@ Bùa hộ mệnh bảo vệ Tier của bạn khi chết. Như Totem of Undying, 
 - **Đặc tính**: Không thể xếp chồng, không thể đặt trong rương
 
 > *"Vực thẳm cho ngươi một cơ hội thứ hai. Đừng mong có cơ hội thứ ba."*
+
+---
+
+## Xem Thêm
+
+- → [Hệ Thống Tier](/vi/ego-system/tier-system)
+- → [Dark Ego](/vi/ego-system/dark-ego)
+- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
+- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
+- → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
