@@ -101,80 +101,10 @@ All recipes below require a [**Cursed Crafting Table**](/en/items/cursed-craftin
 
 ## Ego Shards
 
-> See effect details → [Ego Shard Slots](/en/ego-system/ego-shards)
+> **All shard recipes have been moved to: [Ego Shard Slots](/en/ego-system/ego-shards)**
 
 All Ego Shards require **Tier 3+** to activate. Each type is **unique** in the server.
 All shard recipes require **Tainted Ego** in the center.
-
-### Hidden Blade
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Cactus | Netherite Sword | Prismarine Shard |
-| Row 2 | Prismarine Shard | **Tainted Ego** | Cactus |
-| Row 3 | Cactus | Enchanted Book (Thorns III) | Prismarine Shard |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
-
----
-
-### Bloodwolf
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Bone Block | Crimson Fungus | Bone Block |
-| Row 2 | Crimson Fungus | **Tainted Ego** | Crimson Fungus |
-| Row 3 | Bone Block | Crimson Fungus | Bone Block |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
-
----
-
-### Nameless
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Obsidian | Ink Sac | Obsidian |
-| Row 2 | Ink Sac | **Tainted Ego** | Ink Sac |
-| Row 3 | Obsidian | Ink Sac | Obsidian |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
-
----
-
-### Phantom
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Gunpowder | Coal Block | Gunpowder |
-| Row 2 | Coal Block | **Tainted Ego** | Coal Block |
-| Row 3 | Gunpowder | Coal Block | Gunpowder |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
-
----
-
-### Mad Echo
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Sculk Shrieker | Echo Shard | Sculk Shrieker |
-| Row 2 | Echo Shard | **Tainted Ego** | Echo Shard |
-| Row 3 | Sculk Shrieker | Echo Shard | Goat Horn |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
-
----
-
-### Sky Tyrant
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Wind Charge | Slime Ball | Wind Charge |
-| Row 2 | Slime Ball | **Tainted Ego** | Slime Ball |
-| Row 3 | Wind Charge | Slime Ball | Wind Charge |
-
-- **Souls**: 1 · **Time**: 5 minutes *(Location revealed)*
 
 ---
 

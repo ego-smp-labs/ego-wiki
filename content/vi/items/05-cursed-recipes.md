@@ -101,80 +101,10 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ## Mảnh Vỡ Ego — Ego Shards
 
-> Xem chi tiết hiệu ứng → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
+> **Tất cả công thức rèn mảnh vỡ đã được chuyển sang trang: [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)**
 
 Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại chỉ tồn tại **một** trong server.
 Mọi công thức mảnh đều cần **Tainted Ego ở chính giữa**.
-
-### Mảnh Tàng Kiếm — Hidden Blade
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Cactus | Netherite Sword | Prismarine Shard |
-| Hàng 2 | Prismarine Shard | **Tainted Ego** | Cactus |
-| Hàng 3 | Cactus | Enchanted Book (Thorns III) | Prismarine Shard |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
-
----
-
-### Mảnh Huyết Lang — Bloodwolf
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Bone Block | Crimson Fungus | Bone Block |
-| Hàng 2 | Crimson Fungus | **Tainted Ego** | Crimson Fungus |
-| Hàng 3 | Bone Block | Crimson Fungus | Bone Block |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
-
----
-
-### Mảnh Vô Danh — Nameless
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Obsidian | Ink Sac | Obsidian |
-| Hàng 2 | Ink Sac | **Tainted Ego** | Ink Sac |
-| Hàng 3 | Obsidian | Ink Sac | Obsidian |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
-
----
-
-### Mảnh Ảnh Huyết — Phantom
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Gunpowder | Coal Block | Gunpowder |
-| Hàng 2 | Coal Block | **Tainted Ego** | Coal Block |
-| Hàng 3 | Gunpowder | Coal Block | Gunpowder |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
-
----
-
-### Mảnh Cuồng Thanh — Mad Echo
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Sculk Shrieker | Echo Shard | Sculk Shrieker |
-| Hàng 2 | Echo Shard | **Tainted Ego** | Echo Shard |
-| Hàng 3 | Sculk Shrieker | Echo Shard | Goat Horn |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
-
----
-
-### Mảnh Ngạo Thiên — Sky Tyrant
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Wind Charge | Slime Ball | Wind Charge |
-| Hàng 2 | Slime Ball | **Tainted Ego** | Slime Ball |
-| Hàng 3 | Wind Charge | Slime Ball | Wind Charge |
-
-- **Linh hồn**: 1 · **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
 
