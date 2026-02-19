@@ -51,3 +51,13 @@ Hệ thống Tội Lỗi là một tầng tiến triển nâng cao, mang lại h
 Thanh hotbar có hai **ô kỹ năng** chuyên dụng bị khóa khi tội lỗi đang hoạt động. Các ô này chứa vật phẩm kỹ năng tội lỗi và không thể di chuyển.
 
 > **Lưu ý:** Mỗi tội lỗi có một cặp kỹ năng riêng biệt. Kỹ năng gắn với loại tội lỗi, không phải Tier.
+
+---
+
+## Xem Thêm
+
+- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/ego-system/sacrifice)
+- → [Hệ Thống Tier](/vi/ego-system/tier-system)
+- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
+- → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
+

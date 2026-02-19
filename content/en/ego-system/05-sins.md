@@ -51,3 +51,13 @@ The Sin system is an advanced progression layer that grants powerful passives an
 Your hotbar has two dedicated **skill slots** that are locked while a sin is active. These slots hold sin skill items and cannot be moved by the player.
 
 > **Note:** Each sin has a unique pair of skills. The skills are bound to the sin type, not to your tier.
+
+---
+
+## See Also
+
+- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
+- → [Tier System](/en/ego-system/tier-system)
+- → [Ego Shards](/en/ego-system/ego-shards)
+- → [Cursed Crafting Table](/en/items/cursed-crafting)
+

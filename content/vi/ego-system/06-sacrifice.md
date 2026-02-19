@@ -69,18 +69,19 @@ Ego Shards là vật phẩm trang bị vào **Ô Shard** để nhận hiệu ứ
 
 ### Passive Shards
 
-| Mảnh Vỡ | Hiệu Ứng |
-|----------|-----------|
-| **Mảnh Gai — Thorns** | Phản chiếu 15% sát thương cận chiến |
-| **Mảnh Huyết — Bloodlust** | Dưới 30% HP → Strength I (3s) |
-| **Mảnh Lông — Featherstep** | Giảm 50% sát thương rơi |
+| Mảnh Vỡ | Tên Gọi | Hiệu Ứng |
+|----------|----------|----------|
+| **Mảnh Tàng Kiếm** | Hidden Blade | Phản chiếu 15% sát thương cận chiến |
+| **Mảnh Huyết Lang** | Bloodwolf | Dưới 30% HP → 30% xác suất +200% dmg (5s) |
 
 ### Active Shards
 
-| Mảnh Vỡ | Hiệu Ứng | Cooldown |
-|----------|-----------|----------|
-| **Mảnh Bóng — Shadow Step** | Nhảy 8 blocks + Tàng Hình 3s | 20s |
-| **Mảnh Hư Vô — Void Scream** | AoE knockback 5 blocks | 30s |
+| Mảnh Vỡ | Tên Gọi | Hiệu Ứng | Cooldown |
+|----------|----------|-----------|----------|
+| **Mảnh Vô Danh** | Nameless | Tàng hình hoàn toàn 5 phút | 10 phút |
+| **Mảnh Ảnh Huyết** | Phantom | Lao 8 block + Tàng hình 3s | 20s |
+| **Mảnh Cuồng Thanh** | Mad Echo | AoE knockback bán kính 5 block | 30s |
+| **Mảnh Ngạo Thiên** | Sky Tyrant | Bắn lên 10 block | 45s |
 
 > Xem chi tiết cơ chế ô shard → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
 
