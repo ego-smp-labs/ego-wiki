@@ -23,14 +23,14 @@ Mỗi tier mở khóa bonus sức mạnh, nhưng cũng kéo theo **lời nguyề
 | 2 | **Rạn Nứt** | +4 | +10% | — | Hấp thụ thêm Bản Ngã. Chứng minh đây không còn là "lỡ tay". |
 | 3 | **Dấu Ấn** | +6 | +15% | — | Hấp thụ thêm Bản Ngá. Soul Stealer mở khóa. |
 | 4 | **Huyết Khế** | +8 | +20% | +5% | Hấp thụ thêm Bản Ngã. Chứng minh sức mạnh bản thân. |
-| 5 | **Cửa Tội** | +10 | +25% | +10% | **Yêu cầu [Dark Ego](./dark-ego) để lên Tier 6.** Phong ấn huyết sắc xuất hiện dưới chân. |
-| 6 | **Lãnh Địa** | +12 | +30% | +10% | Kháng Cự I. **Yêu cầu [Dark Ego](./dark-ego) để lên Tier 7.** Hạt nguyền bắt đầu. |
-| 7 | **Hoá Thân** | +14 | +35% | +10% | Dạ Nhãn + Kháng Cự I. **Yêu cầu [Dark Ego](./dark-ego) để lên Tier 8.** Cơ thể phát sáng. |
-| 8 | **Vương Ấn** | +16 | +40% | +15% | Dạ Nhãn + Sức Mạnh I. **Yêu cầu [Dark Ego](./dark-ego) để lên Tier 9.** **5% tỉ lệ Điên Loạn** sau mỗi lần giết người. |
+| 5 | **Cửa Tội** | +10 | +25% | +10% | **Yêu cầu [Dark Ego](/vi/ego-system/dark-ego) để lên Tier 6.** Phong ấn huyết sắc xuất hiện dưới chân. |
+| 6 | **Lãnh Địa** | +12 | +30% | +10% | Kháng Cự I. **Yêu cầu [Dark Ego](/vi/ego-system/dark-ego) để lên Tier 7.** Hạt nguyền bắt đầu. |
+| 7 | **Hoá Thân** | +14 | +35% | +10% | Dạ Nhãn + Kháng Cự I. **Yêu cầu [Dark Ego](/vi/ego-system/dark-ego) để lên Tier 8.** Cơ thể phát sáng. |
+| 8 | **Vương Ấn** | +16 | +40% | +15% | Dạ Nhãn + Sức Mạnh I. **Yêu cầu [Dark Ego](/vi/ego-system/dark-ego) để lên Tier 9.** **5% tỉ lệ Điên Loạn** sau mỗi lần giết người. |
 | 9 | **Tội Thân** | +18 | +45% | +15% | Dạ Nhãn + Sức Mạnh II. **15% tỉ lệ Điên Loạn**. Mạch máu chuyển đỏ rực, sát khí bao trùm toàn thân. |
 
 > **Lưu ý:**  
-> - Từ Tier 5 trở đi, bạn **bắt buộc** phải sở hữu **[Dark Ego](./dark-ego)** để có thể lên tier tiếp theo.  
+> - Từ Tier 5 trở đi, bạn **bắt buộc** phải sở hữu **[Dark Ego](/vi/ego-system/dark-ego)** để có thể lên tier tiếp theo.  
 > - Tier càng cao, **phong ấn**, **hào quang**, và **sát khí** càng rõ ràng → bạn sẽ trở thành mục tiêu săn lùng.
 
 ---
@@ -75,14 +75,14 @@ Chết vì mob, rơi, dung nham, hoặc bất kỳ nguyên nhân nào khác **kh
 - ✅ Bị người chơi tấn công trực tiếp → **mất tier**
 - ✅ Bị bắn bởi mũi tên/projectile từ người chơi → **mất tier**
 - ❌ Chết vì mob, rơi, cháy, v.v. → **giữ nguyên tier**
-- 🛡 Sử dụng **[Soul Keeper](./ego-items#soul-keeper)** → **bảo vệ tier** dù chết bất kỳ cách nào
+- 🛡 Sử dụng **[Soul Keeper](/vi/items/ego-items#soul-keeper)** → **bảo vệ tier** dù chết bất kỳ cách nào
 
 ---
 
 ## 🔥 Kỹ Năng Chủ Động (Từ Hệ Thống Tội Lỗi)
 
 Kỹ năng chủ động **không còn gắn với tier**.  
-Thay vào đó, chúng đến từ **[Hệ Thống Tội Lỗi](./sins)**.
+Thay vào đó, chúng đến từ **[Hệ Thống Tội Lỗi](/vi/ego-system/sins)**.
 
 ### Cách Mở Khóa:
 1. Thức tỉnh **Tội Lỗi** lên **Cấp 2** bằng **hai Trái Tim Tội Lỗi** (Sin Hearts).
@@ -92,7 +92,7 @@ Thay vào đó, chúng đến từ **[Hệ Thống Tội Lỗi](./sins)**.
    - `Shift + Chuột Trái` → Kỹ năng Ô 2
 
 Mỗi tội lỗi trong **7 loại** có một cặp kỹ năng riêng.  
-Xem trang **[Thất Đại Tội](./sins)** để biết chi tiết.
+Xem trang **[Thất Đại Tội](/vi/ego-system/sins)** để biết chi tiết.
 
 ---
 
@@ -111,7 +111,7 @@ Từ **Tier 6** trở đi, bạn phải chịu các hiệu ứng nguyền:
 
 ## 🎲 Xáo Trộn Kho (Chaos)
 
-Khi sử dụng vật phẩm **[Ego](./ego-items)** hoặc **[Dark Ego](./dark-ego)**:
+Khi sử dụng vật phẩm **[Ego](/vi/items/ego-items)** hoặc **[Dark Ego](/vi/ego-system/dark-ego)**:
 - **Toàn bộ kho đồ** (cả hotbar và túi đồ) sẽ bị **xáo trộn ngẫu nhiên**.
 - Đây là lời nhắc rằng: sức mạnh luôn đi kèm với sự mất kiểm soát.
 
@@ -126,10 +126,18 @@ Tiết kiệm không gian túi, nhưng đừng lạm dụng — mỗi lần dùn
 
 ## 🔗 Các Trang Liên Quan
 
-- **[Dark Ego](./dark-ego)** — Vật phẩm bắt buộc để vượt qua Tier 5.
-- **[Thất Đại Tội](./sins)** — Hệ thống kỹ năng chủ động và con đường tội lỗi.
-- **[Ego Items](./ego-items)** — Các vật phẩm đặc biệt để tăng sức mạnh và bảo vệ Tier.
-- **[Ego Shards](./ego-shards)** — Nguyên liệu cốt lõi để chế tạo Ego và Dark Ego.
+- **[Dark Ego](/vi/ego-system/dark-ego)** — Vật phẩm bắt buộc để vượt qua Tier 5.
+- **[Thất Đại Tội](/vi/ego-system/sins)** — Hệ thống kỹ năng chủ động và con đường tội lỗi.
+- **[Ego Items](/vi/items/ego-items)** — Các vật phẩm đặc biệt để tăng sức mạnh và bảo vệ Tier.
+- **[Ego Shards](/vi/ego-system/ego-shards)** — Nguyên liệu cốt lõi để chế tạo Ego và Dark Ego.
+
+---
+
+## Xem Thêm
+
+- → [Hệ Thống Tội Lỗi](/vi/ego-system/sins)
+- → [Hiến Tế](/vi/ego-system/sacrifice)
+- → [Dark Ego](/vi/ego-system/dark-ego)
 
 ---
 

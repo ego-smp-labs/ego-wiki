@@ -14,7 +14,7 @@ Nó chỉ bẻ gãy nhịp tim của bạn, và kéo bạn lại gần miệng v
 - Nếu bạn đang **Tier 0**: bạn vẫn là Tier 0.
 - Nếu bạn đang **Tier 1 trở lên**: khi chết bạn sẽ bị **kéo về Tier 1** (không rơi về Tier 0 nữa).
 
-Xem chi tiết Tier tại: **[Hệ Thống Tier](/vi/ego-system/01-ego.md)**
+Xem chi tiết Tier tại: **[Hệ Thống Tier](/vi/ego-system/tier-system)**
 
 ## Hệ Thống Ego
 

@@ -23,14 +23,14 @@ Each tier unlocks bonus powers, but also entails **curses** and **physical manif
 | 2 | **Rift** | +4 | +10% | — | Absorb more Ego. Prove that this is no longer an "accident". |
 | 3 | **Imprint** | +6 | +15% | — | Absorb more Ban Nga. Soul Stealer unlocked. |
 | 4 | **Blood Contract** | +8 | +20% | +5% | Absorb more Ego. Prove your strength. |
-| 5 | **Door of Sin** | +10 | +25% | +10% | **Requires [Dark Ego](./dark-ego) to reach Tier 6.** A blood-colored seal appears at your feet. |
-| 6 | **Territory** | +12 | +30% | +10% | Resistance I. **Requires [Dark Ego](./dark-ego) to reach Tier 7.** Curse bead begins. |
-| 7 | **Incarnation** | +14 | +35% | +10% | Dark Eye + Resistance I. **Requires [Dark Ego](./dark-ego) to reach Tier 8.** Body glows. |
-| 8 | **King's Seal** | +16 | +40% | +15% | Dark Eye + Strength I. **Requires [Dark Ego](./dark-ego) to reach Tier 9.** **5% Frenzy rate** after each kill. |
+| 5 | **Door of Sin** | +10 | +25% | +10% | **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 6.** A blood-colored seal appears at your feet. |
+| 6 | **Territory** | +12 | +30% | +10% | Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 7.** Curse bead begins. |
+| 7 | **Incarnation** | +14 | +35% | +10% | Dark Eye + Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 8.** Body glows. |
+| 8 | **King's Seal** | +16 | +40% | +15% | Dark Eye + Strength I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 9.** **5% Frenzy rate** after each kill. |
 | 9 | **Sin of the Body** | +18 | +45% | +15% | Night Vision + Strength II. **15% Insanity rate**. Blood vessels turned red, murderous aura covered the whole body. |
 
 > **Note:**  
-> - From Tier 5 onwards, you are **required** to own **[Dark Ego](./dark-ego)** to be able to advance to the next tier.  
+> - From Tier 5 onwards, you are **required** to own **[Dark Ego](/en/ego-system/dark-ego)** to be able to advance to the next tier.  
 > - The higher the tier, the clearer the **seal**, **aura**, and **killing aura** are → you will become a hunting target.
 
 ---
@@ -75,14 +75,14 @@ Dying from mobs, falling, lava, or any other cause **does not** result in losing
 - ✅ Directly attacked by a player → **lose tier**
 - ✅ Shot by arrows/projectiles from players → **lose tier**
 - ❌ Death from mobs, falls, fire, etc. → **keep the same tier**
-- 🛡 Use **[Soul Keeper](./ego-items#soul-keeper)** → **protect tier** no matter how you die
+- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** no matter how you die
 
 ---
 
 ## 🔥 Active Skills (From Sin System)
 
 Active skills **no longer tied to tier**.  
-Instead, they come from **[Sin System](./sins)**.
+Instead, they come from **[Sin System](/en/ego-system/sins)**.
 
 ### How to Unlock:
 1. Awaken **Sin** to **Level 2** with **two Sin Hearts** (Sin Hearts).
@@ -92,7 +92,7 @@ Instead, they come from **[Sin System](./sins)**.
    - `Shift + Left Mouse` → Skill Box 2
 
 Each of the **7 types** of sins has its own pair of skills.  
-See page **[The Seven Deadly Sins](./sins)** for details.
+See page **[The Seven Deadly Sins](/en/ego-system/sins)** for details.
 
 ---
 
@@ -111,7 +111,7 @@ From **Tier 6** onwards, you are subject to curse effects:
 
 ## 🎲 Chaos
 
-When using items **[Ego](./ego-items)** or **[Dark Ego](./dark-ego)**:
+When using items **[Ego](/en/items/ego-items)** or **[Dark Ego](/en/ego-system/dark-ego)**:
 - **Entire inventory** (both hotbar and inventory) will be **randomly shuffled**.
 - This is a reminder that: power always comes with loss of control.
 
@@ -126,10 +126,18 @@ Save bag space, but don't overdo it — every use counts.
 
 ## 🔗 Related Pages
 
-- **[Dark Ego](./dark-ego)** — Required item to pass Tier 5.
-- **[The Seven Deadly Sins](./sins)** — Active skill system and path of sin.
-- **[Ego Items](./ego-items)** — Special items to increase strength and protect Tier.
-- **[Ego Shards](./ego-shards)** — Core materials to craft Ego and Dark Ego.
+- **[Dark Ego](/en/ego-system/dark-ego)** — Required item to pass Tier 5.
+- **[The Seven Deadly Sins](/en/ego-system/sins)** — Active skill system and path of sin.
+- **[Ego Items](/en/items/ego-items)** — Special items to increase strength and protect Tier.
+- **[Ego Shards](/en/ego-system/ego-shards)** — Core materials to craft Ego and Dark Ego.
+
+---
+
+## See Also
+
+- → [The Seven Deadly Sins](/en/ego-system/sins)
+- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
+- → [Dark Ego](/en/ego-system/dark-ego)
 
 ---
 
