@@ -51,7 +51,7 @@ Server có luật chống farm để giữ PvP còn chất — không biến th�
 
 Các nguyên tắc cốt lõi:
 - Giết quá liên tục có thể bị hạn chế rơi Ego (anti kill-spam), để tránh lạm dụng.  
-- **Chênh lệch Tier** sẽ ảnh hưởng drop: người Tier cao (> Tier 2) giết người Tier 0 sẽ **không rơi Ego** nhằm chống farm.
+- **Chênh lệch Tier** sẽ ảnh hưởng drop: người Tier cao (&gt; Tier 2) giết người Tier 0 sẽ **không rơi Ego** nhằm chống farm.
 - Ví dụ rule cụ thể: khi kẻ tấn công Tier 3+ giết nạn nhân Tier 0 thì **không rơi Ego**.
 - Tuy nhiên, trận chiến **Tier 0 vs Tier 0** sẽ **LUÔN rơi Ego**, bỏ qua các hạn chế anti-farm.
 
@@ -62,3 +62,13 @@ Nhưng nó bẻ gãy đà tiến hoá hắc hoá của bạn.
 
 - Khi chết, Tier của bạn được **reset về Tier 1** thay vì rơi về Tier 0.
 - Hệ thống demotion/anti-farm là thứ có thể cấu hình để giữ server công bằng và giảm lạm dụng
+
+---
+
+## Xem Thêm
+
+- → [Hệ Thống Tier](/vi/ego-system/tier-system)
+- → [Dark Ego](/vi/ego-system/dark-ego)
+- → [Tàn Tích Bản Ngã (Ego Items)](/vi/items/ego-items)
+- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
+- → [Thất Đại Tội](/vi/ego-system/sins)

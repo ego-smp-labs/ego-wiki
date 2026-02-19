@@ -12,12 +12,12 @@ order: 3
 ### Nguồn gốc
 
 - **Rơi tự nhiên**: Từ người chơi **Tier 5+** khi bị hạ (100%)
-- **Chế tạo**: Dùng [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tạp-nhiễm) — Ego + Netherite → Tainted Ego. Khi sử dụng Tainted Ego, người chơi **chết ngay lập tức** nhưng sẽ rớt ra Ego Fragment.
+- **Chế tạo**: Dùng [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tp-nhim) làm nguyên liệu cốt lõi tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting) — **không phải dùng trực tiếp**.
 
 ### Quyền năng
 
-- **Tier < 5**: Tăng ngay random **+1-2 Tier**
-- **Tier >= 5**: Tăng **+1 Tier** (bắt buộc dùng để thăng cấp)
+- **Tier &lt; 5**: Tăng ngay random **+1-2 Tier**
+- **Tier &gt;= 5**: Tăng **+1 Tier** (bắt buộc dùng để thăng cấp)
 
 ### Cái giá
 
@@ -40,8 +40,10 @@ Nếu không muốn chấp nhận rủi ro, bạn có thể **thanh tẩy** Dark
 
 ---
 
-## Liên kết
+## Xem Thêm
 
 - → [Tàn Tích Bản Ngã](/vi/items/ego-items)
 - → [Hệ Thống Tier](/vi/ego-system/tier-system)
 - → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
+- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
+- → [Bản Ngã (Ego)](/vi/ego-system/ego)

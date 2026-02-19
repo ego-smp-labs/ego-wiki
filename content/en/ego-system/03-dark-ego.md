@@ -12,12 +12,12 @@ At a certain level of strength (Tier 5+), your normal ego is no longer enough to
 ### Origin
 
 - **Natural drop**: From a **Tier 5+** player when defeated (100%)
-- **Craft**: Use [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tainted-tainted) — Ego + Netherite → Tainted Ego. When using Tainted Ego, the player **instantly dies** but will drop an Ego Fragment.
+- **Craft**: Use [Tainted Ego](/en/items/ego-items#tainted-ego) as a core ingredient at the [Cursed Crafting Table](/en/items/cursed-crafting).
 
 ### Power
 
-- **Tier < 5**: Instant random increase **+1-2 Tier**
-- **Tier >= 5**: Increase **+1 Tier** (required to level up)
+- **Tier &lt; 5**: Instant random increase **+1-2 Tier**
+- **Tier &gt;= 5**: Increase **+1 Tier** (required to level up)
 
 ### The price
 
@@ -40,8 +40,9 @@ If you don't want to take the risk, you can **purify** your Dark Ego with a **Pu
 
 ---
 
-## Link
+## See Also
 
-- → [Ego Ruins](/vi/items/ego-items)
+- → [Ego Items](/en/items/ego-items)
 - → [Tier System](/en/ego-system/tier-system)
-- → [Cursed Recipe](/en/items/cursed-recipes)
+- → [Cursed Recipes](/en/items/cursed-recipes)
+- → [Ego Shards](/en/ego-system/ego-shards)

@@ -1,6 +1,6 @@
 ---
 title: Ego Shard Slots
-description: The Shard Slot mechanic — equip fragments to gain hidden power.
+description: The Shard Slot mechanic — equip fragments of lost egos to gain hidden power.
 order: 4
 ---
 
@@ -18,12 +18,12 @@ not a legend, but a memory imprisoned inside matter.
 ## Unlocking
 
 | Tier | Slots Unlocked |
-|------|----------------|
-| < 3  | None 🔒 |
+|------|-----------|
+| &lt; 3  | None 🔒 |
 | 3 – 4 | **1 slot** (Slot 1 — left) |
 | 5+   | **2 slots** (Slot 1 + Slot 2) |
 
-- Locked slot → displays **red glass** 🔒
+- Locked slot → displays **red glass** 🔒 (cannot interact)
 - Unlocked but empty → displays **gray glass**
 
 ---
@@ -43,41 +43,40 @@ not a legend, but a memory imprisoned inside matter.
 
 ## Equipping
 
-- Drag a Shard into the correct **Slot** in your inventory to equip it.
-- Shard in **Slot 1** → triggers with Shift + Left Click.
-- Shard in **Slot 2** → triggers with Shift + Right Click.
-- Shards **cannot** be placed in chests, barrels, shulkers, or any container.
+- **Right-click** with a Shard in your hand to equip it.
+- If a slot is already occupied, you will be asked if you want to replace it.
+- If **both slots are full**: **sneak + right-click** to choose slot 1, **sneak + shift+right-click** for slot 2.
+- Shard in **Slot 1** → triggers with **Shift + Left Click**.
+- Shard in **Slot 2** → triggers with **Shift + Right Click**.
+- Shards **cannot** be placed in chests, barrels, shulkers, or any container (auto-dropped).
+- To **unequip**: open `/ego` and click the shard slot.
 
 ---
 
 ## Uniqueness Rule
 
-Each Shard type exists only **ONCE** across the entire server.
+Each Shard type exists only **ONE AND ONLY ONE** across the entire server.
 
 - The shard holder becomes a **hunted target**
 - When the holder dies → shard **vanishes permanently** (no drop)
 - After death → the shard can be **reforged** at the Cursed Crafting Table
-- Reforging broadcasts the location to all players
+- Reforging **broadcasts location** to all players on the server
 
 ---
 
 ## Shard List
 
-### Passive (Always Active)
+> All Shards require **[Tier 3+](/en/ego-system/tier-system)** to equip and activate.
+> Forged at the **[Cursed Crafting Table](/en/items/cursed-crafting)** — see [Advanced: Forging](/en/advanced/forging).
 
-| Shard | Effect |
-|-------|--------|
-| **Shard of the Hidden Blade** | Reflect 15% melee damage to attacker |
-| **Shard of the Bloodwolf** | Below 30% HP → 30% chance: +200% damage for 5s |
-
-### Active (Keybind)
-
-| Shard | Effect | Cooldown |
-|-------|--------|----------|
-| **Shard of the Nameless** | Full invisibility for 5 minutes | 10 minutes |
-| **Shard of the Phantom** | Dash 8 blocks + Invisibility 3s | 20s |
-| **Shard of the Mad Echo** | AoE knockback in 5 block radius | 30s |
-| **Shard of the Sky Tyrant** | Launch straight up 10 blocks | 45s |
+| Shard | Type | Tier | Effect | Cooldown / Condition |
+|-------|------|------|--------|----------------------|
+| [🗡️ Shard of the Hidden Blade](#️-shard-of-the-hidden-blade) | Passive | 3+ | Reflect 15% melee damage to attacker | Always active |
+| [🩸 Shard of the Bloodwolf](#-shard-of-the-bloodwolf) | Passive | 3+ | Below &lt;30% HP → 30% chance: +200% dmg for 5s | Triggers on hit received |
+| [🌑 Shard of the Nameless](#-shard-of-the-nameless) | Active | 3+ | Full invisibility for 5 minutes | CD 10 min · Hold weapon |
+| [🌘 Shard of the Phantom](#-shard-of-the-phantom) | Active | 3+ | Dash 8 blocks forward + Invisibility 3s | CD 20s · Hold weapon |
+| [💀 Shard of the Mad Echo](#-shard-of-the-mad-echo) | Active | 3+ | AoE knockback in 5 block radius | CD 30s · Hold weapon |
+| [☁️ Shard of the Sky Tyrant](#️-shard-of-the-sky-tyrant) | Active | 3+ | Launch straight up 10 blocks | CD 45s · Hold weapon |
 
 ---
 
@@ -85,7 +84,8 @@ Each Shard type exists only **ONCE** across the entire server.
 
 > All shards are forged at the [Cursed Crafting Table](/en/items/cursed-crafting).
 > Requires **Tier 3+** to equip and activate.
-> Each recipe costs **1 Soul** — **5 minutes forge time** — *location revealed to all players on completion*.
+> Each recipe costs **1 Soul** — **5 minutes forge time** —
+> *location is revealed to all players upon completion*.
 > **All recipes require Tainted Ego in the center slot.**
 
 ---
@@ -110,6 +110,8 @@ hand still wrapped tight around his sword as if afraid someone might take it.
 | Row 2 | Prismarine Shard ×10 | **Tainted Ego** | Cactus ×10 |
 | Row 3 | Cactus ×10 | Enchanted Book (Thorns III) ×1 | Prismarine Shard ×10 |
 
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
+
 ---
 
 ### 🩸 Shard of the Bloodwolf
@@ -126,13 +128,16 @@ He died when he ran out of enemies to fight.
 No more reason to keep existing.
 
 **Effect (Passive)**: When HP drops below **30%**, each incoming hit has a **30% chance**
-to activate: deal **+200% damage** for **5 seconds** *(custom damage multiplier, not a potion effect)*.
+to activate: deal **+200% damage** for **5 seconds**
+*(custom damage multiplier — not a potion effect, cannot stack)*.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
 | Row 2 | Crimson Fungus ×10 | **Tainted Ego** | Crimson Fungus ×10 |
 | Row 3 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
+
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
 
 ---
 
@@ -147,8 +152,7 @@ Not invisibility in the conventional sense, but the ability to
 no one remembered his face, no one heard his voice,
 no one could feel him in the same room.
 He sat in a crowded court, watched the king strip everything from him,
-and smiled — because he knew a day would come
-when he would **need to disappear completely**.
+and smiled — because he knew a day would come when he would need to disappear completely.
 In the end, he walked out in broad daylight. Nobody noticed.
 
 **Effect (Active)**: On activation → **Full Invisibility for 5 minutes**.
@@ -159,6 +163,8 @@ Cooldown: **10 minutes** after the effect ends.
 | Row 1 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
 | Row 2 | Ink Sac ×10 | **Tainted Ego** | Ink Sac ×10 |
 | Row 3 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
+
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
 
 ---
 
@@ -185,6 +191,8 @@ Cooldown: **20 seconds**.
 | Row 2 | Coal Block ×1 | **Tainted Ego** | Coal Block ×1 |
 | Row 3 | Gunpowder ×10 | Coal Block ×1 | Gunpowder ×10 |
 
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
+
 ---
 
 ### 💀 Shard of the Mad Echo
@@ -197,8 +205,7 @@ He stood in an empty battlefield and **screamed** — not a human sound,
 but the voice of something that had given up on being human.
 Every enemy around him was blown away like dry leaves before a storm.
 People didn't kill him. They couldn't get close enough.
-In the end, he died in silence —
-the one thing he had never chosen for himself.
+In the end, he died in silence — the one thing he had never chosen for himself.
 
 **Effect (Active)**: Release a shockwave that sends all nearby enemies flying
 within a **5 block radius**. Cooldown: **30 seconds**.
@@ -209,6 +216,8 @@ within a **5 block radius**. Cooldown: **30 seconds**.
 | Row 2 | Echo Shard ×10 | **Tainted Ego** | Echo Shard ×10 |
 | Row 3 | Sculk Shrieker ×1 | Echo Shard ×10 | Goat Horn ×1 |
 
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
+
 ---
 
 ### ☁️ Shard of the Sky Tyrant
@@ -216,8 +225,7 @@ within a **5 block radius**. Cooldown: **30 seconds**.
 > *"The ground beneath me is the thing I despise most.
 > I don't belong here. I belong somewhere higher."*
 
-The Sky Tyrant was an emperor who refused to bow —
-not even to the sky itself.
+The Sky Tyrant was an emperor who refused to bow — not even to the sky itself.
 He built towers so tall that clouds parted around them.
 When the towers collapsed under the weight of his arrogance,
 he didn't fall down — he was **launched upward**,
@@ -235,10 +243,16 @@ Cooldown: **45 seconds**.
 | Row 2 | Slime Ball ×10 | **Tainted Ego** | Slime Ball ×10 |
 | Row 3 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
 
+- **Souls**: 1 · **Forge time**: 5 min · *Location revealed*
+
 ---
 
 ## See Also
 
 - → [Cursed Crafting Table](/en/items/cursed-crafting)
 - → [Cursed Recipes](/en/items/cursed-recipes)
+- → [Advanced: Forging](/en/advanced/forging)
 - → [Tier System](/en/ego-system/tier-system)
+- → [Tainted Ego](/en/items/ego-items#tainted-ego)
+- → [Dark Ego](/en/ego-system/dark-ego)
+- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)

@@ -67,7 +67,7 @@ The server has anti-farm rules to keep PvP sharp — not turn it into an Ego pre
 
 Core principles:
 - Killing too repeatedly can reduce/limit Ego drops (anti kill-spam), to prevent abuse.
-- **Tier difference** affects drops: a high-tier (Tier > 2) killing a Tier 0 victim will **not drop Ego** (anti-farm).
+- **Tier difference** affects drops: a high-tier (Tier &gt; 2) killing a Tier 0 victim will **not drop Ego** (anti-farm).
 - Example rule: if a Tier 3+ attacker kills a Tier 0 victim, **no Ego drops**.
 - However, **Tier 0 vs Tier 0** battles will **ALWAYS drop Ego**, bypassing anti-farm restrictions.
 
@@ -81,3 +81,13 @@ But it breaks your momentum — the dark evolution you were riding.
 
 - On death, your Tier is **reset to Tier 1** instead of falling back to Tier 0.
 - The demotion/anti-farm system is configurable to keep the server fair and reduce abuse.
+
+---
+
+## See Also
+
+- → [Tier System](/en/ego-system/tier-system)
+- → [Dark Ego](/en/ego-system/dark-ego)
+- → [Ego Items](/en/items/ego-items)
+- → [Ego Shards](/en/ego-system/ego-shards)
+- → [The Seven Deadly Sins](/en/ego-system/sins)
