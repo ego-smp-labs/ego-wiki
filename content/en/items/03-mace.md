@@ -56,7 +56,7 @@ From then on, Mace of Chaos wandered around the server like an omen of error.
 
 ### Recipe: Mace of Chaos
 
-**Requiment**: [Cursed Crafting Table](../items/04-cursed-items.md)
+**Requiment**: [Cursed Crafting Table](/en/items/cursed-crafting)
 
 **Ingredients**:
 - **M**: **Heavy Core** (Center)

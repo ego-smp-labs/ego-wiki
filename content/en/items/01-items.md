@@ -11,10 +11,10 @@ Some items are **relics** — things left behind after souls have been eroded.
 
 ## Relics in this directory
 
-- [**Might of Power** — Mace of Power](./03-mace-of-power)
-- [**Mace of Chaos** — Mace of Chaos](./04-mace-of-chaos)
-- [**Ego Ruins** — Ego Items](./02-ego-items)
-- [**Dark Self Contract** — Dark Ego](./05-dark-ego)
+- [**Might of Power** — Mace of Power](/en/items/mace#mace-of-power)
+- [**Mace of Chaos** — Mace of Chaos](/en/items/mace#mace-of-chaos)
+- [**Ego Ruins** — Ego Items](/en/items/ego-items)
+- [**Dark Self Contract** — Dark Ego](/en/ego-system/dark-ego)
 
 
 ## Reading suggestions (to avoid picking up "curses")
