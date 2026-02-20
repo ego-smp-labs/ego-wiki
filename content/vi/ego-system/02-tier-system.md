@@ -75,7 +75,7 @@ Chết vì mob, rơi, dung nham, hoặc bất kỳ nguyên nhân nào khác **kh
 - ✅ Bị người chơi tấn công trực tiếp → **mất tier**
 - ✅ Bị bắn bởi mũi tên/projectile từ người chơi → **mất tier**
 - ❌ Chết vì mob, rơi, cháy, v.v. → **giữ nguyên tier**
-- 🛡 Sử dụng **[Soul Keeper](/vi/items/ego-items#soul-keeper)** → **bảo vệ tier** dù chết bất kỳ cách nào
+- 🛡 Sử dụng **[Soul Keeper](/vi/items/ego-items#soul-keeper)** → **bảo vệ tier** và **ngăn rớt Ego** dù chết bất kỳ cách nào
 
 
 ## 🔗 Các Trang Liên Quan

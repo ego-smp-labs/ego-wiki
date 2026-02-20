@@ -8,6 +8,14 @@ order: 3
 
 ## EgoSMP Plugin
 
+### v1.2.1 — Soul Protection & Shard Tweaks
+*Phát hành: Tháng 2/2026*
+
+**Sửa đổi & Cập nhật:**
+- 🛡️ **Soul Keeper** — Sửa lỗi: Người chơi sử dụng Soul Keeper bảo vệ Tier khi chết giờ đây cũng sẽ **không rớt Ego**.
+- 🐺 **Mảnh Vỡ Huyết Lang** — Thêm thời gian hồi 3 ngày cho toàn server mỗi lần Mảnh Kí Ức Huyết Lang được triệu hồi.
+- 🎶 **Mảnh Vỡ Cuồng Thanh** — Đổi thành kỹ năng Bị Động: Thêm hiệu ứng báo thù Sonic Boom khi bị tấn công (Cooldown: 30s).
+- 📜 **Công thức rèn Cuồng Thanh** — Yêu cầu "Mảnh Kí Ức Cuồng Thanh", thu thập bằng cách chết khi đang kích hoạt Ego/Dark Ego gần Sculk Shrieker (tỉ lệ 50%).
 
 ### v1.2.0 — Mảnh Vỡ & Lời Nguyền
 *Phát hành: Tháng 2/2026*

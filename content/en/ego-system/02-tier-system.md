@@ -75,7 +75,7 @@ Dying to mobs, falling, lava, or any other cause does **not** cause tier loss.
 - ✅ Attacked directly by a player → **lose tier**
 - ✅ Shot by arrow/projectile from a player → **lose tier**
 - ❌ Die to mob, fall, fire, etc. → **keep tier**
-- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** regardless of death cause
+- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** and **prevent Ego drop** regardless of death cause
 
 ---
 

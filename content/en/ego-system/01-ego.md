@@ -62,6 +62,7 @@ But it breaks the momentum of your dark evolution.
 
 - When you die, your Tier is **reset to Tier 1** instead of falling back to Tier 0.
 - The demotion/anti-farm system is configurable to keep the server fair and reduce abuse.
+- **Exception**: If you have a **Soul Keeper** equipped, your Tier is protected and your **Ego will not drop** for the killer.
 
 ---
 ## See Also

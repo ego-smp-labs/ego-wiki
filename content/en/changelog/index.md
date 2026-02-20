@@ -8,6 +8,15 @@ order: 3
 
 ## EgoSMP Plugin
 
+### v1.2.1 — Soul Protection & Shard Tweaks
+*Released: February 2026*
+
+**Updates & Fixes:**
+- 🛡️ **Soul Keeper** — Fix: Players protected by Soul Keeper upon death will also **not drop Ego**.
+- 🐺 **Blood Wolf Shard** — Added a 3-day server-wide cooldown whenever Blood Wolf's Memory Fragment is summoned.
+- 🎶 **Mad Sound Shard** — Changed to Passive skill: Added retaliatory Sonic Boom effect when attacked (Cooldown: 30s).
+- 📜 **Mad Sound Forging** — Now requires "Mad Sound's Memory Fragment", obtained by dying under Ego/Dark Ego effect near a Sculk Shrieker (50% chance).
+
 ### v1.2.0 — Shards & Curses
 *Released: February 2026*
 

@@ -62,6 +62,7 @@ Nhưng nó bẻ gãy đà tiến hoá hắc hoá của bạn.
 
 - Khi chết, Tier của bạn được **reset về Tier 1** thay vì rơi về Tier 0.
 - Hệ thống demotion/anti-farm là thứ có thể cấu hình để giữ server công bằng và giảm lạm dụng
+- **Ngoại lệ**: Nếu có **Soul Keeper**, Tier sẽ được giữ nguyên và **không rớt Ego** cho kẻ giết.
 
 ---
 ## Xem Thêm

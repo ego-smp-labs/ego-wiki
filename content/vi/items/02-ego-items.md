@@ -96,7 +96,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 Bùa hộ mệnh bảo vệ Tier của bạn khi chết. Như Totem of Undying, nhưng dành cho **linh hồn**.
 
-- **Công dụng**: Khi chết, Tier không bị mất (dùng 1 lần, tự hủy)
+- **Công dụng**: Khi chết, Tier không bị mất và **không rớt Ego** (dùng 1 lần, tự hủy)
 - **Chế tạo**: Rèn tại [Bàn Nguyền](/vi/items/cursed-crafting) — xem [công thức](/vi/items/cursed-recipes)
 - **Đặc tính**: Không thể xếp chồng, không thể đặt trong rương
 

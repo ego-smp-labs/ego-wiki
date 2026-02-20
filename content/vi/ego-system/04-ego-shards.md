@@ -75,7 +75,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | [🩸 Mảnh Vỡ Kẻ Huyết Lang](#-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: +200% dmg 5s | Kích hoạt khi bị đánh |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút · Cầm vũ khí |
 | [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 20s · Cầm vũ khí |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuồng-thanh) | Chủ Động | 3+ | AoE knockback bán kính 5 block | CD 30s · Cầm vũ khí |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuồng-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | Cooldown 30s |
 | [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngạo-thiên) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 45s · Cầm vũ khí |
 
 ---
@@ -127,7 +127,8 @@ Không còn lý do để tiếp tục tồn tại.
 - **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
   kích hoạt: tăng **+200% sát thương** trong **5 giây**
   *(custom damage multiplier — không phải potion effect, không thể cộng dồn)*.
-- **Mảnh Kí Ức Kẻ Huyết Lang**: Sử dụng Ego, sau đó uống liên tục **x10 Bình Hồi Máu Tức Thời** để nhận được vật phẩm này.
+- **Mảnh Kí Ức Kẻ Huyết Lang**: Sử dụng Ego/Dark Ego, sau đó dùng liên tục **x10 Bình Hồi Máu Tức Thời** (uống hoặc ném) để nhận được vật phẩm này. 
+  *(Lưu ý: Thời gian hồi cho toàn server là 3 ngày sau mỗi lần triệu hồi).*
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -206,14 +207,14 @@ Người ta không giết hắn vì họ không thể đến gần đủ để l
 Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Phát sóng xung kích đẩy lùi tất cả kẻ địch
-trong bán kính **5 block**.
+- **Hiệu Ứng (Bị Động)**: Khi bị tấn công, phát sóng xung kích (Sonic Boom) trả đòn và đẩy lùi kẻ địch. 
 - **Cooldown**: **30 giây**.
+- **Mảnh Kí Ức Cuồng Thanh**: Chết khi đang trong trạng thái Ego/Dark Ego gần khối Sculk Shrieker (bán kính 5 block). Khối Shrieker có 50% tỉ lệ phát nổ và rơi ra mảnh này.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×10 | Sculk Shrieker ×1 |
-| Hàng 2 | Echo Shard ×10 | **Tainted Ego** | Echo Shard ×10 |
+| Hàng 2 | Echo Shard ×10 | **Tainted Ego** | **Mảnh Kí Ức Cuồng Thanh** |
 | Hàng 3 | Sculk Shrieker ×1 | Echo Shard ×10 | Goat Horn ×1 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*

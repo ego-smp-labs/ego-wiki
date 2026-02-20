@@ -75,7 +75,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 | [🩸 Blood Wolf Shard](#-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: +200% dmg 5s | Activate when hit |
 | [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Complete invisibility 5 mins | CD 10m · Hold weapon |
 | [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 20s · Hold weapon |
-| [💀 Mad Sound Shard](#-mad-sound-shard) | Active | 3+ | AoE knockback radius 5 blocks | CD 30s · Hold weapon |
+| [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom when attacked | Cooldown 30s |
 | [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Shoot straight up 10 blocks | CD 45s · Hold weapon |
 
 ---
@@ -127,7 +127,8 @@ No reason to continue existing.
 - **Effect (Passive)**: When HP below **30%**, each hit taken has **30% chance**
   to activate: increase **+200% damage** for **5 seconds**
   *(custom damage multiplier — not potion effect, does not stack)*.
-- **Blood Wolf's Memory Fragment**: Use Ego, then consecutively drink **x10 Instant Health Potions** to receive this item.
+- **Blood Wolf's Memory Fragment**: Use Ego/Dark Ego, then consecutively use **x10 Instant Health Potions** (splash or drink) to receive this item.
+  *(Note: Server-wide cooldown of 3 days applies after each summon).*
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
@@ -206,14 +207,14 @@ People did not kill him because they could not get close enough to do so.
 Eventually he died in silence — the only thing he never chose.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Emit shockwave pushing back all enemies
-in **5 block** radius.
+- **Effect (Passive)**: When attacked, retaliates with a Sonic Boom shockwave pushing back and damaging the attacker.
 - **Cooldown**: **30 seconds**.
+- **Mad Sound's Memory Fragment**: Die while under the effect of Ego/Dark Ego near a Sculk Shrieker (5 block radius). The shrieker has a 50% chance to explode and drop this fragment.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Sculk Shrieker ×1 | Echo Shard ×10 | Sculk Shrieker ×1 |
-| Row 2 | Echo Shard ×10 | **Tainted Ego** | Echo Shard ×10 |
+| Row 2 | Echo Shard ×10 | **Tainted Ego** | **Mad Sound's Memory Fragment** |
 | Row 3 | Sculk Shrieker ×1 | Echo Shard ×10 | Goat Horn ×1 |
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*

@@ -94,7 +94,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 Amulet protecting your Tier upon death. Like Totem of Undying, but for the **soul**.
 
-- **Usage**: Upon death, Tier is not lost (single use, self-destructs)
+- **Usage**: Upon death, Tier is not lost and **Ego does not drop** (single use, self-destructs)
 - **Craft**: Forge at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes)
 - **Trait**: Cannot stack, cannot be placed in chests
 
