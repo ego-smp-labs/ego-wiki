@@ -20,7 +20,7 @@ not a legend, but a memory imprisoned in matter.
 
 | Tier | Seal Unlocked |
 |------|--------------|
-| < 3  | None 🔒 |
+| &lt; 3  | None 🔒 |
 | 3+ | **1 Seal** (Slot 1 — left) |
 | 6+   | **2 Seals** (Slot 1 + Slot 2) |
 
@@ -72,7 +72,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | Reflect 15% melee damage | Always active |
-| [🩸 Blood Wolf Shard](#-blood-wolf-shard) | Passive | 3+ | <30% HP → 30% chance: +200% dmg 5s | Activate when hit |
+| [🩸 Blood Wolf Shard](#-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: +200% dmg 5s | Activate when hit |
 | [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Complete invisibility 5 mins | CD 10m · Hold weapon |
 | [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 20s · Hold weapon |
 | [💀 Mad Sound Shard](#-mad-sound-shard) | Active | 3+ | AoE knockback radius 5 blocks | CD 30s · Hold weapon |
@@ -125,13 +125,14 @@ No reason to continue existing.
 
 - Requires **Tier 3+** to equip and activate.
 - **Effect (Passive)**: When HP below **30%**, each hit taken has **30% chance**
-- to activate: increase **+200% damage** for **5 seconds**
-*(custom damage multiplier — not potion effect, does not stack)*.
+  to activate: increase **+200% damage** for **5 seconds**
+  *(custom damage multiplier — not potion effect, does not stack)*.
+- **Blood Wolf's Memory Fragment**: Use Ego, then consecutively drink **x10 Instant Health Potions** to receive this item.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
-| Row 2 | Crimson Fungus ×10 | **Tainted Ego** | Crimson Fungus ×10 |
+| Row 2 | Crimson Fungus ×10 | **Tainted Ego** | **Blood Wolf's Memory Fragment** |
 | Row 3 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*

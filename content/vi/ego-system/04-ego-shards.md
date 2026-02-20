@@ -125,13 +125,14 @@ Không còn lý do để tiếp tục tồn tại.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
 - **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
-- kích hoạt: tăng **+200% sát thương** trong **5 giây**
-*(custom damage multiplier — không phải potion effect, không thể cộng dồn)*.
+  kích hoạt: tăng **+200% sát thương** trong **5 giây**
+  *(custom damage multiplier — không phải potion effect, không thể cộng dồn)*.
+- **Mảnh Kí Ức Kẻ Huyết Lang**: Sử dụng Ego, sau đó uống liên tục **x10 Bình Hồi Máu Tức Thời** để nhận được vật phẩm này.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
-| Hàng 2 | Crimson Fungus ×10 | **Tainted Ego** | Crimson Fungus ×10 |
+| Hàng 2 | Crimson Fungus ×10 | **Tainted Ego** | **Mảnh Kí Ức Kẻ Huyết Lang** |
 | Hàng 3 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
