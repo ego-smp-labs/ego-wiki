@@ -1,86 +1,88 @@
 ---
-title: Add-on Features
-description: Small pieces — enough to make the world smoother, while keeping the smell of survival.
+title: Add-on Feature
+description: Small pieces — enough to make the world smoother, but keep the survival feel.
 order: 5
 ---
 
-# 05 — Add-on Features
+# 05 — Add-on Feature
 
-These are EGOSMP’s “support” features: they don’t replace the core gameplay, they only make the experience **smooth, clean, and frightening in a subtle way**.  
+These are "add-on" features of EgoSMP: do not change core gameplay, only make the experience **smoother, cleaner, and subtly strictly**.
+
 ---
 
 ## 1) Smooth Night Skipping
 
-When **at least 50%** of players in the *same world* are in bed, the night is skipped with a smooth transition into the next day.  
-No more “one person sleeps, nine people keep watch” like the night itself is a curse.
+When **at least 50%** of players in the *same world* sleep, night will be skipped with a smooth transition to the new day.
+No more one person sleeping, nine people "night watching" like being cursed.
 
-*Note:* A paced night skip — not a sudden *snap* to morning.
+**Note**: This is a rhythmic "night skip", not an instant *snap* to morning.
 
 ---
 
-## 2) Footprints on the Grass
+## 2) Grass Paths
 
-Walking on **grass paths** makes you slightly faster—just enough to make roads worth building.  
-In EGOSMP, a road isn’t just convenience — it’s proof someone kept living.
+Walking on **grass paths** will be slightly faster, enough to make "paths" something worth building.
+In EgoSMP, paths are not just for convenience — they are traces of the living.
 
 <div align="center">
 
 ![Demo — Grass Paths](https://oddlama.github.io/vane/assets/gifs/grass-paths.gif)
 
-<sub><i>A small speed boost on paths.</i></sub>
+<sub><i>Caption: Slight speed boost when walking on grass path.</i></sub>
 
 </div>
 
 ---
 
-## 3) Better Harvesting (Right-click harvesting)
+## 3) Better Harvesting
 
-Right-click a fully grown crop to **harvest and replant instantly**.  
-You get **1–3** drops, with a higher chance to receive more than one item.  
-If the crop has a distinct seed-item, the system **won’t drop seeds** to clutter your inventory.
+Right-click on ripe crops to **harvest and replant immediately**.
+Get **1–3** products, and a higher chance to receive more than one item.
+If the crop has a separate "seed-item", the system will **not drop seeds** like inventory trash.
 
 <div align="center">
 
 ![Demo — Better Harvesting](https://oddlama.github.io/vane/assets/gifs/better-harvesting.gif)
 
-<sub><i>One click, the field stays intact.</i></sub>
+<sub><i>Caption: One click, the field remains — only the harvest is taken.</i></sub>
 
 </div>
 
 ---
 
-## 4) Creeper Protection (with style)
+## 4) Creeper Protection (with taste)
 
-A creeper deleting half your house is pain, but disabling explosions completely is… lame.  
-So this protection is done “with style”: reduced destruction, and **rebuilding after the blast** in a way that still looks clean.
+Creeper blowing up half a house is heart-stopping, but disabling explosion completely is... bland.
+So there is a protection mechanism with "taste": limits destruction, and **rebuilds the area after explosion** in a visually pleasing way.
 
 <div align="center">
 
 ![Demo — Creeper Protection](https://oddlama.github.io/vane/assets/gifs/creeper-protection.gif)
 
-<sub><i>The blast still happens — your work doesn’t get erased.</i></sub>
+<sub><i>Caption: It still explodes — but the world doesn't allow it to steal all your effort.</i></sub>
 
 </div>
 
 ---
 
-## 5) Carrying animals (Carry On)
+## 5) Carry On
 
-You can **lift/carry** small mobs using:
-- Hold sneak + right-click with empty hands to lift, right-click to place.
-- Usually limited to “carry one thing at a time”, with optional slowness while carrying.
+Allows **carrying** small mobs by:
+- Hold sneak + right-click with empty hand to pick up, right-click to place down.
+
+- This mechanism usually comes with a limit "only carry 1 thing at a time" and may slow down the carrier.
 
 <div align="center">
 
 ![Demo — Carry mob](https://i.imgur.com/dYQel9s.png)
 
-<sub><i>Carry life. Run.</i></sub>
+<sub><i>Caption: When the world is too cruel, at least you can hug a cow and run.</i></sub>
 
 </div>
 
 ---
 
-## Inspirations
+## Inspiration
 
-- Vane: QoL features that remain lore-friendly and vanilla-friendly.
-- Carry On: lifting/carrying mobs and certain block-entities with empty hands.
+- Vane: QoL plugin suite but still lore-friendly/vanilla-friendly.
+- Carry On: mechanism to pick/carry mobs and some block-entities with empty hands.

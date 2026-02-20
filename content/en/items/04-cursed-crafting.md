@@ -1,86 +1,83 @@
 ---
 title: Cursed Crafting Table
-description: The forge of the abyss — where souls become fuel.
+description: Forge of the abyss — where soul becomes material.
 order: 4
 ---
 
 # Cursed Crafting Table
 
-> *"Places like this don't craft items. They craft **curses**."*
+> *"This place does not craft items. It crafts **curses**."*
 
-The Cursed Table is the only station capable of forging Artifacts from the abyss. It runs on **soul energy** — and every soul has a price.
+The Cursed Table is the only crafting station that can forge Relics from the abyss. It runs on **soul energy** — and every soul has a price.
 
 ---
 
-## How to Build
+## How to Create Cursed Table
 
-The Cursed Table does not generate naturally. You must **build it yourself**.
+The Cursed Table does not appear naturally. You must **manually** build it.
 
-**Recipe (Shaped Crafting):**
+**Recipe (Normal Crafting — Shaped):**
 
-| | Col 1 | Col 2 | Col 3 |
+| | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | | Ego Soul | |
+| Row 1 | | Ego soul | |
 | Row 2 | Obsidian | Crafting Table | Obsidian |
 | Row 3 | | Netherite Ingot | |
 
-**Output**: Cursed Crafting Table × 1
+**Result**: Cursed Crafting Table × 1
 
-> Place it down and **right-click** to open the interface.
+> Place it down and right-click to open interface.
 
 ---
 
 | Component | Description |
-|-----------|-------------|
-| **Soul Bank** | 10 slots on the left showing souls (gray = empty, purple = charged) |
-| **⚡ Charge Button** | Sacrifice 1 Tier to charge a soul |
+|------------|--------|
+| **Soul Area** | 10 slots on the left show souls (gray = empty, purple = charged) |
+| **⚡ Charge Button** | Sacrifice 1 Tier to charge soul |
 
 ## Soul System
 
-Each Cursed Table holds a maximum of **10 souls**.
+Each Cursed Table holds max **10 souls**.
 Souls are consumed when forging [cursed recipes](/en/items/cursed-recipes).
 
-### Charging Souls
+### Charging Soul
 
-1. Click the **⚡ Charge Soul** button
-2. You lose **1 Tier** and take **1.5 hearts damage**
+1. Click **⚡ Charge Soul** button
+2. You lose **1 Tier** and suffer **1.5 hearts damage**
 3. An empty soul slot is filled
 
-> *"Every soul charged is a piece of your ego you'll never get back."*
+> *"Every soul charged is a part of your ego you will never get back."*
 
-### Consuming Souls
+### Consuming Soul
 
-Each recipe requires a specific number of souls. When you retrieve the result, the required souls are **devoured** — non-refundable.
+Each recipe requires a certain number of souls. When retrieving the result, souls are **devoured** — non-refundable.
 
 ---
 
 ## Abyssal Forging
 
-This is a special forging mechanic for **High-Tier Artifacts** (Mace, Ego Shards...).
-Unlike normal crafting, Abyssal Forging is a **gamble against time**.
+This is a special forging mechanism for **High-level Relics** (Mace, Ego Shards...).
+Unlike normal crafting, Abyssal Forging is a **gamble with time**.
 
 ### Process
 
-1. Place ingredients in the 3×3 grid
-2. If the recipe is valid → result appears
-3. Click result → **forging process begins** (cannot be cancelled)
-4. Wait for the duration → retrieve product
+1. Place materials in 3×3 grid
+2. If recipe is valid → result appears
+3. Click result → **forging process starts** (cannot cancel)
+4. Wait for time to complete → take product
 
-### The Price
+### Forging Characteristics
+- ⏳ **Time**: Powerful Artifacts need extended forging time (5–10 minutes)
+- 📍 **Exposed**: Forge location is **broadcasted to the whole server** — you become prey
+- 🔒 **Locked**: Item is locked until completion
+- 💀 **Risk**: forged items cannot be stored, can only be **absorbed** (strict-mode)
 
-| Risk | Description |
-|------|-------------|
-| ⏳ **Time** | Powerful artifacts take 5–10 minutes to forge |
-| 📍 **Exposure** | Forge location is **broadcast to the entire server** |
-| 🔒 **Lock** | Items cannot be removed until complete |
-| 💀 **Total Loss** | If killed or forge destroyed → lose all ingredients + souls |
-
-> *"Creations of the abyss cannot be made the normal way. They take time, and a gamble."*
+> *"Creations of the abyss cannot be crafted in ordinary ways. They need time, and a gamble."*
 
 ---
 
-## See Also
+## Links
 
 - → [All Cursed Recipes](/en/items/cursed-recipes)
-- → [Artifacts — Ego Items](/en/items/ego-items)
-- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
+- → [Artifacts — Ego Relics](/en/items/ego-items)
+- → [Sacrifice — Hearts & Shards](/en/items/sacrifice)

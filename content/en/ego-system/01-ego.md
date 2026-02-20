@@ -4,90 +4,70 @@ description: Basic information about Ego.
 order: 1
 ---
 
-# Ego (The Self)
+# Ego
 
+**Ego** is power dropped from blood.
+You can get stronger from it — but every time you touch Ego, you sign yet another line in the pact with the abyss.
 
-**Ego** is power shed from blood.
-You can grow stronger with it — but every time you touch Ego, you sign one more line into a contract with the abyss.
-
-
-> See the full rank system: **[Tier System](./02-tier-system)**
-
+> See tier details: **[Tier System](./02-tier-system)**
 
 ## How does Ego drop?
 
-
 Ego **drops from other players** when you kill them.
-It’s not a “reward” — it’s a still-warm shard of sin, tossed into your hands to see how much you can carry before you crack.
+It is not a "reward", but a piece of sin still warm — something the world throws into your hands to test how much you can endure.
 
+## When using Ego: "The Aftershock"
 
-## Using Ego: “Ego Aftershock”
+Using Ego is not just a click-to-buff action.
+It is a wave crashing into your mind, dragging light and darkness over each other, forcing you to **struggle** with what has just awakened.
 
+- **The Price**
+  - **Death**: **5%** chance of **INSTANT DEATH** upon use.
+  - **Chaos**: Always triggered (cannot be skipped).
+  - **Insanity**: Your inventory will be frantically shuffled.
+  - **Effects**: Poison II, Darkness, **Nausea**.
 
-Using Ego isn’t a simple click-and-buff.
-It’s a surge that floods your mind, layering light and shadow on top of each other, forcing you to **withstand** what just woke up inside you.
+  - **Absorption**: A very small chance you will neutralize the ego without any consequences.
 
+A small price to remind you that "Ego always takes back its share".
 
-- **The price you pay**
-- **Death**: **5%** chance to **DIE INSTANTLY** on use.
-- **Chaos**: Always triggers (cannot be bypassed).
-- **Sanity loss**: Your inventory will be violently scrambled.
-- **Effects**: Poison II, Darkness, **Nausea**.
-- **Absorption**: A very small chance you’ll neutralize Ego with no consequences.
-
-
-A small price — just to remind you:
-“Ego always takes back what belongs to it.”
-
-
-If you survive and don’t collapse into the chaos, your Ego stabilizes over time — the “self” becomes less fragile than it was at the start.
-
+If you survive and do not collapse in chaos, your Ego will stabilize over time — the "self" is no longer as fragile as it was in the beginning.
 
 ## Ego Tier (0 → 9)
-It measures **how deep you’ve sunk into the abyss**.
+It measures **how deep you have sunk into the abyss**.
 
+Each tier is a deeper level of hell — and also a new threshold of power.
 
-Each tier is one more layer of hell — and also a new threshold of power.
+- Tier 0: Mortal, not yet ego-fied.
+- Tier 1: Beginning of ego-fication (enough for the world to recognize you "have changed").
+- Tier 9: Ultimate form — no longer "holding power", but "living with it".
 
+(Tier benefits details in [Tier System](./02-tier-system).)
 
-- Tier 0: Ordinary human, not ego-touched.
-- Tier 1: Ego awakening begins (enough for the world to notice you’ve “changed”).
-- Tier 9: The extreme form — no longer “wielding power,” but “living with it.”
+## Anti-farm: The Abyss hates abusers
 
-
-(For detailed perks per tier, see the [Tier System](./02-tier-system).)
-
-
-## Anti-farm: the abyss hates abusers
-
-
-EgoSMP doesn’t encourage the “grind newbies like mobs” playstyle.
-The server has anti-farm rules to keep PvP sharp — not turn it into an Ego press machine.
-
+EgoSMP does not encourage "farming new players like mobs".
+The server has anti-farming rules to keep PvP quality — preventing it from becoming an Ego press machine.
 
 Core principles:
-- Killing too repeatedly can reduce/limit Ego drops (anti kill-spam), to prevent abuse.
-- **Tier difference** affects drops: a high-tier (Tier &gt; 2) killing a Tier 0 victim will **not drop Ego** (anti-farm).
-- Example rule: if a Tier 3+ attacker kills a Tier 0 victim, **no Ego drops**.
-- However, **Tier 0 vs Tier 0** battles will **ALWAYS drop Ego**, bypassing anti-farm restrictions.
+- Killing too continuously may restrict Ego drops (anti kill-spam), to avoid abuse.
+- **Tier Difference** affects drops: High Tier (> Tier 2) killing Tier 0 will **not drop Ego** to prevent farming.
+- Specific rule example: when a Tier 3+ attacker kills a Tier 0 victim, **no Ego drops**.
+- However, a **Tier 0 vs Tier 0** battle will **ALWAYS drop Ego**, ignoring anti-farm restrictions.
 
+## What about Death?
 
-## What happens when you die?
+Death does not "wipe away simple".
+But it breaks the momentum of your dark evolution.
 
-
-Death doesn’t “erase sin.”
-But it breaks your momentum — the dark evolution you were riding.
-
-
-- On death, your Tier is **reset to Tier 1** instead of falling back to Tier 0.
+- When you die, your Tier is **reset to Tier 1** instead of falling back to Tier 0.
 - The demotion/anti-farm system is configurable to keep the server fair and reduce abuse.
 
 ---
-
 ## See Also
 
 - → [Tier System](/en/ego-system/tier-system)
 - → [Dark Ego](/en/ego-system/dark-ego)
 - → [Ego Items](/en/items/ego-items)
 - → [Ego Shards](/en/ego-system/ego-shards)
-- → [The Seven Deadly Sins](/en/ego-system/sins)
+- → [Seven Deadly Sins](/en/ego-system/sins)

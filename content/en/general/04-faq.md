@@ -1,51 +1,51 @@
 ---
 title: FAQ
 description: Frequently asked questions about the server and Ego system.
-order: 5
+order: 4
 ---
 
-# FAQ
+# Frequently Asked Questions
 
-## What about death?
+## What about Death?
 
-Death does not "wash clean" what you have absorbed.
-It only breaks your heartbeat, and pulls you closer to the edge of the abyss.
+Death doesn't "wash away" what you absorbed.
+It only breaks your heartbeat, and pulls you closer to the edge.
 
-- If you are **Tier 0**: you are still Tier 0.
-- If you are **Tier 1 or higher**: when dying you will be **pulled back to Tier 1** (not falling to Tier 0 anymore).
+- If you are **Tier 0**: you remain Tier 0.
+- If you are **Tier 1 or higher**: when you die you will be **pulled back to Tier 1** (no longer drop to Tier 0).
 
-See Tier details at: **[Tier System](/en/ego-system/02-tier-system)**
+See Tier details at: **[Tier System](/en/ego-system/tier-system)**
 
 ## Ego System
 
 ### Where does Ego drop from?
 
-Ego is what drops from **PvP** — from the moment a player takes another player's life.
+Ego is what drops from **PvP** — from the moment one player takes another player's life.
 
-### Why do I kill but don't see Ego drop?
+### Why do I kill but see no Ego drop?
 
 Common reasons:
 
-- **Low tier anti-farm**: high tier player killing tier 0 may **not drop Ego**, to avoid "smashing chickens for eggs".
-- **Server protection from repeated farming**: server may enable drop limit mechanism (cooldown by victim / kill streak limit) to block farming.
+- **Low tier anti-farm**: high tier players killing tier 0 might **not drop Ego**, to avoid "crushing chicks for eggs".
+- **Server protection against repetitive farming**: server might have drop limit mechanisms (cooldown per victim / kill streak limit) to block farming.
 
 ### What happens after using Ego?
 
-Because Ego is not a tonic — it is a "piece of human" broken off.
+Because Ego is not a tonic — it is a "piece of person" broken off.
 
 When using Ego, you will suffer reactions like:
 - Dizziness (Nausea).
-- Sudden light/dark (Darkness).
-- Inventory shuffle (slots swapped).
+- Sudden Light/Dark (Darkness).
+- Inventory Shuffle (inventory slots scrambled).
 - Poison I for 10-15 seconds.
 
-(This is the price of forcing the Ego to "swallow" more sin.)
+(This is the price of forcing Ego to "swallow" more sin.)
 
-### What is Dark Ego, and why is everyone afraid?
+### What is Dark Ego, and why is everyone afraid of it?
 
 Dark Ego is a **more toxic, dirtier, more annoying** version of normal Ego.
-It is designed to **lock evolution**: you cannot "climb blindly" to the next tier if you haven't passed the corresponding Dark Ego gate.
-Besides, Dark Ego also has its own mechanics (e.g., crafting special items, stronger effects, distinct signs).
+It is designed to **lock evolution**: you cannot "climb blindly" to the next tier without passing the corresponding Dark Ego gate.
+Additionally, Dark Ego has its own mechanisms (e.g., crafting special items, stronger effects, distinct signs).
 
 ## Mace
 
@@ -55,13 +55,13 @@ Mace is a legendary weapon with destructive power.
 
 ### How long does Mace glow after belonging to me?
 
-Mace can attach a **glowing effect for 5 minutes** after you own it, but greater power comes with risks, hunting is what awaits you.
+Mace might attach a **glowing effect for 5 minutes** after you possess it, but greater power comes with risks, hunting is what awaits you.
 
-### Can I throw Mace (Q key)?
+### Can I throw away Mace (Q key)?
 
-Mace is designed with restricted drop: **do not allow throwing**, and usually only "slips out" by death rules (depending on mode).
+Mace is designed with restricted drop: **throwing is not allowed**, and usually only "slips out" upon death rules (depending on mode).
 
-### Can I put Mace in a chest?
+### Can I store Mace in a chest?
 
 There is a **strict-mode** to tighten moving Mace into containers; when strict-mode is on, server will block putting Mace into unauthorized storage places.
 
@@ -69,12 +69,12 @@ There is a **strict-mode** to tighten moving Mace into containers; when strict-m
 
 ### How to join?
 
-Connect by server IP and join Discord: https://discord.gg/jRqnNbupj4
+Connect using server IP and join Discord: https://discord.gg/jRqnNbupj4
 
 ### I found a bug!
 
-Report in Discord at #bug-reports channel for team to handle quickly.
+Report in Discord in channel #bug-reports for the team to handle quickly.
 
-### Which Minecraft version is needed?
+### What Minecraft version is needed?
 
-Recommended **1.21.11+** and **1.21.130** for PE (newer version implies fewer errors).
+Recommend **1.21.11+** and **1.21.130** for PE (newer versions have fewer bugs).

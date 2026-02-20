@@ -1,24 +1,63 @@
 ---
-title: Relics
-description: Index of relics left over from the abyss.
+title: Artifacts
+description: Index of relics left from the abyss — and how they are born.
 order: 1
 ---
 
-# Relics
+# Artifacts
 
 Not everything you pick up is "loot".
-Some items are **relics** — things left behind after souls have been eroded.
+Some things are **artifacts** — ruins left behind after souls are ground down to the bone.
 
-## Relics in this directory
+In EgoSMP, items are divided into two origins:
 
-- [**Might of Power** — Mace of Power](/en/items/mace#mace-of-power)
-- [**Mace of Chaos** — Mace of Chaos](/en/items/mace#mace-of-chaos)
-- [**Ego Ruins** — Ego Items](/en/items/ego-items)
-- [**Dark Self Contract** — Dark Ego](/en/ego-system/dark-ego)
+---
 
+## Normal Crafting
 
-## Reading suggestions (to avoid picking up "curses")
+Familiar recipes — vanilla crafting table, furnace, anvil.
+Nothing unusual. No price to pay.
 
-- Want to understand foundation before "fallen": read **Ego Ruins**.
-- Want to deal damage and create drama: read **Mace** pages.
-- Want to survive long in the world of sin: read **Armor** first.
+This is where you create **base materials** — the first bricks before stepping into the abyss:
+
+- **Tainted Ego** — Ego Fragment + Netherite Ingot
+- **Cursed Crafting Table** — Dark Ego + Crafting Table + Netherite + Obsidian
+
+> Details at → [Ego Relics](/en/items/ego-items)
+
+---
+## Abyssal Forging
+
+> *"Not everyone is worthy to touch darkness. But darkness is always ready to touch you."*
+
+Creations of the abyss **cannot** be crafted in the usual way.
+They need time. They need soul. And a **gamble**.
+
+Sacrifice is a special branch — born from soul sacrifice at the [Cursed Table](/en/items/cursed-crafting). They are not weapons, not armor. They are **catalysts** — things that activate powers hidden in the abyss.
+
+### There are four types:
+
+- **[Ego Shards](/en/ego-system/ego-shards)** — relics of those who left their ego behind
+- **[Ancient Artifacts](/en/items/artifacts)** - weapons carrying the ego of the creator
+- **[Ego Pact](/en/items/ego-pact)** - Power boost by sacrificing ego
+- **[Heart of Sins](/en/ego-system/sins)** — Ancient power of the abyss
+
+### Forging Characteristics
+- ⏳ **Time**: Powerful Artifacts need extended forging time (5–10 minutes)
+- 📍 **Exposed**: Forge location is **broadcasted to the whole server** — you become prey
+- 🔒 **Locked**: Item is locked until completion
+- 💀 **Risk**: forged items cannot be stored, can only be **absorbed**
+
+> *"The abyss does not give power. It lends — and the interest is the soul."*
+
+---
+
+## Index
+
+| Page | Content |
+|-------|----------|
+| [Ego Relics](/en/items/ego-items) | Ego Fragment, Dark Ego, Tainted Ego, Soul Keeper |
+| [Legendary Mace](/en/items/mace) | Mace of Power & Mace of Chaos |
+| [Cursed Crafting Table](/en/items/cursed-crafting) | How to build, GUI, Souls, Abyssal Forging |
+| [Cursed Recipes](/en/items/cursed-recipes) | All recipes from Cursed Table |
+| [Sacrifice — Hearts & Shards](/en/items/sacrifice) | Sin Hearts + Ego Shards |

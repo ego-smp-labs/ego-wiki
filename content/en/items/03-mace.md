@@ -1,78 +1,56 @@
 ---
-title: Mace
-description: Two legendary maces — one of power, one of chaos.
+title: Legendary Mace
+description: Two maces — one power, one chaos error. Both are sentences.
 order: 3
 ---
 
-# Mace (Power & Chaos)
+# Legendary Mace
 
-In EGOSMP, Mace is not a weapon.  
-It is **an event** — and anyone who touches it is “seen” by the entire server.
+In EgoSMP, Mace is not a weapon.
+It is **a sentence** — and anyone who touches it is **visible** to the whole server.
 
-There are 2 variations:
-- [**Mace of Power** — Mace of Power: “original” — straight power, whoever holds it becomes the target.](#mace-of-power)
-- [**Mace of Chaos** — Mace of Chaos: “error” — chaos, curse.](#mace-of-chaos)
+There are two variants. Both dangerous. But only one of them is *intended*.
 
 ---
 
 ## Mace of Power
 
-Legendary weapon with destructive power.
+> *"The wielder needs no reason. Its existence is the reason."*
 
-### Strength
-- **Damage**: Extremely large, increases strongly with height when attacking.
-- **Combat effect**: Ground Slam.
-- **Effect when possessed**: Glows for 5 minutes.
+Legendary weapon with pure destructive power.
 
-### Property law
-- When Mace appears, the server can **mark the owner** to create a hunt.
+### Power
+- **Max Damage** — increases heavily with height when attacking (Ground Slam)
+- **Glowing**: Owner is marked Glowing for 5 minutes — whole server knows where you are
+- **Hunted**: When Mace appears, you become a **target** for everyone
 
----
+### Rules
+- Cannot be stored in chest or container
+- Drops outside upon death (not in grave)
+- Forged at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes#mace-of-power)
 
-### Recipe: Mace of Power
-
-<div align="center">
-
-![Recipe - Mace of Power](https://i.imgur.com/pLh7sXs.png)
-
-</div>
-
-> **Note:** The Relic needs to be forged within **5 minutes** — being late means losing your opportunity.
+> ⏳ **Forging time: 5 minutes** — location revealed to server. A moment late is losing all.
 
 ---
 
 ## Mace of Chaos
 
-It is said that once the Mace of Power was “copied”… and that clone refused to be a copy.  
-From then on, Mace of Chaos wandered around the server like an omen of error.
+> *"Once Mace of Power was copied… and that copy refused to be a copy."*
 
-### Strength
-- **Damage**: Is a copy of [Mace of Power](#mace-of-power), but at the cost of Chaos.
-- **Chaos (Combat)**: 10% causes **shuffle inventory** of the victim for a few seconds.
-- **Anonymity**: Death messages can **anonymize the killer**.
-- **Curse (Self-Curse)**: When forged or picked up, it can cause **wither II** and chaos.
+They say it wanders the server like a **glitch omen** — a crack in reality.
 
----
+### Power
+- **Damage**: Equivalent to [Mace of Power](#mace-of-power), but exchanged for Chaos
+- **Chaos (Combat)**: 5% chance to cause **inventory shuffle** to victim for 10 seconds
+- **Anonymous**: Death message may **hide killer's name** — victim doesn't know who killed them
+- **Self-Curse**: Upon finishing forge or picking up → incur **Wither II** + inventory shuffle
 
-### Recipe: Mace of Chaos
+### Rules
+- Same rules as Mace of Power: no chest storage, drops on death
+- Forged at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes#mace-of-chaos)
 
-**Requiment**: [Cursed Crafting Table](/en/items/cursed-crafting)
-
-**Ingredients**:
-- **M**: **Heavy Core** (Center)
-- **T**: **Dark Ego** (Bottom Center)
-- **N**: **Netherite Ingot** (Corners)
-
-*(Pattern: N-H-N / D / N-N)*
-
-<div align="center">
-
-![Hard Recipe - Mace of Chaos](https://i.imgur.com/XClFjxZ.png)
-
-</div>
+> ⏳ **Forging time: 10 minutes** — double that of Mace of Power. Double the risk.
 
 ---
 
-> **Note:** The Relic needs to be forged within **10 minutes** — being late means losing your opportunity.
-
-Mace doesn't choose the strongest. It chooses the one who **dares to keep** it the longest.
+> *"The Mace does not choose the strongest. It chooses the one who **dares to keep** it the longest."*

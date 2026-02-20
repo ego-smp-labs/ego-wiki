@@ -1,24 +1,24 @@
 ---
-title: Combat Punishment
-description: The consequences of fleeing from battle.
+title: Abyss Punishment
+description: Consequences of fleeing from battle.
 order: 6
 ---
 
 # Abyss Punishment (Combat Log)
 
-In EGOSMP, fleeing from combat is not an option. The Abyss watches every fight.
+In EgoSMP, fleeing from battle is not an option. The Abyss always watches every fight.
 
 ## What is Combat Log?
-If you disconnect (quit data game) while in combat (taking or dealing damage with another player), you are considered to be **Combat Logging**.
+If you disconnect (exit game) while in combat state (dealing or receiving damage from another player), you are considered **Combat Logging**.
 
-## The Punishment
-If you log out during combat, the **Abyss Punishment** awaits you upon your return:
+## Punishment
+If you exit the game while fighting, **Abyss Punishment** awaits you upon return:
 
-1.  **Instant Death**: You will die immediately, dropping all your items.
-2.  **Tier Reset**: Your Ego Tier will be **RESET to Tier 1**.
-3.  **Abyss Torture**:
+1.  **Instant Death**: You will die immediately, dropping all items.
+2.  **Reset Tier**: Your Ego Tier will be **RESET to Tier 1**.
+3.  **Torture of the Abyss**:
     - When you rejoin, you will be frozen and lifted into the air.
-    - You will be impaled by dark spikes.
-    - You will suffer **Weakness** and **Blindness** for a short duration.
+    - You will be pierced by dark spikes.
+    - You will suffer **Weakness** and **Blindness** for a short time.
 
-> **Warning**: Do not unplug or alt-f4 during a fight. The Abyss does not care about connectivity issues.
+> **Warning**: Do not pull the plug or Alt-F4 while fighting. The Abyss does not care about your connection reason.

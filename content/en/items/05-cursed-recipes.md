@@ -1,115 +1,74 @@
 ---
 title: Cursed Recipes
-description: All recipes from the Cursed Crafting Table — the price of power.
+description: List of all recipes from Cursed Crafting Table — the price of power.
 order: 5
 ---
 
 # Cursed Recipes
 
-> *"Every recipe is a contract. You give a soul — the abyss returns power."*
+> *"Each recipe is a deal. You give soul — abyss returns power."*
 
-All recipes below require a [**Cursed Crafting Table**](/en/items/cursed-crafting) and charged souls.
+All recipes below require [**Cursed Crafting Table**](/en/items/cursed-crafting) and charged souls.
 
 ---
 
-## Artifacts — Legendary Maces
+## Artifacts — Legendary Mace
 
 ### Mace of Power
 
-> Pure destruction weapon. Details → [Mace of Power](/en/items/mace#mace-of-power)
+> Pure weapon of destruction. See details → [Mace of Power](/en/items/mace#mace-of-power)
 
-| | Col 1 | Col 2 | Col 3 |
+| | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | | Netherite Ingot | |
-| Row 2 | Netherite Ingot | Heavy Core | Netherite Ingot |
-| Row 3 | | Breeze Rod | |
+| Row 1 |       | Netherite Ingot |       |
+| Row 2 |       | Heavy Core |       |
+| Row 3 |       | Breeze Rod |       |
 
-- **Souls**: 4
+- **Soul**: 1
 - **Forging Time**: 5 minutes *(Abyssal Forging — location revealed)*
 
 ---
 
 ### Mace of Chaos
 
-> A flawed copy. Details → [Mace of Chaos](/en/items/mace#mace-of-chaos)
+> Glitched copy. See details → [Mace of Chaos](/en/items/mace#mace-of-chaos)
 
-| | Col 1 | Col 2 | Col 3 |
+| | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | Tainted Ego | Dark Ego | Tainted Ego |
-| Row 2 | Obsidian | Mace | Obsidian |
-| Row 3 | Tainted Ego | Tainted Ego | Tainted Ego |
+| Row 1 | Netherite Ingot | **HEAVY_CORE** | Netherite Ingot |
+| Row 2 | **[Dark Ego Soul](/en/items/ego-items)** | Mace of Power | **[Dark Ego Soul](/en/items/ego-items)** |
+| Row 3 | Netherite Ingot | **Wither Rose** | Netherite Ingot |
 
-- **Souls**: 8
+- **Soul**: 3
 - **Forging Time**: 10 minutes *(Abyssal Forging — location revealed)*
 
 ---
 
-## Protection
+## Amulet
 
 ### Soul Keeper
 
-> Totem for your Tier. Details → [Soul Keeper](/en/items/ego-items#soul-keeper)
+> Amulet protecting Tier upon death. See details → [Soul Keeper](/en/items/ego-items#soul-keeper)
 
-| | Col 1 | Col 2 | Col 3 |
+| | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | Amethyst Shard | **Ego Soul** | Amethyst Shard |
-| Row 2 | Amethyst Shard | Amethyst Shard | Amethyst Shard |
-| Row 3 | Amethyst Shard | Totem of Undying | Amethyst Shard |
+| Row 1 | Enchanted Golden Apple | **[Ego Soul](/en/items/ego-items)** | Enchanted Golden Apple |
+| Row 2 | **[Purification Stone](/en/items/ego-items)** | Netherite Ingot | **[Purification Stone](/en/items/ego-items)** |
+| Row 3 | Enchanted Golden Apple | Totem of Undying | Enchanted Golden Apple |
 
-- **Souls**: 0
-- **Forging Time**: Instant
-
----
-
-## Crafting Components
-
-### Ego Soul
-
-> Crafted at **Normal Crafting Table** (no Cursed Table needed).
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Glass Pane | Glass Pane | Glass Pane |
-| Row 2 | Glass Pane | **Ego** | Glass Pane |
-| Row 3 | Glass Pane | Soul Lantern | Glass Pane |
-
----
-
-### Dark Ego Soul
-
-> Crafted at **Normal Crafting Table** (no Cursed Table needed).
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Glass Pane | Glass Pane | Glass Pane |
-| Row 2 | Glass Pane | **Dark Ego** | Glass Pane |
-| Row 3 | Glass Pane | Soul Lantern | Glass Pane |
-
----
-
-### Tainted Ego
-
-> Crafted at **Normal Crafting Table** (no Cursed Table needed).
-
-| | Col 1 | Col 2 | Col 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | Sculk | Sculk | Sculk |
-| Row 2 | Sculk | **Ego Soul** | Sculk |
-| Row 3 | Sculk | Sculk | Sculk |
+- **Soul**: 0
+- **Forging Time**: 5 minutes
 
 ---
 
 ## Ego Shards
 
-> **All shard recipes have been moved to: [Ego Shard Slots](/en/ego-system/ego-shards)**
-
-All Ego Shards require **Tier 3+** to activate. Each type is **unique** in the server.
-All shard recipes require **Tainted Ego** in the center.
+> **All shard recipes have been moved to: [Ego Shards](/en/ego-system/ego-shards)**
 
 ---
 
-## See Also
+## Links
 
-- → [Cursed Crafting Table](/en/items/cursed-crafting)
+- → [Cursed Crafting Table & Abyssal Forging](/en/items/cursed-crafting)
 - → [Ego Shard Slots](/en/ego-system/ego-shards)
 - → [Legendary Mace](/en/items/mace)

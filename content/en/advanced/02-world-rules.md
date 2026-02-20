@@ -1,20 +1,20 @@
 ---
 title: World Rules
-description: The immutable laws of existence.
+description: Immutable laws.
 order: 2
 ---
 
 # World Rules
 
-## 1. Sealed Artifacts (The Forbidden)
-The Abyss rejects existence of powers too chaotic or destructive.
+## 1. Sealed Artifacts
+The Abyss rejects the existence of some powers that are too great or chaotic.
 
-- **Restricted Items**: End Crystals, TNT Minecarts.
-- **Limited Relics**: The **Mace** is unique (Limit: 1).
-- **Reason**: To maintain the balance of chaos. A world destroyed too quickly is no fun to rule.
+- **Banned/Restricted items**: End Crystal, TNT Minecart.
+- **Limit**: Mace is restricted (Only 1).
+- **Reason**: To balance chaos. A world destroyed too quickly is not fun to rule.
 
-## 2. Sanctuary (Peaceful Zone)
-The Spawn area is protected by an ancient barrier. Here, no blood shall be spilled. This is the only place you can breathe freely.
+## 2. Sanctuary
+The Spawn area is protected by an ancient barrier. No blood spilled here. The only place to breathe peacefully.
 
-## 3. The End (Cursed Dimension)
-The final dimension is heavily cursed. Any soul daring to enter faces **instant death**. Do not challenge the inevitable.
+## 3. The End (Cursed Realm)
+The final dimension is heavily cursed. Anyone step foot in there will meet instant death. Do not challenge death.

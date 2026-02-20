@@ -1,42 +1,42 @@
 ---
 title: Dark Ego
-description: Dark power and risk.
+description: Dark power and risks.
 order: 3
 ---
 
 ## Dark Ego
 
-At a certain level of strength (Tier 5+), your normal ego is no longer enough to satisfy you. You need something darker: **Dark Ego**.
+At a certain power threshold (Tier 5+), normal ego is no longer enough to satisfy you. You need something darker: **Dark Ego**.
 
 
 ### Origin
 
-- **Natural drop**: From a **Tier 5+** player when defeated (100%)
-- **Craft**: Use [Tainted Ego](/en/items/ego-items#tainted-ego) as a core ingredient at the [Cursed Crafting Table](/en/items/cursed-crafting).
+- **Natural Drop**: From **Tier 5+** players when killed (100%).
+- **Crafting**: Use [Tainted Ego](/en/items/ego-items#tainted-ego) as core material at [Cursed Crafting Table](/en/items/cursed-crafting) — **not used directly**.
 
 ### Power
 
-- **Tier &lt; 5**: Instant random increase **+1-2 Tier**
-- **Tier &gt;= 5**: Increase **+1 Tier** (required to level up)
+- **Tier < 5**: Instantly increase random **+1-2 Tiers**.
+- **Tier >= 5**: Increase **+1 Tier** (required for promotion).
 
-### The price
+### The Price
 
-- **10%** chance of instant death upon use
-- **Chaos**: The entire inventory is disturbed
-- **Effect**: Wither II, Darkness, Slow, Weak, Nausea
+- **10%** chance of instant death upon use.
+- **Chaos**: Entire inventory shuffled.
+- **Effects**: Wither II, Darkness, Slowness, Weakness, Nausea.
 
-> Dark Ego is the ego that cannot be absorbed easily.
+> Dark Ego is an ego that cannot be absorbed easily.
 
 ---
 
-## Dark Ego Purification
+## Purifying Dark Ego
 
-If you don't want to take the risk, you can **purify** your Dark Ego with a **Purification Stone**.
+If you don't want to accept the risk, you can **purify** Dark Ego using a **Purification Stone**.
 
 - **Formula**: Dark Ego + Purification Stone → Normal Ego Fragment
-- **Purification Stone**: Forged from Amethyst Shard + Echo Shard at [Curse Table](/en/items/cursed-crafting)
+- **Purification Stone**: Forged from Amethyst Shard + Echo Shard at [Cursed Table](/en/items/cursed-crafting)
 
-> *"Darkness can be washed away — but purity has lost its original power."*
+> *"Darkness can be cleansed — but purity has lost its primal power."*
 
 ---
 
@@ -46,3 +46,4 @@ If you don't want to take the risk, you can **purify** your Dark Ego with a **Pu
 - → [Tier System](/en/ego-system/tier-system)
 - → [Cursed Recipes](/en/items/cursed-recipes)
 - → [Ego Shards](/en/ego-system/ego-shards)
+- → [Ego](/en/ego-system/ego)

@@ -1,144 +1,144 @@
 ---
-title: Tier & Ego Strength
-description: The path from Mortal to Sin — each step is a step deeper into the abyss.
+title: Ego Tier & Power
+description: The path from Mortal to Sin Incarnate — each step is a step deeper into the abyss.
 order: 2
 ---
 
-# Tier & Ego Strength
+# Ego Tier & Power
 
-Tier is not for showing off.  
-It is your **depth** in the abyss: the higher, the stronger — and the harder it is to live as a human being.
+Tier is not for showing off.
+It is your **depth** in the abyss: the higher it is, the stronger you are — and the harder it is to live like a human.
 
-The system has **10 milestones**: Tier 0 → Tier 9 (maximum).  
-Each tier unlocks bonus powers, but also entails **curses** and **physical manifestations** of blackening.
+The system has **10 milestones**: Tier 0 → Tier 9 (max).
+Each tier unlocks power bonuses, but also drags along **curses** and **physical manifestations** of corruption.
 
 ---
 
-## 📊 Tier Progress Table
+## 📊 Tier Progression Table
 
-| Tier | Name | HP Bonus | DMG Bonus | Speed ​​| Special |
-|-------|---------|----------|-----------|--------|----------|
+| Tier | Name | HP Bonus | DMG Bonus | Speed | Special |
+|------|---------|----------|-----------|--------|----------|
 | 0 | **Mortal** | +0 | +0% | — | You haven't "heard" anything yet. |
-| 1 | **Awakening** | +2 | +5% | — | Kill the first person. Overcome the "panic attack" without dying. |
-| 2 | **Rift** | +4 | +10% | — | Absorb more Ego. Prove that this is no longer an "accident". |
-| 3 | **Imprint** | +6 | +15% | — | Absorb more Ban Nga. Soul Stealer unlocked. |
-| 4 | **Blood Contract** | +8 | +20% | +5% | Absorb more Ego. Prove your strength. |
-| 5 | **Door of Sin** | +10 | +25% | +10% | **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 6.** A blood-colored seal appears at your feet. |
-| 6 | **Territory** | +12 | +30% | +10% | Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 7.** Curse bead begins. |
-| 7 | **Incarnation** | +14 | +35% | +10% | Dark Eye + Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 8.** Body glows. |
-| 8 | **King's Seal** | +16 | +40% | +15% | Dark Eye + Strength I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 9.** **5% Frenzy rate** after each kill. |
-| 9 | **Sin of the Body** | +18 | +45% | +15% | Night Vision + Strength II. **15% Insanity rate**. Blood vessels turned red, murderous aura covered the whole body. |
+| 1 | **Awakened** | +2 | +5% | — | First kill. Overcame the "panic" without dying. |
+| 2 | **Fractured** | +4 | +10% | — | Absorbed more Ego. Proved this is no longer a "mistake". |
+| 3 | **Marked** | +6 | +15% | — | Absorbed more Ego. Soul Stealer unlocked. |
+| 4 | **Blood Pact** | +8 | +20% | +5% | Absorbed more Ego. Proved your own strength. |
+| 5 | **Sin Gate** | +10 | +25% | +10% | **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 6.** Crimson seal appears under feet. |
+| 6 | **Territory** | +12 | +30% | +10% | Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 7.** Cursed particles begin. |
+| 7 | **Incarnation** | +14 | +35% | +10% | Night Vision + Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 8.** Body glows. |
+| 8 | **Royal Mark** | +16 | +40% | +15% | Night Vision + Strength I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 9.** **5% Insanity chance** after each kill. |
+| 9 | **Sin Incarnate** | +18 | +45% | +15% | Night Vision + Strength II. **15% Insanity chance**. Veins turn bright red, killing aura envelops body. |
 
-> **Note:**  
-> - From Tier 5 onwards, you are **required** to own **[Dark Ego](/en/ego-system/dark-ego)** to be able to advance to the next tier.  
-> - The higher the tier, the clearer the **seal**, **aura**, and **killing aura** are → you will become a hunting target.
+> **Note:**
+> - From Tier 5 onwards, you **must** possess **[Dark Ego](/en/ego-system/dark-ego)** to advance to the next tier.
+> - The higher the tier, the clearer the **seal**, **aura**, and **killing intent** → you will become a hunted target.
 
 ---
 
-## 🩸 The Manifestation
+## 🩸 Physical Manifestation
 
-When the ego begins to creep into every fiber, the sinner's body will change:
+When the ego begins to seep into every fiber of flesh, the sinner's body changes:
 
-### Tier 5+: Blood Seal
-A red circle appears under your feet — proof that you have stepped one foot into the abyss.
+### Tier 5+: Crimson Seal
+A crimson circle appears beneath your feet — proof that you have stepped one foot into the abyss.
 
-### Tier 7+: Divine Transformation
-The body began to **glow**, the aura of the superior could not be hidden.
+### Tier 7+: Incarnation
+The body begins to **glow**, the aura of a superior being cannot be hidden.
 
-### Tier 9: Unified Killing Aura
-Blood vessels turned **blazing red**, murderous aura covered the entire body.  
-At this moment, you are the **embodiment of the abyss**.
+### Tier 9: Unified Killing Intent
+Veins turn into **bright red**, killing intent covers the entire body.
+At this point, you are the **embodiment of the abyss**.
 
 ---
 
 ## ⚠️ The Cost
 
-With great power comes uncontrollable madness.
+Great power comes with uncontrollable insanity.
 
-| Tier | Insanity Rate | Description |
-|-------|-----------------|-------|
-| **Tier 8** | **5%** | After each kill, there is a 5% chance of falling into a "Mad" state. |
-| **Tier 9** | **15%** | When bloodlust increases, reason will be swallowed up by instinct. |
+| Tier | Insanity Chance | Description |
+|------|-----------------|-------|
+| **Tier 8** | **5%** | After each kill, there is a 5% chance to fall into "Insanity" state. |
+| **Tier 9** | **15%** | When bloodlust rises, reason is swallowed by instinct. |
 
-> *"The stronger you are, the easier it is to lose yourself."*
+> *"The stronger you are, the easier to lose yourself."*
 
 ---
 
-## 💀 Lose Tier Upon Death
+## 💀 Losing Tier on Death
 
-By default, tiers are only reset when you are **killed by another player** (PvP).  
-Dying from mobs, falling, lava, or any other cause **does not** result in losing tiers.
+By default, tier is only reset when you are **killed by another player** (PvP).
+Dying to mobs, falling, lava, or any other cause does **not** cause tier loss.
 
-> *"Only betrayal among your fellow human beings can pull you from the abyss."*
+> *"Only betrayal among kin is strong enough to pull you from the abyss."*
 
 ### Rules:
-- ✅ Directly attacked by a player → **lose tier**
-- ✅ Shot by arrows/projectiles from players → **lose tier**
-- ❌ Death from mobs, falls, fire, etc. → **keep the same tier**
-- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** no matter how you die
+- ✅ Attacked directly by a player → **lose tier**
+- ✅ Shot by arrow/projectile from a player → **lose tier**
+- ❌ Die to mob, fall, fire, etc. → **keep tier**
+- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** regardless of death cause
 
 ---
 
 ## 🔥 Active Skills (From Sin System)
 
-Active skills **no longer tied to tier**.  
-Instead, they come from **[Sin System](/en/ego-system/sins)**.
+Active skills are **no longer tied to tier**.
+Instead, they come from the **[Sin System](/en/ego-system/sins)**.
 
 ### How to Unlock:
-1. Awaken **Sin** to **Level 2** with **two Sin Hearts** (Sin Hearts).
-2. Two skills are attached to the **Skill Box** (hotbar).
+1. Awaken **Sin** to **Level 2** using **two Sin Hearts**.
+2. Two skills are attached to the **Skill Slots** (hotbar).
 3. Activate with:
-   - `Shift + Right Mouse` → Skill Box 1
-   - `Shift + Left Mouse` → Skill Box 2
+   - `Shift + Right Click` → Skill Slot 1
+   - `Shift + Left Click` → Skill Slot 2
 
-Each of the **7 types** of sins has its own pair of skills.  
-See page **[The Seven Deadly Sins](/en/ego-system/sins)** for details.
-
----
-
-## 🌑 Curse (Tier 6+)
-
-From **Tier 6** onwards, you are subject to curse effects:
-
-| Effects | Starting From |
-|-----------|-----------|
-| **Curse Seed** | Tier 6 |
-| **Glow** | Tier 7 |
-
-> This is the sign of the abyss — it cannot be hidden, it cannot be escaped.
+Each of the **7 sins** has a unique pair of skills.
+See **[Seven Deadly Sins](/en/ego-system/sins)** page for details.
 
 ---
 
-## 🎲 Chaos
+## 🌑 Curses (Tier 6+)
 
-When using items **[Ego](/en/items/ego-items)** or **[Dark Ego](/en/ego-system/dark-ego)**:
-- **Entire inventory** (both hotbar and inventory) will be **randomly shuffled**.
+From **Tier 6** onwards, you suffer cursed effects:
+
+| Effect | Starts From |
+|-----------|------------|
+| **Cursed Particles** | Tier 6 |
+| **Glowing** | Tier 7 |
+
+> This is the mark of the abyss — cannot be hidden, cannot be outrun.
+
+---
+
+## 🎲 Inventory Chaos
+
+When using **[Ego](/en/items/ego-items)** or **[Dark Ego](/en/ego-system/dark-ego)**:
+- **Entire inventory** (both hotbar and bag) will be **randomly shuffled**.
 - This is a reminder that: power always comes with loss of control.
 
 ---
 
-## 📦 Stack Items
+## 📦 Item Stacking
 
-**Ego** and **Dark Ego** can **stack** (maximum **16 per tile**).  
-Save bag space, but don't overdo it — every use counts.
+**Ego** and **Dark Ego** can **stack** (max **16 per slot**).
+Saves inventory space, but don't abuse — every use has a price.
 
 ---
 
 ## 🔗 Related Pages
 
-- **[Dark Ego](/en/ego-system/dark-ego)** — Required item to pass Tier 5.
-- **[The Seven Deadly Sins](/en/ego-system/sins)** — Active skill system and path of sin.
-- **[Ego Items](/en/items/ego-items)** — Special items to increase strength and protect Tier.
-- **[Ego Shards](/en/ego-system/ego-shards)** — Core materials to craft Ego and Dark Ego.
+- **[Dark Ego](/en/ego-system/dark-ego)** — Required item to surpass Tier 5.
+- **[Seven Deadly Sins](/en/ego-system/sins)** — Active skill system and path of sin.
+- **[Ego Items](/en/items/ego-items)** — Special items to boost power and protect Tier.
+- **[Ego Shards](/en/ego-system/ego-shards)** — Core material to craft Ego and Dark Ego.
 
 ---
 
 ## See Also
 
-- → [The Seven Deadly Sins](/en/ego-system/sins)
-- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
+- → [Seven Deadly Sins](/en/ego-system/sins)
+- → [Sacrifice](/en/ego-system/sacrifice)
 - → [Dark Ego](/en/ego-system/dark-ego)
 
 ---
 
-> *"Tier isn't for showing off. It's proof of how much you've lost."*
+> *"Tier is not for showing off. It is proof of how much you have lost."*
