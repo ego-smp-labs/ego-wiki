@@ -5,7 +5,7 @@ order: 1
 ---
 
 # Rituals (Commands)
-In EgoSMP, commands are not tools, they are rituals communicating with the system.
+In EgoSMP, commands are not tools; they are rituals to communicate with the system.
 
 | Ritual | Description | Note |
 |---|---|---|

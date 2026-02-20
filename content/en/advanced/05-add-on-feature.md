@@ -1,19 +1,19 @@
 ---
-title: Add-on Feature
-description: Small pieces — enough to make the world smoother, but keep the survival feel.
+title: Auxiliary Features
+description: Small pieces — enough to make the world smoother, but keeping the scent of survival.
 order: 5
 ---
 
-# 05 — Add-on Feature
+# 05 — Auxiliary Features
 
-These are "add-on" features of EgoSMP: do not change core gameplay, only make the experience **smoother, cleaner, and subtly strictly**.
+These are "add-on" features of EgoSMP: not changing the core gameplay, only making the experience **smoother, cleaner, and distinctively terrifying**.
 
 ---
 
 ## 1) Smooth Night Skipping
 
-When **at least 50%** of players in the *same world* sleep, night will be skipped with a smooth transition to the new day.
-No more one person sleeping, nine people "night watching" like being cursed.
+When **at least 50%** of players in the *same world* sleep, the night will be skipped with a smooth transition to the new day.
+No more one person sleeping while nine others "watch the night" like they are cursed.
 
 **Note**: This is a rhythmic "night skip", not an instant *snap* to morning.
 
@@ -28,7 +28,7 @@ In EgoSMP, paths are not just for convenience — they are traces of the living.
 
 ![Demo — Grass Paths](https://oddlama.github.io/vane/assets/gifs/grass-paths.gif)
 
-<sub><i>Caption: Slight speed boost when walking on grass path.</i></sub>
+<sub><i>Caption: Slight speed boost when walking on grass paths.</i></sub>
 
 </div>
 
@@ -37,8 +37,8 @@ In EgoSMP, paths are not just for convenience — they are traces of the living.
 ## 3) Better Harvesting
 
 Right-click on ripe crops to **harvest and replant immediately**.
-Get **1–3** products, and a higher chance to receive more than one item.
-If the crop has a separate "seed-item", the system will **not drop seeds** like inventory trash.
+Receive **1–3** products, with a higher chance to get more.
+If the crop has a separate "seed-item", the system will **not drop seeds** as inventory trash.
 
 <div align="center">
 
@@ -52,8 +52,8 @@ If the crop has a separate "seed-item", the system will **not drop seeds** like 
 
 ## 4) Creeper Protection (with taste)
 
-Creeper blowing up half a house is heart-stopping, but disabling explosion completely is... bland.
-So there is a protection mechanism with "taste": limits destruction, and **rebuilds the area after explosion** in a visually pleasing way.
+A Creeper blowing up half a house is heart-stopping, but disabling explosions completely is... bland.
+So there is a protection mechanism with "taste": limits destruction, and **rebuilds the area after explosion** in a visually satisfying way.
 
 <div align="center">
 
@@ -68,7 +68,7 @@ So there is a protection mechanism with "taste": limits destruction, and **rebui
 ## 5) Carry On
 
 Allows **carrying** small mobs by:
-- Hold sneak + right-click with empty hand to pick up, right-click to place down.
+- Hold sneak + right-click with an empty hand to pick up, right-click to place down.
 
 - This mechanism usually comes with a limit "only carry 1 thing at a time" and may slow down the carrier.
 

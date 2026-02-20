@@ -20,9 +20,9 @@ The Cursed Table does not appear naturally. You must **manually** build it.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | | Ego soul | |
-| Row 2 | Obsidian | Crafting Table | Obsidian |
-| Row 3 | | Netherite Ingot | |
+| | | Ego soul | |
+| Obsidian | Crafting Table | Obsidian |
+| | Netherite Ingot | |
 
 **Result**: Cursed Crafting Table × 1
 
@@ -67,7 +67,7 @@ Unlike normal crafting, Abyssal Forging is a **gamble with time**.
 4. Wait for time to complete → take product
 
 ### Forging Characteristics
-- ⏳ **Time**: Powerful Artifacts need extended forging time (5–10 minutes)
+- ⏳ **Time**: Powerful Relics need extended forging time (5–10 minutes)
 - 📍 **Exposed**: Forge location is **broadcasted to the whole server** — you become prey
 - 🔒 **Locked**: Item is locked until completion
 - 💀 **Risk**: forged items cannot be stored, can only be **absorbed** (strict-mode)
@@ -79,5 +79,5 @@ Unlike normal crafting, Abyssal Forging is a **gamble with time**.
 ## Links
 
 - → [All Cursed Recipes](/en/items/cursed-recipes)
-- → [Artifacts — Ego Relics](/en/items/ego-items)
+- → [Relics — Ego Relics](/en/items/ego-items)
 - → [Sacrifice — Hearts & Shards](/en/items/sacrifice)

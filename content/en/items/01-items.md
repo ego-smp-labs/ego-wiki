@@ -1,13 +1,13 @@
 ---
-title: Artifacts
+title: Relics
 description: Index of relics left from the abyss — and how they are born.
 order: 1
 ---
 
-# Artifacts
+# Relics
 
 Not everything you pick up is "loot".
-Some things are **artifacts** — ruins left behind after souls are ground down to the bone.
+Some things are **relics** — ruins left behind after souls are ground down to the bone.
 
 In EgoSMP, items are divided into two origins:
 
@@ -43,12 +43,27 @@ Sacrifice is a special branch — born from soul sacrifice at the [Cursed Table]
 - **[Heart of Sins](/en/ego-system/sins)** — Ancient power of the abyss
 
 ### Forging Characteristics
-- ⏳ **Time**: Powerful Artifacts need extended forging time (5–10 minutes)
+- ⏳ **Time**: Powerful Relics need extended forging time (5–10 minutes)
 - 📍 **Exposed**: Forge location is **broadcasted to the whole server** — you become prey
 - 🔒 **Locked**: Item is locked until completion
 - 💀 **Risk**: forged items cannot be stored, can only be **absorbed**
 
 > *"The abyss does not give power. It lends — and the interest is the soul."*
+
+---
+
+## Chaos Effect (Inventory Shuffle)
+
+When using **[Ego](/en/items/ego-items)** or **[Dark Ego](/en/ego-system/dark-ego)** items:
+- **Entire Inventory** (both hotbar and bag) will be **randomly shuffled**.
+- This is a reminder: power always comes with loss of control.
+
+---
+
+## Item Stacking
+
+Some items like **Ego** and **Dark Ego** cannot be **stacked** (max **1 per slot**).
+Saves bag space? No. It means every time you use one, you feel the weight.
 
 ---
 

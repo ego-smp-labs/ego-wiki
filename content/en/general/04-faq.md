@@ -6,13 +6,13 @@ order: 4
 
 # Frequently Asked Questions
 
-## What about Death?
+## What happens when you die?
 
 Death doesn't "wash away" what you absorbed.
 It only breaks your heartbeat, and pulls you closer to the edge.
 
 - If you are **Tier 0**: you remain Tier 0.
-- If you are **Tier 1 or higher**: when you die you will be **pulled back to Tier 1** (no longer drop to Tier 0).
+- If you are **Tier 1 or higher**: when you die you will be **dragged back to Tier 1** (no longer drop to Tier 0).
 
 See Tier details at: **[Tier System](/en/ego-system/tier-system)**
 
@@ -20,7 +20,7 @@ See Tier details at: **[Tier System](/en/ego-system/tier-system)**
 
 ### Where does Ego drop from?
 
-Ego is what drops from **PvP** — from the moment one player takes another player's life.
+Ego drops from **PvP** — from the moment one player takes another player's life.
 
 ### Why do I kill but see no Ego drop?
 
@@ -43,8 +43,8 @@ When using Ego, you will suffer reactions like:
 
 ### What is Dark Ego, and why is everyone afraid of it?
 
-Dark Ego is a **more toxic, dirtier, more annoying** version of normal Ego.
-It is designed to **lock evolution**: you cannot "climb blindly" to the next tier without passing the corresponding Dark Ego gate.
+Dark Ego is a **more toxic, dirtier, nastier** version of normal Ego.
+It is designed to **lock evolution**: you cannot "blindly climb" to the next tier without passing the corresponding Dark Ego gate.
 Additionally, Dark Ego has its own mechanisms (e.g., crafting special items, stronger effects, distinct signs).
 
 ## Mace
@@ -55,11 +55,11 @@ Mace is a legendary weapon with destructive power.
 
 ### How long does Mace glow after belonging to me?
 
-Mace might attach a **glowing effect for 5 minutes** after you possess it, but greater power comes with risks, hunting is what awaits you.
+Mace might attach a **glowing effect for 5 minutes** after you possess it, but greater power comes with risks; being hunted is what awaits you.
 
 ### Can I throw away Mace (Q key)?
 
-Mace is designed with restricted drop: **throwing is not allowed**, and usually only "slips out" upon death rules (depending on mode).
+Mace is designed with restricted drop: **throwing is not allowed**, and usually only "slips out" upon death (depending on mode).
 
 ### Can I store Mace in a chest?
 

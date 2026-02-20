@@ -55,6 +55,22 @@ Hiến Tế là nhánh vật phẩm đặc biệt — sinh ra từ sự hy sinh 
 
 ---
 
+
+## 🎲 Hiệu ứng Xáo Trộn Kho (Chaos)
+
+Khi sử dụng vật phẩm **[Ego](/vi/items/ego-items)** hoặc **[Dark Ego](/vi/items/dark-ego)**:
+- **Toàn bộ kho đồ** (cả hotbar và túi đồ) sẽ bị **xáo trộn ngẫu nhiên**.
+- Đây là lời nhắc rằng: sức mạnh luôn đi kèm với sự mất kiểm soát.
+
+---
+
+## 📦 Xếp Chồng Vật Phẩm
+
+một số ỉtems như **Ego** và **Dark Ego** không thể **xếp chồng** (tối đa **1 mỗi ô**).  
+Tiết kiệm không gian túi, nhưng đừng lạm dụng — mỗi lần dùng đều có giá.
+
+---
+
 ## Mục lục
 
 | Trang | Nội dung |

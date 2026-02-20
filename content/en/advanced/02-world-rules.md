@@ -7,14 +7,14 @@ order: 2
 # World Rules
 
 ## 1. Sealed Artifacts
-The Abyss rejects the existence of some powers that are too great or chaotic.
+The Abyss rejects the existence of powers too great or too chaotic.
 
-- **Banned/Restricted items**: End Crystal, TNT Minecart.
-- **Limit**: Mace is restricted (Only 1).
-- **Reason**: To balance chaos. A world destroyed too quickly is not fun to rule.
+- **Banned/Restricted Items**: End Crystal, TNT Minecart.
+- **Limit**: Mace is restricted (Unique — Only 1).
+- **Reason**: To balance the chaos. A world destroyed too quickly is no fun to rule.
 
 ## 2. Sanctuary
-The Spawn area is protected by an ancient barrier. No blood spilled here. The only place to breathe peacefully.
+The Spawn area is protected by an ancient barrier. Here, no blood is allowed to spill. This is the only place you can breathe in peace.
 
 ## 3. The End (Cursed Realm)
-The final dimension is heavily cursed. Anyone step foot in there will meet instant death. Do not challenge death.
+The final dimension is heavily cursed. Anyone stepping foot in there will meet an instant, gruesome death. Do not try to challenge the Reaper.

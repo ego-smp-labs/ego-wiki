@@ -6,7 +6,7 @@ order: 2
 
 # How To Play
 
-If you are brand new: reading this page is enough to survive the "honeymoon week", whether you live long or not depends on your skill.
+If you are brand new: reading this page is enough to survive the "honeymoon week". Whether you live long after that depends on your skill.
 
 ## Starting
 When joining the server, you start at **Tier 0**.
@@ -16,7 +16,7 @@ First things to do:
 - Make a bed (if server allows sleeping), set spawn early to avoid running a marathon.
 - Craft basic armor/weapons before you meet other players.
 
-## Goals
+## Objectives
 1. Gather resources.
 2. Craft weapons.
 3. Fight other players to receive ego power **Ego Fragment**.

@@ -9,22 +9,25 @@ order: 4
 > *"Each shard is a piece of soul separated. Assemble them —
 > and you will become something no longer human."*
 
-Shard Slots are two special slots in the inventory, allowing you to equip **Ego Shards**
+The Shard Slot is a special vessel, allowing you to equip **Ego Shards**
 to receive combat effects. Each shard is the remains of a **true self** —
 not a legend, but a memory imprisoned in matter.
 
 ---
 
 ## Unlocking
+- A seal is the hidden power within your ego, allowing you to inherit the ego of others.
 
-| Tier | Slots Unlocked |
+| Tier | Seal Unlocked |
 |------|--------------|
 | < 3  | None 🔒 |
-| 3 – 4 | **1 slot** (Slot 1 — left) |
-| 5+   | **2 slots** (Slot 1 + Slot 2) |
+| 3+ | **1 Seal** (Slot 1 — left) |
+| 6+   | **2 Seals** (Slot 1 + Slot 2) |
 
-- Locked slot → displays **red glass** 🔒 (cannot interact)
-- Unlocked but empty slot → displays **gray glass** (empty)
+- Locked seal → displays **red glass** 🔒 (cannot interact)
+- Unlocked but empty seal → displays **gray glass** (empty)
+
+- can be viewed in `/ego`
 
 ---
 
@@ -36,7 +39,7 @@ not a legend, but a memory imprisoned in matter.
 | Slot 2 (right) | **SHIFT + RIGHT CLICK** |
 
 > ⚔️ **Active Shards** require holding a **melee weapon**
-> (sword, axe, mace) to activate.
+> (sword, axe, mace) to activate (or some special conditions).
 > **Passive Shards** always operate in the background when equipped, regardless of slot position.
 
 ---
@@ -44,12 +47,9 @@ not a legend, but a memory imprisoned in matter.
 ## Equipping
 
 - **Right-click** with Shard in hand to equip.
-- If a slot is occupied, you will be asked if you want to replace it.
-- If both slots are full: **sneak + right-click** to select slot 1, **sneak + Shift+Right-click** to select slot 2.
-- Shard in **Slot 1** → activate with **Shift + Left Click**.
-- Shard in **Slot 2** → activate with **Shift + Right Click**.
+- If a seal is occupied, you will be asked if you want to replace it.
+- If both seals are full: **sneak + right-click** to select seal 1, **sneak + Shift+Right-click** to select seal 2.
 - **Cannot** place Shards in chests, barrels, shulkers, or any container (automatically drops out).
-- Unequip shard: Open `/ego` and click on the corresponding slot.
 
 ---
 

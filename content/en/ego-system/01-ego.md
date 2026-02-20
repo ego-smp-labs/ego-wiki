@@ -4,10 +4,10 @@ description: Basic information about Ego.
 order: 1
 ---
 
-# Ego
+# Ego (The Self)
 
 **Ego** is power dropped from blood.
-You can get stronger from it — but every time you touch Ego, you sign yet another line in the pact with the abyss.
+You can get stronger from it — but every time you touch Ego, you sign yet another line in the pact with the Abyss.
 
 > See tier details: **[Tier System](./02-tier-system)**
 
@@ -16,7 +16,7 @@ You can get stronger from it — but every time you touch Ego, you sign yet anot
 Ego **drops from other players** when you kill them.
 It is not a "reward", but a piece of sin still warm — something the world throws into your hands to test how much you can endure.
 
-## When using Ego: "The Aftershock"
+## Using Ego: "The Aftershock"
 
 Using Ego is not just a click-to-buff action.
 It is a wave crashing into your mind, dragging light and darkness over each other, forcing you to **struggle** with what has just awakened.
@@ -34,7 +34,7 @@ A small price to remind you that "Ego always takes back its share".
 If you survive and do not collapse in chaos, your Ego will stabilize over time — the "self" is no longer as fragile as it was in the beginning.
 
 ## Ego Tier (0 → 9)
-It measures **how deep you have sunk into the abyss**.
+It measures **how deep you have sunk into the Abyss**.
 
 Each tier is a deeper level of hell — and also a new threshold of power.
 

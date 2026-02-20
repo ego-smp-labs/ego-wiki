@@ -9,34 +9,37 @@ order: 4
 > *"Mỗi mảnh vỡ là một phần linh hồn bị tách ra. Lắp chúng lại —
 > và ngươi sẽ trở thành thứ gì đó không còn là con người."*
 
-Ô Mảnh Vỡ là hai vị trí đặc biệt trong inventory, cho phép trang bị **Ego Shard**
+Ô Mảnh Vỡ là thứ đặc biệt, cho phép trang bị **Ego Shard**
 để nhận hiệu ứng chiến đấu. Mỗi mảnh vỡ là phần còn lại của một **cái tôi thực sự** —
 không phải huyền thoại, mà là ký ức bị giam cầm trong vật chất.
 
 ---
 
 ## Mở Khóa
+- phong ấn là sức mạnh ẩn dấu trong bản ngã của bạn, nó giúp bạn có thể kế thừa bản ngã của kẻ khác
 
-| Tier | Số ô mở khóa |
+| Tier | mở khoá phong ấn |
 |------|--------------|
 | &lt; 3  | Không có 🔒 |
-| 3 – 4 | **1 ô** (Slot 1 — trái) |
-| 5+   | **2 ô** (Slot 1 + Slot 2) |
+| 3+ | **1 phong ấn** (Slot 1 — trái) |
+| 6+   | **2 phong ấn** (Slot 1 + Slot 2) |
 
-- Ô chưa mở → hiển thị **kính đỏ** 🔒 (không thể tương tác)
-- Ô mở nhưng chưa lắp → hiển thị **kính xám** (trống)
+- phong ấn chưa mở → hiển thị **kính đỏ** 🔒 (không thể tương tác)
+- phong ấn mở nhưng chưa lắp → hiển thị **kính xám** (trống)
+
+- có thể xem trong /ego
 
 ---
 
 ## Kích Hoạt
 
-| Ô | Keybind kích hoạt |
+| c | Keybind kích hoạt |
 |---|-------------------|
 | Slot 1 (trái) | **SHIFT + CHUỘT TRÁI** |
 | Slot 2 (phải) | **SHIFT + CHUỘT PHẢI** |
 
 > ⚔️ **Mảnh Vỡ Chủ Động** yêu cầu đang cầm **vũ khí cận chiến**
-> (kiếm, rìu, chùy) mới có thể kích hoạt.
+> (kiếm, rìu, chùy) mới có thể kích hoạt (hoặc một số điều kiện đặc biệt).
 > **Mảnh Vỡ Bị Động** luôn hoạt động ngầm khi được lắp, bất kể vị trí slot.
 
 ---
@@ -44,12 +47,9 @@ không phải huyền thoại, mà là ký ức bị giam cầm trong vật ch�
 ## Lắp Đặt
 
 - **Chuột phải** với Mảnh Vỡ trong tay để trang bị.
-- Nếu một ô đã bị chiếm, bạn sẽ được hỏi có muốn thay thế không.
-- Nếu cả hai ô đều đầy: **ngồi + chuột phải** để chọn ô 1, **ngồi + Shift+Chuột phải** để chọn ô 2.
-- Mảnh trong **Slot 1** → kích hoạt bằng **Shift + Chuột Trái**.
-- Mảnh trong **Slot 2** → kích hoạt bằng **Shift + Chuột Phải**.
+- Nếu một phong ấn đã bị chiếm, bạn sẽ được hỏi có muốn thay thế không.
+- Nếu cả hai phong ấn đều đầy: **ngồi + chuột phải** để chọn phong ấn 1, **ngồi + Shift+Chuột phải** để chọn phong ấn 2.
 - **Không thể** đặt Mảnh Vỡ vào rương, thùng, shulker, hay bất kỳ container nào (tự động rơi ra ngoài).
-- Tháo mảnh vỡ: Mở `/ego` và nhấp vào ô tương ứng.
 
 ---
 
