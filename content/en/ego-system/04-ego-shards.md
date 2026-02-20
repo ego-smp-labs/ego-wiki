@@ -249,6 +249,20 @@ or he has reached something no one else dared to think of.
 
 ---
 
+## 🔮 Ego Purification Ritual (Shard Extraction)
+
+Because Shards represent Sins deeply rooted in your subconscious, you cannot safely remove or touch them like normal equipment. To unequip them, you must perform an agonizing ritual.
+
+### Ego Purification Ritual
+This item requires you to place 1 **Purification Stone** in the center of a normal Crafting Table, surrounded by 8 **Sculk** blocks.
+
+1. Hold the **Ego Purification Ritual** in your hand and **Right-Click**.
+2. The purification magic will tear the Sins (Shards) you have equipped and **drop them onto the floor**.
+3. **The Price**: You will receive fatal purification damage, resulting in **instant death** (Bypassing Totems) and your **Tier will reset to 1**.
+> **Note**: You will NOT drop your Ego since this is not considered PvP death; your Ego remains safe in your inventory. The server broadcast will read: *"<player> was consumed by their own ego"*.
+
+---
+
 ## See Also
 
 - → [Cursed Crafting Table](/en/items/cursed-crafting)
@@ -258,3 +272,4 @@ or he has reached something no one else dared to think of.
 - → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
 - → [Dark Ego](/en/ego-system/dark-ego)
 - → [Tainted Ego](/en/items/ego-items#tainted-ego)
+- → [Memory Fragments](/en/ego-system/memory-fragments)

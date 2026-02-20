@@ -249,6 +249,20 @@ hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 
 ---
 
+## 🔮 Nghi Thức Bóc Tách Bản Ngã (Tháo Shard)
+
+Vì các Mảnh Vỡ đại diện cho Tội Lỗi ăn sâu vào tiềm thức, bạn không thể vuốt ve hay tháo chúng ra như một món trang bị bình thường. Để tháo bỏ, bạn phải dùng nghi thức cực kỳ đau đớn.
+
+### Nghi Thức Bóc Tách Bản Ngã
+Vật phẩm này yêu cầu bạn đặt 1 **Đá Thanh Tẩy (Purification Stone)** ở trung tâm bàn chế tạo (Crafting Table bình thường), được bao bọc bởi 8 **Sculk**.
+
+1. Cầm Nghi Thức Bóc Tách Bản Ngã trên tay vào bấm **Chuột Phải**.
+2. Phép thuật thanh tẩy sẽ bóc tách các Tội Lỗi (Mảnh Vỡ) bạn đang trang bị và **văng chúng ra sàn**.
+3. **Cái giá phải trả**: Bạn sẽ nhận lại sát thương thanh tẩy chí tử, dẫn đến **Cái Chết ngay lập tức** (Bỏ qua Totem) và hạ bậc **Tier của bạn về 1**.
+> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"<tên_người_chơi> chết do bị bản ngã nuốt chửng"*.
+
+---
+
 ## Xem Thêm
 
 - → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
@@ -258,3 +272,4 @@ hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 - → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/ego-system/sacrifice)
 - → [Bản Ngã Hắc Hóa (Dark Ego)](/vi/ego-system/dark-ego)
 - → [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tp-nhim)
+- → [Mảnh Ký Ức (Memory Fragments)](/vi/ego-system/memory-fragments)
