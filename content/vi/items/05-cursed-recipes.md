@@ -20,11 +20,11 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | | Netherite Ingot | |
-| Hàng 2 | Netherite Ingot | Heavy Core | Netherite Ingot |
-| Hàng 3 | | Breeze Rod | |
+| Hàng 1 |       | Netherite Ingot |       |
+| Hàng 2 |       | Heavy Core |       |
+| Hàng 3 |       | Breeze Rod |       |
 
-- **Linh hồn**: 4
+- **Linh hồn**: 1
 - **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
@@ -35,11 +35,11 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Tainted Ego | Dark Ego | Tainted Ego |
-| Hàng 2 | Obsidian | Mace | Obsidian |
-| Hàng 3 | Tainted Ego | Tainted Ego | Tainted Ego |
+| Hàng 1 | Netherite Ingot | **HEAVY_CORE** | Netherite Ingot |
+| Hàng 2 | **[Dark Ego Soul](/vi/items/ego-items)** | Mace of Power | **[Dark Ego Soul](/vi/items/ego-items)** |
+| Hàng 3 | Netherite Ingot | **Wither Rose** | Netherite Ingot |
 
-- **Linh hồn**: 8
+- **Linh hồn**: 3
 - **Thời gian rèn**: 10 phút *(Rèn Huyết Tế — vị trí bị lộ)*
 
 ---
@@ -52,59 +52,18 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Amethyst Shard | **Ego Soul** | Amethyst Shard |
-| Hàng 2 | Amethyst Shard | Amethyst Shard | Amethyst Shard |
-| Hàng 3 | Amethyst Shard | Totem of Undying | Amethyst Shard |
+| Hàng 1 | Enchanted Golden Apple | **[Ego Soul](/vi/items/ego-items)** | Enchanted Golden Apple |
+| Hàng 2 | **[Đá Thanh Tẩy](/vi/items/ego-items)** | Netherite Ingot | **[Đá Thanh Tẩy](/vi/items/ego-items)** |
+| Hàng 3 | Enchanted Golden Apple | Totem of Undying | Enchanted Golden Apple |
 
 - **Linh hồn**: 0
-- **Thời gian rèn**: Tức thì
-
----
-
-## Nguyên Liệu Chế Tạo
-
-### Ego Soul — Mảnh Ego Soul
-
-> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
-| Hàng 2 | Glass Pane | **Ego** | Glass Pane |
-| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
-
----
-
-### Dark Ego Soul — Mảnh Dark Ego Soul
-
-> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
-| Hàng 2 | Glass Pane | **Dark Ego** | Glass Pane |
-| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
-
----
-
-### Tainted Ego — Ego Ô Uế
-
-> Chế tạo từ **bàn chế tạo thường** (không cần Bàn Nguyền).
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Sculk | Sculk | Sculk |
-| Hàng 2 | Sculk | **Ego Soul** | Sculk |
-| Hàng 3 | Sculk | Sculk | Sculk |
+- **Thời gian rèn**: 5 phút
 
 ---
 
 ## Mảnh Vỡ Ego — Ego Shards
 
 > **Tất cả công thức rèn mảnh vỡ đã được chuyển sang trang: [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)**
-
-Tất cả Ego Shards yêu cầu **Tier 3+** để kích hoạt. Mỗi loại chỉ tồn tại **một** trong server.
-Mọi công thức mảnh đều cần **Tainted Ego ở chính giữa**.
 
 ---
 

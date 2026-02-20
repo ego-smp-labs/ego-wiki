@@ -41,19 +41,52 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 
 ---
 
+### Ego Soul — Mảnh Ego Soul
+
+- khả năng lưu trữ Bản ngã Ego dưới dạng linh hồn
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
+| Hàng 2 | Glass Pane | **Ego** | Glass Pane |
+| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
+
+---
+
+### Dark Ego Soul — Mảnh Dark Ego Soul
+
+- khả năng lưu trữ Bản ngã Dark Ego dưới dạng linh hồn
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
+| Hàng 2 | Glass Pane | **Dark Ego** | Glass Pane |
+| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
+
+- **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
+
+
 ## Tainted Ego — Ego Tạp Nhiễm
 
 > *"Tinh khiết bị trộn lẫn với bóng tối. Kết quả? Một thứ không thuộc về ai."*
 
-Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Netherite.
+Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Sculk.
 
-- **Công thức (Chế Tạo Thường)**: Ego Fragment + Netherite Ingot (Shapeless)
-- **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/items/cursed-crafting)
+
+- Chế tạo từ **bàn chế tạo thường**
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Sculk | Sculk | Sculk |
+| Hàng 2 | Sculk | **Ego Soul** | Sculk |
+| Hàng 3 | Sculk | Sculk | Sculk |
+
+- **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/items/cursed-crafting), lấy dark ego gián tiếp.
 - **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
   - Thả ra **Dark Ego** (nạn nhân = bản thân)
-  - **Reset Tier về 1** + xóa toàn bộ Shard
-  - Hiệu ứng **Wither I** trong bán kính 5 block xướng quanh
-- **Giới hạn**: Không thể xếp chồng — không thể đặt trong rương
+  - giống như một cái chết mất cái tôi thông thường
+  - Hiệu ứng **Wither I** trong bán kính 5 block xung quanh
+- **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
 
 ---
 

@@ -2,7 +2,7 @@
 title: Thất Đại Tội
 description: Hệ thống thức tỉnh tội lỗi, kỹ năng, và tiến triển.
 order: 5
-lockedUntil: 2026-03-04
+lockedUntil: 2026-03-01
 ---
 
 # Thất Đại Tội — The Seven Deadly Sins

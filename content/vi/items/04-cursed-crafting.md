@@ -66,14 +66,12 @@ Không giống chế tạo thông thường, Rèn Huyết Tế là một **canh 
 3. Nhấp kết quả → **quá trình rèn bắt đầu** (không thể hủy)
 4. Chờ đủ thời gian → lấy sản phẩm
 
-### Cái giá
+### Đặc tính Huyết Tế
+- ⏳ **Thời gian**: Các Di Vật mạnh cần thời gian rèn kéo dài (5–10 phút)
+- 📍 **Lộ diện**: Vị trí lò rèn bị **phát sóng cho toàn server** — bạn trở thành con mồi
+- 🔒 **Không thể rút**: Vật phẩm bị khóa cho đến khi hoàn tất
+- 💀 **Rủi ro**: vật phẩm được rèn sẽ không thể cất giữ, chỉ có thể **hấp thụ** (strict-mode)
 
-| Rủi ro | Mô tả |
-|--------|--------|
-| ⏳ **Thời gian** | Di Vật mạnh cần 5–10 phút rèn |
-| 📍 **Lộ Diện** | Vị trí lò rèn bị **broadcast cho toàn server** |
-| 🔒 **Khóa** | Không thể lấy vật phẩm ra cho đến khi hoàn tất |
-| 💀 **Mất Trắng** | Bị giết hoặc lò bị phá hủy → mất tất cả nguyên liệu + linh hồn |
 
 > *"Những tạo vật của vực thẳm không thể được chế tạo theo cách thông thường. Chúng cần thời gian, và cả sự đánh cược."*
 

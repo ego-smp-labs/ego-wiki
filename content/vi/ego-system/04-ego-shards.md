@@ -83,9 +83,6 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 ## Công Thức Rèn
 
 > Tất cả rèn tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting).
-> Yêu cầu **Tier 3+** để lắp và kích hoạt.
-> Mỗi công thức tốn **1 Linh Hồn** — **5 phút rèn** — *vị trí bị lộ toàn server khi hoàn thành*.
-> **Tất cả công thức đặt Tainted Ego ở ô trung tâm.**
 
 ---
 
@@ -101,7 +98,8 @@ mà là **chính bề mặt cơ thể hắn**.
 Hắn chết không phải trong chiến trận.
 Hắn chết trong giấc ngủ, tay vẫn nắm chặt kiếm như thể sợ ai đó lấy đi.
 
-**Hiệu Ứng (Bị Động)**: Phản chiếu **15%** sát thương cận chiến về kẻ tấn công.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Bị Động)**: Phản chiếu **15%** sát thương cận chiến về kẻ tấn công.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -125,15 +123,16 @@ vì đó là lúc đôi mắt hắn sáng lên và tất cả những gì hắn 
 Hắn chết khi đã không còn kẻ thù để chiến đấu.
 Không còn lý do để tiếp tục tồn tại.
 
-**Hiệu Ứng (Bị Động)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
-kích hoạt: tăng **+200% sát thương** trong **5 giây**
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
+- kích hoạt: tăng **+200% sát thương** trong **5 giây**
 *(custom damage multiplier — không phải potion effect, không thể cộng dồn)*.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
+| Hàng 1 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
 | Hàng 2 | Crimson Fungus ×10 | **Tainted Ego** | Crimson Fungus ×10 |
-| Hàng 3 | Bone Block ×1 | Crimson Fungus ×10 | Bone Block ×1 |
+| Hàng 3 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
@@ -152,8 +151,9 @@ Hắn ngồi giữa triều đình đông đúc, nhìn vua cướp đi tất c�
 và mỉm cười — vì hắn biết sẽ đến lúc hắn cần biến mất hoàn toàn.
 Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
-**Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
-Cooldown: **10 phút** sau khi hiệu ứng kết thúc.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
+- **Cooldown**: **15 phút** sau khi hiệu ứng kết thúc.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -178,14 +178,15 @@ Hắn biến mất khỏi lịch sử theo đúng nghĩa đen.
 Không mộ phần. Không tên. Chỉ còn lại mảnh vỡ của một cái tôi
 lạnh như đêm và nhanh như tử thần.
 
-**Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**.
-Cooldown: **20 giây**.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**.
+- **Cooldown**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Gunpowder ×10 | Coal Block ×1 | Gunpowder ×10 |
-| Hàng 2 | Coal Block ×1 | **Tainted Ego** | Coal Block ×1 |
-| Hàng 3 | Gunpowder ×10 | Coal Block ×1 | Gunpowder ×10 |
+| Hàng 1 | Gunpowder ×10 | Netherite Spear ×1 | Gunpowder ×10 |
+| Hàng 2 | WIND_CHARGE ×10 | **Tainted Ego** | WIND_CHARGE ×10 |
+| Hàng 3 | Gunpowder ×10 | Enchanted Book (Lunge III) ×1 | Gunpowder ×10 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
@@ -203,8 +204,10 @@ Kẻ địch xung quanh hắn bị thổi bay như lá khô trước bão.
 Người ta không giết hắn vì họ không thể đến gần đủ để làm vậy.
 Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
 
-**Hiệu Ứng (Chủ Động)**: Phát sóng xung kích đẩy lùi tất cả kẻ địch
-trong bán kính **5 block**. Cooldown: **30 giây**.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Chủ Động)**: Phát sóng xung kích đẩy lùi tất cả kẻ địch
+trong bán kính **5 block**.
+- **Cooldown**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -230,8 +233,9 @@ Người ta tìm xác hắn mãi không thấy.
 Có lẽ hắn vẫn đang bay ở đâu đó —
 hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 
-**Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì.
-Cooldown: **45 giây**.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì.
+- **Cooldown**: **60 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|

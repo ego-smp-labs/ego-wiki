@@ -1,12 +1,21 @@
 ---
-title: Nhật Ký Kí Ức
+title: Nhật Ký Thay Đổi
 description: Lịch sử thế giới plugin EgoSMP và Mace-Exclusive.
 order: 3
 ---
 
-# Nhật Ký Kí Ức
+# Nhật Ký Thay Đổi
 
 ## EgoSMP Plugin
+
+
+### v1.2.0 — Mảnh Vỡ & Lời Nguyền
+*Phát hành: Tháng 2/2026*
+
+**Tính năng mới:**
+- 🧩 **Mảnh vỡ bản ngã** — Thu thập mảnh vỡ từ quái vật để chế tạo
+- 🔮 **Bàn chế tạo nguyền rủa** — Nơi tạo ra những vật phẩm cấm kỵ
+- 🐛 **Sửa lỗi** — Vá các lỗi tồn đọng và cải thiện hiệu năng
 
 ### v0.1.3 — Tích Hợp Web Wiki
 *Phát hành: Tháng 2/2026*

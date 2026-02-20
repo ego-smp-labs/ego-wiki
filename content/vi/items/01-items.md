@@ -26,18 +26,30 @@ Không có gì bất thường. Không có cái giá nào phải trả.
 > Chi tiết tại → [Tàn Tích Bản Ngã](/vi/items/ego-items)
 
 ---
-
 ## Rèn Huyết Tế — Abyssal Forging
+
+> *"Không phải ai cũng xứng đáng chạm vào bóng tối. Nhưng bóng tối luôn sẵn sàng chạm vào ngươi."*
 
 Những tạo vật của vực thẳm **không thể** được chế tạo theo cách thông thường.
 Chúng cần thời gian. Chúng cần linh hồn. Và cả **sự đánh cược**.
 
-Rèn Huyết Tế là quá trình chế tạo tại [**Bàn Chế Tạo Nguyền**](/vi/items/cursed-crafting) — nơi mỗi vật phẩm ra đời đều kèm theo một cái giá không thể đảo ngược.
+Hiến Tế là nhánh vật phẩm đặc biệt — sinh ra từ sự hy sinh linh hồn tại [Bàn Nguyền](/vi/items/cursed-crafting). Chúng không phải vũ khí, không phải giáp. Chúng là **chất xúc tác** — thứ kích hoạt những sức mạnh ẩn giấu trong vực thẳm.
 
+
+
+### Có bốn loại:
+
+- **[Mảnh Vỡ Bản Ngã (Ego Shards)](/vi/ego-system/ego-shards)** — di vật của những kẻ đã để lại cái tôi của họ
+- **[Vật Phẩm Cổ Xưa (Artifacts)](/vi/items/artifacts)** - vũ khí mang trong mình cái tôi của người đã tạo ra nó
+- **[Kế ước với bản ngã (Ego Pact)](/vi/items/ego-pact)** - Tăng sức mạnh bằng cách hiến tế bản ngã
+- **[Trái tim của các Đại tội (Heart of Sins)](/vi/ego-system/sins)** — Súc mạnh cổ đại của vực thẳm
+
+### Đặc tính Huyết Tế
 - ⏳ **Thời gian**: Các Di Vật mạnh cần thời gian rèn kéo dài (5–10 phút)
 - 📍 **Lộ diện**: Vị trí lò rèn bị **phát sóng cho toàn server** — bạn trở thành con mồi
 - 🔒 **Không thể rút**: Vật phẩm bị khóa cho đến khi hoàn tất
-- 💀 **Rủi ro**: Bị giết hoặc lò bị phá hủy? **Mất trắng**
+- 💀 **Rủi ro**: vật phẩm được rèn sẽ không thể cất giữ, chỉ có thể **hấp thụ**
+
 
 > *"Vực thẳm không trao quyền năng. Nó cho vay — và lãi suất là linh hồn."*
 

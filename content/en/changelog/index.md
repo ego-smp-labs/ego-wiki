@@ -1,54 +1,63 @@
 ---
-title: Nhật Ký Kí Ức
-description: Lịch sử thế giới plugin EgoSMP và Mace-Exclusive.
+title: Changelog
+description: History of EgoSMP and Mace-Exclusive plugins.
 order: 3
 ---
 
-# Nhật Ký Kí Ức
+# Changelog
 
 ## EgoSMP Plugin
 
-### v0.1.3 — Tích Hợp Web Wiki
-*Phát hành: Tháng 2/2026*
+### v1.2.0 — Shards & Curses
+*Released: February 2026*
 
-**Tính năng mới:**
-- 🌐 **Tích hợp web wiki** — Tích hợp với web wiki
+**New Features:**
+- 🧩 **Ego Shards** — Collect shards from monsters for crafting
+- 🔮 **Cursed Crafting Table** — A place to craft forbidden items
+- 🐛 **Bug Fixes** — Fixed pending bugs and improved performance
 
-### v0.1.2 — Ego Forging & GUI Nâng Cao
-*Phát hành: Tháng 2/2026*
+### v0.1.3 — Web Wiki Integration
+*Released: February 2026*
 
-**Tính năng mới:**
-- ✨ **Hệ thống Ego Forging** — Chế tạo vật phẩm đặc biệt với thời gian chế
-- 🔗 **Tích hợp Mace** — Đồng bộ với Mace-Exclusive plugin
-- 🌐 **Đa ngôn ngữ** — Hỗ trợ đầy đủ tiếng Anh và tiếng Việt
+**New Features:**
+- 🌐 **Web Wiki Integration** — Integrated with the web wiki
+
+### v0.1.2 — Ego Forging & Advanced GUI
+*Released: February 2026*
+
+**New Features:**
+- ✨ **Ego Forging System** — Craft special items with crafting time
+- 🔗 **Mace Integration** — Synced with Mace-Exclusive plugin
+- 🌐 **Multi-language** — Full support for English and Vietnamese
 
 
-**Cải thiện:**
-- 📁 Tổ chức lại thư mục config (`custom/`, `lang/`)
-- ⚡ Tối ưu tải item và GUI
+**Improvements:**
+- 📁 Reorganized config folders (`custom/`, `lang/`)
+- ⚡ Optimized item loading and GUI
 
-### v0.1.1 — Cải Thiện Gameplay
-- 🔒 **Giới hạn chế tạo** — Giới hạn theo loại recipe
-- ☠️ **Death Messages tùy chỉnh** — Tin nhắn hạ gục độc đáo
-- 👑 **Lệnh Admin Tier** — `/sabi ego set`
+### v0.1.1 — Gameplay Improvements
+- 🔒 **Crafting Limits** — Limit by recipe type
+- ☠️ **Custom Death Messages** — Unique death messages
+- 👑 **Admin Tier Command** — `/sabi ego set`
 
 ### v0.1.0 — Dark Ego & Anti-Farming
-- 🌑 **Dark Ego** — Rơi hiếm (5%) từ Tier 5+
-- 🚫 **Anti-Farming** — Ngăn farm Tier 0
-- 🛡️ **Bảo vệ Ego** — Items được bảo vệ khi chết
+- 🌑 **Dark Ego** — Rare drop (5%) from Tier 5+
+- 🚫 **Anti-Farming** — Prevent Tier 0 farming
+- 🛡️ **Ego Protection** — Items protected on death
 
 ## Mace-Exclusive Plugin
 
-### v0.0.2 — Cây Chùy Huyền Thoại
-*Phát hành: Tháng 1/2026*
+### v0.0.2 — The Legendary Mace
+*Released: January 2026*
 
 **Mace of Power:**
-- ⚒️ Vũ khí duy nhất — chỉ MỘT cây trên server
-- 💎 bị truy đuổi khi sở hữu
-- 📍 Strict Mode — không thể cất vào rương
+- ⚒️ Unique Weapon — only ONE on the server
+- 💎 Hunted when owned
+- 📍 Strict Mode — cannot be stored in chests
 
 **Mace of Chaos (The Glitch):**
-- 🔮 Biến thể hỏng với &*%$&$
-- ☠️ Nguyền rủa khi chế/nhặt
-- 🎲 20% xáo trộn inventory đối thủ khi đánh
-- 👻 Tên *%&(^* — ẩn danh tính kẻ giết
+- 🔮 Glitched variant with &*%$&$
+- ☠️ Cursed when crafted/picked up
+- 🎲 20% inventory shuffle for opponent on hit
+- 👻 Name *%&(^* — anonymous killer identity
+

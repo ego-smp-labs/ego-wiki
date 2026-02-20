@@ -64,7 +64,6 @@ Nhưng nó bẻ gãy đà tiến hoá hắc hoá của bạn.
 - Hệ thống demotion/anti-farm là thứ có thể cấu hình để giữ server công bằng và giảm lạm dụng
 
 ---
-
 ## Xem Thêm
 
 - → [Hệ Thống Tier](/vi/ego-system/tier-system)
