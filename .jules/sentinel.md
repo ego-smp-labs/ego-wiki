@@ -12,3 +12,8 @@
 **Vulnerability:** `WikiService` methods (`getAllCategories`, `getCategoryArticles`, `getArticle`) trusted user input (`locale`, `category`) without validation, allowing directory traversal via `..` segments to access sensitive files/directories like `.jules` or source code.
 **Learning:** File system operations that use user input for paths must always validate against a whitelist (like `isValidLocale`) or strictly sanitize path segments to prevent traversal, even if `path.join` is used.
 **Prevention:** Implement strict input validation for all parameters used in file system paths. Use helper methods like `isSafePathSegment` and validate against known enums/constants (`LOCALES`).
+
+## 2025-02-24 - Search API DoS Vectors
+**Vulnerability:** The `/api/search` endpoint lacked input validation for `limit`, `query` length, and `locale`, exposing the server to potential DoS via large payloads or cache poisoning.
+**Learning:** Even read-only APIs need strict input validation to prevent resource exhaustion. `Fuse.js` in-memory search can be expensive with large datasets or queries.
+**Prevention:** Cap all array limits (e.g., max 50 items) and string lengths (e.g., max 100 chars) in public APIs.
