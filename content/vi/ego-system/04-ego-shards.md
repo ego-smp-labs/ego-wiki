@@ -259,7 +259,7 @@ Vật phẩm này yêu cầu bạn đặt 1 **Đá Thanh Tẩy (Purification Sto
 1. Cầm Nghi Thức Bóc Tách Bản Ngã trên tay vào bấm **Chuột Phải**.
 2. Phép thuật thanh tẩy sẽ bóc tách các Tội Lỗi (Mảnh Vỡ) bạn đang trang bị và **văng chúng ra sàn**.
 3. **Cái giá phải trả**: Bạn sẽ nhận lại sát thương thanh tẩy chí tử, dẫn đến **Cái Chết ngay lập tức** (Bỏ qua Totem) và hạ bậc **Tier của bạn về 1**.
-> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"<tên_người_chơi> chết do bị bản ngã nuốt chửng"*.
+> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"&lt;tên_người_chơi&gt; chết do bị bản ngã nuốt chửng"*.
 
 ---
 
