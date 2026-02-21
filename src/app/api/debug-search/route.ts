@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { WikiService } from "@core/services/WikiService";
 import { buildSearchIndex, clearSearchCache } from "@core/lib/search";
+import { auth } from "@core/config/auth";
 
 export async function GET(request: NextRequest) {
+    const session = await auth();
+
+    if (!session?.user?.isAdmin) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const searchParams = request.nextUrl.searchParams;
     const locale = searchParams.get("locale") || "vi";
     const q = searchParams.get("q") || "";

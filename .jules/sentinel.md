@@ -12,3 +12,8 @@
 **Vulnerability:** `WikiService` methods (`getAllCategories`, `getCategoryArticles`, `getArticle`) trusted user input (`locale`, `category`) without validation, allowing directory traversal via `..` segments to access sensitive files/directories like `.jules` or source code.
 **Learning:** File system operations that use user input for paths must always validate against a whitelist (like `isValidLocale`) or strictly sanitize path segments to prevent traversal, even if `path.join` is used.
 **Prevention:** Implement strict input validation for all parameters used in file system paths. Use helper methods like `isSafePathSegment` and validate against known enums/constants (`LOCALES`).
+
+## 2025-02-24 - Exposed Debug Endpoints
+**Vulnerability:** The `/api/debug-search` endpoint allowed unauthenticated users to clear server caches (DoS) and inspect internal data structures.
+**Learning:** Debug tools and endpoints can easily be left in production code. Their impact (like cache clearing) can be severe if not protected.
+**Prevention:** Restrict debug endpoints to `NODE_ENV === 'development'` or require strict Admin authentication. Audit API routes regularly for leftover debug code.
