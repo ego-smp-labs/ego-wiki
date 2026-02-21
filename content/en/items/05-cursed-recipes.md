@@ -29,6 +29,23 @@ All recipes below require [**Cursed Crafting Table**](/en/wiki/items/cursed-craf
 
 ---
 
+## Utility Items
+
+### Purification Stone
+
+> Used to cleanse darkness from Dark Ego. See details → [Purification Stone](/en/wiki/items/ego-items#purification-stone)
+
+| | Column 1 | Column 2 | Column 3 |
+|---|:---:|:---:|:---:|
+| Row 1 |       | Amethyst Shard  |       |
+| Row 2 | Amethyst Shard  | **Echo Shard** | Amethyst Shard  |
+| Row 3 |       | Amethyst Shard  |       |
+
+- **Soul**: 2
+- **Forging Time**: 3 minutes
+
+---
+
 ## Amulet
 
 ### Soul Keeper

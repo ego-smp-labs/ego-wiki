@@ -92,6 +92,20 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 ---
 
+<ItemCard id="purification-stone" name="Purification Stone" image="/wiki/items/ego_default.png" rarity="epic">
+
+> *"Purity is sometimes the result of coercion."*
+
+A spiritual stone capable of cleansing precipitated darkness, reverting an ego back to its original form (losing the raw power of darkness in the process).
+
+- **Origin**: Forged at [Cursed Crafting Table](/en/wiki/items/cursed-crafting)
+- **Usage**: Combine with **Dark Ego** in normal crafting grid to produce normal **Ego Fragment**.
+- **Trait**: Cannot stack (x1 items) — cannot be placed in chests.
+
+</ItemCard>
+
+---
+
 <ItemCard id="soul-keeper" name="Soul Keeper" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Once. Only once. Then it turns to ash."*

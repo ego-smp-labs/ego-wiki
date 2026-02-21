@@ -29,6 +29,23 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ---
 
+## Vật Phẩm Phụ Trợ
+
+### Đá Thanh Tẩy — Purification Stone
+
+> Dùng để thanh tẩy bóng tối khỏi Dark Ego. Xem chi tiết → [Đá Thanh Tẩy](/vi/wiki/items/ego-items#da-thanh-tay--purification-stone)
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 |       | Amethyst Shard  |       |
+| Hàng 2 | Amethyst Shard  | **Echo Shard** | Amethyst Shard  |
+| Hàng 3 |       | Amethyst Shard  |       |
+
+- **Linh hồn**: 2
+- **Thời gian rèn**: 3 phút
+
+---
+
 ## Hộ Mệnh
 
 ### Soul Keeper — Hộ Mệnh Linh Hồn

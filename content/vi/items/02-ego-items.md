@@ -94,6 +94,20 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 ---
 
+<ItemCard id="da-thanh-tay--purification-stone" name="Đá Thanh Tẩy — Purification Stone" image="/wiki/items/ego_default.png" rarity="epic">
+
+> *"Sự thuần khiết đôi khi là kết quả của việc cưỡng chế."*
+
+Một viên đá tâm linh có khả năng gột rửa bóng tối bị kết tủa, đưa bản ngã trở về dạng nguyên bản (tuy nhiên sẽ mất đi sức mạnh thuần túy của bóng tối).
+
+- **Nguồn gốc**: Rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting)
+- **Công dụng**: Kết hợp với **Dark Ego** trong túi đồ/Bàn chế tạo thường để cho ra **Ego Fragment** thường.
+- **Tính chất**: Không thể xếp chồng (x1 items) — không thể đặt trong rương.
+
+</ItemCard>
+
+---
+
 <ItemCard id="soul-keeper--ho-menh-linh-hon" name="Soul Keeper — Hộ Mệnh Linh Hồn" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Một lần. Chỉ một lần. Rồi nó tan thành tro."*
