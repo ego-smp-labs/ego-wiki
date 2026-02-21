@@ -106,6 +106,34 @@ A spiritual stone capable of cleansing precipitated darkness, reverting an ego b
 
 ---
 
+<ItemCard id="shard-extractor" name="Shard Extractor" image="/wiki/items/shard_extractor.png" rarity="epic">
+
+> *"Ripping sin from yourself — but it costs everything."*
+
+A single-use item that allows the player to **remove all equipped Ego Shards**, at the cost of instant death and total Tier loss.
+
+### Crafting
+Crafted using a regular **Crafting Table**.
+
+| | Column 1 | Column 2 | Column 3 |
+|---|:---:|:---:|:---:|
+| Row 1 | Sculk | Sculk | Sculk |
+| Row 2 | Sculk | **[Purification Stone](/en/wiki/items/ego-items#purification-stone)** | Sculk |
+| Row 3 | Sculk | Sculk | Sculk |
+
+### Usage
+1. Hold the Shard Extractor and press **Right Click**.
+2. All equipped Shards will be **ejected onto the ground**.
+3. **The Price**: Instant death (bypasses Totem) and **Tier reset to 1**.
+
+> **Note**: Your Ego won't drop since this isn't PvP. Message: *"player_name died from being consumed by their own ego"*.
+
+> See more → [Ego Shards](/en/wiki/ego-system/ego-shards)
+
+</ItemCard>
+
+---
+
 <ItemCard id="soul-keeper" name="Soul Keeper" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Once. Only once. Then it turns to ash."*

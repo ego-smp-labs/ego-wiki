@@ -108,6 +108,34 @@ Một viên đá tâm linh có khả năng gột rửa bóng tối bị kết t�
 
 ---
 
+<ItemCard id="nghi-thuc-boc-tach--shard-extractor" name="Nghi Thức Bóc Tách Bản Ngã — Shard Extractor" image="/wiki/items/shard_extractor.png" rarity="epic">
+
+> *"Bóc tách tội lỗi ra khỏi bản thân — nhưng cái giá là tất cả."*
+
+Một vật phẩm dùng một lần cho phép người chơi **tháo toàn bộ Mảnh Vỡ (Ego Shards)** đang trang bị, nhưng đổi lại là cái chết tức thì và mất hết Tier.
+
+### Cách chế tạo
+Sử dụng **Bàn chế tạo (Crafting Table)** thông thường.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Sculk | Sculk | Sculk |
+| Hàng 2 | Sculk | **[Đá Thanh Tẩy](/vi/wiki/items/ego-items#da-thanh-tay--purification-stone)** | Sculk |
+| Hàng 3 | Sculk | Sculk | Sculk |
+
+### Cách sử dụng
+1. Cầm Shard Extractor trên tay và bấm **Chuột Phải**.
+2. Tất cả Mảnh Vỡ (Shards) đang gắn trên người sẽ **rơi ra nền**.
+3. **Cái giá**: Chết ngay lập tức (bỏ qua Totem) và **Tier bị đưa về 1**.
+
+> **Lưu ý**: Ego của bạn không bị rơi do đây không phải PvP. Thông báo: *"tên_người_chơi chết do bị bản ngã nuốt chửng"*.
+
+> Xem thêm → [Mảnh Vỡ Bản Ngã (Ego Shards)](/vi/wiki/ego-system/ego-shards)
+
+</ItemCard>
+
+---
+
 <ItemCard id="soul-keeper--ho-menh-linh-hon" name="Soul Keeper — Hộ Mệnh Linh Hồn" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Một lần. Chỉ một lần. Rồi nó tan thành tro."*
