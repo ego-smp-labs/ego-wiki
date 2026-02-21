@@ -4,12 +4,14 @@ description: Thông tin cơ bản về Ego.
 order: 1
 ---
 
-# Bản Ngã (Ego)
+<ItemCard id="ban-nga-ego" name="Bản Ngã (Ego)" image="/wiki/items/ego_default.png" rarity="rare">
 
 **Bản Ngã** (hay còn gọi là Ego) là sức mạnh rơi ra từ máu.
 Bạn có thể mạnh lên nhờ nó — nhưng mỗi lần chạm vào Ego, bạn đang ký thêm một dòng vào khế ước với vực thẳm.
 
 > Xem chi tiết hệ cấp bậc: **[Hệ Thống Tier](./02-tier-system)**
+
+</ItemCard>
 
 ## Ego rơi ra như thế nào?
 

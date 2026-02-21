@@ -4,10 +4,11 @@ description: Dark power and risks.
 order: 3
 ---
 
-## Dark Ego
+<ItemCard id="dark-ego" name="Dark Ego" image="/wiki/items/ego_dark.png" rarity="mythic">
 
 At a certain power threshold (Tier 5+), normal ego is no longer enough to satisfy you. You need something darker: **Dark Ego**.
 
+</ItemCard>
 
 ### Origin
 

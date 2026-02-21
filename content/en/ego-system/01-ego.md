@@ -4,12 +4,14 @@ description: Basic information about Ego.
 order: 1
 ---
 
-# Ego (The Self)
+<ItemCard id="ego" name="Ego (The Self)" image="/wiki/items/ego_default.png" rarity="rare">
 
 **Ego** is power dropped from blood.
 You can get stronger from it — but every time you touch Ego, you sign yet another line in the pact with the Abyss.
 
 > See tier details: **[Tier System](./02-tier-system)**
+
+</ItemCard>
 
 ## How does Ego drop?
 

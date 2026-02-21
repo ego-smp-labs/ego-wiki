@@ -4,10 +4,11 @@ description: Sức mạnh đen tối và rủi ro.
 order: 3
 ---
 
-## Bản Ngã Hắc Hóa (Dark Ego)
+<ItemCard id="ban-nga-hac-hoa" name="Bản Ngã Hắc Hóa (Dark Ego)" image="/wiki/items/ego_dark.png" rarity="mythic">
 
 Đến một ngưỡng sức mạnh nào đó (Tier 5+), bản ngã bình thường không còn đủ thoả mãn bạn. Bạn cần thứ đen tối hơn: **Dark Ego**.
 
+</ItemCard>
 
 ### Nguồn gốc
 
