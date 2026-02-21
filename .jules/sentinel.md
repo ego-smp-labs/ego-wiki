@@ -12,3 +12,8 @@
 **Vulnerability:** `WikiService` methods (`getAllCategories`, `getCategoryArticles`, `getArticle`) trusted user input (`locale`, `category`) without validation, allowing directory traversal via `..` segments to access sensitive files/directories like `.jules` or source code.
 **Learning:** File system operations that use user input for paths must always validate against a whitelist (like `isValidLocale`) or strictly sanitize path segments to prevent traversal, even if `path.join` is used.
 **Prevention:** Implement strict input validation for all parameters used in file system paths. Use helper methods like `isSafePathSegment` and validate against known enums/constants (`LOCALES`).
+
+## 2025-02-24 - Unbounded Search API Inputs
+**Vulnerability:** The public `GET /api/search` endpoint lacked validation for `query` length and `limit` parameter, allowing potential Denial of Service (DoS) via large payloads or processing overhead.
+**Learning:** Public API endpoints must enforce strict input limits to prevent abuse, even if the underlying search engine is efficient. Next.js API routes do not automatically limit query parameter sizes.
+**Prevention:** Implement validation middleware or checks at the start of every public API handler to enforce maximum string lengths and numeric limits.
