@@ -86,61 +86,65 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 ---
 
-### 🗡️ Mảnh Vỡ Kẻ Tàng Kiếm
+<ItemCard id="manh-vo-ke-tang-kiem" name="Mảnh Vỡ Kẻ Tàng Kiếm" image="/wiki/shard/shard_tang_kiem.jpg" rarity="rare">
 
-> *"Thân ta đầy sẹo nhưng mắt ta không hề mờ đi.
-> Mỗi vết thương trên người ta — là một vết thương của kẻ khác."*
+> *"Lưỡi kiếm sắc nhất là lưỡi kiếm không bao giờ được rút ra.
+> Trừ khi nó đã ở kề cổ ngươi."*
 
-Tàng Kiếm là chiến binh không thể bị đánh gục — không phải vì hắn mạnh,
-mà vì mỗi lần hắn bị chém, **lưỡi kiếm của kẻ thù tự vỡ ra**.
-Người ta nói vũ khí thật sự của hắn không phải kiếm trong tay —
-mà là **chính bề mặt cơ thể hắn**.
-Hắn chết không phải trong chiến trận.
-Hắn chết trong giấc ngủ, tay vẫn nắm chặt kiếm như thể sợ ai đó lấy đi.
+Tàng Kiếm là một kiếm khách không bao giờ mang theo vũ khí.
+Người ta cười nhạo hắn cho đến khi hắn bước vào hoàng cung tay không,
+và bước ra với cái đầu của hoàng đế.
+Hắn không cần rèn kiếm, vì **sát ý của hắn chính là lưỡi sắc nhất**.
+Hắn chết không phải vì bị đánh bại, mà vì chính ý chí của hắn
+đã cắt đứt sinh khí của bản thân — hắn đã tự kết liễu mình
+chỉ bằng một cái chớp mắt.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Phản chiếu **15%** sát thương cận chiến về kẻ tấn công.
-
-| | Cột 1 | Cột 2 | Cột 3 |
-|---|:---:|:---:|:---:|
-| Hàng 1 | Cactus ×10 | Netherite Sword ×1 | Prismarine Shard ×10 |
-| Hàng 2 | Prismarine Shard ×10 | **Tainted Ego** | Cactus ×10 |
-| Hàng 3 | Cactus ×10 | Enchanted Book (Thorns III) ×1 | Prismarine Shard ×10 |
-
-- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
-
----
-
-### 🩸 Mảnh Vỡ Kẻ Huyết Lang
-
-> *"Người ta sợ ta khi ta gần chết.
-> Vì họ biết — đó mới là lúc ta thực sự sống."*
-
-Không ai biết tên thật của Huyết Lang. Họ chỉ biết một thứ:
-càng dồn hắn vào đường cùng, hắn càng trở nên **không giống con người**.
-Binh lính không sợ hắn khi hắn khỏe mạnh — họ sợ hắn **khi hắn đang hấp hối**,
-vì đó là lúc đôi mắt hắn sáng lên và tất cả những gì hắn chạm vào đều **tan vỡ gấp ba**.
-Hắn chết khi đã không còn kẻ thù để chiến đấu.
-Không còn lý do để tiếp tục tồn tại.
-
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%**, mỗi lần bị tấn công có **30% xác suất**
-  kích hoạt: tăng **+200% sát thương** trong **5 giây**
-  *(custom damage multiplier — không phải potion effect, không thể cộng dồn)*.
-- **Mảnh Kí Ức Kẻ Huyết Lang**: Sử dụng Ego/Dark Ego, sau đó dùng liên tục **x10 Bình Hồi Máu Tức Thời** (uống hoặc ném) để nhận được vật phẩm này. 
-  *(Lưu ý: Thời gian hồi cho toàn server là 3 ngày sau mỗi lần triệu hồi).*
+- Yêu cầu **Tier 1+** để lắp và kích hoạt.
+- **Hiệu Ứng (Chủ Động)**: Bấm phím **F** (đổi tay offhand) để chém ra một luồng kiếm khí gây sát thương cực mạnh theo đường thẳng.
+- **Cooldown**: **10 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
-| Hàng 2 | Crimson Fungus ×10 | **Tainted Ego** | **Mảnh Kí Ức Kẻ Huyết Lang** |
-| Hàng 3 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
+| Hàng 1 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
+| Hàng 2 | Netherite Sword ×1 | **Ego** | Netherite Sword ×1 |
+| Hàng 3 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
+</ItemCard>
+
 ---
 
-### 🌑 Mảnh Vỡ Kẻ Vô Danh
+<ItemCard id="manh-vo-ke-huyet-lang" name="Mảnh Vỡ Kẻ Huyết Lang" image="/wiki/shard/shard_huyet_lang.jpg" rarity="epic">
+
+> *"Mùi máu. Đó là thứ duy nhất phân biệt ngươi với con mồi."*
+
+Huyết Lang từng là một con người. Hoặc ít nhất, hắn trông giống người
+trước khi cơn đói nuốt chững đi lằn ranh cuối cùng.
+Hắn săn lùng giữa rừng sâu, không vì thù hận, không vì quyền lực —
+chỉ vì máu nóng mang lại cho hắn cảm giác đang sống.
+Càng đổ máu, hắn càng mạnh. Khi không còn sinh vật nào để xé xác,
+hắn phát điên vả tự cấu xé chính mình.
+
+- Yêu cầu **Tier 2+** để lắp và kích hoạt.
+- **Hiệu Ứng (Bị Động)**: Khi ở trạng thái **Đang Chạy (Sprint)** và **Đánh trúng mục tiêu (Kẻ thù/Người chơi)** → Bạn nhận được hiệu ứng **Speed II** và **Hút Máu** trong vài giây. 
+- Máu càng thấp, tốc độ di chuyển và khả năng hồi phục từ đòn đánh càng cao.
+- **Lưu ý**: Hiệu ứng này sẽ **hút cạn thanh thức ăn** của bạn rất nhanh. Nếu Food Level hết, bạn sẽ nhận sát thương Đói khát nhân đôi.
+- **Mảnh Kí Ức Huyết Lang**: Chết do đói (Starvation) khi Food Bar ở mức 0 và Đang trong trạng thái Ego/Dark Ego.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
+| Hàng 2 | Bone ×32 | **Tainted Ego** | **Mảnh Kí Ức Huyết Lang** |
+| Hàng 3 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
+
+- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+
+</ItemCard>
+
+---
+
+<ItemCard id="manh-vo-ke-vo-danh" name="Mảnh Vỡ Kẻ Vô Danh" image="/wiki/shard/shard_vo_thanh.jpg" rarity="epic">
 
 > *"Ta không ẩn mình. Ta không trốn chạy.
 > Ta đơn giản là... không còn tồn tại trong mắt ngươi nữa."*
@@ -165,9 +169,11 @@ Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
+</ItemCard>
+
 ---
 
-### 🌘 Mảnh Vỡ Kẻ Ảnh Huyết
+<ItemCard id="manh-vo-ke-anh-huyet" name="Mảnh Vỡ Kẻ Ảnh Huyết" image="/wiki/shard/shard_anh_nguyet.jpg" rarity="mythic">
 
 > *"Ta không ở đây. Ta chưa bao giờ ở đây.
 > Nhưng ngươi đã chết rồi."*
@@ -192,9 +198,11 @@ lạnh như đêm và nhanh như tử thần.
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
+</ItemCard>
+
 ---
 
-### 💀 Mảnh Vỡ Kẻ Cuồng Thanh
+<ItemCard id="manh-vo-ke-cuong-thanh" name="Mảnh Vỡ Kẻ Cuồng Thanh" image="/wiki/shard/shard_cuong_thanh.png" rarity="mythic">
 
 > *"Tiếng hét này không dành cho ngươi nghe.
 > Nó dành để đẩy ngươi đi."*
@@ -219,9 +227,11 @@ Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
+</ItemCard>
+
 ---
 
-### ☁️ Mảnh Vỡ Kẻ Ngạo Thiên
+<ItemCard id="manh-vo-ke-ngao-thien" name="Mảnh Vỡ Kẻ Ngạo Thiên" image="/wiki/shard/shard_ngao_thien.jpg" rarity="mythic">
 
 > *"Đất dưới chân ta là thứ ta khinh nhất.
 > Ta không thuộc về nơi này. Ta thuộc về chỗ cao hơn."*
@@ -246,6 +256,8 @@ hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 | Hàng 3 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+
+</ItemCard>
 
 ---
 

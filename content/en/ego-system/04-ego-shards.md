@@ -110,37 +110,65 @@ He died in his sleep, hands still gripping the sword as if afraid someone would 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
 
 ---
+<ItemCard id="hidden-sword-shard" name="Hidden Sword Shard" image="/wiki/shard/shard_tang_kiem.jpg" rarity="rare">
 
-### 🩸 Blood Wolf Shard
+> *"The sharpest blade is the one that is never drawn.
+> Unless it is already at your throat."*
 
-> *"They fear me when I am near death.
-> Because they know — that is when I truly live."*
+Hidden Sword was a swordsman who never carried a weapon.
+People laughed at him until he walked into the imperial palace empty-handed,
+and walked out with the emperor's head.
+He didn't need to forge a sword, because **his killing intent was the sharpest blade**.
+He died not by being defeated, but because his own will
+cut off his own life force — he killed himself
+with just a blink of an eye.
 
-No one knows the true name of Blood Wolf. They only know one thing:
-the more cornered he is, the more he becomes **unlike a human**.
-Soldiers do not fear him when he is healthy — they fear him **when he is dying**,
-because that is when his eyes light up and everything he touches **shatters threefold**.
-He died when there were no enemies left to fight.
-No reason to continue existing.
-
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: When HP below **30%**, each hit taken has **30% chance**
-  to activate: increase **+200% damage** for **5 seconds**
-  *(custom damage multiplier — not potion effect, does not stack)*.
-- **Blood Wolf's Memory Fragment**: Use Ego/Dark Ego, then consecutively use **x10 Instant Health Potions** (splash or drink) to receive this item.
-  *(Note: Server-wide cooldown of 3 days applies after each summon).*
+- Requires **Tier 1+** to equip and activate.
+- **Effect (Active)**: Press **F** (swap to offhand) to slash out a wave of sword aura dealing massive damage in a straight line.
+- **Cooldown**: **10 seconds**.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
-| Row 2 | Crimson Fungus ×10 | **Tainted Ego** | **Blood Wolf's Memory Fragment** |
-| Row 3 | Bone Block ×10 | Crimson Fungus ×10 | Bone Block ×10 |
+| Row 1 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
+| Row 2 | Netherite Sword ×1 | **Ego** | Netherite Sword ×1 |
+| Row 3 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
 
+</ItemCard>
+
 ---
 
-### 🌑 Nameless Shard
+<ItemCard id="blood-wolf-shard" name="Blood Wolf Shard" image="/wiki/shard/shard_huyet_lang.jpg" rarity="epic">
+
+> *"The smell of blood. It is the only thing separating you from prey."*
+
+Blood Wolf was once a human. Or at least, he looked like one
+before hunger swallowed the final line.
+He hunted in the deep forest, not out of hatred, not for power —
+only because hot blood made him feel alive.
+The more blood he spilled, the stronger he became. When there were no more creatures to tear apart,
+he went mad and tore himself apart.
+
+- Requires **Tier 2+** to equip and activate.
+- **Effect (Passive)**: When **Sprinting** and **Hitting a target (Enemy/Player)** → You gain **Speed II** and **Lifesteal** for a few seconds.
+- The lower your health, the higher your movement speed and healing from attacks.
+- **Note**: This effect will **drain your food bar** very quickly. If Food Level runs out, you will take double Starvation damage.
+- **Blood Wolf's Memory Fragment**: Die of starvation when Food Bar is 0 and under the effect of Ego/Dark Ego.
+
+| | Column 1 | Column 2 | Column 3 |
+|---|:---:|:---:|:---:|
+| Row 1 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
+| Row 2 | Bone ×32 | **Tainted Ego** | **Blood Wolf's Memory Fragment** |
+| Row 3 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
+
+- **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
+
+</ItemCard>
+
+---
+
+<ItemCard id="nameless-shard" name="Nameless Shard" image="/wiki/shard/shard_vo_thanh.jpg" rarity="epic">
 
 > *"I am not hiding. I am not running.
 > I simply... no longer exist in your eyes."*
@@ -165,9 +193,11 @@ At the end of his life, he left in broad daylight. No one noticed.
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
 
+</ItemCard>
+
 ---
 
-### 🌘 Blood Shadow Shard
+<ItemCard id="blood-shadow-shard" name="Blood Shadow Shard" image="/wiki/shard/shard_anh_nguyet.jpg" rarity="mythic">
 
 > *"I am not here. I was never here.
 > But you are already dead."*
@@ -192,9 +222,11 @@ cold as night and fast as death.
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
 
+</ItemCard>
+
 ---
 
-### 💀 Mad Sound Shard
+<ItemCard id="mad-sound-shard" name="Mad Sound Shard" image="/wiki/shard/shard_cuong_thanh.png" rarity="mythic">
 
 > *"This scream is not for you to hear.
 > It is to push you away."*
@@ -219,9 +251,11 @@ Eventually he died in silence — the only thing he never chose.
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
 
+</ItemCard>
+
 ---
 
-### ☁️ Sky Pride Shard
+<ItemCard id="sky-pride-shard" name="Sky Pride Shard" image="/wiki/shard/shard_ngao_thien.jpg" rarity="mythic">
 
 > *"The ground beneath my feet is what I despise the most.
 > I do not belong here. I belong somewhere higher."*
@@ -246,6 +280,8 @@ or he has reached something no one else dared to think of.
 | Row 3 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
 
 - **Soul**: 1 · **Time**: 5 minutes · *Location revealed*
+
+</ItemCard>
 
 ---
 

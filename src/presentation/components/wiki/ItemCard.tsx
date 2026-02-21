@@ -7,7 +7,7 @@ interface ItemCardProps {
     name: string;
     image: string;
     children: ReactNode;
-    rarity?: "common" | "rare" | "epic" | "legendary";
+    rarity?: "common" | "rare" | "epic" | "legendary" | "mythic";
     id?: string;
 }
 
@@ -35,6 +35,12 @@ const RARITY_STYLES = {
         glow: "shadow-[0_0_25px_rgba(245,158,11,0.3)]",
         label: "text-amber-400",
         bg: "from-amber-500/10 to-transparent",
+    },
+    mythic: {
+        border: "border-rose-500/40",
+        glow: "shadow-[0_0_25px_rgba(225,29,72,0.3)]",
+        label: "text-rose-400",
+        bg: "from-rose-500/10 to-transparent",
     },
 };
 
