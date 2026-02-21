@@ -259,7 +259,7 @@ This item requires you to place 1 **Purification Stone** in the center of a norm
 1. Hold the **Ego Purification Ritual** in your hand and **Right-Click**.
 2. The purification magic will tear the Sins (Shards) you have equipped and **drop them onto the floor**.
 3. **The Price**: You will receive fatal purification damage, resulting in **instant death** (Bypassing Totems) and your **Tier will reset to 1**.
-> **Note**: You will NOT drop your Ego since this is not considered PvP death; your Ego remains safe in your inventory. The server broadcast will read: *"<player> was consumed by their own ego"*.
+> **Note**: You will NOT drop your Ego since this is not considered PvP death; your Ego remains safe in your inventory. The server broadcast will read: *"&lt;player&gt; was consumed by their own ego"*.
 
 ---
 
