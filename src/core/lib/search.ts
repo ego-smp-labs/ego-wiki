@@ -9,6 +9,7 @@ export interface SearchResult extends ArticleMeta {
     score: number;
     matches?: readonly FuseResultMatch[];
     excerpt?: string;
+    hash?: string;
 }
 
 const FUSE_OPTIONS: IFuseOptions<SearchableArticle> = {
@@ -65,6 +66,7 @@ export function searchArticles(
 
     return results.map((result) => {
         let excerpt = result.item.description || "";
+        let hash = "";
 
         if (result.matches) {
             const contentMatch = result.matches.find(m => m.key === "content");
@@ -78,10 +80,31 @@ export function searchArticles(
                 // Add ellipsis if truncated
                 if (start > 0) excerpt = "..." + excerpt;
                 if (end < contentMatch.value.length) excerpt = excerpt + "...";
+
+                // Find the nearest heading before the match index
+                const contentUpToMatch = contentMatch.value.substring(0, matchIndex[0]);
+                let highestIndex = -1;
+
+                if (result.item.headings && Array.isArray(result.item.headings)) {
+                    result.item.headings.forEach(h => {
+                        // Look for the heading text directly or its usage inside ItemCard
+                        const idx = contentUpToMatch.lastIndexOf(h.text);
+                        let nameAttrIdx = contentUpToMatch.lastIndexOf(`name="${h.text}"`);
+                        
+                        // For ItemCard, if we have markdown inside it, its position is what matters
+                        const bestIdx = Math.max(idx, nameAttrIdx);
+                        if (bestIdx > highestIndex) {
+                            highestIndex = bestIdx;
+                            hash = h.slug;
+                        }
+                    });
+                }
             } else {
                 const headingMatch = result.matches.find(m => m.key === "headings.text");
                 if (headingMatch && headingMatch.value) {
                     excerpt = `Heading: ${headingMatch.value}`;
+                    const matchedHeading = result.item.headings?.find(h => h.text === headingMatch.value);
+                    if (matchedHeading) hash = matchedHeading.slug;
                 }
             }
         }
@@ -94,6 +117,7 @@ export function searchArticles(
             score: result.score || 0,
             matches: result.matches,
             excerpt,
+            hash,
         };
     });
 }

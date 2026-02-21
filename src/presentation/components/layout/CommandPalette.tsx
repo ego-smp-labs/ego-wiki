@@ -55,8 +55,9 @@ export default function CommandPalette({
     }, [query, locale]);
 
     const handleSelect = useCallback(
-        (article: ArticleMeta) => {
-            router.push(`/${locale}/wiki/${article.category}/${article.slug}`);
+        (article: ArticleMeta & { hash?: string }) => {
+            const hashPart = article.hash ? `#${article.hash}` : "";
+            router.push(`/${locale}/wiki/${article.category}/${article.slug}${hashPart}`);
             onClose();
             setQuery("");
         },
