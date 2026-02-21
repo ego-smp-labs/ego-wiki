@@ -24,12 +24,18 @@ Vũ khí huyền thoại với sức mạnh hủy diệt thuần túy.
 - **Phát sáng**: Người sở hữu bị đánh dấu Glowing trong 5 phút — cả server biết bạn ở đâu
 - **Săn đuổi**: Khi Mace xuất hiện, bạn trở thành **mục tiêu** của mọi người
 
+### Cách chế tạo
+Sử dụng **Bàn chế tạo (Crafting Table)** thông thường.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | | Netherite Ingot | |
+| Hàng 2 | | Heavy Core | |
+| Hàng 3 | | Breeze Rod | |
+
 ### Luật chơi
 - Không thể cất trong rương hoặc container
 - Rơi ra ngoài khi chết (không vào mộ)
-- Được rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting) — xem [công thức rèn](/vi/wiki/items/cursed-recipes#mace-of-power)
-
-> ⏳ **Thời gian rèn: 5 phút** — vị trí bị lộ cho toàn server. Trễ nhịp là mất tất cả.
 
 ---
 

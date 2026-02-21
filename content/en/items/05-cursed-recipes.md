@@ -14,21 +14,6 @@ All recipes below require [**Cursed Crafting Table**](/en/wiki/items/cursed-craf
 
 ## Artifacts — Legendary Mace
 
-### Mace of Power
-
-> Pure weapon of destruction. See details → [Mace of Power](/en/wiki/items/mace#mace-of-power)
-
-| | Column 1 | Column 2 | Column 3 |
-|---|:---:|:---:|:---:|
-| Row 1 |       | Netherite Ingot |       |
-| Row 2 |       | Heavy Core |       |
-| Row 3 |       | Breeze Rod |       |
-
-- **Soul**: 1
-- **Forging Time**: 5 minutes *(Abyssal Forging — location revealed)*
-
----
-
 ### Mace of Chaos
 
 > Glitched copy. See details → [Mace of Chaos](/en/wiki/items/mace#mace-of-chaos)
