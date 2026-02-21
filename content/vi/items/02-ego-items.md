@@ -11,7 +11,7 @@ Mỗi khi một linh hồn bị mài mòn, nó để lại những **mảnh vỡ
 
 ---
 
-## Ego Fragment — Mảnh Bản Ngã
+<ItemCard name="Ego Fragment — Mảnh Bản Ngã" image="/wiki/items/ego_default.png" rarity="rare">
 
 > *"Mỗi mảnh là một ký ức bị cắt đứt."*
 
@@ -23,9 +23,11 @@ Mảnh vỡ tinh khiết của linh hồn. Nguồn năng lượng cốt lõi đ�
 
 > Xem thêm → [Hệ Thống Tier](/vi/ego-system/tier-system)
 
+</ItemCard>
+
 ---
 
-## Dark Ego — Bản Ngã Hắc Ám
+<ItemCard name="Dark Ego — Bản Ngã Hắc Ám" image="/wiki/items/ego_dark.png" rarity="epic">
 
 > *"Có thứ không nên chạm vào. Nhưng ngươi vẫn chạm."*
 
@@ -38,6 +40,8 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 - **Cổng Tiến Hóa**: Từ Tier 5 trở lên, bạn **buộc phải đánh bại** người sở hữu Dark Ego mới có thể tiến hóa
 
 > Xem thêm → [Dark Ego](/vi/ego-system/dark-ego)
+
+</ItemCard>
 
 ---
 
@@ -90,7 +94,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 ---
 
-## Soul Keeper — Hộ Mệnh Linh Hồn
+<ItemCard name="Soul Keeper — Hộ Mệnh Linh Hồn" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Một lần. Chỉ một lần. Rồi nó tan thành tro."*
 
@@ -101,6 +105,8 @@ Bùa hộ mệnh bảo vệ Tier của bạn khi chết. Như Totem of Undying, 
 - **Đặc tính**: Không thể xếp chồng, không thể đặt trong rương
 
 > *"Vực thẳm cho ngươi một cơ hội thứ hai. Đừng mong có cơ hội thứ ba."*
+
+</ItemCard>
 
 ---
 

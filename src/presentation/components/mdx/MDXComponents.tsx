@@ -176,7 +176,9 @@ const Img = ({ src, alt }: { src?: string; alt?: string }) => {
                     alt={alt || "Wiki content"}
                     fill
                     className="object-contain"
+                    style={{ imageRendering: "pixelated" }}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
+                    unoptimized
                 />
             </div>
             {alt && (
@@ -191,6 +193,7 @@ const Img = ({ src, alt }: { src?: string; alt?: string }) => {
 // ===== Item Components =====
 import ItemStats from "@presentation/components/wiki/ItemStats";
 import CraftingRecipe from "@presentation/components/wiki/CraftingRecipe";
+import ItemCard from "@presentation/components/wiki/ItemCard";
 
 // ===== Export MDX Components =====
 export const mdxComponents = {
@@ -217,6 +220,7 @@ export const mdxComponents = {
     // Custom Components
     ItemStats,
     CraftingRecipe,
+    ItemCard,
 };
 
 export default mdxComponents;

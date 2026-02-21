@@ -33,7 +33,7 @@ Vũ khí huyền thoại với sức mạnh hủy diệt thuần túy.
 
 ---
 
-## Chùy Hỗn Mang — Mace of Chaos
+<ItemCard name="Chùy Hỗn Mang — Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
 
 > *"Có một lần Mace of Power được sao chép… và bản sao đó từ chối làm bản sao."*
 
@@ -50,6 +50,8 @@ Người ta kể rằng nó lang thang khắp server như một **điềm lỗi*
 - Được rèn tại [Bàn Nguyền](/vi/items/cursed-crafting) — xem [công thức rèn](/vi/items/cursed-recipes#mace-of-chaos)
 
 > ⏳ **Thời gian rèn: 10 phút** — gấp đôi Mace of Power. Gấp đôi rủi ro.
+
+</ItemCard>
 
 ---
 

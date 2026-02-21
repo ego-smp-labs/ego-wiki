@@ -33,7 +33,7 @@ Legendary weapon with pure destructive power.
 
 ---
 
-## Mace of Chaos
+<ItemCard name="Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
 
 > *"Once Mace of Power was copied… and that copy refused to be a copy."*
 
@@ -50,6 +50,8 @@ They say it wanders the server like a **glitch omen** — a crack in reality.
 - Forged at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes#mace-of-chaos)
 
 > ⏳ **Forging time: 10 minutes** — double that of Mace of Power. Double the risk.
+
+</ItemCard>
 
 ---
 

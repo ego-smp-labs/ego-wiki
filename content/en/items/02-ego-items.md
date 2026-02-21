@@ -11,7 +11,7 @@ This is not loot. These are the **bones** of the fallen.
 
 ---
 
-## Ego Fragment
+<ItemCard name="Ego Fragment" image="/wiki/items/ego_default.png" rarity="rare">
 
 > *"Each fragment is a severed memory."*
 
@@ -23,9 +23,11 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 > See more → [Tier System](/en/ego-system/tier-system)
 
+</ItemCard>
+
 ---
 
-## Dark Ego
+<ItemCard name="Dark Ego" image="/wiki/items/ego_dark.png" rarity="epic">
 
 > *"There are things one should not touch. But you touched it anyway."*
 
@@ -38,6 +40,8 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 - **Evolution Gate**: From Tier 5 onwards, you **must defeat** a Dark Ego owner to evolve
 
 > See more → [Dark Ego](/en/ego-system/dark-ego)
+
+</ItemCard>
 
 ---
 
@@ -88,7 +92,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 ---
 
-## Soul Keeper
+<ItemCard name="Soul Keeper" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Once. Only once. Then it turns to ash."*
 
@@ -99,6 +103,8 @@ Amulet protecting your Tier upon death. Like Totem of Undying, but for the **sou
 - **Trait**: Cannot stack, cannot be placed in chests
 
 > *"The abyss gives you a second chance. Do not expect a third."*
+
+</ItemCard>
 
 ---
 
