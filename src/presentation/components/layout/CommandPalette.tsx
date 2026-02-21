@@ -24,7 +24,7 @@ export default function CommandPalette({
     onClose,
 }: CommandPaletteProps) {
     const [query, setQuery] = useState("");
-    const [results, setResults] = useState<ArticleMeta[]>([]);
+    const [results, setResults] = useState<(ArticleMeta & { excerpt?: string })[]>([]);
     const [loading, setLoading] = useState(false);
     const router = useRouter();
     const t = getTranslations(locale);
@@ -145,13 +145,18 @@ export default function CommandPalette({
                                                 <div className="text-sm text-white group-data-[selected=true]:text-neon-cyan truncate">
                                                     {article.title}
                                                 </div>
-                                                <div className="text-xs text-white/40">
-                                                    {category
+                                                <div className="text-xs text-white/40 mb-1 flex items-center gap-1.5">
+                                                    <span>{category
                                                         ? locale === "vi"
                                                             ? category.title.vi
                                                             : category.title.en
-                                                        : article.category}
+                                                        : article.category}</span>
                                                 </div>
+                                                {article.excerpt && (
+                                                    <div className="text-xs text-white/60 line-clamp-1 italic">
+                                                        {article.excerpt}
+                                                    </div>
+                                                )}
                                             </div>
                                             <ArrowRight
                                                 size={14}
