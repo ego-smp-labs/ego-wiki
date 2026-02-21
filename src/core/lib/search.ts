@@ -20,12 +20,36 @@ const FUSE_OPTIONS: IFuseOptions<SearchableArticle> = {
         { name: "category", weight: 0.1 },
         { name: "content", weight: 0.5 },
     ],
-    threshold: 0.3,
+    threshold: 0.6,
     includeScore: true,
     includeMatches: true,
     minMatchCharLength: 2,
     ignoreLocation: true,
 };
+
+/**
+ * Strip markdown/MDX syntax, frontmatter, and JSX tags from content
+ * so Fuse.js can match plain text more accurately.
+ */
+function stripMarkdownSyntax(raw: string): string {
+    return raw
+        // Remove YAML frontmatter
+        .replace(/^---[\s\S]*?---/m, "")
+        // Remove JSX/HTML tags but keep their text attributes
+        .replace(/<\w+[^>]*name="([^"]+)"[^>]*>/g, "$1")
+        .replace(/<\/?[^>]+>/g, "")
+        // Remove markdown link syntax, keep text
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        // Remove markdown emphasis
+        .replace(/[*_]{1,3}([^*_]+)[*_]{1,3}/g, "$1")
+        // Remove heading markers
+        .replace(/^#{1,6}\s+/gm, "")
+        // Remove blockquote markers
+        .replace(/^>\s?/gm, "")
+        // Collapse whitespace
+        .replace(/\s+/g, " ")
+        .trim();
+}
 
 const searchIndexCache = new Map<string, Fuse<SearchableArticle>>();
 
@@ -42,7 +66,7 @@ export function buildSearchIndex(locale: string): Fuse<SearchableArticle> {
         const fullArticle = wikiService.getArticle(locale, meta.category, meta.slug);
         return {
             ...meta,
-            content: fullArticle ? fullArticle.rawContent : "",
+            content: fullArticle ? stripMarkdownSyntax(fullArticle.rawContent) : "",
         };
     });
 
