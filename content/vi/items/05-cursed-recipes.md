@@ -8,7 +8,7 @@ order: 5
 
 > *"Mỗi công thức là một giao kèo. Ngươi cho đi linh hồn — vực thẳm trả lại quyền năng."*
 
-Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](/vi/items/cursed-crafting) và linh hồn đã được nạp.
+Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](/vi/wiki/items/cursed-crafting) và linh hồn đã được nạp.
 
 ---
 
@@ -16,7 +16,7 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ### Mace of Power
 
-> Vũ khí hủy diệt thuần túy. Xem chi tiết → [Chùy Quyền Năng](/vi/items/mace#chùy-quyền-năng--mace-of-power)
+> Vũ khí hủy diệt thuần túy. Xem chi tiết → [Chùy Quyền Năng](/vi/wiki/items/mace#chùy-quyền-năng--mace-of-power)
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -31,12 +31,12 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ### Mace of Chaos
 
-> Bản sao lỗi. Xem chi tiết → [Chùy Hỗn Mang](/vi/items/mace#chùy-hỗn-mang--mace-of-chaos)
+> Bản sao lỗi. Xem chi tiết → [Chùy Hỗn Mang](/vi/wiki/items/mace#chùy-hỗn-mang--mace-of-chaos)
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Netherite Ingot | **HEAVY_CORE** | Netherite Ingot |
-| Hàng 2 | **[Dark Ego Soul](/vi/items/ego-items)** | Mace of Power | **[Dark Ego Soul](/vi/items/ego-items)** |
+| Hàng 2 | **[Dark Ego Soul](/vi/wiki/items/ego-items)** | Mace of Power | **[Dark Ego Soul](/vi/wiki/items/ego-items)** |
 | Hàng 3 | Netherite Ingot | **Wither Rose** | Netherite Ingot |
 
 - **Linh hồn**: 3
@@ -48,12 +48,12 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ### Soul Keeper — Hộ Mệnh Linh Hồn
 
-> Bùa hộ mệnh bảo vệ Tier khi chết. Xem chi tiết → [Soul Keeper](/vi/items/ego-items#soul-keeper--hộ-mệnh-linh-hồn)
+> Bùa hộ mệnh bảo vệ Tier khi chết. Xem chi tiết → [Soul Keeper](/vi/wiki/items/ego-items#soul-keeper--hộ-mệnh-linh-hồn)
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Enchanted Golden Apple | **[Ego Soul](/vi/items/ego-items)** | Enchanted Golden Apple |
-| Hàng 2 | **[Đá Thanh Tẩy](/vi/items/ego-items)** | Netherite Ingot | **[Đá Thanh Tẩy](/vi/items/ego-items)** |
+| Hàng 1 | Enchanted Golden Apple | **[Ego Soul](/vi/wiki/items/ego-items)** | Enchanted Golden Apple |
+| Hàng 2 | **[Đá Thanh Tẩy](/vi/wiki/items/ego-items)** | Netherite Ingot | **[Đá Thanh Tẩy](/vi/wiki/items/ego-items)** |
 | Hàng 3 | Enchanted Golden Apple | Totem of Undying | Enchanted Golden Apple |
 
 - **Linh hồn**: 0
@@ -63,12 +63,12 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ## Mảnh Vỡ Ego — Ego Shards
 
-> **Tất cả công thức rèn mảnh vỡ đã được chuyển sang trang: [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)**
+> **Tất cả công thức rèn mảnh vỡ đã được chuyển sang trang: [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)**
 
 ---
 
 ## Liên kết
 
-- → [Bàn Chế Tạo Nguyền & Rèn Huyết Tế](/vi/items/cursed-crafting)
-- → [Ô Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
-- → [Chùy Huyền Thoại](/vi/items/mace)
+- → [Bàn Chế Tạo Nguyền & Rèn Huyết Tế](/vi/wiki/items/cursed-crafting)
+- → [Ô Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Chùy Huyền Thoại](/vi/wiki/items/mace)

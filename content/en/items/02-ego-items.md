@@ -21,7 +21,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 - **Usage**: Use directly to upgrade Tier
 - **Trait**: Bound to the victim — only the killer can use it
 
-> See more → [Tier System](/en/ego-system/tier-system)
+> See more → [Tier System](/en/wiki/ego-system/tier-system)
 
 </ItemCard>
 
@@ -34,12 +34,12 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 **Corrupted** version of Ego Fragment. Stronger, but in exchange for a curse.
 
 - **Origin**: Rare drop chance (5%) from Tier 5+ victims
-- **Usage**: Upgrade Tier 5+ or as [Abyssal Forging](/en/items/cursed-crafting) material
+- **Usage**: Upgrade Tier 5+ or as [Abyssal Forging](/en/wiki/items/cursed-crafting) material
 - **Risk**: **10% instant death** upon use
 - **Pickup Effect**: Wither + inventory shuffle for 10 seconds
 - **Evolution Gate**: From Tier 5 onwards, you **must defeat** a Dark Ego owner to evolve
 
-> See more → [Dark Ego](/en/ego-system/dark-ego)
+> See more → [Dark Ego](/en/wiki/ego-system/dark-ego)
 
 </ItemCard>
 
@@ -83,7 +83,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 | Row 2 | Sculk | **Ego Soul** | Sculk |
 | Row 3 | Sculk | Sculk | Sculk |
 
-- **Main Usage**: Core material to forge at [Cursed Table](/en/items/cursed-crafting), indirect way to get Dark Ego.
+- **Main Usage**: Core material to forge at [Cursed Table](/en/wiki/items/cursed-crafting), indirect way to get Dark Ego.
 - **⚠️ Use directly (Right Click)** → **instant death**:
   - Releases **Dark Ego** (victim = self)
   - Acts like a normal loss of ego death
@@ -99,7 +99,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 Amulet protecting your Tier upon death. Like Totem of Undying, but for the **soul**.
 
 - **Usage**: Upon death, Tier is not lost and **Ego does not drop** (single use, self-destructs)
-- **Craft**: Forge at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes)
+- **Craft**: Forge at [Cursed Table](/en/wiki/items/cursed-crafting) — see [recipes](/en/wiki/items/cursed-recipes)
 - **Trait**: Cannot stack, cannot be placed in chests
 
 > *"The abyss gives you a second chance. Do not expect a third."*
@@ -110,8 +110,8 @@ Amulet protecting your Tier upon death. Like Totem of Undying, but for the **sou
 
 ## See Also
 
-- → [Tier System](/en/ego-system/tier-system)
-- → [Dark Ego](/en/ego-system/dark-ego)
-- → [Ego Shards](/en/ego-system/ego-shards)
-- → [Cursed Recipes](/en/items/cursed-recipes)
-- → [Cursed Crafting Table](/en/items/cursed-crafting)
+- → [Tier System](/en/wiki/ego-system/tier-system)
+- → [Dark Ego](/en/wiki/ego-system/dark-ego)
+- → [Ego Shards](/en/wiki/ego-system/ego-shards)
+- → [Cursed Recipes](/en/wiki/items/cursed-recipes)
+- → [Cursed Crafting Table](/en/wiki/items/cursed-crafting)

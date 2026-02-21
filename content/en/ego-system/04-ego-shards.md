@@ -66,8 +66,8 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 ## Shard List
 
-> All Shards require **[Tier 3+](/en/ego-system/tier-system)** to equip and activate.
-> Forge at **[Cursed Crafting Table](/en/items/cursed-crafting)** — see more [Forging Mechanics](/en/advanced/forging).
+> All Shards require **[Tier 3+](/en/wiki/ego-system/tier-system)** to equip and activate.
+> Forge at **[Cursed Crafting Table](/en/wiki/items/cursed-crafting)** — see more [Forging Mechanics](/en/wiki/advanced/forging).
 
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
@@ -82,7 +82,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 ## Forging Recipes
 
-> All forged at [Cursed Crafting Table](/en/items/cursed-crafting).
+> All forged at [Cursed Crafting Table](/en/wiki/items/cursed-crafting).
 
 ---
 
@@ -265,11 +265,11 @@ This item requires you to place 1 **Purification Stone** in the center of a norm
 
 ## See Also
 
-- → [Cursed Crafting Table](/en/items/cursed-crafting)
-- → [Cursed Recipes](/en/items/cursed-recipes)
-- → [Forging Mechanics (Advanced)](/en/advanced/forging)
-- → [Tier System](/en/ego-system/tier-system)
-- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
-- → [Dark Ego](/en/ego-system/dark-ego)
-- → [Tainted Ego](/en/items/ego-items#tainted-ego)
-- → [Memory Fragments](/en/ego-system/memory-fragments)
+- → [Cursed Crafting Table](/en/wiki/items/cursed-crafting)
+- → [Cursed Recipes](/en/wiki/items/cursed-recipes)
+- → [Forging Mechanics (Advanced)](/en/wiki/advanced/forging)
+- → [Tier System](/en/wiki/ego-system/tier-system)
+- → [Sacrifice — Hearts & Shards](/en/wiki/ego-system/sacrifice)
+- → [Dark Ego](/en/wiki/ego-system/dark-ego)
+- → [Tainted Ego](/en/wiki/items/ego-items#tainted-ego)
+- → [Memory Fragments](/en/wiki/ego-system/memory-fragments)

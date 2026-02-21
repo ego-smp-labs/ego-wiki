@@ -23,7 +23,7 @@ Không có gì bất thường. Không có cái giá nào phải trả.
 - **Ego Tạp Nhiễm** (Tainted Ego) — Ego Fragment + Netherite Ingot
 - **Bàn Chế Tạo Nguyền** — Dark Ego + Crafting Table + Netherite + Obsidian
 
-> Chi tiết tại → [Tàn Tích Bản Ngã](/vi/items/ego-items)
+> Chi tiết tại → [Tàn Tích Bản Ngã](/vi/wiki/items/ego-items)
 
 ---
 ## Rèn Huyết Tế — Abyssal Forging
@@ -33,16 +33,16 @@ Không có gì bất thường. Không có cái giá nào phải trả.
 Những tạo vật của vực thẳm **không thể** được chế tạo theo cách thông thường.
 Chúng cần thời gian. Chúng cần linh hồn. Và cả **sự đánh cược**.
 
-Hiến Tế là nhánh vật phẩm đặc biệt — sinh ra từ sự hy sinh linh hồn tại [Bàn Nguyền](/vi/items/cursed-crafting). Chúng không phải vũ khí, không phải giáp. Chúng là **chất xúc tác** — thứ kích hoạt những sức mạnh ẩn giấu trong vực thẳm.
+Hiến Tế là nhánh vật phẩm đặc biệt — sinh ra từ sự hy sinh linh hồn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting). Chúng không phải vũ khí, không phải giáp. Chúng là **chất xúc tác** — thứ kích hoạt những sức mạnh ẩn giấu trong vực thẳm.
 
 
 
 ### Có bốn loại:
 
-- **[Mảnh Vỡ Bản Ngã (Ego Shards)](/vi/ego-system/ego-shards)** — di vật của những kẻ đã để lại cái tôi của họ
-- **[Vật Phẩm Cổ Xưa (Artifacts)](/vi/items/artifacts)** - vũ khí mang trong mình cái tôi của người đã tạo ra nó
-- **[Kế ước với bản ngã (Ego Pact)](/vi/items/ego-pact)** - Tăng sức mạnh bằng cách hiến tế bản ngã
-- **[Trái tim của các Đại tội (Heart of Sins)](/vi/ego-system/sins)** — Súc mạnh cổ đại của vực thẳm
+- **[Mảnh Vỡ Bản Ngã (Ego Shards)](/vi/wiki/ego-system/ego-shards)** — di vật của những kẻ đã để lại cái tôi của họ
+- **[Vật Phẩm Cổ Xưa (Artifacts)](/vi/wiki/items/artifacts)** - vũ khí mang trong mình cái tôi của người đã tạo ra nó
+- **[Kế ước với bản ngã (Ego Pact)](/vi/wiki/items/ego-pact)** - Tăng sức mạnh bằng cách hiến tế bản ngã
+- **[Trái tim của các Đại tội (Heart of Sins)](/vi/wiki/ego-system/sins)** — Súc mạnh cổ đại của vực thẳm
 
 ### Đặc tính Huyết Tế
 - ⏳ **Thời gian**: Các Di Vật mạnh cần thời gian rèn kéo dài (5–10 phút)
@@ -58,7 +58,7 @@ Hiến Tế là nhánh vật phẩm đặc biệt — sinh ra từ sự hy sinh 
 
 ## 🎲 Hiệu ứng Xáo Trộn Kho (Chaos)
 
-Khi sử dụng vật phẩm **[Ego](/vi/items/ego-items)** hoặc **[Dark Ego](/vi/items/dark-ego)**:
+Khi sử dụng vật phẩm **[Ego](/vi/wiki/items/ego-items)** hoặc **[Dark Ego](/vi/wiki/items/dark-ego)**:
 - **Toàn bộ kho đồ** (cả hotbar và túi đồ) sẽ bị **xáo trộn ngẫu nhiên**.
 - Đây là lời nhắc rằng: sức mạnh luôn đi kèm với sự mất kiểm soát.
 
@@ -75,8 +75,8 @@ Tiết kiệm không gian túi, nhưng đừng lạm dụng — mỗi lần dùn
 
 | Trang | Nội dung |
 |-------|----------|
-| [Tàn Tích Bản Ngã](/vi/items/ego-items) | Ego Fragment, Dark Ego, Tainted Ego, Soul Keeper |
-| [Chùy Huyền Thoại](/vi/items/mace) | Mace of Power & Mace of Chaos |
-| [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting) | Cách xây, GUI, Linh Hồn, Rèn Huyết Tế |
-| [Công Thức Nguyền](/vi/items/cursed-recipes) | Tất cả công thức từ Bàn Nguyền |
-| [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/items/sacrifice) | Trái Tim Tội Lỗi + Mảnh Vỡ Ego (Ego Shards) |
+| [Tàn Tích Bản Ngã](/vi/wiki/items/ego-items) | Ego Fragment, Dark Ego, Tainted Ego, Soul Keeper |
+| [Chùy Huyền Thoại](/vi/wiki/items/mace) | Mace of Power & Mace of Chaos |
+| [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting) | Cách xây, GUI, Linh Hồn, Rèn Huyết Tế |
+| [Công Thức Nguyền](/vi/wiki/items/cursed-recipes) | Tất cả công thức từ Bàn Nguyền |
+| [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/wiki/items/sacrifice) | Trái Tim Tội Lỗi + Mảnh Vỡ Ego (Ego Shards) |

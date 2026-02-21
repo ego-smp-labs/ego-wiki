@@ -12,7 +12,7 @@ order: 3
 ### Nguồn gốc
 
 - **Rơi tự nhiên**: Từ người chơi **Tier 5+** khi bị hạ (100%)
-- **Chế tạo**: Dùng [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tp-nhim) làm nguyên liệu cốt lõi tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting) — **không phải dùng trực tiếp**.
+- **Chế tạo**: Dùng [Tainted Ego](/vi/wiki/items/ego-items#tainted-ego--ego-tp-nhim) làm nguyên liệu cốt lõi tại [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting) — **không phải dùng trực tiếp**.
 
 ### Quyền năng
 
@@ -34,7 +34,7 @@ order: 3
 Nếu không muốn chấp nhận rủi ro, bạn có thể **thanh tẩy** Dark Ego bằng **Đá Thanh Tẩy** (Purification Stone).
 
 - **Công thức**: Dark Ego + Đá Thanh Tẩy → Ego Fragment thường
-- **Đá Thanh Tẩy**: Rèn từ Amethyst Shard + Echo Shard tại [Bàn Nguyền](/vi/items/cursed-crafting)
+- **Đá Thanh Tẩy**: Rèn từ Amethyst Shard + Echo Shard tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting)
 
 > *"Bóng tối có thể bị gột rửa — nhưng sự tinh khiết đã mất đi sức mạnh nguyên thuỷ."*
 
@@ -42,8 +42,8 @@ Nếu không muốn chấp nhận rủi ro, bạn có thể **thanh tẩy** Dark
 
 ## Xem Thêm
 
-- → [Tàn Tích Bản Ngã](/vi/items/ego-items)
-- → [Hệ Thống Tier](/vi/ego-system/tier-system)
-- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
-- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
-- → [Bản Ngã (Ego)](/vi/ego-system/ego)
+- → [Tàn Tích Bản Ngã](/vi/wiki/items/ego-items)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Công Thức Nguyền Rủa](/vi/wiki/items/cursed-recipes)
+- → [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Bản Ngã (Ego)](/vi/wiki/ego-system/ego)

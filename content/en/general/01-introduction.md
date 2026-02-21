@@ -37,12 +37,12 @@ EgoSMP revolves around a simple but hard-to-swallow question:
 You might start as a normal person. But this world won't let you stand still.
 The longer you live, the more you are forced to choose: keep yourself, or let your ego slide deep—and accept the consequences.
 
-- Quick Start: **[How To Play](/en/general/how-to-play)**
-- Ego: **[Ego](/en/ego-system/ego)**
-- Deadly Sins and Legends: **[Sins](/en/ego-system/sins)**
-- Dark Ego: **[Dark Ego](/en/ego-system/dark-ego)**
-- Weapons & Artifacts: **[Items](/en/items/items)**
-- Basic Prayers: **[Commands](/en/advanced/commands)**
+- Quick Start: **[How To Play](/en/wiki/general/how-to-play)**
+- Ego: **[Ego](/en/wiki/ego-system/ego)**
+- Deadly Sins and Legends: **[Sins](/en/wiki/ego-system/sins)**
+- Dark Ego: **[Dark Ego](/en/wiki/ego-system/dark-ego)**
+- Weapons & Artifacts: **[Items](/en/wiki/items/items)**
+- Basic Prayers: **[Commands](/en/wiki/advanced/commands)**
 
 ## Unspoken Rules of the Abyss (read so you don't look stupid)
 
@@ -59,7 +59,7 @@ Calamity doesn't fall from the sky — it rises from inside humans.
 Every bloodstain, every time you survive, is an invitation for **Deadly Sins** to wake up and call your name.
 And in this sinful world, only **Ego** keeps you "human"... or pushes you into something you used to fear.
 
-Want to see the full storyline? Read through: **[Story](/en/general/story)**
+Want to see the full storyline? Read through: **[Story](/en/wiki/general/story)**
 
 ## Message before you step down
 

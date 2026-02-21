@@ -51,5 +51,5 @@ Việc chứng minh sự đồng điệu với bản ngã của chúng sẽ giú
 
 Mảnh Ký Ức là nguyên liệu **tuyệt đối bắt buộc** trong các công thức rèn (Tại Bàn Chế Tạo Nguyền) để tạo ra các hạt giống sức mạnh của 2 Tội Nhân này.
 
-1. Khảm Mảnh Ký Ức **Huyết Lang** vào vị trí trung tâm để rèn nên [Mảnh Vỡ Huyết Lang (Sát Khí)](/vi/ego-system/ego-shards#huyt-lang--sát-khí).
-2. Khảm Mảnh Ký Ức **Cuồng Thanh** vào vị trí trung tâm để rèn nên [Mảnh Vỡ Cuồng Thanh (Sonic Boom)](/vi/ego-system/ego-shards#cung-thanh--sonic-boom).
+1. Khảm Mảnh Ký Ức **Huyết Lang** vào vị trí trung tâm để rèn nên [Mảnh Vỡ Huyết Lang (Sát Khí)](/vi/wiki/ego-system/ego-shards#huyt-lang--sát-khí).
+2. Khảm Mảnh Ký Ức **Cuồng Thanh** vào vị trí trung tâm để rèn nên [Mảnh Vỡ Cuồng Thanh (Sonic Boom)](/vi/wiki/ego-system/ego-shards#cung-thanh--sonic-boom).

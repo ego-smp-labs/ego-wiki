@@ -21,7 +21,7 @@ Mảnh vỡ tinh khiết của linh hồn. Nguồn năng lượng cốt lõi đ�
 - **Công dụng**: Dùng trực tiếp để nâng Tier
 - **Đặc tính**: Gắn liền với nạn nhân — chỉ kẻ giết mới có thể dùng
 
-> Xem thêm → [Hệ Thống Tier](/vi/ego-system/tier-system)
+> Xem thêm → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
 
 </ItemCard>
 
@@ -34,12 +34,12 @@ Mảnh vỡ tinh khiết của linh hồn. Nguồn năng lượng cốt lõi đ�
 Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại là sự nguyền rủa.
 
 - **Nguồn gốc**: Tỷ lệ rơi hiếm (5%) từ nạn nhân Tier 5+
-- **Công dụng**: Nâng Tier 5+ hoặc làm nguyên liệu [Rèn Huyết Tế](/vi/items/cursed-crafting)
+- **Công dụng**: Nâng Tier 5+ hoặc làm nguyên liệu [Rèn Huyết Tế](/vi/wiki/items/cursed-crafting)
 - **Rủi ro**: **10% tử vong tức thì** khi sử dụng
 - **Hiệu ứng nhặt**: Wither + xáo trộn kho đồ trong 10 giây
 - **Cổng Tiến Hóa**: Từ Tier 5 trở lên, bạn **buộc phải đánh bại** người sở hữu Dark Ego mới có thể tiến hóa
 
-> Xem thêm → [Dark Ego](/vi/ego-system/dark-ego)
+> Xem thêm → [Dark Ego](/vi/wiki/ego-system/dark-ego)
 
 </ItemCard>
 
@@ -85,7 +85,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 | Hàng 2 | Sculk | **Ego Soul** | Sculk |
 | Hàng 3 | Sculk | Sculk | Sculk |
 
-- **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/items/cursed-crafting), lấy dark ego gián tiếp.
+- **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting), lấy dark ego gián tiếp.
 - **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
   - Thả ra **Dark Ego** (nạn nhân = bản thân)
   - giống như một cái chết mất cái tôi thông thường
@@ -101,7 +101,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 Bùa hộ mệnh bảo vệ Tier của bạn khi chết. Như Totem of Undying, nhưng dành cho **linh hồn**.
 
 - **Công dụng**: Khi chết, Tier không bị mất và **không rớt Ego** (dùng 1 lần, tự hủy)
-- **Chế tạo**: Rèn tại [Bàn Nguyền](/vi/items/cursed-crafting) — xem [công thức](/vi/items/cursed-recipes)
+- **Chế tạo**: Rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting) — xem [công thức](/vi/wiki/items/cursed-recipes)
 - **Đặc tính**: Không thể xếp chồng, không thể đặt trong rương
 
 > *"Vực thẳm cho ngươi một cơ hội thứ hai. Đừng mong có cơ hội thứ ba."*
@@ -112,8 +112,8 @@ Bùa hộ mệnh bảo vệ Tier của bạn khi chết. Như Totem of Undying, 
 
 ## Xem Thêm
 
-- → [Hệ Thống Tier](/vi/ego-system/tier-system)
-- → [Dark Ego](/vi/ego-system/dark-ego)
-- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
-- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
-- → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Dark Ego](/vi/wiki/ego-system/dark-ego)
+- → [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Công Thức Nguyền Rủa](/vi/wiki/items/cursed-recipes)
+- → [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting)

@@ -12,7 +12,7 @@ At a certain power threshold (Tier 5+), normal ego is no longer enough to satisf
 ### Origin
 
 - **Natural Drop**: From **Tier 5+** players when killed (100%).
-- **Crafting**: Use [Tainted Ego](/en/items/ego-items#tainted-ego) as core material at [Cursed Crafting Table](/en/items/cursed-crafting) — **not used directly**.
+- **Crafting**: Use [Tainted Ego](/en/wiki/items/ego-items#tainted-ego) as core material at [Cursed Crafting Table](/en/wiki/items/cursed-crafting) — **not used directly**.
 
 ### Power
 
@@ -34,7 +34,7 @@ At a certain power threshold (Tier 5+), normal ego is no longer enough to satisf
 If you don't want to accept the risk, you can **purify** Dark Ego using a **Purification Stone**.
 
 - **Formula**: Dark Ego + Purification Stone → Normal Ego Fragment
-- **Purification Stone**: Forged from Amethyst Shard + Echo Shard at [Cursed Table](/en/items/cursed-crafting)
+- **Purification Stone**: Forged from Amethyst Shard + Echo Shard at [Cursed Table](/en/wiki/items/cursed-crafting)
 
 > *"Darkness can be cleansed — but purity has lost its primal power."*
 
@@ -42,8 +42,8 @@ If you don't want to accept the risk, you can **purify** Dark Ego using a **Puri
 
 ## See Also
 
-- → [Ego Items](/en/items/ego-items)
-- → [Tier System](/en/ego-system/tier-system)
-- → [Cursed Recipes](/en/items/cursed-recipes)
-- → [Ego Shards](/en/ego-system/ego-shards)
-- → [Ego](/en/ego-system/ego)
+- → [Ego Items](/en/wiki/items/ego-items)
+- → [Tier System](/en/wiki/ego-system/tier-system)
+- → [Cursed Recipes](/en/wiki/items/cursed-recipes)
+- → [Ego Shards](/en/wiki/ego-system/ego-shards)
+- → [Ego](/en/wiki/ego-system/ego)

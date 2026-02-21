@@ -23,7 +23,7 @@ This is where you create **base materials** — the first bricks before stepping
 - **Tainted Ego** — Ego Fragment + Netherite Ingot
 - **Cursed Crafting Table** — Dark Ego + Crafting Table + Netherite + Obsidian
 
-> Details at → [Ego Relics](/en/items/ego-items)
+> Details at → [Ego Relics](/en/wiki/items/ego-items)
 
 ---
 ## Abyssal Forging
@@ -33,14 +33,14 @@ This is where you create **base materials** — the first bricks before stepping
 Creations of the abyss **cannot** be crafted in the usual way.
 They need time. They need soul. And a **gamble**.
 
-Sacrifice is a special branch — born from soul sacrifice at the [Cursed Table](/en/items/cursed-crafting). They are not weapons, not armor. They are **catalysts** — things that activate powers hidden in the abyss.
+Sacrifice is a special branch — born from soul sacrifice at the [Cursed Table](/en/wiki/items/cursed-crafting). They are not weapons, not armor. They are **catalysts** — things that activate powers hidden in the abyss.
 
 ### There are four types:
 
-- **[Ego Shards](/en/ego-system/ego-shards)** — relics of those who left their ego behind
-- **[Ancient Artifacts](/en/items/artifacts)** - weapons carrying the ego of the creator
-- **[Ego Pact](/en/items/ego-pact)** - Power boost by sacrificing ego
-- **[Heart of Sins](/en/ego-system/sins)** — Ancient power of the abyss
+- **[Ego Shards](/en/wiki/ego-system/ego-shards)** — relics of those who left their ego behind
+- **[Ancient Artifacts](/en/wiki/items/artifacts)** - weapons carrying the ego of the creator
+- **[Ego Pact](/en/wiki/items/ego-pact)** - Power boost by sacrificing ego
+- **[Heart of Sins](/en/wiki/ego-system/sins)** — Ancient power of the abyss
 
 ### Forging Characteristics
 - ⏳ **Time**: Powerful Relics need extended forging time (5–10 minutes)
@@ -54,7 +54,7 @@ Sacrifice is a special branch — born from soul sacrifice at the [Cursed Table]
 
 ## Chaos Effect (Inventory Shuffle)
 
-When using **[Ego](/en/items/ego-items)** or **[Dark Ego](/en/ego-system/dark-ego)** items:
+When using **[Ego](/en/wiki/items/ego-items)** or **[Dark Ego](/en/wiki/ego-system/dark-ego)** items:
 - **Entire Inventory** (both hotbar and bag) will be **randomly shuffled**.
 - This is a reminder: power always comes with loss of control.
 
@@ -71,8 +71,8 @@ Saves bag space? No. It means every time you use one, you feel the weight.
 
 | Page | Content |
 |-------|----------|
-| [Ego Relics](/en/items/ego-items) | Ego Fragment, Dark Ego, Tainted Ego, Soul Keeper |
-| [Legendary Mace](/en/items/mace) | Mace of Power & Mace of Chaos |
-| [Cursed Crafting Table](/en/items/cursed-crafting) | How to build, GUI, Souls, Abyssal Forging |
-| [Cursed Recipes](/en/items/cursed-recipes) | All recipes from Cursed Table |
-| [Sacrifice — Hearts & Shards](/en/items/sacrifice) | Sin Hearts + Ego Shards |
+| [Ego Relics](/en/wiki/items/ego-items) | Ego Fragment, Dark Ego, Tainted Ego, Soul Keeper |
+| [Legendary Mace](/en/wiki/items/mace) | Mace of Power & Mace of Chaos |
+| [Cursed Crafting Table](/en/wiki/items/cursed-crafting) | How to build, GUI, Souls, Abyssal Forging |
+| [Cursed Recipes](/en/wiki/items/cursed-recipes) | All recipes from Cursed Table |
+| [Sacrifice — Hearts & Shards](/en/wiki/items/sacrifice) | Sin Hearts + Ego Shards |

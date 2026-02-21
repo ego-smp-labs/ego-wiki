@@ -66,8 +66,8 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 ## Danh Sách Mảnh Vỡ
 
-> Tất cả Mảnh Vỡ yêu cầu **[Tier 3+](/vi/ego-system/tier-system)** để lắp và kích hoạt.
-> Rèn tại **[Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)** — xem thêm [Cơ Chế Rèn](/vi/advanced/forging).
+> Tất cả Mảnh Vỡ yêu cầu **[Tier 3+](/vi/wiki/ego-system/tier-system)** để lắp và kích hoạt.
+> Rèn tại **[Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting)** — xem thêm [Cơ Chế Rèn](/vi/wiki/advanced/forging).
 
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
@@ -82,7 +82,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 ## Công Thức Rèn
 
-> Tất cả rèn tại [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting).
+> Tất cả rèn tại [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting).
 
 ---
 
@@ -265,11 +265,11 @@ Vật phẩm này yêu cầu bạn đặt 1 **Đá Thanh Tẩy (Purification Sto
 
 ## Xem Thêm
 
-- → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
-- → [Công Thức Nguyền Rủa](/vi/items/cursed-recipes)
-- → [Cơ Chế Rèn (Nâng Cao)](/vi/advanced/forging)
-- → [Hệ Thống Tier](/vi/ego-system/tier-system)
-- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/ego-system/sacrifice)
-- → [Bản Ngã Hắc Hóa (Dark Ego)](/vi/ego-system/dark-ego)
-- → [Tainted Ego](/vi/items/ego-items#tainted-ego--ego-tp-nhim)
-- → [Mảnh Ký Ức (Memory Fragments)](/vi/ego-system/memory-fragments)
+- → [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting)
+- → [Công Thức Nguyền Rủa](/vi/wiki/items/cursed-recipes)
+- → [Cơ Chế Rèn (Nâng Cao)](/vi/wiki/advanced/forging)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/wiki/ego-system/sacrifice)
+- → [Bản Ngã Hắc Hóa (Dark Ego)](/vi/wiki/ego-system/dark-ego)
+- → [Tainted Ego](/vi/wiki/items/ego-items#tainted-ego--ego-tp-nhim)
+- → [Mảnh Ký Ức (Memory Fragments)](/vi/wiki/ego-system/memory-fragments)

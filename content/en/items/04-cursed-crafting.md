@@ -38,7 +38,7 @@ The Cursed Table does not appear naturally. You must **manually** build it.
 ## Soul System
 
 Each Cursed Table holds max **10 souls**.
-Souls are consumed when forging [cursed recipes](/en/items/cursed-recipes).
+Souls are consumed when forging [cursed recipes](/en/wiki/items/cursed-recipes).
 
 ### Charging Soul
 
@@ -78,6 +78,6 @@ Unlike normal crafting, Abyssal Forging is a **gamble with time**.
 
 ## Links
 
-- → [All Cursed Recipes](/en/items/cursed-recipes)
-- → [Relics — Ego Relics](/en/items/ego-items)
-- → [Sacrifice — Hearts & Shards](/en/items/sacrifice)
+- → [All Cursed Recipes](/en/wiki/items/cursed-recipes)
+- → [Relics — Ego Relics](/en/wiki/items/ego-items)
+- → [Sacrifice — Hearts & Shards](/en/wiki/items/sacrifice)

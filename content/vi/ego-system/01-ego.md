@@ -67,8 +67,8 @@ Nhưng nó bẻ gãy đà tiến hoá hắc hoá của bạn.
 ---
 ## Xem Thêm
 
-- → [Hệ Thống Tier](/vi/ego-system/tier-system)
-- → [Dark Ego](/vi/ego-system/dark-ego)
-- → [Tàn Tích Bản Ngã (Ego Items)](/vi/items/ego-items)
-- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
-- → [Thất Đại Tội](/vi/ego-system/sins)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Dark Ego](/vi/wiki/ego-system/dark-ego)
+- → [Tàn Tích Bản Ngã (Ego Items)](/vi/wiki/items/ego-items)
+- → [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Thất Đại Tội](/vi/wiki/ego-system/sins)

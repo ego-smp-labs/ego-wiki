@@ -27,7 +27,7 @@ Vũ khí huyền thoại với sức mạnh hủy diệt thuần túy.
 ### Luật chơi
 - Không thể cất trong rương hoặc container
 - Rơi ra ngoài khi chết (không vào mộ)
-- Được rèn tại [Bàn Nguyền](/vi/items/cursed-crafting) — xem [công thức rèn](/vi/items/cursed-recipes#mace-of-power)
+- Được rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting) — xem [công thức rèn](/vi/wiki/items/cursed-recipes#mace-of-power)
 
 > ⏳ **Thời gian rèn: 5 phút** — vị trí bị lộ cho toàn server. Trễ nhịp là mất tất cả.
 
@@ -47,7 +47,7 @@ Người ta kể rằng nó lang thang khắp server như một **điềm lỗi*
 
 ### Luật chơi
 - Cùng luật như Mace of Power: không cất rương, rơi khi chết
-- Được rèn tại [Bàn Nguyền](/vi/items/cursed-crafting) — xem [công thức rèn](/vi/items/cursed-recipes#mace-of-chaos)
+- Được rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting) — xem [công thức rèn](/vi/wiki/items/cursed-recipes#mace-of-chaos)
 
 > ⏳ **Thời gian rèn: 10 phút** — gấp đôi Mace of Power. Gấp đôi rủi ro.
 

@@ -56,7 +56,7 @@ The hotbar has two dedicated **skill slots** that are locked when a sin is activ
 
 ## See Also
 
-- → [Sacrifice — Hearts & Shards](/en/ego-system/sacrifice)
-- → [Tier System](/en/ego-system/tier-system)
-- → [Ego Shards](/en/ego-system/ego-shards)
-- → [Cursed Crafting Table](/en/items/cursed-crafting)
+- → [Sacrifice — Hearts & Shards](/en/wiki/ego-system/sacrifice)
+- → [Tier System](/en/wiki/ego-system/tier-system)
+- → [Ego Shards](/en/wiki/ego-system/ego-shards)
+- → [Cursed Crafting Table](/en/wiki/items/cursed-crafting)

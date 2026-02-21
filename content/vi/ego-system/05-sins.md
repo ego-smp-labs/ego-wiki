@@ -56,8 +56,8 @@ Thanh hotbar có hai **ô kỹ năng** chuyên dụng bị khóa khi tội lỗi
 
 ## Xem Thêm
 
-- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/ego-system/sacrifice)
-- → [Hệ Thống Tier](/vi/ego-system/tier-system)
-- → [Mảnh Vỡ Bản Ngã](/vi/ego-system/ego-shards)
-- → [Bàn Chế Tạo Nguyền](/vi/items/cursed-crafting)
+- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/wiki/ego-system/sacrifice)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting)
 

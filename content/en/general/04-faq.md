@@ -14,7 +14,7 @@ It only breaks your heartbeat, and pulls you closer to the edge.
 - If you are **Tier 0**: you remain Tier 0.
 - If you are **Tier 1 or higher**: when you die you will be **dragged back to Tier 1** (no longer drop to Tier 0).
 
-See Tier details at: **[Tier System](/en/ego-system/tier-system)**
+See Tier details at: **[Tier System](/en/wiki/ego-system/tier-system)**
 
 ## Ego System
 

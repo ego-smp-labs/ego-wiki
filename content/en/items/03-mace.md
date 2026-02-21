@@ -27,7 +27,7 @@ Legendary weapon with pure destructive power.
 ### Rules
 - Cannot be stored in chest or container
 - Drops outside upon death (not in grave)
-- Forged at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes#mace-of-power)
+- Forged at [Cursed Table](/en/wiki/items/cursed-crafting) — see [recipes](/en/wiki/items/cursed-recipes#mace-of-power)
 
 > ⏳ **Forging time: 5 minutes** — location revealed to server. A moment late is losing all.
 
@@ -47,7 +47,7 @@ They say it wanders the server like a **glitch omen** — a crack in reality.
 
 ### Rules
 - Same rules as Mace of Power: no chest storage, drops on death
-- Forged at [Cursed Table](/en/items/cursed-crafting) — see [recipes](/en/items/cursed-recipes#mace-of-chaos)
+- Forged at [Cursed Table](/en/wiki/items/cursed-crafting) — see [recipes](/en/wiki/items/cursed-recipes#mace-of-chaos)
 
 > ⏳ **Forging time: 10 minutes** — double that of Mace of Power. Double the risk.
 

@@ -23,17 +23,17 @@ Each tier unlocks power bonuses, but also drags along **curses** and **physical 
 | 2 | **Fractured** | +4 | +10% | — | Absorbed more Ego. Proved this is no longer a "mistake". |
 | 3 | **Marked** | +6 | +15% | — | First seal unlocked. Absorbed more Ego. Soul Stealer unlocked. |
 | 4 | **Blood Pact** | +8 | +20% | +5% | Absorbed more Ego. Proved your own strength. |
-| 5 | **Sin Gate** | +10 | +25% | +10% | **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 6.** Crimson seal appears under feet. |
-| 6 | **Territory** | +12 | +30% | +10% | Second seal unlocked. Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 7.** Cursed particles begin. |
-| 7 | **Incarnation** | +14 | +35% | +10% | Night Vision + Resistance I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 8.** Body glows. |
-| 8 | **Royal Mark** | +16 | +40% | +15% | Night Vision + Strength I. **Requires [Dark Ego](/en/ego-system/dark-ego) to reach Tier 9.** **5% Insanity chance** after each kill. |
+| 5 | **Sin Gate** | +10 | +25% | +10% | **Requires [Dark Ego](/en/wiki/ego-system/dark-ego) to reach Tier 6.** Crimson seal appears under feet. |
+| 6 | **Territory** | +12 | +30% | +10% | Second seal unlocked. Resistance I. **Requires [Dark Ego](/en/wiki/ego-system/dark-ego) to reach Tier 7.** Cursed particles begin. |
+| 7 | **Incarnation** | +14 | +35% | +10% | Night Vision + Resistance I. **Requires [Dark Ego](/en/wiki/ego-system/dark-ego) to reach Tier 8.** Body glows. |
+| 8 | **Royal Mark** | +16 | +40% | +15% | Night Vision + Strength I. **Requires [Dark Ego](/en/wiki/ego-system/dark-ego) to reach Tier 9.** **5% Insanity chance** after each kill. |
 | 9 | **Sin Incarnate** | +18 | +45% | +15% | Night Vision + Strength II. **15% Insanity chance**. Veins turn bright red, killing aura envelops body. |
 
 > **Note:**
-> - From Tier 5 onwards, you **must** possess **[Dark Ego](/en/ego-system/dark-ego)** to advance to the next tier.
+> - From Tier 5 onwards, you **must** possess **[Dark Ego](/en/wiki/ego-system/dark-ego)** to advance to the next tier.
 > - The higher the tier, the clearer the **seal**, **aura**, and **killing intent** → you become a hunted target.
 
-Information about ego skills in [ego shard](/en/ego-system/ego-shards)
+Information about ego skills in [ego shard](/en/wiki/ego-system/ego-shards)
 
 ---
 
@@ -75,16 +75,16 @@ Dying to mobs, falling, lava, or any other cause does **not** cause tier loss.
 - ✅ Attacked directly by a player → **lose tier**
 - ✅ Shot by arrow/projectile from a player → **lose tier**
 - ❌ Die to mob, fall, fire, etc. → **keep tier**
-- 🛡 Use **[Soul Keeper](/en/items/ego-items#soul-keeper)** → **protect tier** and **prevent Ego drop** regardless of death cause
+- 🛡 Use **[Soul Keeper](/en/wiki/items/ego-items#soul-keeper)** → **protect tier** and **prevent Ego drop** regardless of death cause
 
 ---
 
 ## 🔗 Related Pages
 
-- **[Dark Ego](/en/ego-system/dark-ego)** — Required item to surpass Tier 5.
-- **[Seven Deadly Sins](/en/ego-system/sins)** — Active skill system and path of sin.
-- **[Ego Items](/en/items/ego-items)** — Special items to boost power and protect Tier.
-- **[Ego Shards](/en/ego-system/ego-shards)** — Core material to craft Ego and Dark Ego.
+- **[Dark Ego](/en/wiki/ego-system/dark-ego)** — Required item to surpass Tier 5.
+- **[Seven Deadly Sins](/en/wiki/ego-system/sins)** — Active skill system and path of sin.
+- **[Ego Items](/en/wiki/items/ego-items)** — Special items to boost power and protect Tier.
+- **[Ego Shards](/en/wiki/ego-system/ego-shards)** — Core material to craft Ego and Dark Ego.
 
 ---
 

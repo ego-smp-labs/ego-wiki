@@ -28,4 +28,4 @@ First things to do:
 - PvP is part of the game — be prepared!
 
 ## Where to go next?
-Refer to the **[FAQ](/en/general/faq)** article for more details.
+Refer to the **[FAQ](/en/wiki/general/faq)** article for more details.

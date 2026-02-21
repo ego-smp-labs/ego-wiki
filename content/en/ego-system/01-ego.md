@@ -67,8 +67,8 @@ But it breaks the momentum of your dark evolution.
 ---
 ## See Also
 
-- → [Tier System](/en/ego-system/tier-system)
-- → [Dark Ego](/en/ego-system/dark-ego)
-- → [Ego Items](/en/items/ego-items)
-- → [Ego Shards](/en/ego-system/ego-shards)
-- → [Seven Deadly Sins](/en/ego-system/sins)
+- → [Tier System](/en/wiki/ego-system/tier-system)
+- → [Dark Ego](/en/wiki/ego-system/dark-ego)
+- → [Ego Items](/en/wiki/items/ego-items)
+- → [Ego Shards](/en/wiki/ego-system/ego-shards)
+- → [Seven Deadly Sins](/en/wiki/ego-system/sins)

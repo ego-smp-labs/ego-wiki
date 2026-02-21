@@ -8,7 +8,7 @@ order: 6
 
 > *"Not everyone is worthy to touch the darkness. But darkness is always ready to touch you."*
 
-Sacrifice is a special branch of items — born from soul offerings at the [Cursed Crafting Table](/en/items/cursed-crafting). They are not weapons, not armor. They are **catalysts** — things that unlock hidden power buried in the abyss.
+Sacrifice is a special branch of items — born from soul offerings at the [Cursed Crafting Table](/en/wiki/items/cursed-crafting). They are not weapons, not armor. They are **catalysts** — things that unlock hidden power buried in the abyss.
 
 Two categories exist:
 
@@ -43,7 +43,7 @@ Sin Hearts are items used to **awaken a Sin** — the dark power system tied to 
 > ⚠️ **Sin Hearts are currently disabled from the Cursed Forging system.**
 > They can only be granted by an Admin. This is a gameplay balance decision.
 
-> See details → [The Seven Deadly Sins](/en/ego-system/sins)
+> See details → [The Seven Deadly Sins](/en/wiki/ego-system/sins)
 
 ---
 
@@ -83,14 +83,14 @@ Ego Shards are items equipped in **Shard Slots** to gain combat effects. Each ty
 | **Mad Echo** | Cuồng Thanh | AoE knockback 5 block radius | 30s |
 | **Sky Tyrant** | Ngạo Thiên | Launch 10 blocks straight up | 45s |
 
-> See full mechanics → [Ego Shards](/en/ego-system/ego-shards)
+> See full mechanics → [Ego Shards](/en/wiki/ego-system/ego-shards)
 
 ---
 
 ## See Also
 
-- → [Cursed Recipes](/en/items/cursed-recipes)
-- → [Cursed Crafting Table](/en/items/cursed-crafting)
-- → [The Seven Deadly Sins](/en/ego-system/sins)
-- → [Ego Items](/en/items/ego-items)
-- → [Ego Shards (Full)](/en/ego-system/ego-shards)
+- → [Cursed Recipes](/en/wiki/items/cursed-recipes)
+- → [Cursed Crafting Table](/en/wiki/items/cursed-crafting)
+- → [The Seven Deadly Sins](/en/wiki/ego-system/sins)
+- → [Ego Items](/en/wiki/items/ego-items)
+- → [Ego Shards (Full)](/en/wiki/ego-system/ego-shards)

@@ -38,7 +38,7 @@ Bàn Nguyền không tự xuất hiện. Bạn phải **tự tay** xây dựng n
 ## Hệ Thống Linh Hồn
 
 Mỗi Bàn Nguyền chứa tối đa **10 linh hồn**.
-Linh hồn bị tiêu thụ khi rèn [công thức nguyền](/vi/items/cursed-recipes).
+Linh hồn bị tiêu thụ khi rèn [công thức nguyền](/vi/wiki/items/cursed-recipes).
 
 ### Nạp Linh Hồn
 
@@ -79,6 +79,6 @@ Không giống chế tạo thông thường, Rèn Huyết Tế là một **canh 
 
 ## Liên kết
 
-- → [Tất cả Công Thức Nguyền](/vi/items/cursed-recipes)
-- → [Di Vật — Tàn Tích Bản Ngã](/vi/items/ego-items)
-- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/items/sacrifice)
+- → [Tất cả Công Thức Nguyền](/vi/wiki/items/cursed-recipes)
+- → [Di Vật — Tàn Tích Bản Ngã](/vi/wiki/items/ego-items)
+- → [Hiến Tế — Trái Tim & Mảnh Vỡ](/vi/wiki/items/sacrifice)
