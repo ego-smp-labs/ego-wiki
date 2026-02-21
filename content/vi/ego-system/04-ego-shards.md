@@ -19,8 +19,8 @@ không phải huyền thoại, mà là ký ức bị giam cầm trong vật ch�
 - phong ấn là sức mạnh ẩn dấu trong bản ngã của bạn, nó giúp bạn có thể kế thừa bản ngã của kẻ khác
 
 | Tier | mở khoá phong ấn |
-|------|--------------|
-| &lt; 3  | Không có 🔒 |
+|------|--------------:|
+| < 3  | Không có 🔒 |
 | 3+ | **1 phong ấn** (Slot 1 — trái) |
 | 6+   | **2 phong ấn** (Slot 1 + Slot 2) |
 
@@ -33,8 +33,8 @@ không phải huyền thoại, mà là ký ức bị giam cầm trong vật ch�
 
 ## Kích Hoạt
 
-| c | Keybind kích hoạt |
-|---|-------------------|
+| Slot | Keybind kích hoạt |
+|---|---|
 | Slot 1 (trái) | **SHIFT + CHUỘT TRÁI** |
 | Slot 2 (phải) | **SHIFT + CHUỘT PHẢI** |
 
@@ -72,17 +72,18 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | Phản chiếu 15% sát thương cận chiến | Luôn hoạt động |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: +200% dmg 5s | Kích hoạt khi bị đánh |
-| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút · Cầm vũ khí |
-| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 20s · Cầm vũ khí |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuồng-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | Cooldown 30s |
-| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngạo-thiên) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 45s · Cầm vũ khí |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | <30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
+| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút |
+| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 30s |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuồng-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | CD 30s |
+| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngạo-thiên) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 60s |
 
 ---
 
 ## Công Thức Rèn
 
 > Tất cả rèn tại [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting).
+> Nguyên liệu được chọn dựa trên **bản chất** của từng kẻ sở hữu — mỗi công thức là một câu chuyện.
 
 ---
 
@@ -99,17 +100,19 @@ Hắn chết không phải vì bị đánh bại, mà vì chính ý chí của h
 đã cắt đứt sinh khí của bản thân — hắn đã tự kết liễu mình
 chỉ bằng một cái chớp mắt.
 
-- Yêu cầu **Tier 1+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Bấm phím **F** (đổi tay offhand) để chém ra một luồng kiếm khí gây sát thương cực mạnh theo đường thẳng.
-- **Cooldown**: **10 giây**.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Bị Động)**: Phản chiếu **15% sát thương cận chiến** về phía kẻ tấn công. Mỗi khi bạn bị đánh, kẻ địch nhận một phần sát thương ngược.
+- **Luôn hoạt động** khi được lắp.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
-| Hàng 2 | Netherite Sword ×1 | **Ego** | Netherite Sword ×1 |
-| Hàng 3 | Iron Sword ×1 | Diamond Sword ×1 | Iron Sword ×1 |
+| Hàng 1 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
+| Hàng 2 | Netherite Sword ×1 | **Tainted Ego** | Enchanted Book (Thorns III) ×1 |
+| Hàng 3 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+> 🔮 **Ý nghĩa nguyên liệu**: Prismarine Shard = sắc bén ẩn dưới đại dương (sát ý ẩn giấu), Netherite Sword = lưỡi kiếm không bao giờ rút, Thorns III = triết lý phản đòn.
+
+- **Linh hồn**: 1 · **Thời gian**: 5 phút
 
 </ItemCard>
 
@@ -120,25 +123,26 @@ chỉ bằng một cái chớp mắt.
 > *"Mùi máu. Đó là thứ duy nhất phân biệt ngươi với con mồi."*
 
 Huyết Lang từng là một con người. Hoặc ít nhất, hắn trông giống người
-trước khi cơn đói nuốt chững đi lằn ranh cuối cùng.
+trước khi cơn đói nuốt chửng đi lằn ranh cuối cùng.
 Hắn săn lùng giữa rừng sâu, không vì thù hận, không vì quyền lực —
 chỉ vì máu nóng mang lại cho hắn cảm giác đang sống.
 Càng đổ máu, hắn càng mạnh. Khi không còn sinh vật nào để xé xác,
-hắn phát điên vả tự cấu xé chính mình.
+hắn phát điên và tự cấu xé chính mình.
 
-- Yêu cầu **Tier 2+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi ở trạng thái **Đang Chạy (Sprint)** và **Đánh trúng mục tiêu (Kẻ thù/Người chơi)** → Bạn nhận được hiệu ứng **Speed II** và **Hút Máu** trong vài giây. 
-- Máu càng thấp, tốc độ di chuyển và khả năng hồi phục từ đòn đánh càng cao.
-- **Lưu ý**: Hiệu ứng này sẽ **hút cạn thanh thức ăn** của bạn rất nhanh. Nếu Food Level hết, bạn sẽ nhận sát thương Đói khát nhân đôi.
-- **Mảnh Kí Ức Huyết Lang**: Chết do đói (Starvation) khi Food Bar ở mức 0 và Đang trong trạng thái Ego/Dark Ego.
+- Yêu cầu **Tier 3+** để lắp và kích hoạt.
+- **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
+- Kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
-| Hàng 2 | Bone ×32 | **Tainted Ego** | **Mảnh Kí Ức Huyết Lang** |
-| Hàng 3 | Spider Eye ×32 | Rotten Flesh ×32 | Spider Eye ×32 |
+| Hàng 1 | Bone Block ×16 | Crimson Fungus ×16 | **Mảnh Kí Ức Huyết Lang** |
+| Hàng 2 | Crimson Fungus ×16 | **Tainted Ego** | Crimson Fungus ×16 |
+| Hàng 3 | Bone Block ×16 | Crimson Fungus ×16 | Bone Block ×16 |
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+> 🔮 **Ý nghĩa nguyên liệu**: Bone Block = xương của con mồi, Crimson Fungus = nấm đỏ máu từ Nether (khát máu), Kí Ức = chết đói khi đang Ego (cơn đói nuốt chửng).
+
+- **Mảnh Kí Ức Huyết Lang**: Chết do đói (Starvation) khi Food Bar ở mức 0 và đang trong trạng thái Ego/Dark Ego.
+- **Linh hồn**: 1 · **Thời gian**: 5 phút
 
 </ItemCard>
 
@@ -159,15 +163,17 @@ Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
 - **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
-- **Cooldown**: **15 phút** sau khi hiệu ứng kết thúc.
+- **Cooldown**: **10 phút**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
-| Hàng 2 | Ink Sac ×10 | **Tainted Ego** | Ink Sac ×10 |
-| Hàng 3 | Obsidian ×10 | Ink Sac ×10 | Obsidian ×10 |
+| Hàng 1 | Fermented Spider Eye ×16 | Phantom Membrane ×16 | Fermented Spider Eye ×16 |
+| Hàng 2 | Phantom Membrane ×16 | **Tainted Ego** | Phantom Membrane ×16 |
+| Hàng 3 | Fermented Spider Eye ×16 | Ink Sac ×32 | Fermented Spider Eye ×16 |
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+> 🔮 **Ý nghĩa nguyên liệu**: Fermented Spider Eye = nguyên liệu pha chế Thuốc Tàng Hình trong vanilla MC (!), Phantom Membrane = kẻ săn mồi vô hình chỉ xuất hiện khi bạn không ngủ, Ink Sac = mực xoá tên — xoá danh tính.
+
+- **Linh hồn**: 1 · **Thời gian**: 5 phút
 
 </ItemCard>
 
@@ -192,9 +198,11 @@ lạnh như đêm và nhanh như tử thần.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Gunpowder ×10 | Netherite Spear ×1 | Gunpowder ×10 |
-| Hàng 2 | WIND_CHARGE ×10 | **Tainted Ego** | WIND_CHARGE ×10 |
-| Hàng 3 | Gunpowder ×10 | Enchanted Book (Lunge III) ×1 | Gunpowder ×10 |
+| Hàng 1 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
+| Hàng 2 | Wither Rose ×8 | **Tainted Ego** | Enchanted Book (Wind Burst III) ×1 |
+| Hàng 3 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
+
+> 🔮 **Ý nghĩa nguyên liệu**: Ender Pearl = xuyên không gian (dịch chuyển bóng tối), Wither Rose = hoa tử thần mọc trên xác chết (chỉ drop khi Wither giết mob — **cực hiếm**), Wind Burst III = phù sách gió từ Trial Chambers.
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
@@ -215,17 +223,19 @@ Người ta không giết hắn vì họ không thể đến gần đủ để l
 Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi bị tấn công, phát sóng xung kích (Sonic Boom) trả đòn và đẩy lùi kẻ địch. 
-- **Cooldown**: **30 giây**.
-- **Mảnh Kí Ức Cuồng Thanh**: Chết khi đang trong trạng thái Ego/Dark Ego gần khối Sculk Shrieker (bán kính 5 block). Khối Shrieker có 50% tỉ lệ phát nổ và rơi ra mảnh này.
+- **Hiệu Ứng (Bị Động)**: Khi bị tấn công cận chiến, phát sóng xung kích (**Sonic Boom**) đẩy lùi kẻ địch **5 block**.
+- **Cooldown**: **30 giây** (hiển thị trên action bar).
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×10 | Sculk Shrieker ×1 |
-| Hàng 2 | Echo Shard ×10 | **Tainted Ego** | **Mảnh Kí Ức Cuồng Thanh** |
-| Hàng 3 | Sculk Shrieker ×1 | Echo Shard ×10 | Goat Horn ×1 |
+| Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×16 | Sculk Shrieker ×1 |
+| Hàng 2 | Echo Shard ×16 | **Tainted Ego** | Echo Shard ×16 |
+| Hàng 3 | Sculk Shrieker ×1 | **Mảnh Kí Ức Cuồng Thanh** | Goat Horn ×1 |
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+> 🔮 **Ý nghĩa nguyên liệu**: Sculk Shrieker = tiếng thét xé không gian, Echo Shard = tiếng vọng của lý trí đã mất, Goat Horn = sừng kêu gọi — tiếng gào nguyên thuỷ, Kí Ức = chết gần Shrieker khi đang Ego (tiếng hét cuối cùng).
+
+- **Mảnh Kí Ức Cuồng Thanh**: Chết khi đang trong trạng thái Ego/Dark Ego gần khối Sculk Shrieker (bán kính 5 block). Khối Shrieker có 50% tỉ lệ phát nổ và rơi ra mảnh này.
+- **Linh hồn**: 1 · **Thời gian**: 5 phút
 
 </ItemCard>
 
@@ -246,14 +256,16 @@ Có lẽ hắn vẫn đang bay ở đâu đó —
 hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì.
+- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi.
 - **Cooldown**: **60 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
-| Hàng 2 | Slime Ball ×10 | **Tainted Ego** | Slime Ball ×10 |
-| Hàng 3 | Wind Charge ×10 | Slime Ball ×10 | Wind Charge ×10 |
+| Hàng 1 | Wind Charge ×16 | Emerald Block ×8 | Wind Charge ×16 |
+| Hàng 2 | Slime Block ×16 | **Tainted Ego** | Slime Block ×16 |
+| Hàng 3 | Wind Charge ×16 | Breeze Rod ×16 | Wind Charge ×16 |
+
+> 🔮 **Ý nghĩa nguyên liệu**: Wind Charge = kháng cự gió trời, Breeze Rod = tinh chất gió từ Breeze (**Trial Chambers — cực hiếm**), Slime Block = mặt đất từ chối hắn — bật ngược lên trời, Emerald Block = sự giàu có và ngạo mạn của hoàng đế.
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 
@@ -271,7 +283,7 @@ Vật phẩm này yêu cầu bạn đặt 1 **Đá Thanh Tẩy (Purification Sto
 1. Cầm Nghi Thức Bóc Tách Bản Ngã trên tay vào bấm **Chuột Phải**.
 2. Phép thuật thanh tẩy sẽ bóc tách các Tội Lỗi (Mảnh Vỡ) bạn đang trang bị và **văng chúng ra sàn**.
 3. **Cái giá phải trả**: Bạn sẽ nhận lại sát thương thanh tẩy chí tử, dẫn đến **Cái Chết ngay lập tức** (Bỏ qua Totem) và hạ bậc **Tier của bạn về 1**.
-> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"&lt;tên_người_chơi&gt; chết do bị bản ngã nuốt chửng"*.
+> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"<tên_người_chơi> chết do bị bản ngã nuốt chửng"*.
 
 ---
 
