@@ -33,7 +33,7 @@ Legendary weapon with pure destructive power.
 
 ---
 
-<ItemCard name="Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
+<ItemCard id="mace-of-chaos" name="Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
 
 > *"Once Mace of Power was copied… and that copy refused to be a copy."*
 

@@ -8,6 +8,7 @@ interface ItemCardProps {
     image: string;
     children: ReactNode;
     rarity?: "common" | "rare" | "epic" | "legendary";
+    id?: string;
 }
 
 const RARITY_STYLES = {
@@ -42,11 +43,13 @@ export default function ItemCard({
     image,
     children,
     rarity = "common",
+    id,
 }: ItemCardProps) {
     const style = RARITY_STYLES[rarity];
 
     return (
         <div
+            id={id}
             className={`
                 relative my-8 rounded-xl overflow-hidden
                 border ${style.border} ${style.glow}

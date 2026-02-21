@@ -11,7 +11,7 @@ This is not loot. These are the **bones** of the fallen.
 
 ---
 
-<ItemCard name="Ego Fragment" image="/wiki/items/ego_default.png" rarity="rare">
+<ItemCard id="ego-fragment" name="Ego Fragment" image="/wiki/items/ego_default.png" rarity="rare">
 
 > *"Each fragment is a severed memory."*
 
@@ -27,7 +27,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 ---
 
-<ItemCard name="Dark Ego" image="/wiki/items/ego_dark.png" rarity="epic">
+<ItemCard id="dark-ego" name="Dark Ego" image="/wiki/items/ego_dark.png" rarity="epic">
 
 > *"There are things one should not touch. But you touched it anyway."*
 
@@ -92,7 +92,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 ---
 
-<ItemCard name="Soul Keeper" image="/wiki/items/soul_keeper.png" rarity="legendary">
+<ItemCard id="soul-keeper" name="Soul Keeper" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Once. Only once. Then it turns to ash."*
 

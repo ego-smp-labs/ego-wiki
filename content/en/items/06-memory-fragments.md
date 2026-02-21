@@ -12,7 +12,7 @@ By proving your resonance with their egos, you can harvest **Memory Fragments**,
 
 ---
 
-<ItemCard name="Blood Wolf's Memory Fragment" image="/wiki/items/memory_huyet_lang.png" rarity="rare">
+<ItemCard id="blood-wolfs-memory-fragment" name="Blood Wolf's Memory Fragment" image="/wiki/items/memory_huyet_lang.png" rarity="rare">
 
 *The Blood Wolf was once a creature of the deep forest, but his thirst for blood clouded his reason. Now, he lingers in a state of Chaos, continuously drinking endless streams of blood to heal wounds that never close.*
 
@@ -25,7 +25,7 @@ By proving your resonance with their egos, you can harvest **Memory Fragments**,
 
 </ItemCard>
 
-<ItemCard name="Mad Sound's Memory Fragment (Sonic Boom)" image="/wiki/items/memory_cuong_thanh.jpg" rarity="rare">
+<ItemCard id="mad-sounds-memory-fragment-sonic-boom" name="Mad Sound's Memory Fragment (Sonic Boom)" image="/wiki/items/memory_cuong_thanh.jpg" rarity="rare">
 
 *The Mad Sound was exiled in the deep Ancient City. His mind merged with the Sculk, creating deadly echolocation sounds that pierce the soul.*
 

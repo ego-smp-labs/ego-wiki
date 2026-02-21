@@ -33,7 +33,7 @@ Vũ khí huyền thoại với sức mạnh hủy diệt thuần túy.
 
 ---
 
-<ItemCard name="Chùy Hỗn Mang — Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
+<ItemCard id="chuy-hon-mang--mace-of-chaos" name="Chùy Hỗn Mang — Mace of Chaos" image="/wiki/items/mace_chaos.png" rarity="legendary">
 
 > *"Có một lần Mace of Power được sao chép… và bản sao đó từ chối làm bản sao."*
 

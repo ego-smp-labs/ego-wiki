@@ -11,7 +11,7 @@ Mỗi khi một linh hồn bị mài mòn, nó để lại những **mảnh vỡ
 
 ---
 
-<ItemCard name="Ego Fragment — Mảnh Bản Ngã" image="/wiki/items/ego_default.png" rarity="rare">
+<ItemCard id="ego-fragment--manh-ban-nga" name="Ego Fragment — Mảnh Bản Ngã" image="/wiki/items/ego_default.png" rarity="rare">
 
 > *"Mỗi mảnh là một ký ức bị cắt đứt."*
 
@@ -27,7 +27,7 @@ Mảnh vỡ tinh khiết của linh hồn. Nguồn năng lượng cốt lõi đ�
 
 ---
 
-<ItemCard name="Dark Ego — Bản Ngã Hắc Ám" image="/wiki/items/ego_dark.png" rarity="epic">
+<ItemCard id="dark-ego--ban-nga-hac-am" name="Dark Ego — Bản Ngã Hắc Ám" image="/wiki/items/ego_dark.png" rarity="epic">
 
 > *"Có thứ không nên chạm vào. Nhưng ngươi vẫn chạm."*
 
@@ -94,7 +94,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 ---
 
-<ItemCard name="Soul Keeper — Hộ Mệnh Linh Hồn" image="/wiki/items/soul_keeper.png" rarity="legendary">
+<ItemCard id="soul-keeper--ho-menh-linh-hon" name="Soul Keeper — Hộ Mệnh Linh Hồn" image="/wiki/items/soul_keeper.png" rarity="legendary">
 
 > *"Một lần. Chỉ một lần. Rồi nó tan thành tro."*
 

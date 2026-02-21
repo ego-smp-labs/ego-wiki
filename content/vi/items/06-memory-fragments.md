@@ -12,7 +12,7 @@ Việc chứng minh sự đồng điệu với bản ngã của chúng sẽ giú
 
 ---
 
-<ItemCard name="Mảnh Ký Ức Kẻ Huyết Lang (Blood Wolf)" image="/wiki/items/memory_huyet_lang.png" rarity="rare">
+<ItemCard id="manh-ky-uc-ke-huyet-lang-blood-wolf" name="Mảnh Ký Ức Kẻ Huyết Lang (Blood Wolf)" image="/wiki/items/memory_huyet_lang.png" rarity="rare">
 
 *Kẻ Huyết Lang khi xưa từng là một sinh vật của rừng thẳm, nhưng cơn khát máu đã che mờ lý trí của hắn. Giờ đây, hắn vẫn vất vưởng trong trạng thái Hỗn Mang (Chaos), liên tục uống những dòng máu vô tận để chữa lành vết thương không bao giờ khép miệng.*
 
@@ -25,7 +25,7 @@ Việc chứng minh sự đồng điệu với bản ngã của chúng sẽ giú
 
 </ItemCard>
 
-<ItemCard name="Mảnh Ký Ức Kẻ Cuồng Thanh (Sonic Boom)" image="/wiki/items/memory_cuong_thanh.jpg" rarity="rare">
+<ItemCard id="manh-ky-uc-ke-cuong-thanh-sonic-boom" name="Mảnh Ký Ức Kẻ Cuồng Thanh (Sonic Boom)" image="/wiki/items/memory_cuong_thanh.jpg" rarity="rare">
 
 *Kẻ Cuồng Thanh bị đày ải nơi Thành Phố Cổ Đại (Ancient City) sâu thẳm. Tâm trí hắn đã hòa làm một với loài Sculk, tạo ra những âm thanh định vị chết chóc xuyên thấu tâm can.*
 
