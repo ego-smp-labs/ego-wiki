@@ -14,6 +14,21 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 ## Di Vật — Chùy Huyền Thoại
 
+### Mace of Power
+
+> Vũ khí hủy diệt thuần túy. Xem chi tiết → [Chùy Quyền Năng](/vi/wiki/items/mace#chuy-quyen-nang--mace-of-power)
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 |       | Netherite Ingot |       |
+| Hàng 2 |       | Heavy Core |       |
+| Hàng 3 |       | Breeze Rod |       |
+
+- **Linh hồn**: 0
+- **Thời gian rèn**: 5 phút *(Rèn Huyết Tế — vị trí bị lộ)*
+
+---
+
 ### Mace of Chaos
 
 > Bản sao lỗi. Xem chi tiết → [Chùy Hỗn Mang](/vi/wiki/items/mace#chùy-hỗn-mang--mace-of-chaos)

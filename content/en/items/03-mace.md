@@ -13,7 +13,7 @@ There are two variants. Both dangerous. But only one of them is *intended*.
 
 ---
 
-## Mace of Power
+<ItemCard id="mace-of-power" name="Mace of Power" image="/wiki/items/mace_of_power.png" rarity="legendary">
 
 > *"The wielder needs no reason. Its existence is the reason."*
 
@@ -24,18 +24,14 @@ Legendary weapon with pure destructive power.
 - **Glowing**: Owner is marked Glowing for 5 minutes — whole server knows where you are
 - **Hunted**: When Mace appears, you become a **target** for everyone
 
-### Crafting
-Crafted using a regular **Crafting Table**.
-
-| | Column 1 | Column 2 | Column 3 |
-|---|:---:|:---:|:---:|
-| Row 1 | | Netherite Ingot | |
-| Row 2 | | Heavy Core | |
-| Row 3 | | Breeze Rod | |
-
 ### Rules
 - Cannot be stored in chest or container
 - Drops outside upon death (not in grave)
+- Forged at [Cursed Table](/en/wiki/items/cursed-crafting) — see [recipes](/en/wiki/items/cursed-recipes#mace-of-power)
+
+> ⏳ **Forging time: 5 minutes** — location revealed to server. A moment late is losing all.
+
+</ItemCard>
 
 ---
 
