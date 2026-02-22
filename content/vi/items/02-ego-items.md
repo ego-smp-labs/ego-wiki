@@ -81,9 +81,9 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Sculk | Sculk | Sculk |
-| Hàng 2 | Sculk | **Ego Soul** | Sculk |
-| Hàng 3 | Sculk | Sculk | Sculk |
+| Hàng 1 | Sculk |  | Sculk |
+| Hàng 2 | Netherite Scrap | **Ego Soul** | Netherite Scrap |
+| Hàng 3 | Sculk |  | Sculk |
 
 - **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting), lấy dark ego gián tiếp.
 - **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
