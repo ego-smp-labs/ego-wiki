@@ -71,7 +71,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | Phản chiếu 15% sát thương cận chiến | Luôn hoạt động |
+| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến | Luôn hoạt động |
 | [🩸 Mảnh Vỡ Kẻ Huyết Lang](#🩸-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút |
 | [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 30s |
@@ -101,7 +101,7 @@ Hắn chết không phải vì bị đánh bại, mà vì chính ý chí của h
 chỉ bằng một cái chớp mắt.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Phản chiếu **15% sát thương cận chiến** về phía kẻ tấn công. Mỗi khi bạn bị đánh, kẻ địch nhận một phần sát thương ngược.
+- **Hiệu Ứng (Bị Động)**: **20% xác suất** phản chiếu **15% sát thương cận chiến** về phía kẻ tấn công. Khi bạn bị đánh rớt máu, kẻ địch có cơ hội nhận một phần sát thương ngược.
 - **Luôn hoạt động** khi được lắp.
 
 | | Cột 1 | Cột 2 | Cột 3 |

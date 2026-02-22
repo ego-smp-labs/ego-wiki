@@ -71,7 +71,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | Reflect 15% melee damage | Always active |
+| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage | Always active |
 | [🩸 Blood Wolf Shard](#🩸-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
 | [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility 5 minutes | CD 10 min |
 | [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 30s |
@@ -101,7 +101,7 @@ severed his own life force — he killed himself
 with just a blink of an eye.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: Reflects **15% melee damage** back to the attacker. Every time you are hit, the enemy takes a portion of the damage back.
+- **Effect (Passive)**: **20% chance** to reflect **15% melee damage** back to the attacker. When you take damage, the enemy has a chance to take a portion of the damage back.
 - **Always active** when equipped.
 
 | | Col 1 | Col 2 | Col 3 |
