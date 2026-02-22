@@ -20,7 +20,7 @@ không phải huyền thoại, mà là ký ức bị giam cầm trong vật ch�
 
 | Tier | mở khoá phong ấn |
 |------|--------------:|
-| < 3  | Không có 🔒 |
+| &lt; 3  | Không có gì cả |
 | 3+ | **1 phong ấn** (Slot 1 — trái) |
 | 6+   | **2 phong ấn** (Slot 1 + Slot 2) |
 
@@ -72,11 +72,11 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | Phản chiếu 15% sát thương cận chiến | Luôn hoạt động |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | <30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#🩸-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút |
 | [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 30s |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuồng-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | CD 30s |
-| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngạo-thiên) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 60s |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | CD 30s |
+| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 60s |
 
 ---
 
@@ -130,7 +130,7 @@ Càng đổ máu, hắn càng mạnh. Khi không còn sinh vật nào để xé 
 hắn phát điên và tự cấu xé chính mình.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi HP dưới **30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
+- **Hiệu Ứng (Bị Động)**: Khi HP **&lt; 30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
 - Kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
 
 | | Cột 1 | Cột 2 | Cột 3 |
@@ -283,7 +283,7 @@ Vật phẩm này yêu cầu bạn đặt 1 **Đá Thanh Tẩy (Purification Sto
 1. Cầm Nghi Thức Bóc Tách Bản Ngã trên tay vào bấm **Chuột Phải**.
 2. Phép thuật thanh tẩy sẽ bóc tách các Tội Lỗi (Mảnh Vỡ) bạn đang trang bị và **văng chúng ra sàn**.
 3. **Cái giá phải trả**: Bạn sẽ nhận lại sát thương thanh tẩy chí tử, dẫn đến **Cái Chết ngay lập tức** (Bỏ qua Totem) và hạ bậc **Tier của bạn về 1**.
-> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"<tên_người_chơi> chết do bị bản ngã nuốt chửng"*.
+> **Lưu ý**: Bạn sẽ không rơi Ego của mình ra do đây không phải PvP, Ego vẫn an toàn trong túi đồ. Dòng thông báo server sẽ hiển thị: *"&lt;tên_người_chơi&gt; chết do bị bản ngã nuốt chửng"*.
 
 ---
 

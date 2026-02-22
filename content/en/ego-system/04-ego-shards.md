@@ -20,7 +20,7 @@ not a legend, but a memory imprisoned in matter.
 
 | Tier | Seal Unlocked |
 |------|--------------:|
-| < 3  | None 🔒 |
+| &lt; 3  | None ❌ |
 | 3+ | **1 Seal** (Slot 1 — left) |
 | 6+   | **2 Seals** (Slot 1 + Slot 2) |
 
@@ -72,7 +72,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | Reflect 15% melee damage | Always active |
-| [🩸 Blood Wolf Shard](#-blood-wolf-shard) | Passive | 3+ | <30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
+| [🩸 Blood Wolf Shard](#🩸-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
 | [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility 5 minutes | CD 10 min |
 | [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 30s |
 | [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom when hit | CD 30s |
@@ -130,7 +130,7 @@ The more he bled, the stronger he grew. When no creature remained to tear apart,
 he went mad and tore himself apart.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: When HP below **30%** and hit → **30% chance** to activate **x3 melee damage** for **5 seconds**.
+- **Effect (Passive)**: When HP **&lt; 30%** and hit → **30% chance** to activate **x3 melee damage** for **5 seconds**.
 - Triggers with red particle effects (boiling blood — killing intent).
 
 | | Col 1 | Col 2 | Col 3 |
@@ -283,7 +283,7 @@ This item requires you to place 1 **Purification Stone** at the center of a norm
 1. Hold the **Ego Purification Ritual** in your hand and **Right-Click**.
 2. The purification magic will tear out the Sins (Shards) you have equipped and **drop them on the ground**.
 3. **The Price**: You will receive fatal purification damage, resulting in **instant death** (bypasses Totems) and your **Tier resets to 1**.
-> **Note**: You will NOT drop your Ego since this is not PvP death; your Ego remains safe in your inventory. Server broadcast: *"<player> was consumed by their own ego"*.
+> **Note**: You will NOT drop your Ego since this is not PvP death; your Ego remains safe in your inventory. Server broadcast: *"&lt;player&gt; was consumed by their own ego"*.
 
 ---
 

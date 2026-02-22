@@ -17,7 +17,7 @@ At a certain power threshold (Tier 5+), normal ego is no longer enough to satisf
 
 ### Power
 
-- **Tier < 5**: Instantly increase random **+1-2 Tiers**.
+- **Tier &lt; 5**: Instantly increase random **+1-2 Tiers**.
 - **Tier >= 5**: Increase **+1 Tier** (required for promotion).
 
 ### The Price
