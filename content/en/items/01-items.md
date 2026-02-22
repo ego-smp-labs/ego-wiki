@@ -20,7 +20,7 @@ Nothing unusual. No price to pay.
 
 This is where you create **base materials** — the first bricks before stepping into the abyss:
 
-- **Tainted Ego** — Ego Fragment + Netherite Ingot
+- **Tainted Ego** — Ego Soul + 8 Sculk
 - **Cursed Crafting Table** — Dark Ego + Crafting Table + Netherite + Obsidian
 
 > Details at → [Ego Relics](/en/wiki/items/ego-items)

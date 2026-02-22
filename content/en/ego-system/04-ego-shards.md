@@ -107,7 +107,7 @@ with just a blink of an eye.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
-| Row 2 | Netherite Sword ×1 | **Tainted Ego** | Enchanted Book (Thorns III) ×1 |
+| Row 2 | Netherite Sword ×1 | **Dark Ego Soul** | Enchanted Book (Thorns III) ×1 |
 | Row 3 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
 
 > 🔮 **Ingredient lore**: Prismarine Shard = hidden sharpness beneath the ocean (concealed intent), Netherite Sword = the blade never drawn, Thorns III = the philosophy of retaliation.
@@ -136,7 +136,7 @@ he went mad and tore himself apart.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Bone Block ×16 | Crimson Fungus ×16 | **Blood Wolf's Memory Fragment** |
-| Row 2 | Crimson Fungus ×16 | **Tainted Ego** | Crimson Fungus ×16 |
+| Row 2 | Crimson Fungus ×16 | **Dark Ego Soul** | Crimson Fungus ×16 |
 | Row 3 | Bone Block ×16 | Crimson Fungus ×16 | Bone Block ×16 |
 
 > 🔮 **Ingredient lore**: Bone Block = bones of prey, Crimson Fungus = blood-red Nether fungus (bloodlust), Memory Fragment = die from starvation during Ego (hunger devours).
@@ -168,7 +168,7 @@ At the end of his life, he left in broad daylight. No one noticed.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Fermented Spider Eye ×16 | Phantom Membrane ×16 | Fermented Spider Eye ×16 |
-| Row 2 | Phantom Membrane ×16 | **Tainted Ego** | Phantom Membrane ×16 |
+| Row 2 | Phantom Membrane ×16 | **Dark Ego Soul** | Phantom Membrane ×16 |
 | Row 3 | Fermented Spider Eye ×16 | Ink Sac ×32 | Fermented Spider Eye ×16 |
 
 > 🔮 **Ingredient lore**: Fermented Spider Eye = THE vanilla invisibility potion ingredient (!), Phantom Membrane = unseen predators that appear only when you don't sleep, Ink Sac = ink that erases names — erasing identity.
@@ -199,7 +199,7 @@ cold as night and swift as death.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
-| Row 2 | Wither Rose ×8 | **Tainted Ego** | Enchanted Book (Wind Burst III) ×1 |
+| Row 2 | Wither Rose ×8 | **Dark Ego Soul** | Enchanted Book (Wind Burst III) ×1 |
 | Row 3 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
 
 > 🔮 **Ingredient lore**: Ender Pearl = phase through space (shadow teleportation), Wither Rose = death flower that grows on corpses (only drops when Wither kills mobs — **extremely rare**), Wind Burst III = wind dash tome from Trial Chambers.
@@ -229,7 +229,7 @@ He died in silence — the only thing he never chose.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Sculk Shrieker ×1 | Echo Shard ×16 | Sculk Shrieker ×1 |
-| Row 2 | Echo Shard ×16 | **Tainted Ego** | Echo Shard ×16 |
+| Row 2 | Echo Shard ×16 | **Dark Ego Soul** | Echo Shard ×16 |
 | Row 3 | Sculk Shrieker ×1 | **Mad Sound's Memory Fragment** | Goat Horn ×1 |
 
 > 🔮 **Ingredient lore**: Sculk Shrieker = the shriek that shattered reality, Echo Shard = echoes of lost sanity, Goat Horn = the primal scream, Memory Fragment = die near a Shrieker during Ego (the final scream).
@@ -262,7 +262,7 @@ or he has reached something no one else dared to think of.
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Wind Charge ×16 | Emerald Block ×8 | Wind Charge ×16 |
-| Row 2 | Slime Block ×16 | **Tainted Ego** | Slime Block ×16 |
+| Row 2 | Slime Block ×16 | **Dark Ego Soul** | Slime Block ×16 |
 | Row 3 | Wind Charge ×16 | Breeze Rod ×16 | Wind Charge ×16 |
 
 > 🔮 **Ingredient lore**: Wind Charge = defying wind itself, Breeze Rod = rare wind essence from Breeze (**Trial Chambers — extremely rare**), Slime Block = the earth rejects him — bouncing him skyward, Emerald Block = the emperor's wealth and arrogance.

@@ -20,7 +20,7 @@ Không có gì bất thường. Không có cái giá nào phải trả.
 
 Đây là nơi bạn tạo ra **nguyên liệu nền** — những viên gạch đầu tiên trước khi bước vào vực thẳm:
 
-- **Ego Tạp Nhiễm** (Tainted Ego) — Ego Fragment + Netherite Ingot
+- **Ego Tạp Nhiễm** (Tainted Ego) — Ego Soul + 8 Sculk
 - **Bàn Chế Tạo Nguyền** — Dark Ego + Crafting Table + Netherite + Obsidian
 
 > Chi tiết tại → [Tàn Tích Bản Ngã](/vi/wiki/items/ego-items)

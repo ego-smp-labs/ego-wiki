@@ -63,9 +63,9 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | Glass Pane | Glass Pane | Glass Pane |
-| Row 2 | Glass Pane | **Dark Ego** | Glass Pane |
-| Row 3 | Glass Pane | Soul Lantern | Glass Pane |
+| Row 1 | Sculk Catalyst | Sculk Catalyst | Sculk Catalyst |
+| Row 2 | Sculk Catalyst | **Dark Ego** | Sculk Catalyst |
+| Row 3 | Sculk Catalyst | Soul Lantern | Sculk Catalyst |
 
 - **Limit**: Cannot stack (x1 items) — cannot be placed in chests
 
@@ -85,9 +85,11 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 - **Main Usage**: Core material to forge at [Cursed Table](/en/wiki/items/cursed-crafting), indirect way to get Dark Ego.
 - **⚠️ Use directly (Right Click)** → **instant death**:
+  - Bypasses Totem of Undying
   - Releases **Dark Ego** (victim = self)
   - Acts like a normal loss of ego death
   - **Wither I** effect in 5 block radius
+  - **Cooldown**: 60 seconds (cannot be spammed)
 - **Limit**: Cannot stack (x1 items) — cannot be placed in chests
 
 ---

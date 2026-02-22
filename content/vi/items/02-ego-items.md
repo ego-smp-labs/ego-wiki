@@ -63,9 +63,9 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Glass Pane | Glass Pane | Glass Pane |
-| Hàng 2 | Glass Pane | **Dark Ego** | Glass Pane |
-| Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
+| Hàng 1 | Sculk Catalyst | Sculk Catalyst | Sculk Catalyst |
+| Hàng 2 | Sculk Catalyst | **Dark Ego** | Sculk Catalyst |
+| Hàng 3 | Sculk Catalyst | Soul Lantern | Sculk Catalyst |
 
 - **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
 
@@ -87,9 +87,11 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 - **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting), lấy dark ego gián tiếp.
 - **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
+  - Bỏ qua Totem of Undying
   - Thả ra **Dark Ego** (nạn nhân = bản thân)
   - giống như một cái chết mất cái tôi thông thường
   - Hiệu ứng **Wither I** trong bán kính 5 block xung quanh
+  - **Thời gian hồi chiêu**: 60 giây (không thể sử dụng liên tục)
 - **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
 
 ---
