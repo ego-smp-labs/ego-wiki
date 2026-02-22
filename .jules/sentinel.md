@@ -17,3 +17,8 @@
 **Vulnerability:** The `/api/search` endpoint lacked input validation for `limit`, `query` length, and `locale`, exposing the server to potential DoS via large payloads or cache poisoning.
 **Learning:** Even read-only APIs need strict input validation to prevent resource exhaustion. `Fuse.js` in-memory search can be expensive with large datasets or queries.
 **Prevention:** Cap all array limits (e.g., max 50 items) and string lengths (e.g., max 100 chars) in public APIs.
+
+## 2025-02-24 - Search API Information Disclosure
+**Vulnerability:** The search functionality (`searchArticles`) included locked articles in the search index and results, allowing users to discover the existence and snippets of classified content before its release date.
+**Learning:** Filtering content for display (e.g. in `ArticlePage`) is insufficient if the data access layer (e.g. `searchArticles`) exposes it via other means. Security checks must be applied at the data retrieval level.
+**Prevention:** Always apply access control filters (like `lockedUntil`) in the service/data layer, not just in the presentation layer.

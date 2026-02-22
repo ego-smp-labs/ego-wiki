@@ -60,7 +60,7 @@ export function buildSearchIndex(locale: string): Fuse<SearchableArticle> {
 
     const wikiService = WikiService.getInstance();
     const articleMetas = wikiService.getAllArticles(locale);
-    
+
     // Fetch content for indexing
     const searchableArticles: SearchableArticle[] = articleMetas.map(meta => {
         const fullArticle = wikiService.getArticle(locale, meta.category, meta.slug);
@@ -86,7 +86,21 @@ export function searchArticles(
     }
 
     const fuse = buildSearchIndex(locale);
-    const results = fuse.search(query, { limit });
+    // Sentinel: Get all matches first, then filter locked ones
+    const allResults = fuse.search(query);
+
+    const results = allResults
+        .filter((result) => {
+            // Sentinel: Filter out locked articles to prevent information disclosure
+            if (result.item.lockedUntil) {
+                const unlockDate = new Date(result.item.lockedUntil).getTime();
+                if (Date.now() < unlockDate) {
+                    return false;
+                }
+            }
+            return true;
+        })
+        .slice(0, limit);
 
     return results.map((result) => {
         let excerpt = result.item.description || "";
@@ -98,9 +112,9 @@ export function searchArticles(
                 const matchIndex = contentMatch.indices[0];
                 const start = Math.max(0, matchIndex[0] - 40);
                 const end = Math.min(contentMatch.value.length, matchIndex[1] + 40);
-                
+
                 excerpt = contentMatch.value.substring(start, end).replace(/\n/g, " ").trim();
-                
+
                 // Add ellipsis if truncated
                 if (start > 0) excerpt = "..." + excerpt;
                 if (end < contentMatch.value.length) excerpt = excerpt + "...";
@@ -113,8 +127,8 @@ export function searchArticles(
                     result.item.headings.forEach(h => {
                         // Look for the heading text directly or its usage inside ItemCard
                         const idx = contentUpToMatch.lastIndexOf(h.text);
-                        let nameAttrIdx = contentUpToMatch.lastIndexOf(`name="${h.text}"`);
-                        
+                        const nameAttrIdx = contentUpToMatch.lastIndexOf(`name="${h.text}"`);
+
                         // For ItemCard, if we have markdown inside it, its position is what matters
                         const bestIdx = Math.max(idx, nameAttrIdx);
                         if (bestIdx > highestIndex) {
@@ -134,6 +148,7 @@ export function searchArticles(
         }
 
         // Omit the 'content' field to prevent huge network payloads
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { content, ...metaOnly } = result.item;
 
         return {
