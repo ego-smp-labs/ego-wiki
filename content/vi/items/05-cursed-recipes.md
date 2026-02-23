@@ -36,7 +36,7 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Netherite Ingot | **HEAVY_CORE** | Netherite Ingot |
-| Hàng 2 | **[Dark Ego Soul](/vi/wiki/items/ego-items)** | Mace of Power | **[Dark Ego Soul](/vi/wiki/items/ego-items)** |
+| Hàng 2 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Mace of Power | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** |
 | Hàng 3 | Netherite Ingot | **Wither Rose** | Netherite Ingot |
 
 - **Linh hồn**: 3
@@ -69,7 +69,7 @@ Tất cả công thức bên dưới yêu cầu [**Bàn Chế Tạo Nguyền**](
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Enchanted Golden Apple | **[Ego Soul](/vi/wiki/items/ego-items)** | Enchanted Golden Apple |
+| Hàng 1 | Enchanted Golden Apple | **[Bình Trấn Ngã](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Enchanted Golden Apple |
 | Hàng 2 | **[Đá Thanh Tẩy](/vi/wiki/items/ego-items)** | Netherite Ingot | **[Đá Thanh Tẩy](/vi/wiki/items/ego-items)** |
 | Hàng 3 | Enchanted Golden Apple | Totem of Undying | Enchanted Golden Apple |
 

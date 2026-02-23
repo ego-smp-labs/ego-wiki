@@ -45,7 +45,7 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 
 ---
 
-### Ego Soul — Mảnh Ego Soul
+### Bình Trấn Ngã — Ego Sealing Vessel
 
 - khả năng lưu trữ Bản ngã Ego dưới dạng linh hồn
 
@@ -57,7 +57,7 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 
 ---
 
-### Dark Ego Soul — Mảnh Dark Ego Soul
+### Bình Trấn Ngã Hắc Ám — Dark Ego Sealing Vessel
 
 - khả năng lưu trữ Bản ngã Dark Ego dưới dạng linh hồn
 
@@ -82,7 +82,7 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Sculk |  | Sculk |
-| Hàng 2 | Netherite Scrap | **Ego Soul** | Netherite Scrap |
+| Hàng 2 | Netherite Scrap | **[Bình Trấn Ngã](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Netherite Scrap |
 | Hàng 3 | Sculk |  | Sculk |
 
 - **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting), lấy dark ego gián tiếp.

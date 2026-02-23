@@ -107,7 +107,7 @@ chỉ bằng một cái chớp mắt.
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
-| Hàng 2 | Netherite Sword ×1 | **Dark Ego Soul** | Enchanted Book (Thorns III) ×1 |
+| Hàng 2 | Netherite Sword ×1 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Enchanted Book (Thorns III) ×1 |
 | Hàng 3 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Prismarine Shard = sắc bén ẩn dưới đại dương (sát ý ẩn giấu), Netherite Sword = lưỡi kiếm không bao giờ rút, Thorns III = triết lý phản đòn.
@@ -136,7 +136,7 @@ hắn phát điên và tự cấu xé chính mình.
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Bone Block ×16 | Crimson Fungus ×16 | **Mảnh Kí Ức Huyết Lang** |
-| Hàng 2 | Crimson Fungus ×16 | **Dark Ego Soul** | Crimson Fungus ×16 |
+| Hàng 2 | Crimson Fungus ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Crimson Fungus ×16 |
 | Hàng 3 | Bone Block ×16 | Crimson Fungus ×16 | Bone Block ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Bone Block = xương của con mồi, Crimson Fungus = nấm đỏ máu từ Nether (khát máu), Kí Ức = chết đói khi đang Ego (cơn đói nuốt chửng).
@@ -168,7 +168,7 @@ Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Fermented Spider Eye ×16 | Phantom Membrane ×16 | Fermented Spider Eye ×16 |
-| Hàng 2 | Phantom Membrane ×16 | **Dark Ego Soul** | Phantom Membrane ×16 |
+| Hàng 2 | Phantom Membrane ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Phantom Membrane ×16 |
 | Hàng 3 | Fermented Spider Eye ×16 | Ink Sac ×32 | Fermented Spider Eye ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Fermented Spider Eye = nguyên liệu pha chế Thuốc Tàng Hình trong vanilla MC (!), Phantom Membrane = kẻ săn mồi vô hình chỉ xuất hiện khi bạn không ngủ, Ink Sac = mực xoá tên — xoá danh tính.
@@ -199,7 +199,7 @@ lạnh như đêm và nhanh như tử thần.
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
-| Hàng 2 | Wither Rose ×8 | **Dark Ego Soul** | Enchanted Book (Wind Burst III) ×1 |
+| Hàng 2 | Wither Rose ×8 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Enchanted Book (Wind Burst III) ×1 |
 | Hàng 3 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Ender Pearl = xuyên không gian (dịch chuyển bóng tối), Wither Rose = hoa tử thần mọc trên xác chết (chỉ drop khi Wither giết mob — **cực hiếm**), Wind Burst III = phù sách gió từ Trial Chambers.
@@ -229,7 +229,7 @@ Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×16 | Sculk Shrieker ×1 |
-| Hàng 2 | Echo Shard ×16 | **Dark Ego Soul** | Echo Shard ×16 |
+| Hàng 2 | Echo Shard ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Echo Shard ×16 |
 | Hàng 3 | Sculk Shrieker ×1 | **Mảnh Kí Ức Cuồng Thanh** | Goat Horn ×1 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Sculk Shrieker = tiếng thét xé không gian, Echo Shard = tiếng vọng của lý trí đã mất, Goat Horn = sừng kêu gọi — tiếng gào nguyên thuỷ, Kí Ức = chết gần Shrieker khi đang Ego (tiếng hét cuối cùng).
@@ -262,7 +262,7 @@ hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Wind Charge ×16 | Emerald Block ×8 | Wind Charge ×16 |
-| Hàng 2 | Slime Block ×16 | **Dark Ego Soul** | Slime Block ×16 |
+| Hàng 2 | Slime Block ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Slime Block ×16 |
 | Hàng 3 | Wind Charge ×16 | Breeze Rod ×16 | Wind Charge ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Wind Charge = kháng cự gió trời, Breeze Rod = tinh chất gió từ Breeze (**Trial Chambers — cực hiếm**), Slime Block = mặt đất từ chối hắn — bật ngược lên trời, Emerald Block = sự giàu có và ngạo mạn của hoàng đế.

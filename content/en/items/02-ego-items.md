@@ -45,7 +45,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 ---
 
-### Ego Soul
+### Ego Sealing Vessel
 
 - Ability to store Ego in soul form
 
@@ -57,7 +57,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 ---
 
-### Dark Ego Soul
+### Dark Ego Sealing Vessel
 
 - Ability to store Dark Ego in soul form
 
@@ -80,7 +80,7 @@ Ego Fragment lost its purity after fusing with Sculk.
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Sculk |  | Sculk |
-| Row 2 | Netherite Scrap | **Ego Soul** | Netherite Scrap |
+| Row 2 | Netherite Scrap | **[Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Netherite Scrap |
 | Row 3 | Sculk |  | Sculk |
 
 - **Main Usage**: Core material to forge at [Cursed Table](/en/wiki/items/cursed-crafting), indirect way to get Dark Ego.
