@@ -22,3 +22,8 @@
 **Vulnerability:** The global middleware (`src/proxy.ts`) skipped authentication for any path containing a dot (`.`) to bypass static files. This allowed attackers to access protected routes (e.g., `/wiki/v1.0`) by ensuring the URL contained a dot.
 **Learning:** Broad pattern matching for skipping middleware (like `pathname.includes(".")`) is dangerous. It assumes only static files have dots, which is false for dynamic routes or user content.
 **Prevention:** Use an explicit allowlist of static file extensions (e.g., `.png`, `.css`) or negative lookahead regex to strictly define what should skip authentication.
+
+## 2025-02-24 - Path Traversal in Changelog
+**Vulnerability:** `getRecentUpdates` in `src/core/lib/changelog.ts` used the `locale` parameter directly in `path.join` without validation, allowing potential path traversal if the locale was manipulated.
+**Learning:** Even if `locale` is expected to be safe from Next.js routing, utility functions should validate their inputs independently to ensure "defense in depth" and prevent misuse in other contexts.
+**Prevention:** Always validate inputs used in file system operations against an allowlist (like `isValidLocale`) or sanitization function, regardless of the source of the input.
