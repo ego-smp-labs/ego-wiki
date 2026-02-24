@@ -8,8 +8,22 @@ const SKIP_PATTERNS = ["/api", "/_next", "/favicon", "/icon.png", "/bg/"];
 /** Paths that do NOT require authentication (relative to locale prefix) */
 const PUBLIC_PATHS = ["/login", "/contact", "/donate", "/qa"];
 
+// Common static file extensions to skip
+const STATIC_EXTENSIONS = [
+    ".ico", ".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp",
+    ".css", ".js", ".json", ".map", ".txt", ".xml",
+    ".woff", ".woff2", ".ttf", ".eot", ".otf", ".mp4", ".webm"
+];
+
 function shouldSkipProxy(pathname: string): boolean {
-    return SKIP_PATTERNS.some((p) => pathname.startsWith(p)) || pathname.includes(".");
+    // Check if the path starts with a skipped pattern
+    if (SKIP_PATTERNS.some((p) => pathname.startsWith(p))) {
+        return true;
+    }
+
+    // Check if the path ends with a known static extension
+    // This prevents skipping auth for paths that just "include" a dot (e.g. /wiki/v1.0)
+    return STATIC_EXTENSIONS.some((ext) => pathname.toLowerCase().endsWith(ext));
 }
 
 function getPathnameLocale(pathname: string): string | undefined {

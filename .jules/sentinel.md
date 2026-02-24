@@ -17,3 +17,8 @@
 **Vulnerability:** The `/api/search` endpoint lacked input validation for `limit`, `query` length, and `locale`, exposing the server to potential DoS via large payloads or cache poisoning.
 **Learning:** Even read-only APIs need strict input validation to prevent resource exhaustion. `Fuse.js` in-memory search can be expensive with large datasets or queries.
 **Prevention:** Cap all array limits (e.g., max 50 items) and string lengths (e.g., max 100 chars) in public APIs.
+
+## 2025-02-24 - Auth Bypass via Path Confusion
+**Vulnerability:** The global middleware (`src/proxy.ts`) skipped authentication for any path containing a dot (`.`) to bypass static files. This allowed attackers to access protected routes (e.g., `/wiki/v1.0`) by ensuring the URL contained a dot.
+**Learning:** Broad pattern matching for skipping middleware (like `pathname.includes(".")`) is dangerous. It assumes only static files have dots, which is false for dynamic routes or user content.
+**Prevention:** Use an explicit allowlist of static file extensions (e.g., `.png`, `.css`) or negative lookahead regex to strictly define what should skip authentication.
