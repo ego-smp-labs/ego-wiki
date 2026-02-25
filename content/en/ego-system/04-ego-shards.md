@@ -71,12 +71,19 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage | Always active |
-| [🩸 Blood Wolf Shard](#🩸-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
-| [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility 5 minutes | CD 10 min |
-| [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 30s |
-| [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom when hit | CD 30s |
-| [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Launch straight up 10 blocks | CD 60s |
+| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage + Poison for 3s | Always active |
+| [🩸 Blood Wolf Shard](#-blood-wolf-shard) | A/P | 3+ | Passive: &lt;30% HP → x3 dmg (5s). Active: Red glowing strength boost (5m). | Passive: Hit. Active: CD 10m |
+| [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility + hides armor for 8 mins (Anonymous kill message) | CD 15 min |
+| [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks leaving a trail + Wither II for 3s if enemies are pierced | CD 30s |
+| [💀 Mad Sound Shard](#-mad-sound-shard) | A/P | 3+ | Passive: Sonic Boom. Active(15s): 20% Warden effect(10s) + drops Shrieker on kill | P.Active: 30s. Active: CD 30s |
+| [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Launch up 10 blocks + force targets (10-block radius) to bow for 3s | CD 60s |
+
+---
+
+## Visual Effects (VFX)
+
+- **When equipped**: All players equipping a Shard will have subtle ambient particles orbiting them, with colors matching the specific Shard type.
+- **When activated**: Each Shard (both Passive and Active) has distinct particle effects upon activation. (e.g., Hidden Blade emits black dust around the attacker when reflecting damage, Blood Shadow leaves a smoke trail while dashing).
 
 ---
 
@@ -131,7 +138,8 @@ he went mad and tore himself apart.
 
 - Requires **Tier 3+** to equip and activate.
 - **Effect (Passive)**: When HP **&lt; 30%** and hit → **30% chance** to activate **x3 melee damage** for **5 seconds**.
-- Triggers with red particle effects (boiling blood — killing intent).
+- **Effect (Active)**: Immediately gain a **red glowing aura** and a **+200% melee damage (Strength II)** boost for **5 minutes**. Cooldown: **10 minutes**.
+- Passive triggers with red particle effects (boiling blood — killing intent).
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
@@ -162,8 +170,9 @@ and smiled — because he knew the time would come to disappear completely.
 At the end of his life, he left in broad daylight. No one noticed.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: On activation → **Complete invisibility for 5 minutes**.
-- **Cooldown**: **10 minutes**.
+- **Effect (Active)**: On activation → **Complete invisibility and auto-hides equipped armor for 8 minutes**. Other players killed by you will only receive a death message saying they were killed by **THE NAMELESS**.
+- Your armor will be safely restored after the effect ends, or upon logging out.
+- **Cooldown**: **15 minutes**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
@@ -173,7 +182,7 @@ At the end of his life, he left in broad daylight. No one noticed.
 
 > 🔮 **Ingredient lore**: Fermented Spider Eye = THE vanilla invisibility potion ingredient (!), Phantom Membrane = unseen predators that appear only when you don't sleep, Ink Sac = ink that erases names — erasing identity.
 
-- **Souls**: 1 · **Time**: 5 min
+- **Souls**: 1 · **Time**: 8 min
 
 </ItemCard>
 
@@ -193,7 +202,7 @@ No grave. No name. Only fragments of an ego left
 cold as night and swift as death.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Dash forward **8 blocks** + gain **Invisibility 3 seconds**.
+- **Effect (Active)**: Dash forward **8 blocks** + gain **Invisibility 3 seconds**. Leaves behind a dark dust trail, and anyone passing through this path will be afflicted with **Wither II for 3 seconds**.
 - **Cooldown**: **30 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
@@ -223,8 +232,9 @@ People could not kill him because they could never get close enough.
 He died in silence — the only thing he never chose.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: When hit by melee, retaliates with a **Sonic Boom** shockwave that pushes the attacker **5 blocks** back.
-- **Cooldown**: **30 seconds** (displayed on action bar).
+- **Effect (Passive)**: When hit by melee, retaliates with a **Sonic Boom** shockwave that pushes the attacker **5 blocks** back. **Passive Cooldown**: **30 seconds**.
+- **Effect (Active)**: For **15 seconds**, each melee hit has a **20% chance** to apply the **Warden effect (Darkness + Nausea)** to the target for **10 seconds**. Any enemy killed by you during this time will spawn a **Sculk Shrieker**.
+- **Active Cooldown**: **30 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
@@ -256,7 +266,7 @@ Perhaps he is still flying somewhere —
 or he has reached something no one else dared to think of.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Launch straight up **10 blocks** instantly. Grants **Resistance I** for 2 seconds to absorb fall damage.
+- **Effect (Active)**: Launch straight up **10 blocks** instantly. Grants **Resistance I** for 2 seconds to absorb fall damage. Ground enemies within a 10-block radius (ignoring height distance) will be forced to look down (**Worship** effect) for 3 seconds accompanied by smoke effects.
 - **Cooldown**: **60 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
