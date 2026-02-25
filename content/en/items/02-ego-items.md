@@ -98,11 +98,11 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 > *"Purity is sometimes the result of coercion."*
 
-A spiritual stone capable of cleansing precipitated darkness, reverting an ego back to its original form (losing the raw power of darkness in the process).
+Formed by combining 4 Amethyst Shards in a normal crafting grid. This is a spiritual stone capable of cleansing things that have been tainted.
 
-- **Origin**: Forged at [Cursed Crafting Table](/en/wiki/items/cursed-crafting)
-- **Usage**: Combine with **Dark Ego** in normal crafting grid to produce normal **Ego Fragment**.
-- **Trait**: Cannot stack (x1 items) — cannot be placed in chests.
+- **Origin**: Crafted with 4 Amethyst Shards in a normal Crafting Table.
+- **Usage**: Used as the core ingredient in the **Ego Purification Ritual** (to remove Shards). Additionally used to purify Dark Egos.
+- **Trait**: Normal item.
 
 </ItemCard>
 

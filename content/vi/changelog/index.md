@@ -16,7 +16,6 @@ order: 3
 - 🌘 **Mảnh Vỡ Ảnh Huyết** — Thêm hiệu ứng Wither II (3s) gây độc cho những ai đi qua vệt bóng tối (lúc lướt).
 - ☁️ **Mảnh Vỡ Ngạo Thiên** — Thêm hiệu ứng Sùng bái: ép toàn bộ kẻ địch dưới mặt đất trong bán kính 10 block phải quỳ (nắm mắt nhìn chằm chằm xuống) trong 3 giây.
 - 🗡️ **Mảnh Vỡ Tàng Kiếm** — Thêm hiệu ứng Độc (Poison) 6s lên kẻ địch khi kích hoạt phản sát thương.
-- 🪨 **Đá Thanh Tẩy (Purification Stone)** — Đổi công thức chế tạo thành 4 Amethyst Shard (ghép khối 2x2 vuông).
 
 ### v1.2.1 — Soul Protection & Shard Tweaks
 *Phát hành: Tháng 2/2026*
