@@ -71,12 +71,12 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage | Always active |
+| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage + Poison for 6s | Always active |
 | [🩸 Blood Wolf Shard](#🩸-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
-| [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility 5 minutes | CD 10 min |
-| [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 30s |
-| [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom when hit | CD 30s |
-| [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Launch straight up 10 blocks | CD 60s |
+| [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility + auto-hides armor for 8 minutes | CD 15 min |
+| [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility & Wither II trail for 3s | CD 30s |
+| [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom + Knock-up when hit | CD 30s |
+| [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Launch straight up 10 blocks + force ground targets to bow (look down) for 3s | CD 60s |
 
 ---
 
@@ -162,8 +162,9 @@ and smiled — because he knew the time would come to disappear completely.
 At the end of his life, he left in broad daylight. No one noticed.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: On activation → **Complete invisibility for 5 minutes**.
-- **Cooldown**: **10 minutes**.
+- **Effect (Active)**: On activation → **Complete invisibility and auto-hides equipped armor for 8 minutes**.
+- Your armor will be safely restored after the effect ends, or upon logging out.
+- **Cooldown**: **15 minutes**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
@@ -173,7 +174,7 @@ At the end of his life, he left in broad daylight. No one noticed.
 
 > 🔮 **Ingredient lore**: Fermented Spider Eye = THE vanilla invisibility potion ingredient (!), Phantom Membrane = unseen predators that appear only when you don't sleep, Ink Sac = ink that erases names — erasing identity.
 
-- **Souls**: 1 · **Time**: 5 min
+- **Souls**: 1 · **Time**: 8 min
 
 </ItemCard>
 
@@ -193,7 +194,7 @@ No grave. No name. Only fragments of an ego left
 cold as night and swift as death.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Dash forward **8 blocks** + gain **Invisibility 3 seconds**.
+- **Effect (Active)**: Dash forward **8 blocks** + gain **Invisibility 3 seconds**. Leaves behind a dark dust trail that afflicts anyone passing through with **Wither II for 3 seconds**.
 - **Cooldown**: **30 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
@@ -256,7 +257,7 @@ Perhaps he is still flying somewhere —
 or he has reached something no one else dared to think of.
 
 - Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Launch straight up **10 blocks** instantly. Grants **Resistance I** for 2 seconds to absorb fall damage.
+- **Effect (Active)**: Launch straight up **10 blocks** instantly. Grants **Resistance I** for 2 seconds to absorb fall damage. Ground enemies in a 10-block radius will be forced to look down (worship effect) for 3 seconds.
 - **Cooldown**: **60 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |

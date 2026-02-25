@@ -71,12 +71,12 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến | Luôn hoạt động |
+| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến + Độc 6s | Luôn hoạt động |
 | [🩸 Mảnh Vỡ Kẻ Huyết Lang](#🩸-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
-| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút |
-| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 30s |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | CD 30s |
-| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 60s |
+| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn + giấu giáp 8 phút | CD 15 phút |
+| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình & hiệu ứng Wither 3s cho nạn nhân | CD 30s |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom + bay khi bị đánh | CD 30s |
+| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn thẳng lên 10 block + Lực ép nạn nhân nhìn xuống đất 3s | CD 60s |
 
 ---
 
@@ -162,8 +162,9 @@ và mỉm cười — vì hắn biết sẽ đến lúc hắn cần biến mất
 Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
-- **Cooldown**: **10 phút**.
+- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn và tự động cất hết giáp đang mặc trong 8 phút**.
+- Giáp của bạn sẽ an toàn trở lại sau khi hết trạng thái, hoặc thoát game.
+- **Cooldown**: **15 phút**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -173,7 +174,7 @@ Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 > 🔮 **Ý nghĩa nguyên liệu**: Fermented Spider Eye = nguyên liệu pha chế Thuốc Tàng Hình trong vanilla MC (!), Phantom Membrane = kẻ săn mồi vô hình chỉ xuất hiện khi bạn không ngủ, Ink Sac = mực xoá tên — xoá danh tính.
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút
+- **Linh hồn**: 1 · **Thời gian**: 8 phút
 
 </ItemCard>
 
@@ -193,7 +194,7 @@ Không mộ phần. Không tên. Chỉ còn lại mảnh vỡ của một cái t
 lạnh như đêm và nhanh như tử thần.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**.
+- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**. Để lại vệt bụi mờ bóng đêm, những kẻ nào đi qua sẽ bị trúng độc **Wither II trong 3 giây**.
 - **Cooldown**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
@@ -256,7 +257,7 @@ Có lẽ hắn vẫn đang bay ở đâu đó —
 hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi.
+- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi. Nhóm kẻ địch dưới mặt đất trong bán kính 10 block sẽ bị hiệu ứng ép buộc nhìn chằm chằm xuống đất (Sùng bái) trong 3 giây.
 - **Cooldown**: **60 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
