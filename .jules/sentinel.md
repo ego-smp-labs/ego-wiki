@@ -23,6 +23,10 @@
 **Learning:** Broad pattern matching for skipping middleware (like `pathname.includes(".")`) is dangerous. It assumes only static files have dots, which is false for dynamic routes or user content.
 **Prevention:** Use an explicit allowlist of static file extensions (e.g., `.png`, `.css`) or negative lookahead regex to strictly define what should skip authentication.
 
+## 2025-02-24 - Path Traversal in Changelog
+**Vulnerability:** `getRecentUpdates` in `src/core/lib/changelog.ts` used the `locale` parameter directly in `path.join` without validation, allowing potential path traversal if the locale was manipulated.
+**Learning:** Even if `locale` is expected to be safe from Next.js routing, utility functions should validate their inputs independently to ensure "defense in depth" and prevent misuse in other contexts.
+**Prevention:** Always validate inputs used in file system operations against an allowlist (like `isValidLocale`) or sanitization function, regardless of the source of the input.
 ## 2025-02-24 - Information Disclosure in Search
 **Vulnerability:** The search functionality (`searchArticles`) exposed content of articles that were scheduled for future release (`lockedUntil`), leaking sensitive information before the intended time.
 **Learning:** Index-time filtering (in `buildSearchIndex`) is insufficient for time-sensitive visibility controls because the index is cached. Search-time filtering is required to enforce dynamic access rules like release dates.
