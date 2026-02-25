@@ -22,3 +22,8 @@
 **Vulnerability:** The global middleware (`src/proxy.ts`) skipped authentication for any path containing a dot (`.`) to bypass static files. This allowed attackers to access protected routes (e.g., `/wiki/v1.0`) by ensuring the URL contained a dot.
 **Learning:** Broad pattern matching for skipping middleware (like `pathname.includes(".")`) is dangerous. It assumes only static files have dots, which is false for dynamic routes or user content.
 **Prevention:** Use an explicit allowlist of static file extensions (e.g., `.png`, `.css`) or negative lookahead regex to strictly define what should skip authentication.
+
+## 2025-02-24 - Information Disclosure in Search
+**Vulnerability:** The search functionality (`searchArticles`) exposed content of articles that were scheduled for future release (`lockedUntil`), leaking sensitive information before the intended time.
+**Learning:** Index-time filtering (in `buildSearchIndex`) is insufficient for time-sensitive visibility controls because the index is cached. Search-time filtering is required to enforce dynamic access rules like release dates.
+**Prevention:** Filter sensitive content at the point of query execution (`searchArticles`) based on current context (time, user permissions), not just at index time.
