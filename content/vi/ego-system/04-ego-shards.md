@@ -71,12 +71,19 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến + Độc 6s | Luôn hoạt động |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#🩸-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
-| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn + giấu giáp 8 phút | CD 15 phút |
-| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình & hiệu ứng Wither 3s cho nạn nhân | CD 30s |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom + bay khi bị đánh | CD 30s |
-| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn thẳng lên 10 block + Lực ép nạn nhân nhìn xuống đất 3s | CD 60s |
+| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến + Độc 3s | Luôn hoạt động |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#-mảnh-vỡ-kẻ-huyết-lang) | C/B | 3+ | Bị Động: &lt;30% HP → x3 dmg (5s). Chủ Động: Sức mạnh đỏ rực rỡ (5m) | Bị Động: Bị đánh. C.Động CD 10m |
+| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình + giấu giáp 8 phút (Chết ẩn danh) | CD 15 phút |
+| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block để lại vệt khói + Wither II 3s nếu xuyên qua | CD 30s |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | C/B | 3+ | Bị Động: Sonic Boom. Chủ Động (15s): đòn đánh gây Warden (10s) + bộc phát Shrieker | B.Động CD 30s. C.Động CD 30s |
+| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn lên 10 block + Ép nạn nhân (bán kính 10 block) cúi đầu 3s | CD 60s |
+
+---
+
+## Hiệu Ứng Hình Ảnh (VFX)
+
+- **Khi trang bị**: Tất cả Mảnh Vỡ khi được trang bị đều phát ra các hạt nội tạng (ambient particles) bay nhẹ quanh người chơi, màu sắc tương ứng với từng loại mảnh vỡ.
+- **Khi kích hoạt**: Mỗi Mảnh Vỡ (cả Bị Động và Chủ Động) đều có hiệu ứng hạt riêng biệt khi được kích hoạt. (Ví dụ: Kẻ Tàng Kiếm phát ra bụi đen quanh kẻ tấn công khi phản đòn, Ảnh Huyết để lại vệt khói khi lao tới).
 
 ---
 
@@ -131,7 +138,8 @@ hắn phát điên và tự cấu xé chính mình.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
 - **Hiệu Ứng (Bị Động)**: Khi HP **&lt; 30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
-- Kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
+- **Hiệu Ứng (Chủ Động)**: Lập tức nhận trạng thái **đỏ rực rỡ** và **được buff +200% dmg (Strength II)** trong **5 phút**. Thời gian hồi: **10 phút**.
+- Bị động kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -162,7 +170,7 @@ và mỉm cười — vì hắn biết sẽ đến lúc hắn cần biến mất
 Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn và tự động cất hết giáp đang mặc trong 8 phút**.
+- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn và tự động cất hết giáp đang mặc trong 8 phút**. Người chơi khác bị bạn giết sẽ chỉ nhận được thông báo bị giết bởi **KẺ VÔ DANH**.
 - Giáp của bạn sẽ an toàn trở lại sau khi hết trạng thái, hoặc thoát game.
 - **Cooldown**: **15 phút**.
 
@@ -194,7 +202,7 @@ Không mộ phần. Không tên. Chỉ còn lại mảnh vỡ của một cái t
 lạnh như đêm và nhanh như tử thần.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**. Để lại vệt bụi mờ bóng đêm, những kẻ nào đi qua sẽ bị trúng độc **Wither II trong 3 giây**.
+- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**. Để lại một đường vệt bụi mờ bóng đêm chặn lại sau lưng, những kẻ nào đi xuyên qua đường lao đó sẽ bị trúng độc **Wither II trong 3 giây**.
 - **Cooldown**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
@@ -224,8 +232,9 @@ Người ta không giết hắn vì họ không thể đến gần đủ để l
 Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi bị tấn công cận chiến, phát sóng xung kích (**Sonic Boom**) đẩy lùi kẻ địch **5 block**.
-- **Cooldown**: **30 giây** (hiển thị trên action bar).
+- **Hiệu Ứng (Bị Động)**: Khi bị tấn công cận chiến, phát sóng xung kích (**Sonic Boom**) đẩy lùi kẻ địch **5 block**. **Cooldown Bị Động**: **30 giây**.
+- **Hiệu Ứng (Chủ Động)**: Trong **15 giây**, mỗi đòn đánh cận chiến có **20% xác suất** gây hiệu ứng **Warden (Darkness + Nausea)** lên mục tiêu trong **10 giây**. Bất kì kẻ địch nào bị bạn giết trong thời gian này sẽ sinh ra một khối **Sculk Shrieker**.
+- **Cooldown Chủ Động**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
@@ -257,7 +266,7 @@ Có lẽ hắn vẫn đang bay ở đâu đó —
 hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi. Nhóm kẻ địch dưới mặt đất trong bán kính 10 block sẽ bị hiệu ứng ép buộc nhìn chằm chằm xuống đất (Sùng bái) trong 3 giây.
+- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi. Nhóm kẻ địch dưới mặt đất trong bán kính 10 block (không tính khoảng cách chiều cao) sẽ bị hiệu ứng **Tôn Sùng** ép buộc nhìn chằm chằm xuống đất trong 3 giây kèm hiệu ứng khói.
 - **Cooldown**: **60 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
