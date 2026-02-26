@@ -138,7 +138,7 @@ hắn phát điên và tự cấu xé chính mình.
 
 - Yêu cầu **Tier 3+** để lắp và kích hoạt.
 - **Hiệu Ứng (Bị Động)**: Khi HP **&lt; 30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
-- **Hiệu Ứng (Chủ Động)**: Lập tức nhận trạng thái **đỏ rực rỡ** và **được buff +200% dmg (Strength II)** trong **5 phút**. Thời gian hồi: **10 phút**.
+- **Hiệu Ứng (Chủ Động)**: Lập tức nhận trạng thái **đỏ rực rỡ**, **được buff +200% dmg (Strength II)** và **Tốc Độ II** trong **1 phút**. Thời gian hồi: **10 phút**.
 - Bị động kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
 
 | | Cột 1 | Cột 2 | Cột 3 |

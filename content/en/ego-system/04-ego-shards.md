@@ -138,7 +138,7 @@ he went mad and tore himself apart.
 
 - Requires **Tier 3+** to equip and activate.
 - **Effect (Passive)**: When HP **&lt; 30%** and hit → **30% chance** to activate **x3 melee damage** for **5 seconds**.
-- **Effect (Active)**: Immediately gain a **red glowing aura** and a **+200% melee damage (Strength II)** boost for **5 minutes**. Cooldown: **10 minutes**.
+- **Effect (Active)**: Immediately gain a **red glowing aura**, a **+200% melee damage (Strength II)** boost, and **Speed II** for **1 minute**. Cooldown: **10 minutes**.
 - Passive triggers with red particle effects (boiling blood — killing intent).
 
 | | Col 1 | Col 2 | Col 3 |
