@@ -31,3 +31,8 @@
 **Vulnerability:** The search functionality (`searchArticles`) exposed content of articles that were scheduled for future release (`lockedUntil`), leaking sensitive information before the intended time.
 **Learning:** Index-time filtering (in `buildSearchIndex`) is insufficient for time-sensitive visibility controls because the index is cached. Search-time filtering is required to enforce dynamic access rules like release dates.
 **Prevention:** Filter sensitive content at the point of query execution (`searchArticles`) based on current context (time, user permissions), not just at index time.
+
+## 2025-03-05 - Cross-Site Scripting (XSS) in Changelog
+**Vulnerability:** The `src/app/[locale]/changelog/page.tsx` page rendered changelog entries using `dangerouslySetInnerHTML`, exposing the application to XSS attacks if the markdown content was modified or sourced externally.
+**Learning:** Bypassing React's built-in XSS protection with `dangerouslySetInnerHTML` should be avoided when rendering raw text or potentially unsafe user content.
+**Prevention:** Always use safe rendering patterns (e.g. creating React nodes) or sanitization libraries instead of directly rendering unescaped HTML strings.
