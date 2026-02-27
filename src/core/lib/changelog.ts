@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { isValidLocale } from "./i18n";
 
 // Define parsing types
 export interface ChangelogEntry {
@@ -10,6 +11,11 @@ export interface ChangelogEntry {
 }
 
 export const getRecentUpdates = async (locale: string, limit: number = 3): Promise<ChangelogEntry[]> => {
+    // Sentinel: Validate locale to prevent path traversal
+    if (!isValidLocale(locale)) {
+        return [];
+    }
+
     try {
         const filePath = path.join(process.cwd(), `content/${locale}/changelog/index.md`);
         

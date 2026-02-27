@@ -7,6 +7,27 @@ order: 3
 # Nhật Ký Thay Đổi
 
 ## EgoSMP Plugin
+### VERSION 1.2.3 — KỶ NGUYÊN VÔ DANH & TÔN SÙNG
+*Phát hành: Tháng 2/2026*
+
+
+**Sửa đổi & Cập nhật:*
+🌑 Cơ chế Sinh Tồn & Bản Ngã:
+
+Tier -1 (Linh Hồn Yếu Ớt): Thực thể chết tại Tier 0 sẽ rơi xuống Tier -1.
+
+Săn Lùng Đại Tội: Tỉ lệ rớt Dark Ego và Bản Ngã tăng tỉ lệ thuận khi tiêu diệt mục tiêu ở Tier 7, 8 và 9.
+
+Thưởng Khắc Kỷ: Tiêu diệt thực thể đang mang Mảnh Vỡ (Shard) hoặc Đại Tội (Sins) sẽ ép rớt thêm 100% Bản Ngã Thường.
+
+### v1.2.2 — Cập Nhật Kỹ Năng Mảnh Vỡ Tội Lỗi
+*Phát hành: Tháng 2/2026*
+
+**Sửa đổi & Cập nhật:**
+- 🌑 **Mảnh Vỡ Vô Danh** — Tăng thời gian tàng hình lên 8 phút, tự động tháo và giấu giáp khi tàng hình. Cooldown tăng lên 15 phút.
+- 🌘 **Mảnh Vỡ Ảnh Huyết** — Thêm hiệu ứng Wither II (3s) gây độc cho những ai đi qua vệt bóng tối (lúc lướt).
+- ☁️ **Mảnh Vỡ Ngạo Thiên** — Thêm hiệu ứng Sùng bái: ép toàn bộ kẻ địch dưới mặt đất trong bán kính 10 block phải quỳ (nắm mắt nhìn chằm chằm xuống) trong 3 giây.
+- 🗡️ **Mảnh Vỡ Tàng Kiếm** — Thêm hiệu ứng Độc (Poison) 6s lên kẻ địch khi kích hoạt phản sát thương.
 
 ### v1.2.1 — Soul Protection & Shard Tweaks
 *Phát hành: Tháng 2/2026*

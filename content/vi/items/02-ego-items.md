@@ -73,11 +73,11 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 > *"Sự thuần khiết đôi khi là kết quả của việc cưỡng chế."*
 
-Một viên đá tâm linh có khả năng gột rửa bóng tối bị kết tủa, đưa bản ngã trở về dạng nguyên bản (tuy nhiên sẽ mất đi sức mạnh thuần túy của bóng tối).
+Tinh hoa được tạo ra từ việc ghép 4 viên Amethyst Shard trong bàn chế tạo. Đây là một viên đá tâm linh có khả năng gột rửa những thứ đã bị ô uế.
 
-- **Nguồn gốc**: Rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting)
-- **Công dụng**: Kết hợp với **Dark Ego** trong túi đồ/Bàn chế tạo thường để cho ra **Ego Fragment** thường.
-- **Tính chất**: Không thể xếp chồng (x1 items) — không thể đặt trong rương.
+- **Nguồn gốc**: Ghép 4 Amethyst Shard trong Bàn chế tạo thường.
+- **Công dụng**: Dùng làm nguyên liệu trung tâm trong **Nghi Thức Bóc Tách Bản Ngã** (tháo Mảnh vỡ). Ngoài ra, còn nằm trong quy trình thanh tẩy Dark Ego.
+- **Tính chất**: Vật phẩm thông thường.
 
 </ItemCard>
 
