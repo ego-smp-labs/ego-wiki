@@ -6,12 +6,12 @@ order: 4
 
 # Mảnh Vỡ Bản Ngã — Ego Shards
 
-> *"Mỗi mảnh vỡ là một phần linh hồn bị tách ra. Lắp chúng lại —
-> và ngươi sẽ trở thành thứ gì đó không còn là con người."*
+> *"Mỗi mảnh vỡ là một đoạn ức tàn dư, bị xé toạc từ một linh hồn đã vỡ vụn. Hãy gắn kết chúng —
+> và đắm chìm vào thứ sức mạnh đã thoát khỏi lằn ranh của nhân tính."*
 
-Ô Mảnh Vỡ là thứ đặc biệt, cho phép trang bị **Ego Shard**
-để nhận hiệu ứng chiến đấu. Mỗi mảnh vỡ là phần còn lại của một **cái tôi thực sự** —
-không phải huyền thoại, mà là ký ức bị giam cầm trong vật chất.
+Ô Mảnh Vỡ là một khảm nạp đặc biệt, cho phép dung nhập **Ego Shard**
+để đoạt lấy dị năng chiến đấu. Mỗi mảnh vỡ là tàn tro của một **cái tôi thực sự** —
+không phải huyền tích, mà là những uất hận bị xiềng xích trong vật chất.
 
 ---
 
@@ -71,12 +71,20 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#️-mảnh-vỡ-kẻ-tàng-kiếm) | Bị Động | 3+ | 20% cơ hội phản 15% sát thương cận chiến | Luôn hoạt động |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#🩸-mảnh-vỡ-kẻ-huyết-lang) | Bị Động | 3+ | &lt;30% HP → 30% xác suất: x3 dmg trong 5s | Kích hoạt khi bị đánh |
-| [🌑 Mảnh Vỡ Kẻ Vô Danh](#-mảnh-vỡ-kẻ-vô-danh) | Chủ Động | 3+ | Tàng hình hoàn toàn 5 phút | CD 10 phút |
-| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#-mảnh-vỡ-kẻ-ảnh-huyết) | Chủ Động | 3+ | Lao 8 block + Tàng hình 3s | CD 30s |
-| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#-mảnh-vỡ-kẻ-cuong-thanh) | Bị Động | 3+ | Trả đòn bằng Sonic Boom khi bị đánh | CD 30s |
-| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#️-mảnh-vỡ-kẻ-ngao-thien) | Chủ Động | 3+ | Bắn thẳng lên 10 block | CD 60s |
+| [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#manh-vo-ke-tang-kiem) | Bị Động | 3+ | 20% phản 15% tổn thương cận chiến + Độc 3s | Tiềm tàng |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực <30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
+| [🌑 Mảnh Vỡ Kẻ Vô Danh](#manh-vo-ke-vo-danh) | Chủ Động | 3+ | Tịch mịch hoàn toàn: Xóa bóng & giáp 8 phút (Chết ẩn danh) | CD 15 phút |
+| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#manh-vo-ke-anh-huyet) | Chủ Động | 3+ | Vượt 8 khối không gian, để lại Tà Khí Wither II (3s) nếu xuyên qua sinh linh | CD 30s |
+| [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#manh-vo-ke-cuong-thanh) | C/B | 3+ | Bị Động: Phản kích Sonic Boom. Chủ Động (15s): 20% nguyền rủa Warden (10s) + bộc phát Shrieker | B.Động CD 30s. C.Động CD 30s |
+| [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#manh-vo-ke-ngao-thien) | Chủ Động | 3+ | Bắn tung 10 khối + Ép nạn nhân (bán kính 10 khối) phủ phục 3s | CD 60s |
+| [🍖 Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác](#manh-vo-ke-nuot-tron-the-xac) | C/B | 3+ | Bị Động: Chảy máu (True Dmg) + Regen III. Chủ Động: Đoạt Max HP | B.Động: Cận chiến. C.Động: CD 10m |
+
+---
+
+## Hiệu Ứng Hình Ảnh (VFX)
+
+- **Khi trang bị**: Tất cả Mảnh Vỡ khi được trang bị đều phát ra các hạt nội tạng (ambient particles) bay nhẹ quanh người chơi, màu sắc tương ứng với từng loại mảnh vỡ.
+- **Khi kích hoạt**: Mỗi Mảnh Vỡ (cả Bị Động và Chủ Động) đều có hiệu ứng hạt riêng biệt khi được kích hoạt. (Ví dụ: Kẻ Tàng Kiếm phát ra bụi đen quanh kẻ tấn công khi phản đòn, Ảnh Huyết để lại vệt khói khi lao tới).
 
 ---
 
@@ -89,25 +97,25 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 
 <ItemCard id="manh-vo-ke-tang-kiem" name="Mảnh Vỡ Kẻ Tàng Kiếm" image="/wiki/shard/shard_tang_kiem.jpg" rarity="rare">
 
-> *"Lưỡi kiếm sắc nhất là lưỡi kiếm không bao giờ được rút ra.
-> Trừ khi nó đã ở kề cổ ngươi."*
+> *"Lưỡi đao đoạt mạng nhất là lưỡi đao chưa từng được vung lên.
+> Phút chốc ngươi nhận ra, nó đã đầm đìa máu tươi của chính ngươi."*
 
-Tàng Kiếm là một kiếm khách không bao giờ mang theo vũ khí.
-Người ta cười nhạo hắn cho đến khi hắn bước vào hoàng cung tay không,
-và bước ra với cái đầu của hoàng đế.
-Hắn không cần rèn kiếm, vì **sát ý của hắn chính là lưỡi sắc nhất**.
-Hắn chết không phải vì bị đánh bại, mà vì chính ý chí của hắn
-đã cắt đứt sinh khí của bản thân — hắn đã tự kết liễu mình
-chỉ bằng một cái chớp mắt.
+Tàng Kiếm là một lãng khách chưa bao giờ cần đến vũ khí.
+Thiên hạ phỉ nhổ vào sự trống không nơi đôi bàn tay hắn, cho đến khi hắn bước vào cấm cung,
+và rời đi với thủ cấp của bậc vương giả.
+Hắn không cần rèn đao, vì **sát ý ngưng tụ sâu thẳm chính là tuyệt thế lưỡi dao**.
+Hắn băng hà không phải do bị khuất phục, mà bởi chính tà niệm của hắn
+đã cắt đứt sinh ti mệnh mạch của bản thân — kết liễu một kiếp người
+chỉ bằng một nháy mắt tĩnh lặng.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: **20% xác suất** phản chiếu **15% sát thương cận chiến** về phía kẻ tấn công. Khi bạn bị đánh rớt máu, kẻ địch có cơ hội nhận một phần sát thương ngược.
-- **Luôn hoạt động** khi được lắp.
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Lời nguyền (Bị Động)**: Tồn tại **20% xác suất** dội ngược **15% sát thương cận chiến** về phía kẻ bạo hành. Trúng luồng tà khí này kẻ địch cũng bị dính **Độc III trong 3 giây**. Khi da thịt bạn rỉ máu, kẻ địch cũng gánh chịu sự phản phệ từ vực thẳm.
+- **Tiềm tàng** khi được phong ấn.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
-| Hàng 2 | Netherite Sword ×1 | **Dark Ego Soul** | Enchanted Book (Thorns III) ×1 |
+| Hàng 2 | Netherite Sword ×1 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Enchanted Book (Thorns III) ×1 |
 | Hàng 3 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Prismarine Shard = sắc bén ẩn dưới đại dương (sát ý ẩn giấu), Netherite Sword = lưỡi kiếm không bao giờ rút, Thorns III = triết lý phản đòn.
@@ -120,23 +128,24 @@ chỉ bằng một cái chớp mắt.
 
 <ItemCard id="manh-vo-ke-huyet-lang" name="Mảnh Vỡ Kẻ Huyết Lang" image="/wiki/shard/shard_huyet_lang.jpg" rarity="epic">
 
-> *"Mùi máu. Đó là thứ duy nhất phân biệt ngươi với con mồi."*
+> *"Hương vị của máu đỏ... Đó là lằn ranh duy nhất ngăn cách ngươi và con mồi còm cõi."*
 
-Huyết Lang từng là một con người. Hoặc ít nhất, hắn trông giống người
-trước khi cơn đói nuốt chửng đi lằn ranh cuối cùng.
-Hắn săn lùng giữa rừng sâu, không vì thù hận, không vì quyền lực —
-chỉ vì máu nóng mang lại cho hắn cảm giác đang sống.
-Càng đổ máu, hắn càng mạnh. Khi không còn sinh vật nào để xé xác,
-hắn phát điên và tự cấu xé chính mình.
+Huyết Lang từng là một phàm nhân. Hoặc ít nhất, mang hình hài phàm nhân,
+trước khi cơn đói vô tận cắn nuốt tia lý trí cuối cùng.
+Hắn điên cuồng săn lùng giữa rừng thẳm, không vì thù oán, chẳng màng quyền uy —
+chỉ bởi dòng máu nóng mang lại cho hắn thứ thực tại đang sống.
+Càng đắm chìm trong tanh tưởi, hắn càng bá đạo. Khi vạn vật không còn để xé xác,
+hắn phát điên và ngấu nghiến chính da thịt của mình.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi HP **&lt; 30%** và bị đánh → **30% xác suất** kích hoạt **x3 sát thương cận chiến** trong **5 giây**.
-- Kích hoạt kèm hiệu ứng hạt đỏ (máu sôi — sát ý).
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Lời nguyền (Bị Động)**: Khi Sinh Lực **< 30%** và hứng chịu sát thương → **30% xác suất** bộc phát **x3 sát thương cận chiến** trong **5 giây**.
+- **Quyền năng (Chủ Động)**: Lập tức bị dung nhập bởi sắc **đỏ rực rỡ**, **Bạo phát Khí Lực +200% (Strength II)** và **Tốc Độ II** trong **1 phút**. Thời gian ngủ đông: **10 phút**.
+- Bị động bùng nổ kèm những tàn ảnh tà huyết (huyết dịch sôi sục — sát ý).
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Bone Block ×16 | Crimson Fungus ×16 | **Mảnh Kí Ức Huyết Lang** |
-| Hàng 2 | Crimson Fungus ×16 | **Dark Ego Soul** | Crimson Fungus ×16 |
+| Hàng 2 | Crimson Fungus ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Crimson Fungus ×16 |
 | Hàng 3 | Bone Block ×16 | Crimson Fungus ×16 | Bone Block ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Bone Block = xương của con mồi, Crimson Fungus = nấm đỏ máu từ Nether (khát máu), Kí Ức = chết đói khi đang Ego (cơn đói nuốt chửng).
@@ -150,30 +159,29 @@ hắn phát điên và tự cấu xé chính mình.
 
 <ItemCard id="manh-vo-ke-vo-danh" name="Mảnh Vỡ Kẻ Vô Danh" image="/wiki/shard/shard_vo_thanh.jpg" rarity="epic">
 
-> *"Ta không ẩn mình. Ta không trốn chạy.
-> Ta đơn giản là... không còn tồn tại trong mắt ngươi nữa."*
+> *"Ta không trú ngụ nơi bóng tối. Ta chẳng màng trốn chạy.
+> Ta chỉ đơn thuần... tháo bỏ gông cùm của sự hiện diện trước mắt ngươi."*
 
-Kẻ Vô Danh không bị lịch sử xóa đi — hắn **tự xóa mình trước**.
-Không phải tàng hình theo nghĩa thông thường, mà hắn học được cách
-**rút mình ra khỏi nhận thức của người xung quanh** —
-không ai nhớ khuôn mặt hắn, không ai nghe thấy giọng hắn.
-Hắn ngồi giữa triều đình đông đúc, nhìn vua cướp đi tất cả của mình,
-và mỉm cười — vì hắn biết sẽ đến lúc hắn cần biến mất hoàn toàn.
-Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
+Kẻ Vô Danh không bị sử sách xóa sổ — hắn **tự xóa sổ chính bản ngã của mình**.
+Đó chẳng phải ảo ảnh tàng hình phàm tục, mà là bí thuật
+**rút cạn sự hiện diện khỏi mọi giác quan của chúng sinh** —
+không một nhân ảnh nào mang ký ức về diện mạo, chẳng có thính giác nào đọng lại thanh âm của hắn.
+Khắc cuối đời, hắn tan biến giữa thanh thiên bạch nhật. Tịch diệt vô ảnh.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Khi kích hoạt → **Tàng hình hoàn toàn trong 5 phút**.
-- **Cooldown**: **10 phút**.
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Quyền năng (Chủ Động)**: Khi thức tỉnh → **Chìm vào cõi câm lặng hoàn toàn và tự động che khuất giáp trụ trong 8 phút**. Bất cứ sinh linh nào gục ngã dưới tay bạn sẽ chỉ nhận được bi kịch do **KẺ VÔ DANH** tước đoạt.
+- Giáp trụ sẽ nguyên vẹn trở lại khi thoát ly trạng thái, hoặc rời cõi.
+- **Thời gian ngủ đông**: **15 phút**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Fermented Spider Eye ×16 | Phantom Membrane ×16 | Fermented Spider Eye ×16 |
-| Hàng 2 | Phantom Membrane ×16 | **Dark Ego Soul** | Phantom Membrane ×16 |
+| Hàng 2 | Phantom Membrane ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Phantom Membrane ×16 |
 | Hàng 3 | Fermented Spider Eye ×16 | Ink Sac ×32 | Fermented Spider Eye ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Fermented Spider Eye = nguyên liệu pha chế Thuốc Tàng Hình trong vanilla MC (!), Phantom Membrane = kẻ săn mồi vô hình chỉ xuất hiện khi bạn không ngủ, Ink Sac = mực xoá tên — xoá danh tính.
 
-- **Linh hồn**: 1 · **Thời gian**: 5 phút
+- **Linh hồn**: 1 · **Thời gian**: 8 phút
 
 </ItemCard>
 
@@ -181,25 +189,25 @@ Cuối đời, hắn ra đi giữa ban ngày. Không ai để ý.
 
 <ItemCard id="manh-vo-ke-anh-huyet" name="Mảnh Vỡ Kẻ Ảnh Huyết" image="/wiki/shard/shard_anh_nguyet.jpg" rarity="mythic">
 
-> *"Ta không ở đây. Ta chưa bao giờ ở đây.
-> Nhưng ngươi đã chết rồi."*
+> *"Ta chưa từng hiện hữu nơi này. Bụi trần không lưu dấu giày.
+> Nhưng sinh mạng ngươi... đã tàn lụi từ lâu."*
 
-Ảnh Huyết là sát thủ duy nhất không ai từng nhìn thấy mặt.
-Danh sách nạn nhân của hắn dài hơn bất kỳ tên đồ tể nào trong lịch sử —
-nhưng không có nhân chứng sống.
-Người ta nói hắn không di chuyển qua không gian — hắn **xuyên qua bóng tối**.
-Hắn biến mất khỏi lịch sử theo đúng nghĩa đen.
-Không mộ phần. Không tên. Chỉ còn lại mảnh vỡ của một cái tôi
-lạnh như đêm và nhanh như tử thần.
+Ảnh Huyết là âm sát thủ duy nhất không ai từng diện kiến được bộ mặt thật.
+Cuốn danh sách tử vong của hắn dài hơn bất kỳ ác quỷ đồ tể nào được ghi nhận —
+nhưng tịnh không có một chứng nhân sống sót.
+Giới mộ đạo truyền tụng hắn không xê dịch qua lớp vỏ vật lý — hắn **vượt qua chiều không gian u ám**.
+Hắn tan biến khỏi dòng chảy thời gian đúng nghĩa đen.
+Vô mộ. Vô danh. Chỉ vương lại một mảnh vỡ của bản ngã
+lạnh lẽo như vòm trời vỡ và chớp nhoáng tựa lưỡi hái vong linh.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Lao thẳng về phía trước **8 block** + nhận **Tàng Hình 3 giây**.
-- **Cooldown**: **30 giây**.
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Quyền năng (Chủ Động)**: Vượt dải không gian **8 khối** + hòa làm **một với bóng đêm 3 giây**. Để lại một vết nứt tà khí xé toạc sau lưng, kẻ nào vô xui lọt vào đường đi đó sẽ bị ngưng đọng bởi **Wither II trong 3 giây**.
+- **Thời gian ngủ đông**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
-| Hàng 2 | Wither Rose ×8 | **Dark Ego Soul** | Enchanted Book (Wind Burst III) ×1 |
+| Hàng 2 | Wither Rose ×8 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Enchanted Book (Wind Burst III) ×1 |
 | Hàng 3 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Ender Pearl = xuyên không gian (dịch chuyển bóng tối), Wither Rose = hoa tử thần mọc trên xác chết (chỉ drop khi Wither giết mob — **cực hiếm**), Wind Burst III = phù sách gió từ Trial Chambers.
@@ -212,24 +220,25 @@ lạnh như đêm và nhanh như tử thần.
 
 <ItemCard id="manh-vo-ke-cuong-thanh" name="Mảnh Vỡ Kẻ Cuồng Thanh" image="/wiki/shard/shard_cuong_thanh.png" rarity="mythic">
 
-> *"Tiếng hét này không dành cho ngươi nghe.
-> Nó dành để đẩy ngươi đi."*
+> *"Thanh âm này không dành để rót vào tai ngươi.
+> Nó sinh ra... để tống khứ sự tồn tại của ngươi."*
 
-Cuồng Thanh mất tất cả trong một đêm — gia đình, danh dự, lý trí.
-Hắn đứng giữa chiến trường rỗng không và **hét lên** — không phải tiếng người,
-mà tiếng của thứ gì đó đã từ bỏ việc là người.
-Kẻ địch xung quanh hắn bị thổi bay như lá khô trước bão.
-Người ta không giết hắn vì họ không thể đến gần đủ để làm vậy.
-Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao giờ chọn.
+Cuồng Thanh mất đi mọi thứ trong một đêm tĩnh mịch — huyết thống, tôn nghiêm, và tâm trí.
+Hắn sững sờ giữa sa trường hoang diệt và **gầm rú** — một thứ thanh âm xa rời nhân tính,
+của một thực thể đã đoạn tuyệt với kiếp con người.
+Những bóng ma lảng vảng bị thổi bạt như xác lá úa trước cơn cuồng phong.
+Thiên hạ không dám đoạt mạng hắn vì chẳng kẻ nào tiếp kích đủ gần.
+Hắn ra đi trong sự cô mịch — điều bi ai nhất hắn xưa nay chưa từng lựa chọn.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Bị Động)**: Khi bị tấn công cận chiến, phát sóng xung kích (**Sonic Boom**) đẩy lùi kẻ địch **5 block**.
-- **Cooldown**: **30 giây** (hiển thị trên action bar).
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Lời nguyền (Bị Động)**: Hứng chịu đau đớn cận chiến, giải phóng dư chấn (**Sonic Boom**) thổi dạt kẻ địch **5 khối**. **Ngủ đông (Bị động)**: **30 giây**.
+- **Quyền năng (Chủ Động)**: Trong **15 giây**, mỗi nhát chém sở hữu **20% xác suất** nhúng mục tiêu vào bóng tối **Warden (Darkness + Nausea)** trong **10 giây**. Bất cứ sinh linh nào bỏ mạng trong khắc này sẽ tự hiến tế ra một khối **Sculk Shrieker**.
+- **Thời gian ngủ đông**: **30 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Sculk Shrieker ×1 | Echo Shard ×16 | Sculk Shrieker ×1 |
-| Hàng 2 | Echo Shard ×16 | **Dark Ego Soul** | Echo Shard ×16 |
+| Hàng 2 | Echo Shard ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Echo Shard ×16 |
 | Hàng 3 | Sculk Shrieker ×1 | **Mảnh Kí Ức Cuồng Thanh** | Goat Horn ×1 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Sculk Shrieker = tiếng thét xé không gian, Echo Shard = tiếng vọng của lý trí đã mất, Goat Horn = sừng kêu gọi — tiếng gào nguyên thuỷ, Kí Ức = chết gần Shrieker khi đang Ego (tiếng hét cuối cùng).
@@ -243,29 +252,58 @@ Cuối cùng hắn chết trong im lặng — điều duy nhất hắn chưa bao
 
 <ItemCard id="manh-vo-ke-ngao-thien" name="Mảnh Vỡ Kẻ Ngạo Thiên" image="/wiki/shard/shard_ngao_thien.jpg" rarity="mythic">
 
-> *"Đất dưới chân ta là thứ ta khinh nhất.
-> Ta không thuộc về nơi này. Ta thuộc về chỗ cao hơn."*
+> *"Bụi bặm kẹt dưới gót giày ta là thứ bẩn thỉu nhất.
+> Chốn phàm tục này đâu xứng. Cõi ngự trị của ta là ở trên cao kia."*
 
-Ngạo Thiên là hoàng đế từ chối cúi đầu — kể cả trước bầu trời.
-Hắn xây tháp cao đến nỗi đám mây phải né hắn.
-Khi tháp sụp đổ vì sức nặng của sự ngạo mạn,
-hắn không rơi xuống — hắn **bị bắn lên trên**,
-như thể đất cũng không chịu đựng được hắn nữa.
-Người ta tìm xác hắn mãi không thấy.
-Có lẽ hắn vẫn đang bay ở đâu đó —
-hoặc hắn đã chạm được tới thứ không ai khác dám nghĩ tới.
+Ngạo Thiên là bậc đế vương chối bỏ quỳ lạy — ngay cả đối với thần linh.
+Hắn cất lên một ngọn tháp chọc trời đến mức mây đen phải nhường lối.
+Nhưng khi sự cuồng vọng đạt đỉnh và đỉnh tháp sụp đổ,
+hắn không lao xuống vực sâu — trái lại, thứ ngạo khí đó **bắn hắn ngược lên trời**,
+như thể mặt đất nhơ bẩn không dám đón nhận thể xác của hắn.
+Thiên hạ đào bới tìm xác hắn nhưng vô thực.
+Có chăng hắn vẫn thong dong trên cõi vĩnh hằng —
+hoặc đã chạm đến những giới hạn mà vô ngã chưa một lần xướng tên.
 
-- Yêu cầu **Tier 3+** để lắp và kích hoạt.
-- **Hiệu Ứng (Chủ Động)**: Bắn thẳng lên không trung **10 block** tức thì. Nhận **Resistance I** trong 2 giây để chống sát thương rơi.
-- **Cooldown**: **60 giây**.
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Quyền năng (Chủ Động)**: Phá vỡ trọng lực, lao thẳng lên hư không **10 khối**. Kháng cự sức ép với **Resistance I** trong 2 giây. Những sinh giới hạ đẳng mặt đất lọt vào bán kính 10 khối (xuyên không gian dọc) sẽ bị áp đặt hiệu ứng **Phủ Phục** quỳ gối cúi gằm xuống mặt đất trong 3 giây hòa cùng tro tàn sương khói.
+- **Thời gian ngủ đông**: **60 giây**.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
 | Hàng 1 | Wind Charge ×16 | Emerald Block ×8 | Wind Charge ×16 |
-| Hàng 2 | Slime Block ×16 | **Dark Ego Soul** | Slime Block ×16 |
+| Hàng 2 | Slime Block ×16 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Slime Block ×16 |
 | Hàng 3 | Wind Charge ×16 | Breeze Rod ×16 | Wind Charge ×16 |
 
 > 🔮 **Ý nghĩa nguyên liệu**: Wind Charge = kháng cự gió trời, Breeze Rod = tinh chất gió từ Breeze (**Trial Chambers — cực hiếm**), Slime Block = mặt đất từ chối hắn — bật ngược lên trời, Emerald Block = sự giàu có và ngạo mạn của hoàng đế.
+
+- **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
+
+</ItemCard>
+
+---
+
+<ItemCard id="manh-vo-ke-nuot-tron-the-xac" name="Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác" image="/wiki/shard/shard_ke_nuot_tron.jpg" rarity="mythic">
+
+> *"Máu thịt phàm trần... chỉ là lớp vỏ bọc ngon lành giấu đi linh hồn mà ta khao khát."*
+
+Kẻ Nuốt Trọn Thể Xác sinh ra từ vực thẳm của sự thèm khát vô tận.
+Hắn tàn bạo, cuồng loạn và không bao giờ thỏa mãn.
+Sự thèm khát của hắn không dừng lại ở máu, mà là sinh lực cốt lõi
+của mọi sinh linh hắn cắn xé. Mỗi sinh mạng ngã xuống không chỉ
+nuôi dưỡng cơ thể, mà còn bành trướng thứ dị năng ma quái của hắn.
+
+- Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
+- **Lời nguyền (Bị Động)**: Huyết Sát — Kẻ địch chịu sát thương cận chiến có cơ hội bị chảy máu (True Damage), đồng thời bản thân nhận Regen III. Mục tiêu bị chảy máu sẽ chịu hiệu ứng Hunger II. Kẻ mang mảnh vỡ phải chịu cơn đói khát vĩnh hằng (Hunger I) bòn rút thể lực.
+- **Quyền năng (Chủ Động)**: Cú Cắn Của Kẻ Phàm Ăn — Đòn đánh cận chiến tiếp theo (trong 5s) sẽ **đoạt lấy vĩnh viễn Max HP** của nạn nhân và cộng vào Max HP của bản thân (tối đa +20 HP bonus). Nếu người sở hữu hoặc nạn nhân bỏ mạng, số Max HP bị đoạt/mất sẽ trở lại bình thường.
+- **Thời gian ngủ đông**: **10 phút**.
+
+| | Cột 1 | Cột 2 | Cột 3 |
+|---|:---:|:---:|:---:|
+| Hàng 1 | Rotten Flesh ×32 | Spider Eye ×32 | Rotten Flesh ×32 |
+| Hàng 2 | Bone ×32 | **[Bình Trấn Ngã Hắc Ám](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Bone ×32 |
+| Hàng 3 | Rotten Flesh ×32 | **Mảnh Kí Ức Kẻ Nuốt Trọn** | Spider Eye ×32 |
+
+> 🔮 **Ý nghĩa nguyên liệu**: Rotten Flesh & Bone = Xác thịt thối rữa của nạn nhân, Spider Eye = Nọc độc của sự giày vò thể xác, Kí Ức = Thu thập từ những sinh linh chết do thiêu đốt sinh lực.
 
 - **Linh hồn**: 1 · **Thời gian**: 5 phút · *Vị trí bị lộ*
 

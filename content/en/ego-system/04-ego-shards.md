@@ -6,12 +6,12 @@ order: 4
 
 # Ego Shards
 
-> *"Each shard is a piece of soul torn apart. Assemble them —
-> and you will become something no longer human."*
+> *"Each shard is a residual fragment, violently torn from a shattered soul. Bind them —
+> and submerge yourself into a power that has long forsaken the boundaries of humanity."*
 
 The Shard Slot is a special vessel, allowing you to equip **Ego Shards**
-to receive combat effects. Each shard is the remains of a **true self** —
-not a legend, but a memory imprisoned in matter.
+to receive abyssal combat effects. Each shard is the remains of a **true self** —
+not a legend, but an imprisoned agony trapped in matter.
 
 ---
 
@@ -71,12 +71,20 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
-| [🗡️ Hidden Blade Shard](#️-hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage | Always active |
-| [🩸 Blood Wolf Shard](#🩸-blood-wolf-shard) | Passive | 3+ | &lt;30% HP → 30% chance: x3 dmg for 5s | Triggers when hit |
-| [🌑 Nameless Shard](#-nameless-shard) | Active | 3+ | Full invisibility 5 minutes | CD 10 min |
-| [🌘 Blood Shadow Shard](#-blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility 3s | CD 30s |
-| [💀 Mad Sound Shard](#-mad-sound-shard) | Passive | 3+ | Retaliatory Sonic Boom when hit | CD 30s |
-| [☁️ Sky Pride Shard](#️-sky-pride-shard) | Active | 3+ | Launch straight up 10 blocks | CD 60s |
+| [🗡️ Hidden Blade Shard](#hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage + Poison for 3s | Always active |
+| [🩸 Blood Wolf Shard](#blood-wolf-shard) | A/P | 3+ | Passive: <30% HP → x3 dmg (5s). Active: Blood-red aura & Rage boost (1 min). | Passive: On hit. Active: CD 10m |
+| [🌑 Nameless Shard](#nameless-shard) | Active | 3+ | Abyssal silence: True invisibility & hides armor for 8 mins (Anonymous kill) | CD 15 min |
+| [🌘 Blood Shadow Shard](#blood-shadow-shard) | Active | 3+ | Phase 8 blocks, leaving an Abyssal Wither II trail (3s) if enemies are pierced | CD 30s |
+| [💀 Mad Sound Shard](#mad-sound-shard) | A/P | 3+ | Passive: Sonic Boom. Active(15s): 20% Warden curse(10s) + spawns Shrieker on kill | P.CD: 30s. A.CD: 30s |
+| [☁️ Sky Pride Shard](#sky-pride-shard) | Active | 3+ | Pierce the sky 10 blocks + Enforce targets (10-block radius) to bow for 3s | CD 60s |
+| [🍖 Flesh Devourer Shard](#flesh-devourer-shard) | A/P | 3+ | Passive: True DMG Bleed + Regen III. Active: Steal Max HP | P: Melee. A: CD 10m |
+
+---
+
+## Visual Effects (VFX)
+
+- **When equipped**: All players equipping a Shard will have subtle ambient particles orbiting them, with colors matching the specific Shard type.
+- **When activated**: Each Shard (both Passive and Active) has distinct particle effects upon activation. (e.g., Hidden Blade emits black dust around the attacker when reflecting damage, Blood Shadow leaves a smoke trail while dashing).
 
 ---
 
@@ -89,25 +97,25 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 
 <ItemCard id="hidden-blade-shard" name="Hidden Blade Shard" image="/wiki/shard/shard_tang_kiem.jpg" rarity="rare">
 
-> *"The sharpest blade is the one never drawn.
-> Unless it is already at your throat."*
+> *"The deadliest blade is the one never unsheathed.
+> By the time you realize, it is already drenched in your own blood."*
 
-Hidden Blade was a swordsman who never carried a weapon.
-People laughed at him until he walked into the imperial palace empty-handed,
-and walked out with the emperor's head.
-He didn't need to forge a blade, because **his killing intent was the sharpest edge**.
-He died not by being defeated, but because his own will
-severed his own life force — he killed himself
-with just a blink of an eye.
+Hidden Blade was a wandering swordsman who never bothered with a weapon.
+The realm spat upon his empty hands until he breached the forbidden palace,
+and departed holding the sovereign's severed head.
+He never needed to forge steel, for **his condensed killing intent was the ultimate edge**.
+He met his demise not by subjugation, but because his own abyssal malice
+severed his life thread — extinguishing his mortal coil
+in a single, silent blink.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: **20% chance** to reflect **15% melee damage** back to the attacker. When you take damage, the enemy has a chance to take a portion of the damage back.
-- **Always active** when equipped.
+- Requires **Tier 3+** to seal and awaken.
+- **Curse (Passive)**: A **20% probability** to rebound **15% melee suffering** back to the aggressor. Upon impact, the attacker is cursed with **Poison III for 3 seconds**. When your flesh bleeds, the enemy shares the abyssal backlash.
+- **Latent** when sealed.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
-| Row 2 | Netherite Sword ×1 | **Dark Ego Soul** | Enchanted Book (Thorns III) ×1 |
+| Row 2 | Netherite Sword ×1 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Enchanted Book (Thorns III) ×1 |
 | Row 3 | Prismarine Shard ×16 | Netherite Sword ×1 | Prismarine Shard ×16 |
 
 > 🔮 **Ingredient lore**: Prismarine Shard = hidden sharpness beneath the ocean (concealed intent), Netherite Sword = the blade never drawn, Thorns III = the philosophy of retaliation.
@@ -120,23 +128,24 @@ with just a blink of an eye.
 
 <ItemCard id="blood-wolf-shard" name="Blood Wolf Shard" image="/wiki/shard/shard_huyet_lang.jpg" rarity="epic">
 
-> *"The smell of blood. It is the only thing separating you from prey."*
+> *"The metallic taste of crimson... That is the solitary line separating you from frail prey."*
 
-Blood Wolf was once human. Or at least, he looked like one
-before hunger devoured the last boundary.
-He hunted in the deep forest, not out of hatred, not for power —
-only because hot blood made him feel alive.
-The more he bled, the stronger he grew. When no creature remained to tear apart,
-he went mad and tore himself apart.
+Blood Wolf was once a mortal. Or at least, bore a mortal vessel,
+before an endless famine devoured his final thread of sanity.
+He blindly hunted within the abyssal woods, devoid of hatred, uncaring of power —
+driven solely by the hot vitae that bestowed the illusion of living.
+The deeper he bathed in gore, the more tyrannical he became. When no flesh remained to rend,
+he succumbed to madness and devoured his own.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: When HP **&lt; 30%** and hit → **30% chance** to activate **x3 melee damage** for **5 seconds**.
-- Triggers with red particle effects (boiling blood — killing intent).
+- Requires **Tier 3+** to seal and awaken.
+- **Curse (Passive)**: When Life Force **< 30%** and struck → **30% probability** to erupt with **x3 melee damage** for **5 seconds**.
+- **Dominion (Active)**: Instantly consumed by a **crimson incandescence**, an **Explosion of Ki (+200% Strength II)** and **Speed II** for **1 minute**. Slumber time: **10 minutes**.
+- Passive eruption is accompanied by blood-stained phantoms (boiling vitae — killing intent).
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Bone Block ×16 | Crimson Fungus ×16 | **Blood Wolf's Memory Fragment** |
-| Row 2 | Crimson Fungus ×16 | **Dark Ego Soul** | Crimson Fungus ×16 |
+| Row 2 | Crimson Fungus ×16 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Crimson Fungus ×16 |
 | Row 3 | Bone Block ×16 | Crimson Fungus ×16 | Bone Block ×16 |
 
 > 🔮 **Ingredient lore**: Bone Block = bones of prey, Crimson Fungus = blood-red Nether fungus (bloodlust), Memory Fragment = die from starvation during Ego (hunger devours).
@@ -150,30 +159,29 @@ he went mad and tore himself apart.
 
 <ItemCard id="nameless-shard" name="Nameless Shard" image="/wiki/shard/shard_vo_thanh.jpg" rarity="epic">
 
-> *"I am not hiding. I am not running.
-> I simply... no longer exist in your eyes."*
+> *"I do not dwell in the shadows. I care not for escape.
+> I simply... unbind the shackles of my presence before your very eyes."*
 
-The Nameless One was not erased by history — he **erased himself first**.
-Not invisible in the usual sense, but he learned to
-**withdraw from the perception of everyone around** —
-no one remembers his face, no one hears his voice.
-He sat in the crowded court, watching the king take everything from him,
-and smiled — because he knew the time would come to disappear completely.
-At the end of his life, he left in broad daylight. No one noticed.
+The Nameless One was not purged by history's ink — he **eradicated his own ego first**.
+This was no mortal illusion of invisibility, but a dark art
+**draining his existence from all sentient senses** —
+not a single figure harbored the memory of his visage, no ear retained the echo of his voice.
+In his final twilight, he dissolved in broad daylight. Silent annihilation.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: On activation → **Complete invisibility for 5 minutes**.
-- **Cooldown**: **10 minutes**.
+- Requires **Tier 3+** to seal and awaken.
+- **Dominion (Active)**: Upon awakening → **Plunge into absolute stillness, concealing your armor and being for 8 minutes**. Any soul that perishes by your hand will only witness a tragedy claimed by **THE NAMELESS**.
+- Your armor emerges unscathed when parting from this state, or ascending from the realm.
+- **Slumber time**: **15 minutes**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Fermented Spider Eye ×16 | Phantom Membrane ×16 | Fermented Spider Eye ×16 |
-| Row 2 | Phantom Membrane ×16 | **Dark Ego Soul** | Phantom Membrane ×16 |
+| Row 2 | Phantom Membrane ×16 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Phantom Membrane ×16 |
 | Row 3 | Fermented Spider Eye ×16 | Ink Sac ×32 | Fermented Spider Eye ×16 |
 
 > 🔮 **Ingredient lore**: Fermented Spider Eye = THE vanilla invisibility potion ingredient (!), Phantom Membrane = unseen predators that appear only when you don't sleep, Ink Sac = ink that erases names — erasing identity.
 
-- **Souls**: 1 · **Time**: 5 min
+- **Souls**: 1 · **Time**: 8 min
 
 </ItemCard>
 
@@ -181,25 +189,25 @@ At the end of his life, he left in broad daylight. No one noticed.
 
 <ItemCard id="blood-shadow-shard" name="Blood Shadow Shard" image="/wiki/shard/shard_anh_nguyet.jpg" rarity="mythic">
 
-> *"I am not here. I was never here.
-> But you are already dead."*
+> *"I was never standing here. Mundane dust bears no footprint of mine.
+> But your life essence... weathered away long before."*
 
-Blood Shadow is the only assassin no one has ever seen the face of.
-His victim list is longer than any butcher in history —
-but there are no living witnesses.
-They say he does not move through space — he **phases through darkness**.
-He vanished from history literally.
-No grave. No name. Only fragments of an ego left
-cold as night and swift as death.
+Blood Shadow is the solitary silent phantom whose true face remains unseen.
+His ledger of the deceased stretches further than any recorded diabolical butcher —
+yet devoid of a single surviving spectator.
+Zealots whisper he does not traverse through the physical plane — he **phases through the abyssal dimension**.
+He faded from the river of time in its truest literal sense.
+No tomb. No title. Only an ego shard left behind,
+frigid as a shattered sky and fleeting as a reaper's scythe.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Dash forward **8 blocks** + gain **Invisibility 3 seconds**.
-- **Cooldown**: **30 seconds**.
+- Requires **Tier 3+** to seal and awaken.
+- **Dominion (Active)**: Transverse the void **8 blocks** + merge **with the darkness for 3 seconds**. Leave behind a ruptured abyssal trail, any unfortunate victim caught in this path will be suspended by **Wither II for 3 seconds**.
+- **Slumber time**: **30 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
-| Row 2 | Wither Rose ×8 | **Dark Ego Soul** | Enchanted Book (Wind Burst III) ×1 |
+| Row 2 | Wither Rose ×8 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Enchanted Book (Wind Burst III) ×1 |
 | Row 3 | Ender Pearl ×8 | Wither Rose ×8 | Ender Pearl ×8 |
 
 > 🔮 **Ingredient lore**: Ender Pearl = phase through space (shadow teleportation), Wither Rose = death flower that grows on corpses (only drops when Wither kills mobs — **extremely rare**), Wind Burst III = wind dash tome from Trial Chambers.
@@ -212,24 +220,25 @@ cold as night and swift as death.
 
 <ItemCard id="mad-sound-shard" name="Mad Sound Shard" image="/wiki/shard/shard_cuong_thanh.png" rarity="mythic">
 
-> *"This scream is not for you to hear.
-> It is to push you away."*
+> *"This frequency was never meant to grace your ears.
+> It was born... to sever your very existence."*
 
-Mad Sound lost everything in one night — family, honor, reason.
-He stood in the empty battlefield and **screamed** — not a human voice,
-but the voice of something that had given up on being human.
-Enemies around him were blown away like dry leaves before a storm.
-People could not kill him because they could never get close enough.
-He died in silence — the only thing he never chose.
+Mad Sound lost his entire world in a single, deadly quiet night — lineage, dignity, and mind.
+He stood motionless on the desolate ruins and **roared** — a frequency alienated from humanity,
+of an entity that had severed ties with mortality.
+Lingering phantoms were swept aside like withered leaves in a maelstrom.
+The world dared not execute him, for none could approach near enough to strike.
+He departed in utter silence — the most tragic reality he never actively chose.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Passive)**: When hit by melee, retaliates with a **Sonic Boom** shockwave that pushes the attacker **5 blocks** back.
-- **Cooldown**: **30 seconds** (displayed on action bar).
+- Requires **Tier 3+** to seal and awaken.
+- **Curse (Passive)**: Enduring close-quarters torment unleashes an aftershock (**Sonic Boom**) that repels enemies **5 blocks**. **Passive Slumber**: **30 seconds**.
+- **Dominion (Active)**: For **15 seconds**, every slash wields a **20% probability** to drown the target in darkness **Warden (Darkness + Nausea)** for **10 seconds**. Any entity that perishes in this fleeting moment will sacrifice itself to birth a **Sculk Shrieker**.
+- **Slumber time**: **30 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Sculk Shrieker ×1 | Echo Shard ×16 | Sculk Shrieker ×1 |
-| Row 2 | Echo Shard ×16 | **Dark Ego Soul** | Echo Shard ×16 |
+| Row 2 | Echo Shard ×16 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Echo Shard ×16 |
 | Row 3 | Sculk Shrieker ×1 | **Mad Sound's Memory Fragment** | Goat Horn ×1 |
 
 > 🔮 **Ingredient lore**: Sculk Shrieker = the shriek that shattered reality, Echo Shard = echoes of lost sanity, Goat Horn = the primal scream, Memory Fragment = die near a Shrieker during Ego (the final scream).
@@ -243,29 +252,58 @@ He died in silence — the only thing he never chose.
 
 <ItemCard id="sky-pride-shard" name="Sky Pride Shard" image="/wiki/shard/shard_ngao_thien.jpg" rarity="mythic">
 
-> *"The ground beneath my feet is what I despise the most.
-> I do not belong here. I belong somewhere higher."*
+> *"The filth lodged beneath my heel is the basest of existence.
+> This mortal realm is unworthy. My true throne sits upon the highest zenith."*
 
-Sky Pride is the emperor who refused to bow — even to the sky.
-He built a tower so high that clouds had to dodge him.
-When the tower collapsed under the weight of arrogance,
-he did not fall down — he **was shot upward**,
-as if the earth could not stand him either.
-They searched for his body forever but found nothing.
-Perhaps he is still flying somewhere —
-or he has reached something no one else dared to think of.
+Sky Pride is the sovereign who shunned kneeling — even to deities.
+He constructed a spire so colossal that storm clouds were forced to yield.
+Yet when his hubris reached its apex and the spire collapsed,
+he did not plummet to the abyss — ironically, that sheer arrogance **propelled him straight into the heavens**,
+as if the filthy earth refused to embrace his corporeal form.
+The world excavated fruitlessly for his corpse.
+Perhaps he still wanders the eternal firmament —
+or breached limits that the egoless never dared utter aloud.
 
-- Requires **Tier 3+** to equip and activate.
-- **Effect (Active)**: Launch straight up **10 blocks** instantly. Grants **Resistance I** for 2 seconds to absorb fall damage.
-- **Cooldown**: **60 seconds**.
+- Requires **Tier 3+** to seal and awaken.
+- **Dominion (Active)**: Shatter gravity, propelling into the void **10 blocks**. Resist the crushing pressure with **Resistance I** for 2 seconds. The inferior terrestrial lifeforms trapped within a 10-block radius (piercing vertical space) will be forcibly afflicted by **Submission**, bowing their heads in reverence to the floor for 3 seconds amidst fading ash.
+- **Slumber time**: **60 seconds**.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|
 | Row 1 | Wind Charge ×16 | Emerald Block ×8 | Wind Charge ×16 |
-| Row 2 | Slime Block ×16 | **Dark Ego Soul** | Slime Block ×16 |
+| Row 2 | Slime Block ×16 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Slime Block ×16 |
 | Row 3 | Wind Charge ×16 | Breeze Rod ×16 | Wind Charge ×16 |
 
 > 🔮 **Ingredient lore**: Wind Charge = defying wind itself, Breeze Rod = rare wind essence from Breeze (**Trial Chambers — extremely rare**), Slime Block = the earth rejects him — bouncing him skyward, Emerald Block = the emperor's wealth and arrogance.
+
+- **Souls**: 1 · **Time**: 5 min · *Location revealed*
+
+</ItemCard>
+
+---
+
+<ItemCard id="flesh-devourer-shard" name="Flesh Devourer Shard" image="/wiki/shard/shard_ke_nuot_tron.jpg" rarity="mythic">
+
+> *"Mortal flesh... is but a delectable shell hiding the true soul I hunger for."*
+
+The Flesh Devourer was born from the abyss of an endless famine.
+He is brutal, frantic, and perpetually unsatisfied.
+His craving does not stop at blood, but extends to the very core vitality
+of every living being he tears apart. Every fallen life not only
+nourishes his vessel but expands his monstrous dominion.
+
+- Requires **Tier 3+** to seal and awaken.
+- **Curse (Passive)**: Bloodletting — Enemies suffering melee damage have a chance to bleed (True Damage), while granting you Regen III. Bleeding targets suffer Hunger II. The shard bearer must endure an eternal starvation (Hunger I) draining their energy.
+- **Dominion (Active)**: Devourer's Bite — The next melee strike (within 5s) will **permanently steal the victim's Max HP** and add it to your own (max +20 HP bonus). If the bearer or the victim perishes, the stolen/lost Max HP is restored.
+- **Slumber time**: **10 minutes**.
+
+| | Col 1 | Col 2 | Col 3 |
+|---|:---:|:---:|:---:|
+| Row 1 | Rotten Flesh ×32 | Spider Eye ×32 | Rotten Flesh ×32 |
+| Row 2 | Bone ×32 | **[Dark Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Bone ×32 |
+| Row 3 | Rotten Flesh ×32 | **Devourer's Memory Fragment** | Spider Eye ×32 |
+
+> 🔮 **Ingredient lore**: Rotten Flesh & Bone = The putrefied remains of victims, Spider Eye = The venom of physical torment, Memory Fragment = Harvested from souls incinerated by vitality drain.
 
 - **Souls**: 1 · **Time**: 5 min · *Location revealed*
 

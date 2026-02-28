@@ -3,70 +3,89 @@ title: Changelog
 description: History of EgoSMP and Mace-Exclusive plugins.
 order: 3
 ---
-
-# Changelog
+# Change Log
 
 ## EgoSMP Plugin
+### VERSION 1.2.3 — AN ERA OF ANNOUNCEMENT & WORSHIP
+*Released: February 2026*
+
+
+**Edit & Update:*
+🌑 Survival & Ego Mechanisms:
+
+Tier -1 (Frail Soul): Entities that die at Tier 0 will fall to Tier -1.
+
+Hunt for Deadly Sins: Dark Ego and Ego drop rates increase proportionally when killing targets at Tier 7, 8, and 9.
+
+Stoic Bonus: Destroying an entity carrying Shards or Sins will force 100% more Normal Self to drop.
+
+### v1.2.2 — Guilty Fragment Skill Update
+*Released: February 2026*
+
+**Edit & Update:**
+- 🌑 **Nameless Fragment** — Increases invisibility time to 8 minutes, automatically removes and hides armor when invisible. Cooldown increased to 15 minutes.
+- 🌘 **Blood Shadow Fragments** — Added Wither II effect (3s) that poisons those who pass through the shadow trail (during dash).
+- ☁️ **Arrogance Fragment** — Added Worship effect: forcing all enemies on the ground within a 10 block radius to kneel (close their eyes and stare down) for 3 seconds.
+- 🗡️ **Hidden Sword Fragment** — Adds a 6s Poison effect to enemies when activating damage reflection.
 
 ### v1.2.1 — Soul Protection & Shard Tweaks
 *Released: February 2026*
 
-**Updates & Fixes:**
-- 🛡️ **Soul Keeper** — Fix: Players protected by Soul Keeper upon death will also **not drop Ego**.
-- 🐺 **Blood Wolf Shard** — Added a 3-day server-wide cooldown whenever Blood Wolf's Memory Fragment is summoned.
-- 🎶 **Mad Sound Shard** — Changed to Passive skill: Added retaliatory Sonic Boom effect when attacked (Cooldown: 30s).
-- 📜 **Mad Sound Forging** — Now requires "Mad Sound's Memory Fragment", obtained by dying under Ego/Dark Ego effect near a Sculk Shrieker (50% chance).
+**Edit & Update:**
+- 🛡️ **Soul Keeper** — Bug fix: Players using Soul Keeper to protect their Tier when they die will now also **not drop Ego**.
+- 🐺 **Blood Wolf Fragment** — Adds a 3-day cooldown to the entire server each time the Blood Wolf Memory Fragment is summoned.
+- 🎶 **Sonic Fragments** — Changed to Passive skill: Adds Sonic Boom revenge effect when attacked (Cooldown: 30s).
+- 📜 **Culk Ego Forge Recipe** — Requires "Culk Ego Memory Fragment", obtained by dying while activating Ego/Dark Ego near Sculk Shrieker (50% chance).
 
-### v1.2.0 — Shards & Curses
+### v1.2.0 — Shards & Curse
 *Released: February 2026*
 
-**New Features:**
-- 🧩 **Ego Shards** — Collect shards from monsters for crafting
-- 🔮 **Cursed Crafting Table** — A place to craft forbidden items
-- 🐛 **Bug Fixes** — Fixed pending bugs and improved performance
+**New features:**
+- 🧩 **Ego Fragments** — Collect shards from monsters to craft
+- 🔮 **Curse Crafting Table** — Where taboo items are created
+- 🐛 **Bug Fix** — Fix outstanding bugs and improve performance
 
-### v0.1.3 — Web Wiki Integration
+### v0.1.3 — Wiki Web Integration
 *Released: February 2026*
 
-**New Features:**
-- 🌐 **Web Wiki Integration** — Integrated with the web wiki
+**New features:**
+- 🌐 **Web wiki integration** — Integration with web wiki
 
 ### v0.1.2 — Ego Forging & Advanced GUI
 *Released: February 2026*
 
-**New Features:**
+**New features:**
 - ✨ **Ego Forging System** — Craft special items with crafting time
-- 🔗 **Mace Integration** — Synced with Mace-Exclusive plugin
-- 🌐 **Multi-language** — Full support for English and Vietnamese
+- 🔗 **Mace Integration** — Sync with Mace-Exclusive plugin
+- 🌐 **Multilingual** — Fully supports English and Vietnamese
 
 
-**Improvements:**
-- 📁 Reorganized config folders (`custom/`, `lang/`)
-- ⚡ Optimized item loading and GUI
+**Improvement:**
+- 📁 Reorganized config folder (`custom/`, `lang/`)
+- ⚡ Optimize item loading and GUI
 
-### v0.1.1 — Gameplay Improvements
-- 🔒 **Crafting Limits** — Limit by recipe type
+### v0.1.1 — Improved Gameplay
+- 🔒 **Crafting limit** — Limited by recipe type
 - ☠️ **Custom Death Messages** — Unique death messages
 - 👑 **Admin Tier Command** — `/sabi ego set`
 
 ### v0.1.0 — Dark Ego & Anti-Farming
 - 🌑 **Dark Ego** — Rare drop (5%) from Tier 5+
-- 🚫 **Anti-Farming** — Prevent Tier 0 farming
-- 🛡️ **Ego Protection** — Items protected on death
+- 🚫 **Anti-Farming** — Prevents Tier 0 farming
+- 🛡️ **Ego Protection** — Items are protected upon death
 
 ## Mace-Exclusive Plugin
 
-### v0.0.2 — The Legendary Mace
+### v0.0.2 — Legendary Mace
 *Released: January 2026*
 
 **Mace of Power:**
-- ⚒️ Unique Weapon — only ONE on the server
-- 💎 Hunted when owned
+- ⚒️ Unique weapon — only ONE weapon on the server
+- 💎 chased when possessed
 - 📍 Strict Mode — cannot be stored in chests
 
 **Mace of Chaos (The Glitch):**
-- 🔮 Glitched variant with &*%$&$
-- ☠️ Cursed when crafted/picked up
-- 🎲 20% inventory shuffle for opponent on hit
-- 👻 Name *%&(^* — anonymous killer identity
-
+- 🔮 Broken variant with &*%$&$
+- ☠️ Curse when making/picking up
+- 🎲 20% shuffles opponent's inventory when fighting
+- 👻 Name *%&(^* — hides the killer's identity

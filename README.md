@@ -99,6 +99,6 @@ Establish communication with the central command.
 
 <sub>**ENGINEERED BY THE EGO SMP ARCHITECTS**</sub>
 <br />
-<sub>EST. 2024 • SYSTEM OPTIMIZED</sub>
+<sub>EST. 2026 • SYSTEM OPTIMIZED</sub>
 
 </div>

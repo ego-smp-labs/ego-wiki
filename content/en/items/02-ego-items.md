@@ -45,7 +45,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 ---
 
-### Ego Soul
+### Ego Sealing Vessel
 
 - Ability to store Ego in soul form
 
@@ -57,7 +57,7 @@ Pure fragment of the soul. Core energy to **upgrade Tier**.
 
 ---
 
-### Dark Ego Soul
+### Dark Ego Sealing Vessel
 
 - Ability to store Dark Ego in soul form
 
@@ -79,9 +79,9 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 | | Column 1 | Column 2 | Column 3 |
 |---|:---:|:---:|:---:|
-| Row 1 | Sculk | Sculk | Sculk |
-| Row 2 | Sculk | **Ego Soul** | Sculk |
-| Row 3 | Sculk | Sculk | Sculk |
+| Row 1 | Sculk |  | Sculk |
+| Row 2 | Netherite Scrap | **[Ego Sealing Vessel](https://ego.sabicoder.xyz/en/wiki/items/ego-items)** | Netherite Scrap |
+| Row 3 | Sculk |  | Sculk |
 
 - **Main Usage**: Core material to forge at [Cursed Table](/en/wiki/items/cursed-crafting), indirect way to get Dark Ego.
 - **⚠️ Use directly (Right Click)** → **instant death**:
@@ -98,11 +98,11 @@ Ego Fragment lost its purity after fusing with Sculk.
 
 > *"Purity is sometimes the result of coercion."*
 
-A spiritual stone capable of cleansing precipitated darkness, reverting an ego back to its original form (losing the raw power of darkness in the process).
+Formed by combining 4 Amethyst Shards in a normal crafting grid. This is a spiritual stone capable of cleansing things that have been tainted.
 
-- **Origin**: Forged at [Cursed Crafting Table](/en/wiki/items/cursed-crafting)
-- **Usage**: Combine with **Dark Ego** in normal crafting grid to produce normal **Ego Fragment**.
-- **Trait**: Cannot stack (x1 items) — cannot be placed in chests.
+- **Origin**: Crafted with 4 Amethyst Shards in a normal Crafting Table.
+- **Usage**: Used as the core ingredient in the **Ego Purification Ritual** (to remove Shards). Additionally used to purify Dark Egos.
+- **Trait**: Normal item.
 
 </ItemCard>
 

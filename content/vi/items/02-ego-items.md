@@ -11,41 +11,7 @@ Mỗi khi một linh hồn bị mài mòn, nó để lại những **mảnh vỡ
 
 ---
 
-<ItemCard id="ego-fragment--manh-ban-nga" name="Ego Fragment — Mảnh Bản Ngã" image="/wiki/items/ego_default.png" rarity="rare">
-
-> *"Mỗi mảnh là một ký ức bị cắt đứt."*
-
-Mảnh vỡ tinh khiết của linh hồn. Nguồn năng lượng cốt lõi để **nâng cấp Tier**.
-
-- **Nguồn gốc**: Rơi khi giết người chơi khác (PvP kill)
-- **Công dụng**: Dùng trực tiếp để nâng Tier
-- **Đặc tính**: Gắn liền với nạn nhân — chỉ kẻ giết mới có thể dùng
-
-> Xem thêm → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
-
-</ItemCard>
-
----
-
-<ItemCard id="dark-ego--ban-nga-hac-am" name="Dark Ego — Bản Ngã Hắc Ám" image="/wiki/items/ego_dark.png" rarity="epic">
-
-> *"Có thứ không nên chạm vào. Nhưng ngươi vẫn chạm."*
-
-Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại là sự nguyền rủa.
-
-- **Nguồn gốc**: Tỷ lệ rơi hiếm (5%) từ nạn nhân Tier 5+
-- **Công dụng**: Nâng Tier 5+ hoặc làm nguyên liệu [Rèn Huyết Tế](/vi/wiki/items/cursed-crafting)
-- **Rủi ro**: **10% tử vong tức thì** khi sử dụng
-- **Hiệu ứng nhặt**: Wither + xáo trộn kho đồ trong 10 giây
-- **Cổng Tiến Hóa**: Từ Tier 5 trở lên, bạn **buộc phải đánh bại** người sở hữu Dark Ego mới có thể tiến hóa
-
-> Xem thêm → [Dark Ego](/vi/wiki/ego-system/dark-ego)
-
-</ItemCard>
-
----
-
-### Ego Soul — Mảnh Ego Soul
+<ItemCard id="ego-sealing-vessel--binh-tran-nga" name="Bình Trấn Ngã — Ego Sealing Vessel" image="/wiki/items/ego_sealing_vessel.png" rarity="rare">
 
 - khả năng lưu trữ Bản ngã Ego dưới dạng linh hồn
 
@@ -55,9 +21,11 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 | Hàng 2 | Glass Pane | **Ego** | Glass Pane |
 | Hàng 3 | Glass Pane | Soul Lantern | Glass Pane |
 
+</ItemCard>
+
 ---
 
-### Dark Ego Soul — Mảnh Dark Ego Soul
+<ItemCard id="dark-ego-vessel--binh-tran-nga-hau-am" name="Dark Ego Vessel — Bình Trấn Ngã Hắc Ám" image="/wiki/items/dark_ego_sealing_vessel.png" rarity="rare">
 
 - khả năng lưu trữ Bản ngã Dark Ego dưới dạng linh hồn
 
@@ -69,8 +37,11 @@ Phiên bản **tha hóa** của Ego Fragment. Mạnh hơn, nhưng đổi lại l
 
 - **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
 
+</ItemCard>
 
-## Tainted Ego — Ego Tạp Nhiễm
+---
+
+<ItemCard id="tainted-ego--ego-tap-nhiem" name="Tainted Ego — Ego Tạp Nhiễm" image="/wiki/items/tainted_ego.png" rarity="epic">
 
 > *"Tinh khiết bị trộn lẫn với bóng tối. Kết quả? Một thứ không thuộc về ai."*
 
@@ -81,9 +52,9 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
-| Hàng 1 | Sculk | Sculk | Sculk |
-| Hàng 2 | Sculk | **Ego Soul** | Sculk |
-| Hàng 3 | Sculk | Sculk | Sculk |
+| Hàng 1 | Sculk |  | Sculk |
+| Hàng 2 | Netherite Scrap | **[Bình Trấn Ngã](https://ego.sabicoder.xyz/vi/wiki/items/ego-items)** | Netherite Scrap |
+| Hàng 3 | Sculk |  | Sculk |
 
 - **Công dụng chính**: Nguyên liệu cốt lõi để rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting), lấy dark ego gián tiếp.
 - **⚠️ Dùng trực tiếp (Chuột Phải)** → **chết người lập tức**:
@@ -94,17 +65,19 @@ Ego Fragment đã mất đi sự tinh khiết sau khi bị dung hợp với Scul
   - **Thời gian hồi chiêu**: 60 giây (không thể sử dụng liên tục)
 - **Giới hạn**: Không thể xếp chồng (x1 items)— không thể đặt trong rương
 
+</ItemCard>
+
 ---
 
-<ItemCard id="da-thanh-tay--purification-stone" name="Đá Thanh Tẩy — Purification Stone" image="/wiki/items/ego_default.png" rarity="epic">
+<ItemCard id="da-thanh-tay--purification-stone" name="Đá Thanh Tẩy — Purification Stone" image="/wiki/items/purification_stone.png" rarity="epic">
 
 > *"Sự thuần khiết đôi khi là kết quả của việc cưỡng chế."*
 
-Một viên đá tâm linh có khả năng gột rửa bóng tối bị kết tủa, đưa bản ngã trở về dạng nguyên bản (tuy nhiên sẽ mất đi sức mạnh thuần túy của bóng tối).
+Tinh hoa được tạo ra từ việc ghép 4 viên Amethyst Shard trong bàn chế tạo. Đây là một viên đá tâm linh có khả năng gột rửa những thứ đã bị ô uế.
 
-- **Nguồn gốc**: Rèn tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting)
-- **Công dụng**: Kết hợp với **Dark Ego** trong túi đồ/Bàn chế tạo thường để cho ra **Ego Fragment** thường.
-- **Tính chất**: Không thể xếp chồng (x1 items) — không thể đặt trong rương.
+- **Nguồn gốc**: Ghép 4 Amethyst Shard trong Bàn chế tạo thường.
+- **Công dụng**: Dùng làm nguyên liệu trung tâm trong **Nghi Thức Bóc Tách Bản Ngã** (tháo Mảnh vỡ). Ngoài ra, còn nằm trong quy trình thanh tẩy Dark Ego.
+- **Tính chất**: Vật phẩm thông thường.
 
 </ItemCard>
 

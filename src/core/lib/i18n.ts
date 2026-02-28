@@ -37,7 +37,7 @@ export const translations = {
             serverIp: "Server IP",
             copyIp: "Copy",
             copied: "Copied!",
-            copyright: "© 2026 EGO WIKI | Void Backbone v2",
+            copyright: "© 2026 EGO WIKI | SOV lab.",
         },
         faq: {
             title: "FAQ",
@@ -84,7 +84,7 @@ export const translations = {
             serverIp: "IP Server",
             copyIp: "Sao chép",
             copied: "Đã sao chép!",
-            copyright: "© 2026 EGO WIKI | Void Backbone v2",
+            copyright: "© 2026 EGO WIKI | SOV lab.",
         },
         faq: {
             title: "Hỏi đáp",
