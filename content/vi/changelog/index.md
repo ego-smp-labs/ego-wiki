@@ -12,13 +12,13 @@ order: 3
 **Phát hành: Tháng 2/2026**
 
 **Sửa đổi & Cập nhật:**
-🌑 Cơ chế Sinh Tồn & Bản Ngã:
+- 🌑 **Cơ chế Sinh Tồn & Bản Ngã:**
 
-Tier -1 (Linh Hồn Yếu Ớt): Thực thể chết tại Tier 0 sẽ rơi xuống Tier -1.
+- **Tier -1 (Linh Hồn Yếu Ớt):** Thực thể chết tại Tier 0 sẽ rơi xuống Tier -1.
 
-Săn Lùng Đại Tội: Tỉ lệ rớt Dark Ego và Bản Ngã tăng tỉ lệ thuận khi tiêu diệt mục tiêu ở Tier 7, 8 và 9.
+- **Săn Lùng Đại Tội:** Tỉ lệ rớt Dark Ego và Bản Ngã tăng tỉ lệ thuận khi tiêu diệt mục tiêu ở Tier 7, 8 và 9.
 
-Thưởng Khắc Kỷ: Tiêu diệt thực thể đang mang Mảnh Vỡ (Shard) hoặc Đại Tội (Sins) sẽ ép rớt thêm 100% Bản Ngã Thường.
+- **Thưởng Khắc Kỷ:** Tiêu diệt thực thể đang mang Mảnh Vỡ (Shard) hoặc Đại Tội (Sins) sẽ ép rớt thêm 100% Bản Ngã Thường.
 
 ### v1.2.2 — Cập Nhật Kỹ Năng Mảnh Vỡ Tội Lỗi
 *Phát hành: Tháng 2/2026*
