@@ -72,7 +72,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 | Shard | Type | Tier | Effect | Cooldown / Condition |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Hidden Blade Shard](#hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage + Poison for 3s | Always active |
-| [🩸 Blood Wolf Shard](#blood-wolf-shard) | A/P | 3+ | Passive: <30% HP → x3 dmg (5s). Active: Blood-red aura & Rage boost (1 min). | Passive: On hit. Active: CD 10m |
+| [🩸 Blood Wolf Shard](#blood-wolf-shard) | A/P | 3+ | Passive: &lt;30% HP → x3 dmg (5s). Active: Blood-red aura & Rage boost (1 min). | Passive: On hit. Active: CD 10m |
 | [🌑 Nameless Shard](#nameless-shard) | Active | 3+ | Abyssal silence: True invisibility & hides armor for 8 mins (Anonymous kill) | CD 15 min |
 | [🌘 Blood Shadow Shard](#blood-shadow-shard) | Active | 3+ | Phase 8 blocks, leaving an Abyssal Wither II trail (3s) if enemies are pierced | CD 30s |
 | [💀 Mad Sound Shard](#mad-sound-shard) | A/P | 3+ | Passive: Sonic Boom. Active(15s): 20% Warden curse(10s) + spawns Shrieker on kill | P.CD: 30s. A.CD: 30s |

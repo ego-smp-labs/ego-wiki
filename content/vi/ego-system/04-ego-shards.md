@@ -72,7 +72,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#manh-vo-ke-tang-kiem) | Bị Động | 3+ | 20% phản 15% tổn thương cận chiến + Độc 3s | Tiềm tàng |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực <30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực &lt;30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#manh-vo-ke-vo-danh) | Chủ Động | 3+ | Tịch mịch hoàn toàn: Xóa bóng & giáp 8 phút (Chết ẩn danh) | CD 15 phút |
 | [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#manh-vo-ke-anh-huyet) | Chủ Động | 3+ | Vượt 8 khối không gian, để lại Tà Khí Wither II (3s) nếu xuyên qua sinh linh | CD 30s |
 | [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#manh-vo-ke-cuong-thanh) | C/B | 3+ | Bị Động: Phản kích Sonic Boom. Chủ Động (15s): 20% nguyền rủa Warden (10s) + bộc phát Shrieker | B.Động CD 30s. C.Động CD 30s |
