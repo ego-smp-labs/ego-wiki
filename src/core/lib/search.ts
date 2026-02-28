@@ -86,16 +86,23 @@ export function searchArticles(
     }
 
     const fuse = buildSearchIndex(locale);
-    // Sentinel: Request more results than limit to account for post-filtering of locked articles
-    const results = fuse.search(query, { limit: limit * 2 });
+    // Sentinel: Get all matches first, then filter locked ones
+    const allResults = fuse.search(query);
 
-    const now = new Date();
-    const visibleResults = results.filter((result) => {
-        if (!result.item.lockedUntil) return true;
-        return now >= new Date(result.item.lockedUntil);
-    });
+    const results = allResults
+        .filter((result) => {
+            // Sentinel: Filter out locked articles to prevent information disclosure
+            if (result.item.lockedUntil) {
+                const unlockDate = new Date(result.item.lockedUntil).getTime();
+                if (Date.now() < unlockDate) {
+                    return false;
+                }
+            }
+            return true;
+        })
+        .slice(0, limit);
 
-    return visibleResults.slice(0, limit).map((result) => {
+    return results.map((result) => {
         let excerpt = result.item.description || "";
         let hash = "";
 

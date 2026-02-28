@@ -18,21 +18,7 @@
 **Learning:** Even read-only APIs need strict input validation to prevent resource exhaustion. `Fuse.js` in-memory search can be expensive with large datasets or queries.
 **Prevention:** Cap all array limits (e.g., max 50 items) and string lengths (e.g., max 100 chars) in public APIs.
 
-## 2025-02-24 - Auth Bypass via Path Confusion
-**Vulnerability:** The global middleware (`src/proxy.ts`) skipped authentication for any path containing a dot (`.`) to bypass static files. This allowed attackers to access protected routes (e.g., `/wiki/v1.0`) by ensuring the URL contained a dot.
-**Learning:** Broad pattern matching for skipping middleware (like `pathname.includes(".")`) is dangerous. It assumes only static files have dots, which is false for dynamic routes or user content.
-**Prevention:** Use an explicit allowlist of static file extensions (e.g., `.png`, `.css`) or negative lookahead regex to strictly define what should skip authentication.
-
-## 2025-02-24 - Path Traversal in Changelog
-**Vulnerability:** `getRecentUpdates` in `src/core/lib/changelog.ts` used the `locale` parameter directly in `path.join` without validation, allowing potential path traversal if the locale was manipulated.
-**Learning:** Even if `locale` is expected to be safe from Next.js routing, utility functions should validate their inputs independently to ensure "defense in depth" and prevent misuse in other contexts.
-**Prevention:** Always validate inputs used in file system operations against an allowlist (like `isValidLocale`) or sanitization function, regardless of the source of the input.
-## 2025-02-24 - Information Disclosure in Search
-**Vulnerability:** The search functionality (`searchArticles`) exposed content of articles that were scheduled for future release (`lockedUntil`), leaking sensitive information before the intended time.
-**Learning:** Index-time filtering (in `buildSearchIndex`) is insufficient for time-sensitive visibility controls because the index is cached. Search-time filtering is required to enforce dynamic access rules like release dates.
-**Prevention:** Filter sensitive content at the point of query execution (`searchArticles`) based on current context (time, user permissions), not just at index time.
-
-## 2025-03-05 - Cross-Site Scripting (XSS) in Changelog
-**Vulnerability:** The `src/app/[locale]/changelog/page.tsx` page rendered changelog entries using `dangerouslySetInnerHTML`, exposing the application to XSS attacks if the markdown content was modified or sourced externally.
-**Learning:** Bypassing React's built-in XSS protection with `dangerouslySetInnerHTML` should be avoided when rendering raw text or potentially unsafe user content.
-**Prevention:** Always use safe rendering patterns (e.g. creating React nodes) or sanitization libraries instead of directly rendering unescaped HTML strings.
+## 2025-02-24 - Search API Information Disclosure
+**Vulnerability:** The search functionality (`searchArticles`) included locked articles in the search index and results, allowing users to discover the existence and snippets of classified content before its release date.
+**Learning:** Filtering content for display (e.g. in `ArticlePage`) is insufficient if the data access layer (e.g. `searchArticles`) exposes it via other means. Security checks must be applied at the data retrieval level.
+**Prevention:** Always apply access control filters (like `lockedUntil`) in the service/data layer, not just in the presentation layer.
