@@ -6,19 +6,18 @@ order: 3
 # Change Log
 
 ## EgoSMP Plugin
+
 ### VERSION 1.2.3 — AN ERA OF ANNOUNCEMENT & WORSHIP
-*Released: February 2026*
+**Released: February 2026**
 
+**Edit & Update:**
+- 🌑 **Survival Mechanism & Ego:**
 
-**Edit & Update:*
-🌑 Survival & Ego Mechanisms:
+- **Tier -1 (Frailty Soul):** Entities that die at Tier 0 will fall to Tier -1.
 
-Tier -1 (Frail Soul): Entities that die at Tier 0 will fall to Tier -1.
+- **Hunting for Deadly Sins:** Dark Ego and Ego drop rates increase proportionally when killing targets at Tier 7, 8 and 9.
 
-Hunt for Deadly Sins: Dark Ego and Ego drop rates increase proportionally when killing targets at Tier 7, 8, and 9.
-
-Stoic Bonus: Destroying an entity carrying Shards or Sins will force 100% more Normal Self to drop.
-
+- **Stoic Bonus:** Destroying an entity carrying Shards or Sins will force an additional 100% of Normal Self to drop.
 ### v1.2.2 — Guilty Fragment Skill Update
 *Released: February 2026*
 
