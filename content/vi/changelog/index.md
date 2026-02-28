@@ -7,11 +7,11 @@ order: 3
 # Nhật Ký Thay Đổi
 
 ## EgoSMP Plugin
+
 ### VERSION 1.2.3 — KỶ NGUYÊN VÔ DANH & TÔN SÙNG
-*Phát hành: Tháng 2/2026*
+**Phát hành: Tháng 2/2026**
 
-
-**Sửa đổi & Cập nhật:*
+**Sửa đổi & Cập nhật:**
 🌑 Cơ chế Sinh Tồn & Bản Ngã:
 
 Tier -1 (Linh Hồn Yếu Ớt): Thực thể chết tại Tier 0 sẽ rơi xuống Tier -1.
