@@ -20,7 +20,7 @@ không phải huyền tích, mà là những uất hận bị xiềng xích tron
 
 | Tier | mở khoá phong ấn |
 |------|--------------:|
-| &lt; 3  | Không có gì cả |
+| < 3  | Không có gì cả |
 | 3+ | **1 phong ấn** (Slot 1 — trái) |
 | 6+   | **2 phong ấn** (Slot 1 + Slot 2) |
 
@@ -72,7 +72,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | Mảnh Vỡ | Loại | Tier | Hiệu Ứng | Cooldown / Điều Kiện |
 |---------|------|------|-----------|----------------------|
 | [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#manh-vo-ke-tang-kiem) | Bị Động | 3+ | 20% phản 15% tổn thương cận chiến + Độc 3s | Tiềm tàng |
-| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực &lt;30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
+| [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực < 30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#manh-vo-ke-vo-danh) | Chủ Động | 3+ | Tịch mịch hoàn toàn: Xóa bóng & giáp 8 phút (Chết ẩn danh) | CD 15 phút |
 | [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#manh-vo-ke-anh-huyet) | Chủ Động | 3+ | Vượt 8 khối không gian, để lại Tà Khí Wither II (3s) nếu xuyên qua sinh linh | CD 30s |
 | [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#manh-vo-ke-cuong-thanh) | C/B | 3+ | Bị Động: Phản kích Sonic Boom. Chủ Động (15s): 20% nguyền rủa Warden (10s) + bộc phát Shrieker | B.Động CD 30s. C.Động CD 30s |
@@ -284,13 +284,12 @@ hoặc đã chạm đến những giới hạn mà vô ngã chưa một lần x�
 
 <ItemCard id="manh-vo-ke-nuot-tron-the-xac" name="Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác" image="/wiki/shard/shard_ke_nuot_tron.jpg" rarity="mythic">
 
-> *"Máu thịt phàm trần... chỉ là lớp vỏ bọc ngon lành giấu đi linh hồn mà ta khao khát."*
+> *"Cái lạnh cắt da cắt thịt không đáng sợ bằng tiếng gào thét của dạ dày. 
+> Ngươi sẽ không bao giờ hiểu được... thịt đồng loại lại ấm áp đến thế."*
 
-Kẻ Nuốt Trọn Thể Xác sinh ra từ vực thẳm của sự thèm khát vô tận.
-Hắn tàn bạo, cuồng loạn và không bao giờ thỏa mãn.
-Sự thèm khát của hắn không dừng lại ở máu, mà là sinh lực cốt lõi
-của mọi sinh linh hắn cắn xé. Mỗi sinh mạng ngã xuống không chỉ
-nuôi dưỡng cơ thể, mà còn bành trướng thứ dị năng ma quái của hắn.
+Kẻ Nuốt Trọn Thể Xác không sinh ra là một ác quỷ. Hắn từng là một lữ khách vĩ đại bị mắc kẹt lại trong trận bão tuyết kỷ nguyên. Khi lương thực cạn kiệt và những người đồng hành ngã gục vì cái lạnh, sự sinh tồn đã đánh bại nhân tính. Hắn bắt đầu ăn. Đầu tiên là xác chết lạnh lẽo, rồi đến những kẻ đang thoi thóp...
+
+Một linh hồn bị nguyền rủa bởi cơn đói vô tận, kẻ ăn thịt đồng loại để tồn tại giữa thiên tai trắng xóa.
 
 - Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
 - **Lời nguyền (Bị Động)**: Huyết Sát — Kẻ địch chịu sát thương cận chiến có cơ hội bị chảy máu (True Damage), đồng thời bản thân nhận Regen III. Mục tiêu bị chảy máu sẽ chịu hiệu ứng Hunger II. Kẻ mang mảnh vỡ phải chịu cơn đói khát vĩnh hằng (Hunger I) bòn rút thể lực.

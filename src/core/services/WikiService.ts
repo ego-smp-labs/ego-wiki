@@ -221,7 +221,12 @@ export class WikiService {
         const filePath = path.join(categoryPath, matchingFile);
         const fileContent = fs.readFileSync(filePath, "utf-8");
         const stats = fs.statSync(filePath);
-        const { data: frontmatter, content } = matter(fileContent);
+        const { data: frontmatter, content: rawContentBody } = matter(fileContent);
+        
+        // Auto-fix MDX syntax errors for < used as a comparison (not followed by a tag name)
+        const content = rawContentBody
+            .replace(/\\?<(?![a-zA-Z/])/g, '&lt;');
+
         const { order } = this.parseFilename(matchingFile);
         const headings = this.extractHeadings(content);
         const title = frontmatter.title || this.extractTitle(content);
