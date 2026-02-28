@@ -10,7 +10,7 @@ Beyond the permanent Ego Shards and Sin Hearts, the Ego world occasionally birth
 
 ---
 
-<ItemCard id="betrayer-heart" name="Betrayer's Heart" image="/wiki/event/betrayer_heart.jpg" rarity="mythic">
+<ItemCard id="betrayer-heart" name="Betrayer's Heart" image="/wiki/items/the_betrayer_heart.gif" rarity="mythic">
 
 > *"Its heartbeat is a death knell. You chose to betray the world, 
 > now watch what the world does to tear it from your hands."*

@@ -10,7 +10,7 @@ Ngoài các Ego Shard và Sin Heart cố định, thế giới Ego đôi khi b�
 
 ---
 
-<ItemCard id="trai-tim-ke-phan-boi" name="Trái Tim Kẻ Phản Bội" image="/wiki/event/betrayer_heart.jpg" rarity="mythic">
+<ItemCard id="trai-tim-ke-phan-boi" name="Trái Tim Kẻ Phản Bội" image="/wiki/items/the_betrayer_heart.gif" rarity="mythic">
 
 > *"Nhịp đập của nó là tiếng chuông báo tử. Ngươi đã chọn phản bội cả thế giới,
 > giờ hãy xem thế giới sẽ làm gì để tước lấy nó từ tay ngươi."*

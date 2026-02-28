@@ -282,7 +282,7 @@ or breached limits that the egoless never dared utter aloud.
 
 ---
 
-<ItemCard id="flesh-devourer-shard" name="Flesh Devourer Shard" image="/wiki/shard/shard_ke_nuot_tron.jpg" rarity="mythic">
+<ItemCard id="flesh-devourer-shard" name="Flesh Devourer Shard" image="/wiki/shard/shard_ke_nuot_tron.gif" rarity="mythic">
 
 > *"The biting cold of the flesh is not as terrifying as the scream of the stomach. 
 > You will never understand... how warm the flesh of your kind truly is."*

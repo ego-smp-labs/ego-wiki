@@ -282,7 +282,7 @@ hoặc đã chạm đến những giới hạn mà vô ngã chưa một lần x�
 
 ---
 
-<ItemCard id="manh-vo-ke-nuot-tron-the-xac" name="Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác" image="/wiki/shard/shard_ke_nuot_tron.jpg" rarity="mythic">
+<ItemCard id="manh-vo-ke-nuot-tron-the-xac" name="Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác" image="/wiki/shard/shard_ke_nuot_tron.gif" rarity="mythic">
 
 > *"Cái lạnh cắt da cắt thịt không đáng sợ bằng tiếng gào thét của dạ dày. 
 > Ngươi sẽ không bao giờ hiểu được... thịt đồng loại lại ấm áp đến thế."*
