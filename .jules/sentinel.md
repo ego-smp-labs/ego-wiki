@@ -22,3 +22,8 @@
 **Vulnerability:** The search functionality (`searchArticles`) included locked articles in the search index and results, allowing users to discover the existence and snippets of classified content before its release date.
 **Learning:** Filtering content for display (e.g. in `ArticlePage`) is insufficient if the data access layer (e.g. `searchArticles`) exposes it via other means. Security checks must be applied at the data retrieval level.
 **Prevention:** Always apply access control filters (like `lockedUntil`) in the service/data layer, not just in the presentation layer.
+
+## 2025-02-24 - Unrestricted Image Optimization Sources (SSRF Risk)
+**Vulnerability:** The Next.js `next.config.ts` allowed the `/_next/image` endpoint to fetch and optimize images from any `https://**` hostname. This exposes the application to Server-Side Request Forgery (SSRF) risks and excessive resource consumption.
+**Learning:** Next.js Image Optimization can act as an open proxy if not restricted. An attacker could force the server to repeatedly fetch and process large/malicious images from arbitrary domains.
+**Prevention:** Always use strict allowlists in `images.remotePatterns` for `next.config.ts`, specifically limiting domains to trusted origins like CDNs (e.g., `cdn.discordapp.com`).
