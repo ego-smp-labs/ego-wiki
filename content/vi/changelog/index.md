@@ -8,6 +8,16 @@ order: 3
 
 ## EgoSMP Plugin
 
+### VERSION 1.2.4 — HIẾN TẾ HƯ VÔ & CUỘC SĂN KẺ PHẢN BỘI
+**Phát hành: Tháng 3/2026**
+
+**Tính năng mới:**
+- 🔮 **Đài Hiến Tế Hư Vô (Void Altar)** — Đặt Lõi Nặng Khảm Nạm lên cấu trúc 8 khối Đá Móc Đen để triệu hồi.
+- 🩸 **Cơ chế Huyết Sạc** — Đài tiêu tốn Charge để hoạt động, sạc lại bằng cách hiến tế sinh mạng (Dân Làng) gần đó.
+- 🎭 **Đánh thức Bản Ngã** — Ném Ego vào Đài Hư Vô để thăng cấp thành Dark Ego.
+- ⚔️ **Chế Tạo Nguyền Rủa** — Ném đúng các nguyên liệu lơ lửng quanh đài để rèn các Cổ vật mạnh nhất (Cuồng Thanh, Tàng Kiếm...).
+- 🔪 **Sự Kiện "Cuộc Săn Kẻ Phản Bội"** — Event Sinh Tồn 1-Life mới, tiêu diệt The Betrayer's Guardian để đoạt Quả Tim, mang về Win Zone an toàn để chiến thắng.
+
 ### VERSION 1.2.3 — KỶ NGUYÊN VÔ DANH & TÔN SÙNG
 **Phát hành: Tháng 2/2026**
 

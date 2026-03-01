@@ -7,6 +7,16 @@ order: 3
 
 ## EgoSMP Plugin
 
+### VERSION 1.2.4 — VOID SACRIFICE & THE BETRAYER'S HUNT
+**Released: March 2026**
+
+**New features:**
+- 🔮 **Void Altar** — Summoned by placing a Cursed Heavy Core on an 8-block Polished Blackstone Brick structure.
+- 🩸 **Blood Recharge** — The Altar consumes Charges to function; recharge it by sacrificing lives (Villagers) nearby.
+- 🎭 **Ego Awakening** — Throw an Ego into the Void Altar to awaken it into a Dark Ego.
+- ⚔️ **Cursed Crafting** — Throw floating ingredients near the Altar to forge the most powerful Artifacts.
+- 🔪 **"Betrayer's Hunt" Event** — A new 1-Life Survival Event. Defeat The Betrayer's Guardian to claim the Heart, and deliver it to the Win Zone to claim victory.
+
 ### VERSION 1.2.3 — AN ERA OF ANNOUNCEMENT & WORSHIP
 **Released: February 2026**
 
