@@ -7,6 +7,9 @@ import Footer from "@presentation/components/layout/Footer";
 import CommandPalette from "@presentation/components/layout/CommandPalette";
 import { GlobalBackground } from "@presentation/components/ui/GlobalBackground";
 import FloatingParticles from "@presentation/components/effects/FloatingParticles";
+import { Toaster } from "sonner";
+import UpdateAnnouncer from "@presentation/components/effects/UpdateAnnouncer";
+import FloatingHub from "@presentation/components/ui/FloatingHub";
 
 interface LocaleLayoutClientProps {
     children: React.ReactNode;
@@ -42,6 +45,23 @@ export default function LocaleLayoutClient({
                 isOpen={searchOpen}
                 onClose={() => setSearchOpen(false)}
             />
+
+            {/* Announcer & Toaster */}
+            <UpdateAnnouncer />
+            <Toaster 
+                theme="dark"
+                position="bottom-right"
+                toastOptions={{
+                    className: "bg-black/80 border border-white/10 backdrop-blur-md text-white font-inter",
+                    actionButtonStyle: {
+                        backgroundColor: "#5865F2",
+                        color: "white",
+                    }
+                }}
+            />
+
+            {/* Floating Community Hub */}
+            <FloatingHub />
         </SessionProvider>
     );
 }

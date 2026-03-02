@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Clock } from "lucide-react";
 import { getTranslations } from "@core/lib/i18n";
 import { getRecentUpdates } from "@core/lib/changelog";
+import React from "react";
 
 interface ChangelogPageProps {
     params: Promise<{ locale: string }>;
@@ -19,6 +20,30 @@ export async function generateMetadata({
                 ? "Lịch sử cập nhật và thay đổi của EGO SMP"
                 : "Update history and changelogs for EGO SMP",
     };
+}
+
+function parseChangelogLine(line: string) {
+    // Split the text into parts using regex for **bold** and `code`
+    const parts = line.split(/(\*\*.*?\*\*|`.*?`)/g);
+
+    return parts.map((part, index) => {
+        if (part.startsWith("**") && part.endsWith("**")) {
+            const content = part.slice(2, -2);
+            return (
+                <strong key={index} className="text-white">
+                    {content}
+                </strong>
+            );
+        } else if (part.startsWith("`") && part.endsWith("`")) {
+            const content = part.slice(1, -1);
+            return (
+                <code key={index} className="bg-white/10 px-1 rounded text-xs font-mono text-neon-pink">
+                    {content}
+                </code>
+            );
+        }
+        return <React.Fragment key={index}>{part}</React.Fragment>;
+    });
 }
 
 export default async function ChangelogPage({ params }: ChangelogPageProps) {
@@ -99,14 +124,9 @@ export default async function ChangelogPage({ params }: ChangelogPageProps) {
                                         return (
                                             <div key={j} className={`flex items-start gap-3 text-white/70 ${isMainFeature ? "text-white font-semibold mt-4" : ""}`}>
                                                 <span className={`mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 ${isMainFeature ? "bg-neon-purple" : "bg-white/20"}`} />
-                                                <span 
-                                                    className="leading-relaxed"
-                                                    dangerouslySetInnerHTML={{ 
-                                                        __html: cleanLine
-                                                            .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')
-                                                            .replace(/`(.*?)`/g, '<code class="bg-white/10 px-1 rounded text-xs font-mono text-neon-pink">$1</code>')
-                                                    }} 
-                                                />
+                                                <span className="leading-relaxed">
+                                                    {parseChangelogLine(cleanLine)}
+                                                </span>
                                             </div>
                                         );
                                     })}

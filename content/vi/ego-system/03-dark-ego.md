@@ -1,0 +1,50 @@
+---
+title: Dark Ego
+description: Sức mạnh đen tối và rủi ro.
+order: 3
+---
+
+<ItemCard id="ban-nga-hac-hoa" name="Bản Ngã Hắc Hóa (Dark Ego)" image="/wiki/items/ego_dark.png" rarity="mythic">
+
+Đến một ngưỡng sức mạnh nào đó (Tier 5+), bản ngã bình thường không còn đủ thoả mãn bạn. Bạn cần thứ đen tối hơn: **Dark Ego**.
+
+</ItemCard>
+
+### Nguồn gốc
+
+- **Rơi tự nhiên**: Từ người chơi **Tier 5+** khi bị hạ (100%)
+- **Chế tạo**: Dùng [Tainted Ego](/vi/wiki/items/ego-items#tainted-ego--ego-tp-nhim) làm nguyên liệu cốt lõi tại [Bàn Chế Tạo Nguyền](/vi/wiki/items/cursed-crafting) — **không phải dùng trực tiếp**.
+
+### Quyền năng
+
+- **Tier &lt; 5**: Tăng ngay random **+1-2 Tier**
+- **Tier &gt;= 5**: Tăng **+1 Tier** (bắt buộc dùng để thăng cấp)
+
+### Cái giá
+
+- **10%** khả năng chết ngay lập tức khi sử dụng
+- **Hỗn loạn**: Toàn bộ inventory bị xáo trộn
+- **Hiệu ứng**: Wither II, Bóng tối, Chậm, Yếu, Buồn nôn
+
+> Dark Ego là bản ngã không thể hấp thụ dễ dàng.
+
+---
+
+## Thanh Tẩy Dark Ego
+
+Nếu không muốn chấp nhận rủi ro, bạn có thể **thanh tẩy** Dark Ego bằng **Đá Thanh Tẩy** (Purification Stone).
+
+- **Công thức**: Dark Ego + Đá Thanh Tẩy → Ego Fragment thường
+- **Đá Thanh Tẩy**: Rèn từ Amethyst Shard + Echo Shard tại [Bàn Nguyền](/vi/wiki/items/cursed-crafting)
+
+> *"Bóng tối có thể bị gột rửa — nhưng sự tinh khiết đã mất đi sức mạnh nguyên thuỷ."*
+
+---
+
+## Xem Thêm
+
+- → [Tàn Tích Bản Ngã](/vi/wiki/items/ego-items)
+- → [Hệ Thống Tier](/vi/wiki/ego-system/tier-system)
+- → [Công Thức Nguyền Rủa](/vi/wiki/items/cursed-recipes)
+- → [Mảnh Vỡ Bản Ngã](/vi/wiki/ego-system/ego-shards)
+- → [Bản Ngã (Ego)](/vi/wiki/ego-system/ego)

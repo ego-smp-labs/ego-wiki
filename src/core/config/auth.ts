@@ -1,8 +1,9 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthConfig } from "next-auth";
 import Discord from "next-auth/providers/discord";
 import { env } from "@core/config/env";
+import { WebhookService } from "@core/services/WebhookService";
 
-export const { handlers, auth, signIn, signOut } = NextAuth({
+export const authConfig: NextAuthConfig = {
     providers: [
         Discord({
             clientId: env.DISCORD_CLIENT_ID,
@@ -20,7 +21,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             }
             return session;
         },
-        async jwt({ token, account }) {
+        async jwt({ token, account, user }) {
             if (account) {
                 token.accessToken = account.access_token;
                 token.isGuildMember = false;
@@ -54,6 +55,20 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                         console.error("Failed to fetch Discord roles", error);
                     }
                 }
+
+                // Sentinel: Audit log for admin logins
+                if (token.isAdmin) {
+                    const webhookService = new WebhookService();
+                    const username = user?.name || "Unknown User";
+                    try {
+                        // Fire-and-forget for speed, or await for reliability
+                        // We await to ensure the log is sent before completing the login flow
+                        await webhookService.notifyAdminLogin(username);
+                    } catch (error) {
+                        // Fail open: Don't block login if logging fails
+                        console.error("Failed to send admin login notification:", error);
+                    }
+                }
             }
             return token;
         },
@@ -61,4 +76,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     pages: {
         signIn: "/login",
     },
-});
+};
+
+export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);

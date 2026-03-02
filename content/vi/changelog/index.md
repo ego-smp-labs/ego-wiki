@@ -1,12 +1,60 @@
 ---
-title: Nhật Ký Kí Ức
+title: Nhật Ký Thay Đổi
 description: Lịch sử thế giới plugin EgoSMP và Mace-Exclusive.
 order: 3
 ---
 
-# Nhật Ký Kí Ức
+# Nhật Ký Thay Đổi
 
 ## EgoSMP Plugin
+
+### VERSION 1.2.4 — HIẾN TẾ HƯ VÔ & CUỘC SĂN KẺ PHẢN BỘI
+**Phát hành: Tháng 3/2026**
+
+**Tính năng mới:**
+- 🔮 **Đài Hiến Tế Hư Vô (Void Altar)** — Đặt Lõi Nặng Khảm Nạm lên cấu trúc 8 khối Đá Móc Đen để triệu hồi.
+- 🩸 **Cơ chế Huyết Sạc** — Đài tiêu tốn Charge để hoạt động, sạc lại bằng cách hiến tế sinh mạng (Dân Làng) gần đó.
+- 🎭 **Đánh thức Bản Ngã** — Ném Ego vào Đài Hư Vô để thăng cấp thành Dark Ego.
+- ⚔️ **Chế Tạo Nguyền Rủa** — Ném đúng các nguyên liệu lơ lửng quanh đài để rèn các Cổ vật mạnh nhất (Cuồng Thanh, Tàng Kiếm...).
+- 🔪 **Sự Kiện "Cuộc Săn Kẻ Phản Bội"** — Event Sinh Tồn 1-Life mới, tiêu diệt The Betrayer's Guardian để đoạt Quả Tim, mang về Win Zone an toàn để chiến thắng.
+
+### VERSION 1.2.3 — KỶ NGUYÊN VÔ DANH & TÔN SÙNG
+**Phát hành: Tháng 2/2026**
+
+**Sửa đổi & Cập nhật:**
+- 🌑 **Cơ chế Sinh Tồn & Bản Ngã:**
+
+- **Tier -1 (Linh Hồn Yếu Ớt):** Thực thể chết tại Tier 0 sẽ rơi xuống Tier -1.
+
+- **Săn Lùng Đại Tội:** Tỉ lệ rớt Dark Ego và Bản Ngã tăng tỉ lệ thuận khi tiêu diệt mục tiêu ở Tier 7, 8 và 9.
+
+- **Thưởng Khắc Kỷ:** Tiêu diệt thực thể đang mang Mảnh Vỡ (Shard) hoặc Đại Tội (Sins) sẽ ép rớt thêm 100% Bản Ngã Thường.
+
+### v1.2.2 — Cập Nhật Kỹ Năng Mảnh Vỡ Tội Lỗi
+*Phát hành: Tháng 2/2026*
+
+**Sửa đổi & Cập nhật:**
+- 🌑 **Mảnh Vỡ Vô Danh** — Tăng thời gian tàng hình lên 8 phút, tự động tháo và giấu giáp khi tàng hình. Cooldown tăng lên 15 phút.
+- 🌘 **Mảnh Vỡ Ảnh Huyết** — Thêm hiệu ứng Wither II (3s) gây độc cho những ai đi qua vệt bóng tối (lúc lướt).
+- ☁️ **Mảnh Vỡ Ngạo Thiên** — Thêm hiệu ứng Sùng bái: ép toàn bộ kẻ địch dưới mặt đất trong bán kính 10 block phải quỳ (nắm mắt nhìn chằm chằm xuống) trong 3 giây.
+- 🗡️ **Mảnh Vỡ Tàng Kiếm** — Thêm hiệu ứng Độc (Poison) 6s lên kẻ địch khi kích hoạt phản sát thương.
+
+### v1.2.1 — Soul Protection & Shard Tweaks
+*Phát hành: Tháng 2/2026*
+
+**Sửa đổi & Cập nhật:**
+- 🛡️ **Soul Keeper** — Sửa lỗi: Người chơi sử dụng Soul Keeper bảo vệ Tier khi chết giờ đây cũng sẽ **không rớt Ego**.
+- 🐺 **Mảnh Vỡ Huyết Lang** — Thêm thời gian hồi 3 ngày cho toàn server mỗi lần Mảnh Kí Ức Huyết Lang được triệu hồi.
+- 🎶 **Mảnh Vỡ Cuồng Thanh** — Đổi thành kỹ năng Bị Động: Thêm hiệu ứng báo thù Sonic Boom khi bị tấn công (Cooldown: 30s).
+- 📜 **Công thức rèn Cuồng Thanh** — Yêu cầu "Mảnh Kí Ức Cuồng Thanh", thu thập bằng cách chết khi đang kích hoạt Ego/Dark Ego gần Sculk Shrieker (tỉ lệ 50%).
+
+### v1.2.0 — Mảnh Vỡ & Lời Nguyền
+*Phát hành: Tháng 2/2026*
+
+**Tính năng mới:**
+- 🧩 **Mảnh vỡ bản ngã** — Thu thập mảnh vỡ từ quái vật để chế tạo
+- 🔮 **Bàn chế tạo nguyền rủa** — Nơi tạo ra những vật phẩm cấm kỵ
+- 🐛 **Sửa lỗi** — Vá các lỗi tồn đọng và cải thiện hiệu năng
 
 ### v0.1.3 — Tích Hợp Web Wiki
 *Phát hành: Tháng 2/2026*

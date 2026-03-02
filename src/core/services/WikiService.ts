@@ -91,9 +91,13 @@ export class WikiService {
      */
     private extractHeadings(content: string): Heading[] {
         const headingRegex = /^(#{1,6})\s+(.+)$/gm;
+        // Match <ItemCard ... id="some-id" ... name="Some Name" ... >
+        const itemCardRegex = /<ItemCard[^>]*id="([^"]+)"[^>]*name="([^"]+)"[^>]*>/g;
+        
         const headings: Heading[] = [];
         let match;
 
+        // 1. Extract standard markdown headings
         while ((match = headingRegex.exec(content)) !== null) {
             const level = match[1].length;
             const text = match[2].trim();
@@ -104,6 +108,14 @@ export class WikiService {
                 .replace(/-+/g, "-");
 
             headings.push({ level, text, slug });
+        }
+
+        // 2. Extract ItemCard sections (treated as Level 2 headings in TOC/Search)
+        while ((match = itemCardRegex.exec(content)) !== null) {
+            const slug = match[1]; // id attribute
+            const text = match[2]; // name attribute
+            // We treat ItemCards like H2 for TOC structure
+            headings.push({ level: 2, text, slug });
         }
 
         return headings;
@@ -209,7 +221,12 @@ export class WikiService {
         const filePath = path.join(categoryPath, matchingFile);
         const fileContent = fs.readFileSync(filePath, "utf-8");
         const stats = fs.statSync(filePath);
-        const { data: frontmatter, content } = matter(fileContent);
+        const { data: frontmatter, content: rawContentBody } = matter(fileContent);
+        
+        // Auto-fix MDX syntax errors for < used as a comparison (not followed by a tag name)
+        const content = rawContentBody
+            .replace(/\\?<(?![a-zA-Z/])/g, '&lt;');
+
         const { order } = this.parseFilename(matchingFile);
         const headings = this.extractHeadings(content);
         const title = frontmatter.title || this.extractTitle(content);
