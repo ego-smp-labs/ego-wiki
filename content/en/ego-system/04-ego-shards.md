@@ -74,7 +74,7 @@ Each type of Shard exists **ONE AND ONLY ONE** across the entire server.
 | [🗡️ Hidden Blade Shard](#hidden-blade-shard) | Passive | 3+ | 20% chance to reflect 15% melee damage + Poison for 3s | Always active |
 | [🩸 Blood Wolf Shard](#blood-wolf-shard) | A/P | 3+ | Passive: HP < 30% → x3 dmg (5s). Active: Blood-red aura & Rage boost (1 min). | Passive: On hit. Active: CD 10m |
 | [🌑 Nameless Shard](#nameless-shard) | Active | 3+ | Abyssal silence: True invisibility & hides armor for 8 mins (Anonymous kill) | CD 15 min |
-| [🌘 Blood Shadow Shard](#blood-shadow-shard) | Active | 3+ | Phase 8 blocks, leaving an Abyssal Wither II trail (3s) if enemies are pierced | CD 30s |
+| [🌘 Blood Shadow Shard](#blood-shadow-shard) | Active | 3+ | Dash 8 blocks + Invisibility. 3 Charges with escalating buffs (Regen, Max HP Boost). Leaves a toxic Abyssal trail. | 3 Charges, CD 60s |
 | [💀 Mad Sound Shard](#mad-sound-shard) | A/P | 3+ | Passive: Sonic Boom. Active(15s): 20% Warden curse(10s) + spawns Shrieker on kill | P.CD: 30s. A.CD: 30s |
 | [☁️ Sky Pride Shard](#sky-pride-shard) | Active | 3+ | Pierce the sky 10 blocks + Enforce targets (10-block radius) to bow for 3s | CD 60s |
 | [🍖 Flesh Devourer Shard](#flesh-devourer-shard) | A/P | 3+ | Passive: True DMG Bleed + Regen III. Active: Steal Max HP | P: Melee. A: CD 10m |
@@ -201,8 +201,12 @@ No tomb. No title. Only an ego shard left behind,
 frigid as a shattered sky and fleeting as a reaper's scythe.
 
 - Requires **Tier 3+** to seal and awaken.
-- **Dominion (Active)**: Transverse the void **8 blocks** + merge **with the darkness for 3 seconds**. Leave behind a ruptured abyssal trail, any unfortunate victim caught in this path will be suspended by **Wither II for 3 seconds**.
-- **Slumber time**: **30 seconds**.
+- **Dominion (Active)**: Awakens a **3-Charge Dash** system, each dash transversing the void **8 blocks**:
+  - **Charge 1**: Merge with the darkness (Invisibility) for **5 seconds**.
+  - **Charge 2**: Darkness extends to **10 seconds**, accompanied by healing **Regen I (2s)**.
+  - **Charge 3**: Absolute silence for **15 seconds**, granting **Regen III (5s)** and stimulating survival instincts for **+20 Max HP (30 seconds)**.
+- **Abyssal Curse**: Each dash leaves behind a ruptured trail of abyssal smoke. Any unfortunate entity caught in this path will be afflicted by **Wither II, Poison, Nausea, and Blindness for 3 seconds**.
+- **Slumber time**: **60 seconds** after exhausting the 3rd charge.
 
 | | Col 1 | Col 2 | Col 3 |
 |---|:---:|:---:|:---:|

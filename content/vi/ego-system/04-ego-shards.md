@@ -74,7 +74,7 @@ Mỗi loại Mảnh Vỡ chỉ tồn tại **MỘT VÀ CHỈ MỘT** trong toàn
 | [🗡️ Mảnh Vỡ Kẻ Tàng Kiếm](#manh-vo-ke-tang-kiem) | Bị Động | 3+ | 20% phản 15% tổn thương cận chiến + Độc 3s | Tiềm tàng |
 | [🩸 Mảnh Vỡ Kẻ Huyết Lang](#manh-vo-ke-huyet-lang) | C/B | 3+ | Bị Động: Sinh lực < 30% → x3 sát thương (5s). Chủ Động: Chìm trong huyết quang rực rỡ (1 phút) | Bị Động: Chịu đòn. C.Động: CD 10 phút |
 | [🌑 Mảnh Vỡ Kẻ Vô Danh](#manh-vo-ke-vo-danh) | Chủ Động | 3+ | Tịch mịch hoàn toàn: Xóa bóng & giáp 8 phút (Chết ẩn danh) | CD 15 phút |
-| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#manh-vo-ke-anh-huyet) | Chủ Động | 3+ | Vượt 8 khối không gian, để lại Tà Khí Wither II (3s) nếu xuyên qua sinh linh | CD 30s |
+| [🌘 Mảnh Vỡ Kẻ Ảnh Huyết](#manh-vo-ke-anh-huyet) | Chủ Động | 3+ | Lao 8 khối + Tàng hình. Tích lũy 3 lượt Lướt với hiệu ứng cường hoá (Hồi phục, Tăng Max HP). Để lại Tà Khí độc hại. | 3 Lượt, CD 60s |
 | [💀 Mảnh Vỡ Kẻ Cuồng Thanh](#manh-vo-ke-cuong-thanh) | C/B | 3+ | Bị Động: Phản kích Sonic Boom. Chủ Động (15s): 20% nguyền rủa Warden (10s) + bộc phát Shrieker | B.Động CD 30s. C.Động CD 30s |
 | [☁️ Mảnh Vỡ Kẻ Ngạo Thiên](#manh-vo-ke-ngao-thien) | Chủ Động | 3+ | Bắn tung 10 khối + Ép nạn nhân (bán kính 10 khối) phủ phục 3s | CD 60s |
 | [🍖 Mảnh Vỡ Kẻ Nuốt Trọn Thể Xác](#manh-vo-ke-nuot-tron-the-xac) | C/B | 3+ | Bị Động: Chảy máu (True Dmg) + Regen III. Chủ Động: Đoạt Max HP | B.Động: Cận chiến. C.Động: CD 10m |
@@ -201,8 +201,12 @@ Vô mộ. Vô danh. Chỉ vương lại một mảnh vỡ của bản ngã
 lạnh lẽo như vòm trời vỡ và chớp nhoáng tựa lưỡi hái vong linh.
 
 - Yêu cầu **Tier 3+** để phong ấn và thức tỉnh.
-- **Quyền năng (Chủ Động)**: Vượt dải không gian **8 khối** + hòa làm **một với bóng đêm 3 giây**. Để lại một vết nứt tà khí xé toạc sau lưng, kẻ nào vô xui lọt vào đường đi đó sẽ bị ngưng đọng bởi **Wither II trong 3 giây**.
-- **Thời gian ngủ đông**: **30 giây**.
+- **Quyền năng (Chủ Động)**: Kích hoạt hệ thống **3 Lượt Lướt** (Charges), mỗi lần lướt vượt dải không gian **8 khối**:
+  - **Lần 1**: Hòa làm một với bóng đêm (Tàng Hình) trong **5 giây**.
+  - **Lần 2**: Bóng đêm kéo dài **10 giây** kèm theo **Regen I (2s)** chữa lành.
+  - **Lần 3**: Bóng tối tịch mịch **15 giây**, ban phát **Regen III (5s)** và kích thích tiềm năng sinh tồn **Tăng Max HP thêm 20 máu (30 giây)**.
+- **Lời Nguyền Tà Khí**: Mỗi lần lướt để lại một vết nứt khói tà khí xé toạc không gian. Chúng sinh lọt vào màn sương này sẽ gánh chịu **Wither II, Độc, Buồn Nôn và Mù Lòa trong 3 giây**.
+- **Thời gian ngủ đông**: **60 giây** sau khi kiệt sức ở lượt lướt thứ 3.
 
 | | Cột 1 | Cột 2 | Cột 3 |
 |---|:---:|:---:|:---:|
