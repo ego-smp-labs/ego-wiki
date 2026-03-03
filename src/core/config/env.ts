@@ -34,7 +34,18 @@ const isServer = typeof window === "undefined";
 let parsed;
 
 if (isServer) {
-    parsed = allSchema.safeParse(process.env);
+    parsed = allSchema.safeParse({
+        NODE_ENV: process.env.NODE_ENV,
+        DISCORD_CLIENT_ID: process.env.DISCORD_CLIENT_ID,
+        DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
+        DISCORD_GUILD_ID: process.env.DISCORD_GUILD_ID,
+        DISCORD_ADMIN_ROLE_ID: process.env.DISCORD_ADMIN_ROLE_ID,
+        DISCORD_ADMIN_USER_IDS: process.env.DISCORD_ADMIN_USER_IDS,
+        DISCORD_WEBHOOK_URL: process.env.DISCORD_WEBHOOK_URL,
+        AUTH_SECRET: process.env.AUTH_SECRET,
+        NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+        NEXT_PUBLIC_DISCORD_INVITE_URL: process.env.NEXT_PUBLIC_DISCORD_INVITE_URL,
+    });
 } else {
     parsed = clientSchema.safeParse({
         NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,

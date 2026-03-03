@@ -9,6 +9,7 @@
 [![Next.js](https://img.shields.io/badge/CORE-NEXT.JS_16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/UI-REACT_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind](https://img.shields.io/badge/STYLE-TAILWIND_V4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/LICENSE-ENCL-red?style=for-the-badge)](./LICENSE)
 
 ---
 
@@ -92,6 +93,10 @@ Establish communication with the central command.
 
 - **Discord Mainframe**: [Join Server](https://discord.gg/jRqnNbupj4)
 - **Live Frequency**: [ego.sabicoder.xyz](https://ego.sabicoder.xyz)
+
+## 📜 LICENSE
+
+Distributed under the Ego SMP Non-Commercial License (ENCL). See `LICENSE` for more information.
 
 ---
 

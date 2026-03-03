@@ -1,17 +1,22 @@
-/*
- * ego-wiki - ego-wiki in server
- * Copyright (C) 2026 Ego SMP Labs
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
+Ego SMP Non-Commercial License (ENCL)
+Version 1.0
+
+Copyright (c) 2026 NirussVn0 and Ego SMP Labs. All rights reserved.
+
+This software and associated documentation files (the "Software") are provided 
+under the following conditions:
+
+1. FORK AND MODIFY: You are permitted to fork, download, and modify the Software 
+   for personal and private use or for learning purposes.
+2. NON-COMMERCIAL: You may NOT use, distribute, or modify the Software for any 
+   commercial purposes. This includes, but is not limited to, selling the Software, 
+   putting it behind a paywall, or using it on a monetized server to generate revenue.
+3. ATTRIBUTION AND PERMISSION: If you wish to distribute modified or unmodified versions 
+   of the Software publicly, you MUST obtain explicit written permission from the original 
+   creator (NirussVn0 / Ego SMP Labs). If permission is granted, you must prominently 
+   display credit to the original creator in all source code distributions and graphical interfaces.
+4. NO WARRANTY: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+   EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
+
+By using or modifying this Software, you agree to these terms.
