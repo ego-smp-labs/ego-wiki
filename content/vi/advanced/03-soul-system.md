@@ -1,10 +1,10 @@
 ---
-title: Mảnh Kí Ức
+title: Kí Ức Linh Hồn
 description: Tiếng vọng của linh hồn sau cái chết.
 order: 3
 ---
 
-# Mảnh Kí Ức (Soul Grave)
+# Kí Ức Linh Hồn (Soul Grave)
 
 Cái chết không phải là kết thúc, mà là sự để lại.
 Khi linh hồn lìa khỏi xác, một phần ký ức của bạn sẽ cô đọng lại thành **Ngôi Mộ (Grave)**.
