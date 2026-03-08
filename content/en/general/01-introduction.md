@@ -4,72 +4,81 @@ description: Welcome to EGO WIKI.
 order: 1
 ---
 
-# Welcome to the Abyss (Ego Wiki)
+# Welcome to EGO WIKI
 
-You have just stepped onto the edge of a world that does not care if you are "good" or "evil".
-It only cares about one thing: **how long you live** before your ego cracks.
+EgoSMP is not the kind of server where you just farm, gear up, and live peacefully until the end of the season.
 
-EgoSMP is where survival is no longer "farming for fun".
-This is the abyss—where the calamity of sin is not a plot twist, but a **schedule**.
+Here, power does not fall from the sky.
+It drops from the **losers**.
 
-In other servers, peace is default.
-Here, peace is an **illusion** you tell yourself to sleep well.
+The core mechanic of the server is simple:
 
-## What are you stepping into?
+- When a player is killed, their **Ego** drops.
+- Others can **absorb that Ego**.
+- Absorb enough, and you will **rank up your Tier** and unlock new powers.
 
-This world operates on a bitter truth:
-when blood spills on the ground, what awakens is not just hatred—but the **deadly sins** lying dormant inside humans.
+Simply put:
 
-You start as a normal person.
-But the longer you exist, the more you are forced to choose: keep yourself, or let your ego slide deep—and accept the consequences.
+**You die -> your Ego drops -> someone else picks it up -> they get stronger.**
 
-Don't expect "respawn like nothing happened".
-In EgoSMP, death is a door, and behind it, something is always waiting for you to pay the price.
+That is why EgoSMP is more than just survival.
+This is a world where **every life matters**, and every PvP fight can tip the balance of power completely to one side.
 
-## How to survive as a newcomer?
+## How to play on this server?
 
-### Philosophy of the Ego World
+See [How to Play](/en/wiki/general/how-to-play)
 
-EgoSMP revolves around a simple but hard-to-swallow question:
+## What makes EgoSMP different from normal survival?
 
-**“When pushed to the edge, who are you?”**
+On other servers, PvP might just be fighting for fun.
 
-You might start as a normal person. But this world won't let you stand still.
-The longer you live, the more you are forced to choose: keep yourself, or let your ego slide deep—and accept the consequences.
+In EgoSMP, PvP is part of the character progression system.
 
-- Quick Start: **[How To Play](/en/wiki/general/how-to-play)**
-- Ego: **[Ego](/en/wiki/ego-system/ego)**
-- Deadly Sins and Legends: **[Sins](/en/wiki/ego-system/sins)**
-- Dark Ego: **[Dark Ego](/en/wiki/ego-system/dark-ego)**
-- Weapons & Artifacts: **[Items](/en/wiki/items/items)**
-- Basic Prayers: **[Commands](/en/wiki/advanced/commands)**
+You do not just fight to win.
+You fight to:
 
-## Unspoken Rules of the Abyss (read so you don't look stupid)
+- Steal your opponent's progression
+- Prevent others from getting stronger
+- Level up faster
+- Seize control of the game
 
-- Trust is a skill, not morality.
-- Combat doesn't "naturally happen" — it is *called* by the system and greed.
-- Surviving in a sinful world will eventually become obvious... and that's when you start becoming truly scary.
+Therefore, death here is not just losing items.
+Death implies:
 
-## Drifting Memories...
+**you just handed growth resources to the person who killed you.**
 
-Some souls die and rest in peace.
-But in EgoSMP, death might just be the start of a punishment loop—where you pull yourself out of darkness, or get swallowed whole.
+Sounds a bit cruel?
+Exactly. That is EgoSMP.
 
-Calamity doesn't fall from the sky — it rises from inside humans.
-Every bloodstain, every time you survive, is an invitation for **Deadly Sins** to wake up and call your name.
-And in this sinful world, only **Ego** keeps you "human"... or pushes you into something you used to fear.
+## What should beginners understand first?
 
-Want to see the full storyline? Read through: **[Story](/en/wiki/general/story)**
+If you are new to the server, remember 3 things:
 
-## Message before you step down
+- Don't die early, because dying means dropping your Ego
+- Don't fight carelessly, because losing means feeding others
+- Don't be slow to understand the mechanics, because fast learners will snowball hard
 
-EgoSMP doesn't promise "absolute fairness".
-EgoSMP promises "clear consequences".
+This server rewards those who:
 
-You get stronger by winning, and you learn lessons by losing.
-If you are stubborn enough, smart enough, cruel enough when needed and awake enough when chaotic...
+- know how to prepare
+- know when to fight
+- know when to hunt others
+- and know when to survive like a rat to avoid becoming loot
 
-Explore — and become the strongest warrior.
+## What to read next?
 
-But remember carefully:
-**the abyss does not swallow the weak... it swallows the naive.**
+If you want to understand the server quickly without getting overwhelmed, read in this order:
+
+- Ego System: **[Ego](/en/wiki/ego-system/ego)**
+- Tiers and power progression: **[Dark Ego](/en/wiki/ego-system/dark-ego)**
+- Deadly Sins and paths: **[Sins](/en/wiki/advanced/sins)**
+- Weapons, relics, items: **[Items](/en/wiki/items/items)**
+- Basic Commands: **[Commands](/en/wiki/miscellaneous/commands)**
+- World Lore: **[Story](/en/wiki/general/story)**
+
+## Before stepping in
+
+EgoSMP does not ask if you are good or bad.
+The server only asks one question:
+
+**how long can you survive before becoming a stepping stone for someone else?**

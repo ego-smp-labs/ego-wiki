@@ -26,7 +26,7 @@ Nói dễ hiểu hơn:
 
 ## Server này chơi kiểu gì?
 
-tham khảo ở [Cách Chơi](/vi/wiki/general/how-to-play)
+### Tham khảo ở [Cách Chơi](/vi/wiki/general/how-to-play)
 
 ## Điều gì làm EgoSMP khác với survival thường?
 
