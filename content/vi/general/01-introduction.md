@@ -4,74 +4,81 @@ description: Chào mừng đến với EGO WIKI.
 order: 1
 ---
 
+# Chào mừng đến EGO WIKI
 
-# Chào Mừng đến EGO WIKI
+EgoSMP không phải kiểu server nơi bạn chỉ farm, mặc giáp, rồi sống yên ổn đến cuối mùa.
 
-Bạn vừa đặt chân lên rìa của một thế giới không hề quan tâm bạn “hiền” hay “ác”.  
-Nó chỉ quan tâm một điều: bạn **sống được bao lâu** trước khi bản ngã của bạn rạn nứt.
+Ở đây, sức mạnh không tự rơi từ trên trời xuống.  
+Nó rơi ra từ **người thua cuộc**.
 
-EgoSMP là nơi sinh tồn không còn là “farm cho vui”.  
-Đây là vực thẳm—nơi tai ương của tội lỗi không phải plot twist, mà là **lịch trình**.
+Cơ chế cốt lõi của server rất đơn giản:
 
-Ở những server khác, hoà bình là mặc định.  
-Ở đây, hoà bình là **ảo giác** bạn tự kể để ngủ ngon.
+- Khi một người chơi bị hạ gục, **Bản Ngã** của họ sẽ rơi ra
+- Người khác có thể **hấp thụ Bản Ngã đó**
+- Hấp thụ đủ, bạn sẽ **thăng cấp Tier** và mở ra sức mạnh mới
 
-## Bạn đang bước vào cái gì?
+Nói dễ hiểu hơn:
 
-Thế giới này vận hành bằng một sự thật khó nuốt:  
-khi máu đổ xuống đất, thứ thức tỉnh không chỉ là hận thù—mà là những **đại tội** nằm sẵn trong con người.
+**Ông chết -> ông rơi Bản Ngã -> người khác nhặt được -> người đó mạnh lên.**
 
-Bạn bắt đầu như một người bình thường.  
-Nhưng càng tồn tại lâu, bạn càng bị ép phải chọn: giữ mình, hoặc để bản ngã trượt sâu—và chấp nhận hậu quả.
+Đó là lý do EgoSMP không chỉ là sinh tồn.  
+Đây là một thế giới nơi **mỗi mạng người đều có giá trị**, và mỗi trận PvP đều có thể đẩy cán cân sức mạnh lệch hẳn sang một phía.
 
-Đừng mong “chết rồi respawn như chưa từng có gì”.  
-Ở EgoSMP, cái chết là một cánh cửa, và phía sau nó luôn có thứ đang chờ bạn trả giá.
+## Server này chơi kiểu gì?
 
-## Người mới nên làm sao để sống sót?
+tham khảo ở [Cách Chơi](/vi/wiki/general/how-to-play)
 
-### Triết lý của thế giới EGO
+## Điều gì làm EgoSMP khác với survival thường?
 
-EgoSMP xoay quanh một câu hỏi đơn giản nhưng khó nuốt:
+Ở server khác, PvP có thể chỉ là đánh nhau cho vui.
 
-**“Khi bị dồn đến tận cùng, bạn là ai?”**
+Ở EgoSMP, PvP là một phần của hệ thống phát triển nhân vật.
 
-Bạn có thể bắt đầu như một người bình thường. Nhưng thế giới này không cho bạn đứng yên.  
-Càng sống lâu, bạn càng bị ép phải chọn: giữ mình, hoặc để bản ngã trượt sâu—và chấp nhận hậu quả.
+Bạn không chỉ đánh để thắng.  
+Bạn đánh để:
 
-- Bắt đầu nhanh: **[Cách Chơi](/vi/wiki/general/how-to-play)**
-- Bản ngã: **[Ego](/vi/wiki/ego-system/ego)**
-- Thất đại tội và truyền thuyết: **[Sins](/vi/wiki/advanced/sins)**
-- Bản Ngã đen: **[Dark Ego](/vi/wiki/ego-system/dark-ego)**
-- Vũ khí & Di vật: **[Items](/vi/wiki/items/items)**
-- Cầu nguyện cơ bản: **[Commands](/vi/wiki/miscellaneous/commands)**
+- Cướp lấy tiến trình của đối thủ
+- Ngăn người khác mạnh lên
+- Tăng cấp nhanh hơn
+- Giành quyền kiểm soát cuộc chơi
 
-## Luật ngầm của vực thẳm (đọc cho khỏi ngáo)
+Vì thế, ở đây cái chết không chỉ là mất đồ.  
+Cái chết còn có nghĩa là:
 
-- Tin người là một kỹ năng, không phải đạo đức.
-- Giao tranh không “tự nhiên xảy ra” — nó được hệ thống và lòng tham *gọi đến*.
-- Sống sót trong thế giới tội lỗi rồi sẽ trở thành hiển nhiên… và đó là lúc bạn bắt đầu đáng sợ thật sự.
+**bạn vừa trao tài nguyên tăng trưởng cho chính người đã giết mình.**
 
-## Kí ức trôi dạt...
+Nghe hơi tàn nhẫn?  
+Chuẩn. Đó mới là EgoSMP.
 
-Có những linh hồn chết rồi được yên nghỉ.  
-Còn ở EgoSMP, chết có thể chỉ là khởi đầu của một vòng trừng phạt—nơi bạn phải tự kéo mình ra khỏi bóng tối, hoặc bị nó nuốt trọn.
+## Người mới cần hiểu gì trước?
 
-Tai ương không rơi xuống từ bầu trời — nó trồi lên từ bên trong con người. 
-Mỗi vết máu, mỗi lần bạn sống sót, đều là một lời mời để **Đại Tội** thức giấc và gọi tên bạn. 
-Và giữa thế giới tội lỗi này, chỉ có **Bản Ngã** giữ bạn còn là “người”… hoặc đẩy bạn thành thứ mà bạn từng sợ hãi.
+Nếu bạn mới vào server, hãy nhớ 3 điều:
 
-Muốn xem tuyến truyện đầy đủ, hãy đọc qua: **[Story](/vi/wiki/general/story)**
+- Đừng chết sớm, vì chết là rơi Bản Ngã
+- Đừng đánh bừa, vì thua là nuôi người khác
+- Đừng chậm hiểu cơ chế, vì người hiểu nhanh sẽ snowball rất mạnh
 
+Server này thưởng cho người:
 
-## Lời nhắn trước khi bạn bước xuống
+- biết chuẩn bị
+- biết chọn thời điểm giao tranh
+- biết lúc nào nên săn người khác
+- và biết lúc nào nên sống như chuột để không bị biến thành loot
 
-EgoSMP không hứa “công bằng tuyệt đối”.  
-EgoSMP hứa “hậu quả rõ ràng”.
+## Đọc gì tiếp theo?
 
-Bạn mạnh lên bằng chiến thắng, và bạn học được bài học bằng thất bại.  
-Nếu bạn đủ lì, đủ khôn, đủ ác khi cần và đủ tỉnh khi loạn…
+Nếu muốn hiểu server nhanh mà không bị ngợp, đọc theo thứ tự này:
 
-Hãy khám phá — và trở thành chiến binh mạnh nhất.
+- Hệ thống Bản Ngã: **[Ego](/vi/wiki/ego-system/ego)**
+- Tier và tiến trình sức mạnh: **[Dark Ego](/vi/wiki/ego-system/dark-ego)**
+- Đại Tội và hướng phát triển: **[Sins](/vi/wiki/advanced/sins)**
+- Vũ khí, di vật, vật phẩm: **[Items](/vi/wiki/items/items)**
+- Lệnh cơ bản: **[Commands](/vi/wiki/miscellaneous/commands)**
+- Cốt truyện thế giới: **[Story](/vi/wiki/general/story)**
 
-Nhưng nhớ kỹ:  
-**vực thẳm không nuốt người yếu… nó nuốt người ngây thơ.**
+## Trước khi bước vào
+
+EgoSMP không hỏi bạn có tốt hay xấu.  
+Server chỉ hỏi một câu thôi:
+
+**ông sống được bao lâu trước khi trở thành bậc thang cho kẻ khác leo lên?**
