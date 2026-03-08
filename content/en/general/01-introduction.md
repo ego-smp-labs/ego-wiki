@@ -26,7 +26,7 @@ This is a world where **every life matters**, and every PvP fight can tip the ba
 
 ## How to play on this server?
 
-See [How to Play](/en/wiki/general/how-to-play)
+### See [How to Play](/en/wiki/general/how-to-play)
 
 ## What makes EgoSMP different from normal survival?
 
