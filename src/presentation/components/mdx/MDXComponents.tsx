@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// @ts-expect-error - Hand exists at runtime in lucide-react v0.563 (verified), TS defs lag behind
-import { ExternalLink, Hand } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 // ===== Custom MDX Component Types =====
 interface HeadingProps {
@@ -67,6 +66,16 @@ const A = ({
     children: ReactNode;
 }) => {
     const isExternal = href?.startsWith("http");
+    const isAnchor = href?.startsWith("#");
+
+    // Anchor links from rehype-autolink-headings — render as plain link, no icon
+    if (isAnchor) {
+        return (
+            <a href={href} className="no-underline text-inherit hover:text-inherit">
+                {children}
+            </a>
+        );
+    }
 
     if (isExternal) {
         return (
@@ -87,7 +96,7 @@ const A = ({
             href={href || "#"}
             className="text-neon-cyan hover:text-white transition-colors link-underline inline-flex items-center gap-1.5"
         >
-            <Hand size={14} className="-rotate-90 flex-shrink-0" />
+            <span className="flex-shrink-0 text-sm" aria-hidden="true">👉</span>
             <span>{children}</span>
         </Link>
     );
