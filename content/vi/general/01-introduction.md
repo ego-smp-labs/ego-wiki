@@ -6,6 +6,8 @@ order: 1
 
 # Chào mừng đến EGO WIKI
 
+![Ego Banner](/images/general/ego-banner.png)
+
 EgoSMP không phải kiểu server nơi bạn chỉ farm, mặc giáp, rồi sống yên ổn đến cuối mùa.
 
 Ở đây, sức mạnh không tự rơi từ trên trời xuống.  
@@ -20,6 +22,8 @@ Cơ chế cốt lõi của server rất đơn giản:
 Nói dễ hiểu hơn:
 
 **Ông chết -> ông rơi Bản Ngã -> người khác nhặt được -> người đó mạnh lên.**
+
+![Cơ chế Cốt lõi](/images/general/core-loop.png)
 
 Đó là lý do EgoSMP không chỉ là sinh tồn.  
 Đây là một thế giới nơi **mỗi mạng người đều có giá trị**, và mỗi trận PvP đều có thể đẩy cán cân sức mạnh lệch hẳn sang một phía.

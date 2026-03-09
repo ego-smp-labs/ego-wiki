@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 // @ts-expect-error - lucide-react type declarations lag behind runtime exports
 import { ChevronRight, Bookmark, X } from "lucide-react";
@@ -76,6 +77,18 @@ export default function Sidebar({
         <aside
             className={`w-64 flex-shrink-0 hidden lg:block sticky top-20 h-[calc(100vh-6rem)] overflow-y-auto bg-black/40 backdrop-blur-md p-4 rounded-xl border border-white/5 ${className}`}
         >
+            {/* Logo Section */}
+            <div className="mb-6 flex justify-center pb-6 border-b border-void-border/50">
+                <Image
+                    src="/images/general/ego-logo.png"
+                    alt="Ego Logo"
+                    width={150}
+                    height={60}
+                    className="object-contain drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]"
+                    priority
+                />
+            </div>
+
             <nav className="pb-4">
                 <div className="mb-8">
                     <h4 className="text-xs font-medium uppercase tracking-wider text-white/40 mb-3">

@@ -52,6 +52,8 @@ Hiểu đơn giản:
 Nên khi gặp một người chơi mạnh hơn hẳn, nhiều khi không phải do họ aim thần.  
 Mà là vì họ đã hấp thụ đủ nhiều Bản Ngã để vượt bạn cả một quãng.
 
+![Tiến hóa Tier](/images/general/tier-evolution.png)
+
 ## Vậy người mới nên chơi thế nào?
 
 Lộ trình an toàn nhất là:

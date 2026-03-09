@@ -52,6 +52,8 @@ Simply put:
 So when you meet a player who is vastly stronger, it might not just be god-like aim.
 It's because they have absorbed enough Egos to leap far ahead of you.
 
+![Tier Evolution](/images/general/tier-evolution.png)
+
 ## So how should beginners play?
 
 The safest path is:

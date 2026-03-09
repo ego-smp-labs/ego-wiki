@@ -6,6 +6,8 @@ order: 1
 
 # Welcome to EGO WIKI
 
+![Ego Banner](/images/general/ego-banner.png)
+
 EgoSMP is not the kind of server where you just farm, gear up, and live peacefully until the end of the season.
 
 Here, power does not fall from the sky.
@@ -20,6 +22,8 @@ The core mechanic of the server is simple:
 Simply put:
 
 **You die -> your Ego drops -> someone else picks it up -> they get stronger.**
+
+![Core Loop](/images/general/core-loop.png)
 
 That is why EgoSMP is more than just survival.
 This is a world where **every life matters**, and every PvP fight can tip the balance of power completely to one side.
