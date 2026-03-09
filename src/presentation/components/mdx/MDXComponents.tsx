@@ -1,19 +1,8 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
-
-// Inline pointing hand SVG to bypass Next.js lucide-react type-checking issues
-const PointerHand = ({ size = 14, className = "" }: { size?: number, className?: string }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-        <path d="M22 14a8 8 0 0 1-8 8" />
-        <path d="M18 11v-1a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-        <path d="M14 10V5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-        <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-        <path d="M6 14v-2a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-        <path d="M14 10.5v-.5" />
-    </svg>
-);
+// @ts-expect-error - Hand exists at runtime in lucide-react v0.563 (verified), TS defs lag behind
+import { ExternalLink, Hand } from "lucide-react";
 
 // ===== Custom MDX Component Types =====
 interface HeadingProps {
@@ -98,7 +87,7 @@ const A = ({
             href={href || "#"}
             className="text-neon-cyan hover:text-white transition-colors link-underline inline-flex items-center gap-1.5"
         >
-            <PointerHand size={16} className="-rotate-12 flex-shrink-0" />
+            <Hand size={14} className="-rotate-90 flex-shrink-0" />
             <span>{children}</span>
         </Link>
     );

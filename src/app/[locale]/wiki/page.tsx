@@ -65,7 +65,7 @@ export default async function WikiPage({ params }: WikiPageProps) {
                     </div>
 
                     <h1 className="font-display text-4xl font-bold text-white mb-2">
-                        <span className="text-neon-cyan">#</span> Wiki
+                        Wiki
                     </h1>
                     <p className="text-white/50 mb-10">
                         {pageSubtitle}
@@ -87,8 +87,7 @@ export default async function WikiPage({ params }: WikiPageProps) {
                     </div>
 
                     <div className="mt-16">
-                        <h2 className="font-display text-xl font-bold text-white mb-6 flex items-center gap-2">
-                            <span className="text-neon-purple">#</span>
+                        <h2 className="font-display text-xl font-bold text-white mb-6">
                             {recentUpdatesTitle}
                         </h2>
                         <div className="p-6 rounded-xl bg-void-surface border border-void-border text-center">

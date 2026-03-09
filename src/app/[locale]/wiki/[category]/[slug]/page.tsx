@@ -10,6 +10,7 @@ import { getTranslations } from "@core/lib/i18n";
 import Sidebar from "@presentation/components/layout/Sidebar";
 import MDXComponents from "@presentation/components/mdx/MDXComponents";
 import { LockedArticleView } from "@presentation/components/wiki/LockedArticleView";
+import BookmarkButton from "@presentation/components/wiki/BookmarkButton";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
@@ -117,7 +118,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     </div>
 
                     {/* Meta Info */}
-                    <div className="flex items-center gap-4 text-xs text-white/30 mb-8 border-b border-void-border pb-4">
+                    <div className="flex items-center justify-between gap-4 text-xs text-white/30 mb-8 border-b border-void-border pb-4">
                         <span className="flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-neon-pink animate-pulse"></span>
                             {t.common?.lastUpdated || "Last Updated"}: {new Date(article.lastUpdated).toLocaleDateString(locale, {
@@ -128,6 +129,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                                 minute: '2-digit'
                             })}
                         </span>
+                        <BookmarkButton
+                            title={article.title}
+                            slug={slug}
+                            category={categorySlug}
+                            locale={locale}
+                            labels={{
+                                save: locale === "vi" ? "Lưu trang" : "Save",
+                                unsave: locale === "vi" ? "Đã lưu" : "Saved",
+                            }}
+                        />
                     </div>
 
                     {/* Article Content */}

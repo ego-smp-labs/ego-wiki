@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronRight } from "lucide-react";
+// @ts-expect-error - lucide-react type declarations lag behind runtime exports
+import { ChevronRight, Bookmark, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { CATEGORIES, getCategory } from "@core/lib/categories";
 import { type ArticleMeta, type Heading } from "@core/services/WikiService";
 import { getTranslations } from "@core/lib/i18n";
+import { useBookmarkStore, type BookmarkItem } from "@core/stores/useBookmarkStore";
 
 interface SidebarProps {
     locale: string;
@@ -26,6 +28,25 @@ export default function Sidebar({
     const pathname = usePathname();
     const t = getTranslations(locale);
     const [activeId, setActiveId] = useState<string>("");
+    const { init, getBookmarks, removeBookmark } = useBookmarkStore();
+    const [savedPages, setSavedPages] = useState<BookmarkItem[]>([]);
+
+    // Initialize bookmark store
+    useEffect(() => {
+        init();
+        setSavedPages(getBookmarks(locale));
+    }, [init, getBookmarks, locale]);
+
+    // Re-sync on store changes
+    useEffect(() => {
+        return useBookmarkStore.subscribe((state) => {
+            setSavedPages(
+                state.bookmarks
+                    .filter((b) => b.locale === locale)
+                    .sort((a, b) => b.savedAt - a.savedAt)
+            );
+        });
+    }, [locale]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -87,6 +108,41 @@ export default function Sidebar({
                         })}
                     </ul>
                 </div>
+
+                {/* Saved Pages */}
+                {savedPages.length > 0 && (
+                    <div className="mb-8">
+                        <h4 className="text-xs font-medium uppercase tracking-wider text-white/40 mb-3 flex items-center gap-1.5">
+                            <Bookmark size={12} />
+                            {t.wiki.savedPages}
+                        </h4>
+                        <ul className="space-y-1">
+                            {savedPages.map((bookmark) => (
+                                <li key={`${bookmark.category}-${bookmark.slug}`} className="group/bm">
+                                    <div className="flex items-center gap-1">
+                                        <Link
+                                            href={`/${locale}/wiki/${bookmark.category}/${bookmark.slug}`}
+                                            className={`flex-1 flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-all ${
+                                                pathname.includes(`/${bookmark.slug}`)
+                                                    ? "bg-neon-cyan/10 text-neon-cyan"
+                                                    : "text-white/60 hover:text-white hover:bg-void-surface"
+                                            }`}
+                                        >
+                                            <span className="truncate">{bookmark.title}</span>
+                                        </Link>
+                                        <button
+                                            onClick={() => removeBookmark(bookmark.slug, bookmark.category)}
+                                            className="opacity-0 group-hover/bm:opacity-100 p-1 rounded text-white/30 hover:text-red-400 transition-all"
+                                            title="Remove"
+                                        >
+                                            <X size={12} />
+                                        </button>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
 
                 {articles.length > 0 && (
                     <div className="mb-8">

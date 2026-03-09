@@ -32,6 +32,10 @@ export const translations = {
             previousArticle: "Previous",
             nextArticle: "Next",
             backToCategory: "Back to",
+            savedPages: "Saved Pages",
+            save: "Save",
+            unsave: "Saved",
+            noSavedPages: "No saved pages",
         },
         footer: {
             serverIp: "Server IP",
@@ -79,6 +83,10 @@ export const translations = {
             previousArticle: "Trước",
             nextArticle: "Tiếp theo",
             backToCategory: "Quay lại",
+            savedPages: "Trang đã lưu",
+            save: "Lưu trang",
+            unsave: "Đã lưu",
+            noSavedPages: "Chưa có trang nào được lưu",
         },
         footer: {
             serverIp: "IP Server",

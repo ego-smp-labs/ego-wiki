@@ -4,10 +4,12 @@ import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, FileText, ArrowRight, Loader2 } from "lucide-react";
+// @ts-expect-error - lucide-react type declarations lag behind runtime exports
+import { Search, FileText, ArrowRight, Loader2, Bookmark } from "lucide-react";
 import { type ArticleMeta } from "@core/services/WikiService";
 import { getCategory } from "@core/lib/categories";
 import { getTranslations } from "@core/lib/i18n";
+import { useBookmarkStore, type BookmarkItem } from "@core/stores/useBookmarkStore";
 
 interface CommandPaletteProps {
     locale: string;
@@ -28,6 +30,24 @@ export default function CommandPalette({
     const [loading, setLoading] = useState(false);
     const router = useRouter();
     const t = getTranslations(locale);
+    const { init, getBookmarks } = useBookmarkStore();
+    const [savedPages, setSavedPages] = useState<BookmarkItem[]>([]);
+
+    // Init bookmarks
+    useEffect(() => {
+        init();
+        setSavedPages(getBookmarks(locale));
+    }, [init, getBookmarks, locale]);
+
+    useEffect(() => {
+        return useBookmarkStore.subscribe((state) => {
+            setSavedPages(
+                state.bookmarks
+                    .filter((b) => b.locale === locale)
+                    .sort((a, b) => b.savedAt - a.savedAt)
+            );
+        });
+    }, [locale]);
 
     useEffect(() => {
         if (!query || query.length < MIN_QUERY_LENGTH) {
@@ -124,6 +144,49 @@ export default function CommandPalette({
                             </div>
 
                             <Command.List className="max-h-80 overflow-y-auto bg-void-surface p-2">
+                                {/* Show saved pages when query is empty */}
+                                {query.length < MIN_QUERY_LENGTH && savedPages.length > 0 && (
+                                    <Command.Group heading={
+                                        <span className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-white/40 px-2 py-1.5">
+                                            <Bookmark size={12} />
+                                            {t.wiki.savedPages}
+                                        </span>
+                                    }>
+                                        {savedPages.map((bookmark) => (
+                                            <Command.Item
+                                                key={`saved-${bookmark.category}-${bookmark.slug}`}
+                                                value={`saved ${bookmark.title} ${bookmark.category}`}
+                                                onSelect={() => {
+                                                    router.push(`/${locale}/wiki/${bookmark.category}/${bookmark.slug}`);
+                                                    onClose();
+                                                    setQuery("");
+                                                }}
+                                                className="group flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer data-[selected=true]:bg-neon-cyan/10"
+                                            >
+                                                <div className="flex-shrink-0 p-2 rounded-lg bg-void-bg border border-void-border group-data-[selected=true]:border-neon-cyan/30">
+                                                    <Bookmark size={16} className="text-neon-cyan" />
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                    <div className="text-sm text-white group-data-[selected=true]:text-neon-cyan truncate">
+                                                        {bookmark.title}
+                                                    </div>
+                                                    <div className="text-xs text-white/40">
+                                                        {getCategory(bookmark.category)
+                                                            ? locale === "vi"
+                                                                ? getCategory(bookmark.category)!.title.vi
+                                                                : getCategory(bookmark.category)!.title.en
+                                                            : bookmark.category}
+                                                    </div>
+                                                </div>
+                                                <ArrowRight
+                                                    size={14}
+                                                    className="text-white/20 group-data-[selected=true]:text-neon-cyan"
+                                                />
+                                            </Command.Item>
+                                        ))}
+                                    </Command.Group>
+                                )}
+
                                 {query.length >= MIN_QUERY_LENGTH && !loading && results.length === 0 && (
                                     <Command.Empty className="py-8 text-center text-white/40">
                                         {noResultsText}
