@@ -180,17 +180,16 @@ const Img = ({ src, alt }: { src?: string; alt?: string }) => {
 
     return (
         <figure className="my-6">
-            <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-void-border bg-void-surface-light">
-                <Image
-                    src={src}
-                    alt={alt || "Wiki content"}
-                    fill
-                    className="object-contain"
-                    style={{ imageRendering: "pixelated" }}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
-                    unoptimized
-                />
-            </div>
+            <Image
+                src={src}
+                alt={alt || "Wiki content"}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto", imageRendering: "pixelated" }}
+                className="rounded-xl border border-void-border bg-void-surface-light"
+                unoptimized
+            />
             {alt && (
                 <figcaption className="text-center text-xs text-white/40 mt-2">
                     {alt}
