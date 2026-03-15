@@ -46,7 +46,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         notFound();
     }
 
-    const articles = wikiService.getCategoryArticles(locale, categorySlug);
+    const allArticles = wikiService.getCategoryArticles(locale, categorySlug);
+    const articles = allArticles.filter((article) => {
+        if (!article.lockedUntil) return true;
+        const unlockDate = new Date(article.lockedUntil).getTime();
+        return Date.now() >= unlockDate;
+    });
     const Icon = category.icon;
     const title = locale === "vi" ? category.title.vi : category.title.en;
     const description = locale === "vi" ? category.description.vi : category.description.en;
