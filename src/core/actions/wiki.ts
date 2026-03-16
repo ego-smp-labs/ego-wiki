@@ -4,6 +4,7 @@ import { z } from "zod";
 import fs from "fs/promises";
 import path from "path";
 import { revalidatePath } from "next/cache";
+import matter from "gray-matter";
 import { auth } from "@core/config/auth";
 import { env } from "@core/config/env";
 import { CATEGORY_SLUGS } from "@core/lib/categories";
@@ -47,14 +48,11 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     }
 
     // 5. Construct MDX Content with Frontmatter
-    const fileContent = `---
-title: "${title}"
-description: "Created via Admin Editor"
-category: "${category}"
----
-
-${content}
-`;
+    const fileContent = matter.stringify(content, {
+        title,
+        description: "Created via Admin Editor",
+        category,
+    });
 
     // 6. Write File
     try {
