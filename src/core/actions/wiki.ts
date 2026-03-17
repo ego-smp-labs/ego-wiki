@@ -3,6 +3,7 @@
 import { z } from "zod";
 import fs from "fs/promises";
 import path from "path";
+import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { auth } from "@core/config/auth";
 import { env } from "@core/config/env";
@@ -47,19 +48,16 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     }
 
     // 5. Construct MDX Content with Frontmatter
-    const fileContent = `---
-title: "${title}"
-description: "Created via Admin Editor"
-category: "${category}"
----
-
-${content}
-`;
+    const fileContent = matter.stringify(content, {
+        title,
+        description: "Created via Admin Editor",
+        category,
+    });
 
     // 6. Write File
     try {
-        // Check if file exists to prevent accidental overwrite? 
-        // For now, let's allow overwrite or maybe fail. 
+        // Check if file exists to prevent accidental overwrite?
+        // For now, let's allow overwrite or maybe fail.
         // Let's use 'wx' flag to fail if exists? No, just overwrite for editing.
         await fs.writeFile(targetFile, fileContent, "utf8");
     } catch (err) {

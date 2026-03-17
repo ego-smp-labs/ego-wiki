@@ -32,3 +32,8 @@
 **Vulnerability:** The `createWikiPage` server action relied on a custom role check (`userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)`) instead of using the centralized `session.user.isAdmin` property. This caused an authorization bypass/inconsistency where administrators granted access via `DISCORD_ADMIN_USER_IDS` were denied access, and it could also result in failing closed if the `DISCORD_ADMIN_ROLE_ID` was not set, despite other admin definitions existing.
 **Learning:** Re-implementing authorization logic in individual functions or endpoints leads to inconsistencies and potential bypasses. The application's definition of an "admin" is complex (combining user IDs and roles) and is correctly centralized in the `jwt` callback (`src/core/config/auth.ts`).
 **Prevention:** Always use the centralized `session.user.isAdmin` property or `AuthService.isAdmin()` for all administrative authorization checks. Do not re-implement custom role or ID checks in individual actions or routes.
+
+## 2025-03-10 - YAML Injection in Wiki Action
+**Vulnerability:** The `createWikiPage` server action used manual string concatenation (`\`---\ntitle: "${title}"\n...\n---\``) to construct MDX file content. If an administrator injected multi-line content or quote-escaped strings into the `title`, they could arbitrarily modify the resulting YAML frontmatter (e.g., adding `lockedUntil` or changing `roles`).
+**Learning:** Manual construction of formatted data (like YAML, JSON, XML) using user input is inherently vulnerable to injection. Always use established serialization libraries.
+**Prevention:** Use `matter.stringify()` from the `gray-matter` library when programmatically generating Markdown with YAML frontmatter to ensure all inputs are properly escaped and structured.
