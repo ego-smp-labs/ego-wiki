@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 import { auth } from "@core/config/auth";
 import { env } from "@core/config/env";
 import { CATEGORY_SLUGS } from "@core/lib/categories";
+import matter from "gray-matter";
 
 const wikiPageSchema = z.object({
     title: z.string().min(3, "Title must be at least 3 characters"),
@@ -35,8 +36,14 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     // 3. construct File Path
     // content/[locale]/[category]/[slug].md
     const rootDir = process.cwd();
-    const targetDir = path.join(rootDir, "content", locale, category);
-    const targetFile = path.join(targetDir, `${slug}.md`);
+    const contentDir = path.join(rootDir, "content");
+    const targetDir = path.resolve(contentDir, locale, category);
+    const targetFile = path.resolve(targetDir, `${slug}.md`);
+
+    // Security: Prevent path traversal
+    if (!targetFile.startsWith(contentDir + path.sep)) {
+        throw new Error("Invalid file path");
+    }
 
     // 4. Create Directory if not exists
     try {
@@ -46,15 +53,12 @@ export async function createWikiPage({ title, category, slug, content, locale }:
         throw new Error("Failed to prepare storage");
     }
 
-    // 5. Construct MDX Content with Frontmatter
-    const fileContent = `---
-title: "${title}"
-description: "Created via Admin Editor"
-category: "${category}"
----
-
-${content}
-`;
+    // 5. Construct MDX Content with Frontmatter securely
+    const fileContent = matter.stringify(content, {
+        title,
+        description: "Created via Admin Editor",
+        category,
+    });
 
     // 6. Write File
     try {
