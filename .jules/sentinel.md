@@ -32,3 +32,8 @@
 **Vulnerability:** The `createWikiPage` server action relied on a custom role check (`userRoles.includes(env.DISCORD_ADMIN_ROLE_ID)`) instead of using the centralized `session.user.isAdmin` property. This caused an authorization bypass/inconsistency where administrators granted access via `DISCORD_ADMIN_USER_IDS` were denied access, and it could also result in failing closed if the `DISCORD_ADMIN_ROLE_ID` was not set, despite other admin definitions existing.
 **Learning:** Re-implementing authorization logic in individual functions or endpoints leads to inconsistencies and potential bypasses. The application's definition of an "admin" is complex (combining user IDs and roles) and is correctly centralized in the `jwt` callback (`src/core/config/auth.ts`).
 **Prevention:** Always use the centralized `session.user.isAdmin` property or `AuthService.isAdmin()` for all administrative authorization checks. Do not re-implement custom role or ID checks in individual actions or routes.
+
+## 2025-03-10 - YAML Injection in Markdown Generator
+**Vulnerability:** The `createWikiPage` action used manual string concatenation to construct YAML frontmatter (e.g., \`title: "\${title}"\`). This allowed an attacker to inject arbitrary YAML via the \`title\` or \`category\` fields by using newlines or double quotes, leading to YAML injection.
+**Learning:** Never generate structured data formats like YAML, JSON, or XML via manual string interpolation when using user input. Attackers can escape the expected string context and add unexpected properties.
+**Prevention:** Always use a dedicated serialization library like `gray-matter` (\`matter.stringify\`) to construct frontmatter safely.

@@ -3,6 +3,7 @@
 import { z } from "zod";
 import fs from "fs/promises";
 import path from "path";
+import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { auth } from "@core/config/auth";
 import { env } from "@core/config/env";
@@ -47,14 +48,12 @@ export async function createWikiPage({ title, category, slug, content, locale }:
     }
 
     // 5. Construct MDX Content with Frontmatter
-    const fileContent = `---
-title: "${title}"
-description: "Created via Admin Editor"
-category: "${category}"
----
-
-${content}
-`;
+    // Sentinel: Use matter.stringify to prevent YAML injection via user input
+    const fileContent = matter.stringify(content, {
+        title,
+        description: "Created via Admin Editor",
+        category,
+    });
 
     // 6. Write File
     try {
